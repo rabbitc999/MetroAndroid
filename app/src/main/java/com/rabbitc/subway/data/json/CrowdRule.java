@@ -17,6 +17,7 @@ public class CrowdRule {
 
     /** 拥挤时段列表 */
     public List<CrowdPeriod> periods;
+    public String directionKey; public String startTime; public String endTime; public double factor; public List<String> days;
 
     /** 单个拥挤时段。 */
     public static class CrowdPeriod {

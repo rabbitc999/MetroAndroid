@@ -7,13 +7,13 @@ package com.rabbitc.subway.data.json;
 public class OpenTimeRule {
 
     /** 线路标识符，或 "GLOBAL" 表示全局默认（JSON: "id"） */
-    public String id;
+    public String id; public String lineId;
 
     /** 运营开始时间，格式 "HH:mm"（JSON: "from"） */
-    public String from;
+    public String from; public String startTime;
 
     /** 运营结束时间，格式 "HH:mm"（JSON: "to"） */
-    public String to;
+    public String to; public String endTime;
 
     /** 适用日期修饰符原文，如 "WORKDAY"；为空表示不限（JSON: "days"） */
     public String days;

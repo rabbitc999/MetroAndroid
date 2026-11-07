@@ -52,6 +52,8 @@ goto fail
 
 :findJavaFromJavaHome
 set JAVA_HOME=%JAVA_HOME:"=%
+rem Accept the common mistaken JAVA_HOME=...\bin form.
+for %%I in ("%JAVA_HOME%") do if /I "%%~nxI"=="bin" set "JAVA_HOME=%%~dpI"
 set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
 if exist "%JAVA_EXE%" goto execute

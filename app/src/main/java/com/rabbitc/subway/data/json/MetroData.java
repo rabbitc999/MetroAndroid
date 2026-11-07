@@ -80,7 +80,7 @@ public class MetroData {
     @SerializedName("transfer_types")
     public List<TransferType> transferTypes;
     /** 所有站点数组，每项自带 name 身份字段（v3：数组结构） */
-    public List<Station> stations;
+    public Map<String, Station> stations;
     /** 所有线路集合，键为线路ID，值为线路详细信息（含方向与站点） */
     public Map<String, Line> lines;
     /** 换乘规则数组（v3：根级数组，站名 + 双向线路 + 类型 + 时间） */

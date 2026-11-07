@@ -1,6 +1,7 @@
 package com.rabbitc.subway.data.json;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 地铁站点数据模型（v3：MetroLang JSON 数组条目），表示一个地铁车站的完整信息。
@@ -31,4 +32,6 @@ public class Station {
 
     /** 内联的无障碍设施信息；站点没有任何设施时该字段不存在 */
     public StationFacilities accessibility;
+
+    public Map<String, Object> transfers;
 }

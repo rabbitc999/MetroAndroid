@@ -635,39 +635,7 @@ function drawMap(data) {
         });
     });
 
-    const servicePaths = [];
-    for (const line of pathData) {
-        line.services.forEach((type, index) => {
-            if (!type) return;
-            const a = line.coordinates[index];
-            const b = line.coordinates[(index + 1) % line.coordinates.length];
-            if (!a || !b) return;
-            const isInterpolated = line.smoothPoints.length === line.services.length * segPerSegment + 1;
-            const points = isInterpolated && line.pts.length === line.coordinates.length
-                ? line.smoothPoints.slice(index * segPerSegment, (index + 1) * segPerSegment + 1)
-                : [];
-            servicePaths.push({
-                type, groupKey: line.groupKey,
-                d: points.length > 1 ? "M" + points.map(p => p.join(",")).join("L")
-                    : `M${a.x},${a.y}L${b.x},${b.y}`
-            });
-        });
-    }
-    const overlay = pathGroup.append("g").attr("class", "service-overlay")
-        .attr("pointer-events", "none");
-    overlay.selectAll("path").data(servicePaths.sort((a, b) =>
-        Number(a.type === 'through') - Number(b.type === 'through')
-    )).join("path")
-        .attr("d", d => d.d)
-        .attr("fill", "none")
-        .attr("stroke", d => d.type === 'through' ? "#008577" : "#D68A00")
-        .attr("stroke-width", d => d.type === 'through' ? 2 : 4)
-        .attr("stroke-dasharray", d => d.type === 'through' ? "5 3" : null)
-        .attr("vector-effect", "non-scaling-stroke");
-    const legend = d3.select("#service-legend");
-    legend.property("hidden", servicePaths.length === 0);
-    legend.select(".shared-track").property("hidden", !servicePaths.some(path => path.type === 'shared'));
-    legend.select(".through-service").property("hidden", !servicePaths.some(path => path.type === 'through'));
+    // 共线/贯通服务预览已移除，地图只展示常规线路。
 
     // --- 17. 站点（圆 + 标签） ---
     stationGroup = g.append("g").attr("class", "stations");

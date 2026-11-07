@@ -184,7 +184,7 @@ public final class DataParser {
                 rule.lineId = ot.lineId;
                 rule.startTime = ot.startTime;
                 rule.endTime = ot.endTime;
-                rule.days = ot.days;
+                rule.days = ot.days == null ? null : Collections.singletonList(ot.days);
                 openTimes.add(rule);
             }
             cache.setOpenTimes(openTimes);
@@ -576,38 +576,17 @@ public final class DataParser {
             List<com.rabbitc.subway.data.parse.SpecialLineRule> rules = new ArrayList<>();
             for (SpecialLineRule sp : price.specialLines) {
                 com.rabbitc.subway.data.parse.SpecialLineRule rule = new com.rabbitc.subway.data.parse.SpecialLineRule();
-                rule.lineId = sp.lineId;
-                rule.useLines = sp.useLines;
-                rule.all = sp.all;
-
-                if (sp.surcharge != null) {
+                rule.lineId = sp.line;
+                rule.useLines = sp.line == null ? null : Collections.singletonList(sp.line);
+                rule.all = sp.all ? sp.fare : null;
+                rule.defaultFare = sp.all ? sp.fare : null;
+                if (sp.segment != null) {
                     rule.surcharge = new ArrayList<>();
-                    for (Surcharge sur : sp.surcharge) {
-                        com.rabbitc.subway.data.parse.Surcharge s = new com.rabbitc.subway.data.parse.Surcharge();
-                        s.node_a = sur.node_a;
-                        s.node_b = sur.node_b;
-                        s.price = sur.price;
-                        rule.surcharge.add(s);
-                    }
-                }
-
-                rule.defaultFare = sp.defaultFare;
-                if (sp.segments != null) {
-                    rule.segments = new ArrayList<>();
-                    for (FareSegment fs : sp.segments) {
-                        com.rabbitc.subway.data.parse.FareSegment cacheFs = new com.rabbitc.subway.data.parse.FareSegment();
-                        cacheFs.rangeStart = fs.rangeStart;
-                        cacheFs.rangeEnd = fs.rangeEnd;
-                        cacheFs.fare = fs.fare;
-                        rule.segments.add(cacheFs);
-                    }
-                }
-                if (sp.linearExtension != null) {
-                    com.rabbitc.subway.data.parse.LinearExtension le = new com.rabbitc.subway.data.parse.LinearExtension();
-                    le.threshold = sp.linearExtension.threshold;
-                    le.baseFare = sp.linearExtension.baseFare;
-                    le.ratePerKm = sp.linearExtension.ratePerKm;
-                    rule.linearExtension = le;
+                    com.rabbitc.subway.data.parse.Surcharge surcharge = new com.rabbitc.subway.data.parse.Surcharge();
+                    surcharge.node_a = sp.segment.from;
+                    surcharge.node_b = sp.segment.to;
+                    surcharge.price = sp.fare;
+                    rule.surcharge.add(surcharge);
                 }
                 rules.add(rule);
             }

@@ -91,6 +91,10 @@ public class MetroGraph {
 
             // 线路基本信息
             String lineName = (line.name != null) ? line.name : lineId;
+            // 深圳地铁 2 号线与 8 号线贯通运营，统一使用乘客熟悉的组合名称。
+            if ("深圳".equals(line.city) && ("2号线".equals(lineName) || "8号线".equals(lineName))) {
+                lineName = "2/8号线";
+            }
             lineNameMap.put(lineId, lineName);
 
             String city = (line.city != null) ? line.city : "广州";
@@ -656,6 +660,30 @@ public class MetroGraph {
                     directionDisplay, endStation, stationCount,
                     isOutStationTransfer, dirKey
             ));
+        }
+
+        // Merge adjacent segments that belong to the same physical line. Direction
+        // keys may change at a segmented-operation boundary (for example Shenzhen
+        // Line 6), but passengers should see one continuous line segment.
+        if (segments.size() > 1) {
+            List<RouteSegment> merged = new ArrayList<>();
+            for (RouteSegment current : segments) {
+                if (!merged.isEmpty()) {
+                    RouteSegment previous = merged.get(merged.size() - 1);
+                    if (previous.lineId.equals(current.lineId)
+                            && !previous.isOutStationTransfer
+                            && !current.isOutStationTransfer
+                            && previous.endStation.equals(current.startStation)) {
+                        previous.endStation = current.endStation;
+                        previous.stationCount += current.stationCount;
+                        previous.direction = current.direction;
+                        previous.dirKey = current.dirKey;
+                        continue;
+                    }
+                }
+                merged.add(current);
+            }
+            segments = merged;
         }
 
         return segments;
