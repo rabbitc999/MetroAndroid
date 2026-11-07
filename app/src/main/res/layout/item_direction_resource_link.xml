@@ -1,0 +1,15 @@
+<com.google.android.material.button.MaterialButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Material3.Button.OutlinedButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start|center_vertical"
+    android:minHeight="48dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:textAllCaps="false"
+    app:cornerRadius="8dp"
+    app:icon="@drawable/ic_direction_external_link"
+    app:iconGravity="end"
+    app:iconSize="18dp" />
