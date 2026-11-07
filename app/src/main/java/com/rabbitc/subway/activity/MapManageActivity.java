@@ -84,6 +84,8 @@ public class MapManageActivity extends AppCompatActivity {
     private void initViews() {
         listView = findViewById(R.id.listView);
         findViewById(R.id.backMainBtn).setOnClickListener(v -> finish());
+        findViewById(R.id.btn_edit_map).setOnClickListener(
+                view -> startActivity(new Intent(this, MetroV2Activity.class)));
         findViewById(R.id.btn_import).setOnClickListener(v -> importMap());
         findViewById(R.id.btn_export).setOnClickListener(v -> exportSelected());
         findViewById(R.id.btn_refresh).setOnClickListener(v -> refreshList());

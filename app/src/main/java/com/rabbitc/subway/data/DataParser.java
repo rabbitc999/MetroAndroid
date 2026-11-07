@@ -8,18 +8,12 @@ import com.google.gson.Gson;
 import java.util.*;
 
 /**
- * 地图数据解析器（v3：MetroLang JSON），使用 Gson 将原始 JSON 字符串解析为
- * 结构化数据并存入 {@link DataCache}。
- *
- * <p>输入格式以 metro-lang 仓库 {@code doc/02-json-format.md} 为准：
- * 站点为数组（自带 name 身份字段）、无障碍设施内联在站点上、
- * 换乘为根级 transfers 数组、编组与链接为数组。不再兼容旧版
- * metro_editor 的 v1/v2 写法（字典站点、字符串编组、站点内联换乘状态）。</p>
+ * 地图数据解析器，使用 Gson 将原始 JSON 字符串解析为结构化数据并存入 {@link DataCache}。
  */
 public final class DataParser {
 
     private static final String TAG = "DataParser";
-    private static final Gson GSON = new Gson();
+    private static final Gson GSON = new Gson(); // 加上 static final
 
     private DataParser() {
         // 工具类禁止实例化
@@ -41,10 +35,14 @@ public final class DataParser {
         }
 
         // 1. 使用 Gson 解析整个 JSON 结构；后续步骤只处理内存对象，不再访问原始字符串。
-        MetroData data = GSON.fromJson(jsonData, MetroData.class);
+        MetroData data = GSON.fromJson(MetroV2.forRouting(jsonData), MetroData.class);
+        if (data == null || data.stations == null || data.stations.isEmpty()
+                || data.lines == null || data.lines.isEmpty()) {
+            throw new IllegalArgumentException("地图必须包含站点和线路");
+        }
         cache.setMetroData(data);
 
-        // 2. 基础运营参数：缺省值保证字段不全的数据也能参与时间计算。
+        // 2. 基础运营参数：缺省值保证旧格式地图也能参与时间计算。
         String keyCity = data.keyCity != null ? data.keyCity : "未知";
         cache.setKeyCity(keyCity);
         if (data.operationParams != null) {
@@ -52,9 +50,6 @@ public final class DataParser {
             cache.setAvgStopTime(data.operationParams.dwellTime);
             cache.setOutStationTransferTime(data.operationParams.outStationTransferTime);
             cache.setAvgEntryTime(data.operationParams.entryTime);
-            if (data.operationParams.avgBoardTime > 0) {
-                cache.setDefaultBoardTime(data.operationParams.avgBoardTime);
-            }
         } else {
             cache.setAvgTransferTime(120.0);
             cache.setAvgStopTime(45.0);
@@ -62,21 +57,16 @@ public final class DataParser {
             cache.setAvgEntryTime(120.0);
         }
 
-        // 3. 解析站点：坐标、站名索引；站点线路状态与换乘表从 directions / 根级 transfers 构建。
+        // 3. 解析站点相关：先建立坐标和状态索引，后续图构建与页面查询都复用这些表。
         Map<String, double[]> stationCoords = new HashMap<>();
         Map<String, Map<String, String>> stationLineStatus = new HashMap<>();
-        Map<String, Station> stationIndex = new HashMap<>();
-        if (data.stations != null) {
-            parseStations(data.stations, stationCoords, stationIndex);
-        }
-        cache.setStationCoords(stationCoords);
-        cache.setStationIndex(stationIndex);
-
         Map<String, Map<String, String>> transferStatus = new HashMap<>();
         Map<String, Double> specialTransferTimeMap = new HashMap<>();
-        if (data.transfers != null) {
-            parseTransfers(data.transfers, transferStatus, specialTransferTimeMap);
+        if (data.stations != null) {
+            parseStations(data.stations, stationCoords, stationLineStatus, transferStatus, specialTransferTimeMap);
         }
+        cache.setStationCoords(stationCoords);
+        cache.setStationLineStatusMap(stationLineStatus);
         cache.setTransferStatusMap(transferStatus);
         cache.setSpecialTransferTimeMap(specialTransferTimeMap);
 
@@ -100,17 +90,14 @@ public final class DataParser {
         Map<String, Boolean> hasFutureMap = new HashMap<>();
         Map<String, Boolean> lineAllFutureMap = new HashMap<>();
         Map<String, Boolean> dirLoopMap = new HashMap<>();
-        Map<String, String> dirIdIndex = new HashMap<>(); // v3：方向 ID（如 SZ1_0）→ 方向键
 
         if (data.lines != null) {
             parseLines(data.lines, keyCity, dirStations, lineNameMap, lineColorMap,
                     lineCityMap, hasLoopMap, lineTotalLengthMap, lineSpecialMap,
                     lineHasFastMap, lineMaxSpeedMap, dirDirectionTypeMap,
                     dirFutureMap, lineBrakeMap, stationStopTimeMap, lineFormationMap, linePowerKwMap,
-                    lineTotalLengthWithoutFutureMap, hasFutureMap, lineAllFutureMap, dirLoopMap,
-                    stationLineStatus, dirIdIndex);
+                    lineTotalLengthWithoutFutureMap, hasFutureMap, lineAllFutureMap, dirLoopMap);
         }
-        cache.setStationLineStatusMap(stationLineStatus);
 
         // 5. 限速规则：把 JSON DTO 转成运行时模型，避免算法层依赖 Gson 映射类。
         if (data.speedLimits != null) {
@@ -159,71 +146,34 @@ public final class DataParser {
         // 9. 票价解析：普通分段、线性延伸和特殊线路规则统一交给缓存保存。
         parsePrice(data.price, cache);
 
-        // 10. 拥挤规则 (crowd_rules)：v3 按方向聚合，展平为逐时段规则并映射方向键。
+        // 10. 拥挤规则 (crowd_rules)：保留原始时段和倍率，查询时再按出发时间匹配。
         if (data.crowdRules != null) {
             List<com.rabbitc.subway.data.parse.CrowdRule> rules = new ArrayList<>();
             for (CrowdRule cr : data.crowdRules) {
-                if (cr.id == null || cr.periods == null) continue;
-                String dirKey = dirIdIndex.get(cr.id);
-                if (dirKey == null) continue; // 引用了不存在的方向，跳过
-                for (CrowdRule.CrowdPeriod p : cr.periods) {
-                    com.rabbitc.subway.data.parse.CrowdRule rule = new com.rabbitc.subway.data.parse.CrowdRule();
-                    rule.directionKey = dirKey;
-                    rule.startTime = p.from;
-                    rule.endTime = p.to;
-                    rule.factor = p.factor;
-                    rule.days = normalizeDays(p.days);
-                    rules.add(rule);
-                }
+                com.rabbitc.subway.data.parse.CrowdRule rule = new com.rabbitc.subway.data.parse.CrowdRule();
+                rule.directionKey = cr.directionKey;
+                rule.startTime = cr.startTime;
+                rule.endTime = cr.endTime;
+                rule.factor = cr.factor;
+                rule.days = cr.days;
+                rules.add(rule);
             }
             cache.setCrowdRules(rules);
         }
 
-        // 11. 行车间隔 (headway_rules)：v3 按线路聚合，展平为逐时段规则。
+        // 11. 行车间隔 (headway_rules)：用于估算站台候车时间。
         if (data.headwayRules != null) {
             List<com.rabbitc.subway.data.parse.HeadwayRule> rules = new ArrayList<>();
             for (HeadwayRule hr : data.headwayRules) {
-                if (hr.id == null || hr.periods == null) continue;
-                for (HeadwayRule.HeadwayPeriod p : hr.periods) {
-                    com.rabbitc.subway.data.parse.HeadwayRule rule = new com.rabbitc.subway.data.parse.HeadwayRule();
-                    rule.lineId = hr.id;
-                    rule.startTime = p.from;
-                    rule.endTime = p.to;
-                    rule.intervalSeconds = p.seconds;
-                    rule.days = normalizeDays(p.days);
-                    rules.add(rule);
-                }
-            }
-            cache.setHeadwayRules(rules);
-        }
-
-        // 11.1 停站时间规则 (dwell_rules)：按线路或站点展开为 "站点名|方向键 → 秒"。
-        if (data.dwellRules != null) {
-            applyDwellRules(data.dwellRules, dirStations, stationStopTimeMap);
-        }
-
-        // 11.2 特殊线路票价 (special_line_rules)：统一票价或区段附加费。
-        if (data.specialLineRules != null) {
-            List<com.rabbitc.subway.data.parse.SpecialLineRule> rules = new ArrayList<>();
-            for (SpecialLineRule sp : data.specialLineRules) {
-                if (sp.line == null || sp.line.isEmpty()) continue;
-                com.rabbitc.subway.data.parse.SpecialLineRule rule = new com.rabbitc.subway.data.parse.SpecialLineRule();
-                rule.lineId = sp.line;
-                rule.all = sp.all ? 1.0 : 0.0;
-                if (sp.all) {
-                    rule.defaultFare = sp.fare;
-                } else if (sp.segment != null) {
-                    // 区段附加费：映射为 surcharge 列表（价格单位与里程表一致）
-                    rule.surcharge = new ArrayList<>();
-                    com.rabbitc.subway.data.parse.Surcharge s = new com.rabbitc.subway.data.parse.Surcharge();
-                    s.node_a = sp.segment.from;
-                    s.node_b = sp.segment.to;
-                    s.price = sp.fare;
-                    rule.surcharge.add(s);
-                }
+                com.rabbitc.subway.data.parse.HeadwayRule rule = new com.rabbitc.subway.data.parse.HeadwayRule();
+                rule.lineId = hr.lineId;
+                rule.startTime = hr.startTime;
+                rule.endTime = hr.endTime;
+                rule.intervalSeconds = hr.intervalSeconds;
+                rule.days = hr.days;
                 rules.add(rule);
             }
-            cache.setSpecialLineRules(rules);
+            cache.setHeadwayRules(rules);
         }
 
         // 12. 运营时间 (open_times)：路径算法据此跳过未营业线路。
@@ -231,10 +181,10 @@ public final class DataParser {
             List<com.rabbitc.subway.data.parse.OpenTimeRule> openTimes = new ArrayList<>();
             for (OpenTimeRule ot : data.openTimes) {
                 com.rabbitc.subway.data.parse.OpenTimeRule rule = new com.rabbitc.subway.data.parse.OpenTimeRule();
-                rule.lineId = ot.id;
-                rule.startTime = ot.from;
-                rule.endTime = ot.to;
-                rule.days = expandDays(ot.days);
+                rule.lineId = ot.lineId;
+                rule.startTime = ot.startTime;
+                rule.endTime = ot.endTime;
+                rule.days = ot.days;
                 openTimes.add(rule);
             }
             cache.setOpenTimes(openTimes);
@@ -266,82 +216,74 @@ public final class DataParser {
     // ======================== Gson 对象转 DataCache 核心转换 ========================
 
     /**
-     * 解析站点数据（v3：数组条目，自带 name），填充坐标表与站名索引。
+     * 解析站点数据，填充站点坐标表、站点线路状态、换乘状态和特殊换乘时间。
      *
-     * <p>同名车站按数组出现顺序解析，后出现的条目不覆盖先出现的引用；
-     * 无障碍设施随站点内联保存，供站点详情页展示。
-     * 站点线路状态不在此处构建——MetroLang 的 stations[].lines 摘要为空，
-     * 由 {@link #parseLines} 从 direction[].station 反向推导。</p>
+     * <p>站点坐标以经纬度数��� {@code double[]{lon, lat}} 存储；
+     * 换乘状态同时处理字符串格式（纯状态）和对象格式（状态+特殊时间），
+     * 特殊换乘时间会同时创建正向和反向键以支持双向查询。</p>
      *
-     * @param stations       JSON 解析出的站点数组
-     * @param stationCoords  输出：站点坐标表（站点名 → [经度, 纬度]）
-     * @param stationIndex   输出：站名 → Station 索引（首个出现的同名车站）
+     * @param stations               JSON 解析出的站点集合（站点名 → Station）
+     * @param stationCoords          输出：站点坐标表（站点名 → [经度, 纬度]）
+     * @param stationLineStatus      输出：站点线路状态表（站点名 → (线路ID → 状态)）
+     * @param transferStatus         输出：换乘状态表（站点名 → (换乘键 → 状态)）
+     * @param specialTransferTimeMap 输出：站点特殊换乘时间表（站点名|换乘键 → 时间）
      */
-    private static void parseStations(List<Station> stations,
+    private static void parseStations(Map<String, Station> stations,
                                       Map<String, double[]> stationCoords,
-                                      Map<String, Station> stationIndex) {
-        for (Station st : stations) {
-            String name = st.name;
-            if (name == null || name.isEmpty()) continue;
+                                      Map<String, Map<String, String>> stationLineStatus,
+                                      Map<String, Map<String, String>> transferStatus,
+                                      Map<String, Double> specialTransferTimeMap) {
+        for (Map.Entry<String, Station> entry : stations.entrySet()) {
+            String name = entry.getKey();
+            Station st = entry.getValue();
 
             // 坐标
             stationCoords.put(name, new double[]{st.lon, st.lat});
 
-            // 站名索引：同名车站取首个出现的条目，与 metro-lang 的引用解析口径一致
-            stationIndex.putIfAbsent(name, st);
-        }
-    }
-
-    /**
-     * 解析根级换乘规则数组（v3），填充换乘状态表与特殊换乘时间表。
-     *
-     * <p>metro-lang 的 type 为大写枚举（如 "OUT_STATION" / "HALL" / "PENDING"），
-     * 这里归一化为运行时小写状态：出站类（OUT / OUT_STATION / OUT_LONG）→
-     * "out_station"，PENDING → "pending"，其余视为站内 "operating"。
-     * 换乘时间按秒保存，同时写入正反两个方向的键。</p>
-     *
-     * @param transfers             JSON 解析出的换乘规则数组
-     * @param transferStatus        输出：换乘状态表（站点名 → ("lineA|lineB"（字典序）→ 状态)）
-     * @param specialTransferTimeMap 输出：特殊换乘时间表（"站点名|line1|line2" → 秒，含正反键）
-     */
-    private static void parseTransfers(List<TransferRule> transfers,
-                                       Map<String, Map<String, String>> transferStatus,
-                                       Map<String, Double> specialTransferTimeMap) {
-        for (TransferRule tr : transfers) {
-            String station = tr.station;
-            String from = tr.from;
-            String to = tr.to;
-            if (station == null || from == null || to == null || from.equals(to)) continue;
-
-            String status = normalizeTransferType(tr.type);
-            String pairKey = from.compareTo(to) < 0 ? from + "|" + to : to + "|" + from;
-            transferStatus.computeIfAbsent(station, k -> new HashMap<>()).put(pairKey, status);
-
-            if (tr.time > 0) {
-                specialTransferTimeMap.put(station + "|" + from + "|" + to, tr.time);
-                specialTransferTimeMap.put(station + "|" + to + "|" + from, tr.time);
+            // 站点线路状态
+            if (st.lines != null) {
+                Map<String, String> lineStatusMap = new HashMap<>();
+                for (StationLine sl : st.lines) {
+                    lineStatusMap.put(sl.id, sl.status != null ? sl.status : "operating");
+                }
+                stationLineStatus.put(name, lineStatusMap);
             }
-        }
-    }
 
-    /**
-     * 归一化 MetroLang 换乘类型为运行时状态。
-     *
-     * @param type 大写类型标识，如 "OUT_STATION" / "HALL" / "PENDING"
-     * @return 运行时状态："out_station" / "pending" / "operating"
-     */
-    private static String normalizeTransferType(String type) {
-        if (type == null || type.isEmpty()) return "operating";
-        switch (type) {
-            case "OUT":
-            case "OUT_STATION":
-            case "OUT_LONG":
-                return "out_station";
-            case "PENDING":
-                return "pending";
-            default:
-                // SAME / HALL / CHANNEL / CHANNEL_LONG / STAIR 等均视为站内换乘
-                return "operating";
+            // 换乘状态 + 特殊时间（注意 JSON 中是字符串或对象的变种）
+            if (st.transfers != null) {
+                Map<String, String> transferMap = new HashMap<>();
+                for (Map.Entry<String, Object> transEntry : st.transfers.entrySet()) {
+                    String key = transEntry.getKey();
+                    Object value = transEntry.getValue();
+                    String status = "operating";
+                    double time = 0;
+
+                    // Gson 遇到 JSONObject 会解析为 Map
+                    if (value instanceof Map) {
+                        Map<?, ?> valMap = (Map<?, ?>) value;
+                        Object statusObj = valMap.get("status");
+                        if (statusObj instanceof String) status = (String) statusObj;
+
+                        Object timeObj = valMap.get("time");
+                        if (timeObj instanceof Double) {
+                            time = (Double) timeObj;
+                            if (time > 0) {
+                                specialTransferTimeMap.put(name + "|" + key, time);
+                                // 添加反向键
+                                String[] rev = key.split("\\|");
+                                if (rev.length >= 2) {
+                                    String revKey = rev[1] + "|" + rev[0];
+                                    specialTransferTimeMap.put(name + "|" + revKey, time);
+                                }
+                            }
+                        }
+                    } else if (value instanceof String) {
+                        status = (String) value;
+                    }
+                    transferMap.put(key, status);
+                }
+                transferStatus.put(name, transferMap);
+            }
         }
     }
 
@@ -360,7 +302,7 @@ public final class DataParser {
      * @param keyCity                        默认城市（key_city）
      * @param dirStations                    输出：方向站点表（方向键 → 站点名列表）
      * @param lineNameMap                    输出：线路显示名称表（线路ID → 名称）
-     * @param lineColorMap                   输出：线路颜色表（线路ID → #RRGGBB）
+     * @param lineColorMap                   输出：线路颜色���（线路ID → #RRGGBB）
      * @param lineCityMap                    输出：线路所属城市表（线路ID → 城市名）
      * @param hasLoopMap                     输出：线路是否有环线（线路ID → boolean）
      * @param lineTotalLengthMap             输出：线路总长度表（线路ID → 公里数）
@@ -371,14 +313,12 @@ public final class DataParser {
      * @param dirFutureMap                   输出：方向未来状态表（方向键 → isFuture）
      * @param lineBrakeMap                   输出：线路制动加速度表（线路ID → m/s²）
      * @param stationStopTimeMap             输出：站点停站时间表（站点名|方向键 → 秒）
-     * @param lineFormationMap               输出：线路编组表（线路ID → 编组如"6B"，多条以逗号连接）
+     * @param lineFormationMap               输出：线路编组表（线路ID → 编组类型如"6B"）
      * @param linePowerKwMap                 输出：线路功率表（线路ID → kW）
      * @param lineTotalLengthWithoutFutureMap 输出：不含未来站点的线路长度表（线路ID → 公里数）
      * @param hasFutureMap                   输出：线路是否包含未来方向（线路ID → boolean）
      * @param lineAllFutureMap               输出：线路是否全为未来方向（线路ID → boolean）
      * @param dirLoopMap                     输出：方向环线标记（方向键 → isLoop）
-     * @param stationLineStatus              输出：站点线路状态表（站点名 → (线路ID → "operating"/"pending")）
-     * @param dirIdIndex                     输出：方向 ID → 方向键（供拥挤规则等按方向 ID 引用的数据映射）
      */
     private static void parseLines(Map<String, Line> lines, String keyCity,
                                    Map<String, List<String>> dirStations,
@@ -399,9 +339,7 @@ public final class DataParser {
                                    Map<String, Double> lineTotalLengthWithoutFutureMap,
                                    Map<String, Boolean> hasFutureMap,
                                    Map<String, Boolean> lineAllFutureMap,
-                                   Map<String, Boolean> dirLoopMap,
-                                   Map<String, Map<String, String>> stationLineStatus,
-                                   Map<String, String> dirIdIndex) {
+                                   Map<String, Boolean> dirLoopMap) {
         for (Map.Entry<String, Line> lineEntry : lines.entrySet()) {
             String lineId = lineEntry.getKey();
             Line line = lineEntry.getValue();
@@ -424,7 +362,7 @@ public final class DataParser {
 
             lineSpecialMap.put(lineId, line.special);
             if (line.formation != null && !line.formation.isEmpty()) {
-                lineFormationMap.put(lineId, String.join(",", line.formation));
+                lineFormationMap.put(lineId, line.formation);
             }
 
             // ---- 方向遍历 & 长度计算合并 ----
@@ -448,11 +386,6 @@ public final class DataParser {
                     String start = dir.start;
                     String end = dir.end;
                     String dirKey = GraphKeyUtils.makeDirKey(lineId, start, end);
-
-                    // 方向 ID 索引（拥挤规则按 MetroLang 方向 ID 引用）
-                    if (dir.id != null && !dir.id.isEmpty()) {
-                        dirIdIndex.putIfAbsent(dir.id, dirKey);
-                    }
 
                     // 未来标记
                     if (dir.isFuture) hasFuture = true;
@@ -509,16 +442,6 @@ public final class DataParser {
                         }
                     }
                     dirStations.put(dirKey, stationNames);
-
-                    // 站点线路状态（v3：由 direction[].station 反向推导）
-                    // operating 优先：同一站点同一线路存在已开通方向时不受未来方向影响
-                    String lineStatus = dir.isFuture ? "pending" : "operating";
-                    for (String name : stationNames) {
-                        Map<String, String> m = stationLineStatus.computeIfAbsent(name, k -> new HashMap<>());
-                        if ("operating".equals(lineStatus) || !m.containsKey(lineId)) {
-                            m.put(lineId, lineStatus);
-                        }
-                    }
                 }
 
                 // 线路级属性
@@ -543,7 +466,7 @@ public final class DataParser {
      * 若存在超过一个连通分量，则该线路为分段运营。</p>
      *
      * @param lineId       线路ID
-     * @param dirStations  所有方向的站点列表
+     * @param dirStations  ���有方向的站点列表
      * @return {@code true} 如果线路存在多个不连通的运营区段
      */
     private static boolean isLineSegmented(String lineId, Map<String, List<String>> dirStations) {
@@ -599,108 +522,17 @@ public final class DataParser {
         return false;
     }
 
-    /**
-     * 把 MetroLang 的 days 修饰符原文展开为英文星期名列表。
-     *
-     * <p>MetroLang 保留源码原文（如 "WORKDAY"）；运行时消费端使用
-     * {@code SimpleDateFormat("EEEE", Locale.US)} 生成的英文星期名做包含判断，
-     * 因此这里把常见修饰符展开成对应集合：</p>
-     * <ul>
-     *   <li>WORKDAY / 工作日 → 周一至周五</li>
-     *   <li>WEEKEND / 周末 → 周六与周日</li>
-     *   <li>空或其他值 → null（不限日期）</li>
-     * </ul>
-     *
-     * @param raw days 修饰符原文，可为 null
-     * @return 英文星期名列表，或 null 表示不限
-     */
-    private static List<String> expandDays(String raw) {
-        if (raw == null || raw.isEmpty()) return null;
-        switch (raw.trim().toUpperCase(Locale.ROOT)) {
-            case "WORKDAY":
-            case "WORKDAYS":
-                return Arrays.asList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday");
-            case "WEEKEND":
-            case "WEEKENDS":
-                return Arrays.asList("Saturday", "Sunday");
-            default:
-                return null;
-        }
-    }
-
-    /**
-     * 把 MetroLang 的星期缩写列表归一化为英文星期全称列表。
-     *
-     * <p>MetroLang 输出英文小写缩写（["mon","tue",...]），运行时消费端
-     * （TimeCalculator / 页面展示）使用英文全称做包含判断，这里逐项展开；
-     * 无法识别的项原样保留，空列表返回 null 表示不限日期。</p>
-     *
-     * @param days 星期缩写列表，可为 null
-     * @return 英文星期全称列表，或 null 表示不限
-     */
-    private static List<String> normalizeDays(List<String> days) {
-        if (days == null || days.isEmpty()) return null;
-        Map<String, String> mapping = new HashMap<>();
-        mapping.put("mon", "Monday");
-        mapping.put("tue", "Tuesday");
-        mapping.put("wed", "Wednesday");
-        mapping.put("thu", "Thursday");
-        mapping.put("fri", "Friday");
-        mapping.put("sat", "Saturday");
-        mapping.put("sun", "Sunday");
-        List<String> result = new ArrayList<>();
-        for (String d : days) {
-            if (d == null || d.isEmpty()) continue;
-            result.add(mapping.getOrDefault(d.trim().toLowerCase(Locale.ROOT), d));
-        }
-        return result.isEmpty() ? null : result;
-    }
-
-    /**
-     * 把停站时间规则展开进站点停站时间表。
-     *
-     * <p>scope 为 "line" 时对该线路所有方向的所有站点生效；
-     * scope 为 "station" 时对经过该站的所有方向生效。
-     * 已存在的逐站停站时间（方向内 DWELL_TIME）优先，不被本规则覆盖。</p>
-     *
-     * @param dwellRules        停站时间规则列表
-     * @param dirStations       方向站点表（方向键 → 站点名列表）
-     * @param stationStopTimeMap 输出：站点停站时间表（"站点名|方向键" → 秒）
-     */
-    private static void applyDwellRules(List<DwellRule> dwellRules,
-                                        Map<String, List<String>> dirStations,
-                                        Map<String, Double> stationStopTimeMap) {
-        for (DwellRule dr : dwellRules) {
-            if (dr.seconds <= 0) continue;
-            if ("line".equals(dr.scope) && dr.line != null) {
-                for (Map.Entry<String, List<String>> entry : dirStations.entrySet()) {
-                    String[] parts = GraphKeyUtils.parseDirKey(entry.getKey());
-                    if (parts == null || !parts[0].equals(dr.line)) continue;
-                    for (String name : entry.getValue()) {
-                        stationStopTimeMap.putIfAbsent(name + "|" + entry.getKey(), dr.seconds);
-                    }
-                }
-            } else if ("station".equals(dr.scope) && dr.station != null) {
-                for (Map.Entry<String, List<String>> entry : dirStations.entrySet()) {
-                    if (entry.getValue().contains(dr.station)) {
-                        stationStopTimeMap.putIfAbsent(dr.station + "|" + entry.getKey(), dr.seconds);
-                    }
-                }
-            }
-        }
-    }
-
     // ======================== 票价解析 ========================
 
     /**
      * 解析票价数据并填充缓存。
      *
-     * <p>处理票价体系中的核心部分：</p>
+     * <p>处理票价体系中的四个核心部分：</p>
      * <ul>
      *   <li><b>计价类型</b>（pricingType）：如 "distance" 按里程计价</li>
      *   <li><b>阶梯区间</b>（segments）：里程范围与对应的票价</li>
      *   <li><b>线性扩展</b>（linearExtension）：超出阶梯上限后的线性计价规则</li>
-     *   <li><b>特殊线路规则</b>（specialLines）：特定线路的附加费或独立计价规则（MetroLang 暂未输出）</li>
+     *   <li><b>特殊线路规则</b>（specialLines）：特定线路的附加费或独立计价规则</li>
      * </ul>
      * <p>还会设置票价封顶（fareCap）和默认票价（defaultFare）。</p>
      *
@@ -739,7 +571,48 @@ public final class DataParser {
             cache.setLinearExtension(le);
         }
 
-        // 特殊线路规则已迁移至根级 special_line_rules（见 parse() 步骤 11.2）
+        // 特殊线路规则
+        if (price.specialLines != null) {
+            List<com.rabbitc.subway.data.parse.SpecialLineRule> rules = new ArrayList<>();
+            for (SpecialLineRule sp : price.specialLines) {
+                com.rabbitc.subway.data.parse.SpecialLineRule rule = new com.rabbitc.subway.data.parse.SpecialLineRule();
+                rule.lineId = sp.lineId;
+                rule.useLines = sp.useLines;
+                rule.all = sp.all;
+
+                if (sp.surcharge != null) {
+                    rule.surcharge = new ArrayList<>();
+                    for (Surcharge sur : sp.surcharge) {
+                        com.rabbitc.subway.data.parse.Surcharge s = new com.rabbitc.subway.data.parse.Surcharge();
+                        s.node_a = sur.node_a;
+                        s.node_b = sur.node_b;
+                        s.price = sur.price;
+                        rule.surcharge.add(s);
+                    }
+                }
+
+                rule.defaultFare = sp.defaultFare;
+                if (sp.segments != null) {
+                    rule.segments = new ArrayList<>();
+                    for (FareSegment fs : sp.segments) {
+                        com.rabbitc.subway.data.parse.FareSegment cacheFs = new com.rabbitc.subway.data.parse.FareSegment();
+                        cacheFs.rangeStart = fs.rangeStart;
+                        cacheFs.rangeEnd = fs.rangeEnd;
+                        cacheFs.fare = fs.fare;
+                        rule.segments.add(cacheFs);
+                    }
+                }
+                if (sp.linearExtension != null) {
+                    com.rabbitc.subway.data.parse.LinearExtension le = new com.rabbitc.subway.data.parse.LinearExtension();
+                    le.threshold = sp.linearExtension.threshold;
+                    le.baseFare = sp.linearExtension.baseFare;
+                    le.ratePerKm = sp.linearExtension.ratePerKm;
+                    rule.linearExtension = le;
+                }
+                rules.add(rule);
+            }
+            cache.setSpecialLineRules(rules);
+        }
 
         cache.setFareCap(price.fareCap);
         cache.setDefaultFare(price.defaultFare);

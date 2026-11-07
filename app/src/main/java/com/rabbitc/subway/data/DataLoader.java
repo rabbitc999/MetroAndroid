@@ -380,7 +380,7 @@ public final class DataLoader {
                 json = decompressGzip(jsonBytes);
                 if (parseAndCache(json, context, fileName)) {
                     // 自动保存到内部存储（保持原格式）
-                    saveMapToInternalStorage(context, fileName, json);
+                    saveMapBytesToInternalStorage(context, fileName, jsonBytes);
                     saveLastMapFile(context, fileName);
                     return true;
                 }
@@ -403,8 +403,9 @@ public final class DataLoader {
      * @return {@code true} 如果解析成功，{@code false} 否则
      */
     private static boolean parseAndCache(String json, Context context, String fileName) {
+        DataCache cache = DataCache.getInstance();
+        String previousJson = cache.getJsonData();
         try {
-            DataCache cache = DataCache.getInstance();
             // 解析前清理旧地图，防止新旧城市的索引混在一起。
             cache.clear();
             cache.setJsonData(json);
@@ -413,6 +414,17 @@ public final class DataLoader {
             saveLastMapFile(context, fileName);
             return true;
         } catch (Exception e) {
+            cache.clear();
+            if (previousJson != null) {
+                try {
+                    cache.setJsonData(previousJson);
+                    DataParser.parse();
+                } catch (Exception restoreError) {
+                    cache.clear();
+                    Log.e(TAG, "恢复原地图失败", restoreError);
+                }
+            }
+            Log.e(TAG, "解析地图失败", e);
             return false;
         }
     }
@@ -434,6 +446,25 @@ public final class DataLoader {
      * @param context Android 上下文
      * @return 文件名列表（仅文件名，不含路径）
      */
+    public static String getActiveMapName(Context context) {
+        return context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
+                .getString(KEY_LAST_MAP_FILE, null);
+    }
+
+    public static List<String> getBuiltInMaps(Context context) {
+        return getAssetFiles(context);
+    }
+
+    public static String readBuiltInMap(Context context, String name) throws Exception {
+        if (!getAssetFiles(context).contains(name)) {
+            throw new IllegalArgumentException("请选择内置地图");
+        }
+        try (InputStream input = context.getAssets().open("map/" + name)) {
+            byte[] data = readBytesFromStream(input);
+            return name.endsWith(".bmetro") ? decompressGzip(data) : new String(data, StandardCharsets.UTF_8);
+        }
+    }
+
     private static List<String> getAssetFiles(Context context) {
         try {
             String[] assetsFiles = context.getAssets().list("map");

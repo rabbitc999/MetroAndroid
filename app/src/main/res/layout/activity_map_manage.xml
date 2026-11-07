@@ -137,6 +137,11 @@
                     android:text="🔄 刷新"
                     android:backgroundTint="#43A047" />
             </LinearLayout>
+            <Button
+                android:id="@+id/btn_edit_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="编辑 v2 地图 / 现场计时" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

@@ -38,6 +38,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * </p>
  */
 public class MetroGraph {
+    private final Map<List<String>, Double> measuredRunTimes = new HashMap<>();
 
     // ==================== 图结构 ====================
     private final Map<String, List<Edge>> transferGraph = new HashMap<>();
@@ -46,7 +47,6 @@ public class MetroGraph {
 
     // ==================== 辅助映射 ====================
     private final Map<String, List<String>> dirStations = new HashMap<>();
-    private final Map<String, Set<String>> stationDirKeys = new HashMap<>(); // v3：站名 → 方向键集合（由 direction[].station 反向构建）
     private final Map<String, String> lineNameMap = new HashMap<>();
     private final Map<String, String> lineCityMap = new HashMap<>();
     private final Map<String, Boolean> hasLoopMap = new HashMap<>();
@@ -129,6 +129,7 @@ public class MetroGraph {
 
                     if (i < stationList.size() - 1) {
                         String nxt = stationList.get(i + 1).name;
+                        recordRunTime(dirKey, name, nxt, ds.runTimeSeconds);
                         // Gson 直接解析 Double，不再需要 getDoubleSafely
                         if (ds.next != null) {
                             double dist = ds.next;
@@ -143,6 +144,7 @@ public class MetroGraph {
                     String first = stationNames.get(0);
                     String last = stationNames.get(stationNames.size() - 1);
                     DirectionStation lastDs = stationList.get(stationList.size() - 1);
+                    recordRunTime(dirKey, last, first, lastDs.runTimeSeconds);
 
                     // 直接使用 Gson 解析出的 Double，非 Number 不再需要强转
                     if (lastDs.next != null) {
@@ -152,13 +154,11 @@ public class MetroGraph {
                     }
                 }
 
-                // 添加同线路相邻站点边（构建 transferGraph），同时反向登记站 → 方向键
-                for (int i = 0; i < stationNames.size(); i++) {
+                // 添加同线路相邻站点边（构建 transferGraph）
+                for (int i = 0; i < stationNames.size() - 1; i++) {
                     String cur = stationNames.get(i);
-                    stationDirKeys.computeIfAbsent(cur, k -> new HashSet<>()).add(dirKey);
-                    if (i < stationNames.size() - 1) {
-                        addEdge(dirKey, cur, stationNames.get(i + 1));
-                    }
+                    String nxt = stationNames.get(i + 1);
+                    addEdge(dirKey, cur, nxt);
                 }
                 if (isLoop && stationNames.size() > 1) {
                     String first = stationNames.get(0);
@@ -170,15 +170,24 @@ public class MetroGraph {
     }
 
     // ==================== 第二阶段：解析站点，建立换乘边 ====================
-    private void parseStations(List<Station> stationsList) {
-        // v3：MetroLang JSON 的 stations[].lines 摘要为空，站 → 方向键索引
-        // 在 parseLines 阶段由 direction[].station 反向构建（stationDirKeys）。
-        for (Station stInfo : stationsList) {
-            String stationName = stInfo.name;
-            if (stationName == null) continue;
+    private void parseStations(Map<String, Station> stationsMap) {
+        for (Map.Entry<String, Station> stEntry : stationsMap.entrySet()) {
+            String stationName = stEntry.getKey();
+            Station stInfo = stEntry.getValue();
 
-            Set<String> dirKeys = stationDirKeys.get(stationName);
-            if (dirKeys == null || dirKeys.isEmpty()) continue;
+            List<StationLine> lines = stInfo.lines;
+            if (lines == null) continue;
+
+            // 收集该站点所有有效方向键（排除已关闭的线路）
+            Set<String> dirKeys = new HashSet<>();
+            for (StationLine lineEntry : lines) {
+                String id = lineEntry.id;
+                String start = lineEntry.start;
+                String end = lineEntry.end;
+                String status = StationUtils.getStationLineStatus(stationName, id);
+                if (StationUtils.isClosed(status)) continue;
+                dirKeys.add(GraphKeyUtils.makeDirKey(id, start, end));
+            }
 
             // 建立换乘边（不同方向之间）
             List<String> dirKeyList = new ArrayList<>(dirKeys);
@@ -271,22 +280,17 @@ public class MetroGraph {
         // 票价基于清理后的路径计算，避免重复方向节点造成重复计费。
         Pair<Double, Double> fare1 = FareCalculator.calculateFareWithoutSpecial(shortest.path, this);
         Pair<Double, Double> fare2 = FareCalculator.calculateFareWithSpecial(result2.path, this);
-        // 防御：不可达或票价数据缺失时计费对可能返回 null / null 字段，按 0 处理
-        double fare1Total = (fare1 != null && fare1.first != null) ? fare1.first : 0.0;
-        double fare1Special = (fare1 != null && fare1.second != null) ? fare1.second : 0.0;
-        double fare2Total = (fare2 != null && fare2.first != null) ? fare2.first : 0.0;
-        double fare2Special = (fare2 != null && fare2.second != null) ? fare2.second : 0.0;
 
-        double cost1 = fare1Total * weight.moneyWeight + result1.cost;
-        double cost2 = fare2Total * weight.moneyWeight + result2.cost;
+        double cost1 = fare1.first * weight.moneyWeight + result1.cost;
+        double cost2 = fare2.first * weight.moneyWeight + result2.cost;
 
-        result1.totalMoney = fare1Total;
-        result1.specialMoney = fare1Special;
-        result2.totalMoney = fare2Total;
-        result2.specialMoney = fare2Special;
+        result1.totalMoney = fare1.first;
+        result1.specialMoney = fare1.second;
+        result2.totalMoney = fare2.first;
+        result2.specialMoney = fare2.second;
 
         if (weight.moneyWeight == Double.POSITIVE_INFINITY && result1.transfers != -1) {
-            result1.totalMoney = fare1Total;
+            result1.totalMoney = fare1.first;
             result1.specialMoney = 0;
             return result1;
         } else if (result1.transfers == -1) {
@@ -481,7 +485,7 @@ public class MetroGraph {
                 cache.getLineMaxSpeedMap().getOrDefault(lineId, 80) : 80;
 
         // ***** 修改此处：传入方向键和起终点站名以支持限速 *****
-        double segmentTime = TimeCalculator.computeSegmentTime(addDist, maxSpeed, lineId,
+        double segmentTime = computeRunTime(addDist, maxSpeed, lineId,
                 fromDir, fromStation, toStation);
 
 
@@ -549,6 +553,19 @@ public class MetroGraph {
     /**
      * 获取同一方向内两站之间的距离，若不存在则返回 -1。
      */
+    public double computeRunTime(double distance, int maxSpeed, String lineId,
+                                 String direction, String from, String to) {
+        Double measured = measuredRunTimes.get(List.of(direction, from, to));
+        return measured != null ? measured
+                : TimeCalculator.computeSegmentTime(distance, maxSpeed, lineId, direction, from, to);
+    }
+
+    private void recordRunTime(String direction, String from, String to, Double seconds) {
+        if (from != null && to != null && seconds != null && Double.isFinite(seconds) && seconds > 0) {
+            measuredRunTimes.put(List.of(direction, from, to), seconds);
+        }
+    }
+
     public double getDistanceInDirection(String dirKey, String from, String to) {
         Map<String, Map<String, Double>> adj = lineAdjDist.get(dirKey);
         if (adj == null) return -1;

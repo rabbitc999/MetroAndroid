@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
@@ -11,8 +12,8 @@ android {
         applicationId = "com.rabbitc.subway"
         minSdk = 31
         targetSdk = 35
-        versionCode = 230
-        versionName = "2.230"
+        versionCode = 231
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -37,9 +38,11 @@ android {
             }
         }
     }
-    testOptions {
-        // 纯 JVM 单元测试中 android.util.Log 等框架调用返回默认值而非抛异常
-        unitTests.isReturnDefaultValues = true
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11)
     }
 }
 

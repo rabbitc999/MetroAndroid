@@ -2,16 +2,26 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>交互式地铁线路图</title>
     <link rel="stylesheet" href="file:///android_asset/map.css" />
 </head>
 <body>
 <div id="container">
-        <div id="loading">
+        <div id="loading" role="status" aria-live="polite">
             地图加载中...
         </div>
 </div>
+<nav id="map-controls" aria-label="地图缩放" hidden>
+    <button type="button" id="zoom-in" aria-label="放大">＋</button>
+    <button type="button" id="zoom-out" aria-label="缩小">−</button>
+    <button type="button" id="zoom-reset" aria-label="查看全图">全图</button>
+</nav>
+
+<aside id="service-legend" hidden aria-label="区段图例">
+    <span class="shared-track">共线</span>
+    <span class="through-service">贯通</span>
+</aside>
 
 <!-- 提示浮窗 -->
 <div class="tooltip" id="tooltip">

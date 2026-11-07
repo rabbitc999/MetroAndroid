@@ -3,7 +3,7 @@
 [![Android](https://img.shields.io/badge/Android-8.0%2B-brightgreen)](https://developer.android.com)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
-> 专为 [Metro Editor](https://gitee.com/rabbitc/metro_editor) 设计的 Android 数据消费端。加载 JSON / `.bmetro` 同步数据，浏览线路地图，使用多种策略进行路径规划，并支持站点打卡、多站点任务链、通勤距离计算、历史行程、收藏路线管理以及与桌面端的双向同步。
+> 专为 [Metro Editor](https://github.com/rabbitc999/MetroEditor) 设计的 Android 数据消费端。加载 JSON / `.bmetro` 同步数据，浏览线路地图，使用多种策略进行路径规划，并支持站点打卡、多站点任务链、通勤距离计算、历史行程、收藏路线管理以及与桌面端的双向同步。
 
 ## 📌 项目定位
 

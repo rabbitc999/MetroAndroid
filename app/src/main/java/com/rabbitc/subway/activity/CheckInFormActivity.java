@@ -43,6 +43,7 @@ import java.util.Locale;
  */
 public class CheckInFormActivity extends AppCompatActivity {
 
+    public static final String EXTRA_CITY = "measurement_city";
     public static final String EXTRA_STATION_NAME = "station_name";
 
     private static final int REQUEST_PICK_IMAGES = 5001;
@@ -218,7 +219,8 @@ public class CheckInFormActivity extends AppCompatActivity {
             return;
         }
         CheckInRecord record = new CheckInRecord(station, System.currentTimeMillis(), 0, 0, -1);
-        record.city = DataCache.getInstance().getKeyCity();
+        String city = getIntent().getStringExtra(EXTRA_CITY);
+        record.city = TextUtils.isEmpty(city) ? DataCache.getInstance().getKeyCity() : city;
         record.note = etNote.getText().toString().trim();
         record.date = pendingDate;
         record.essay = etEssay.getText().toString().trim();

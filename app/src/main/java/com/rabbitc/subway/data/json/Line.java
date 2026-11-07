@@ -14,8 +14,8 @@ public class Line {
     /** 线路标识颜色（十六进制色值） */
     public String color;
 
-    /** 列车编组形式列表，可多条，如 ["6A"] 表示 6 节 A 型车编组（v3：数组） */
-    public List<String> formation;
+    /** 列车编组形式（如 "6A" 表示6节A型车编组） */
+    public String formation;
 
     /** 线路开通年份（JSON: "open_year"） */
     @SerializedName("open_year")
@@ -27,8 +27,11 @@ public class Line {
     /** 线路最高运行速度（公里/小时） */
     public int maxspeed;
 
-    /** 线路相关链接列表，可多条，如百科介绍页（v3：数组） */
-    public List<String> link;
+    /** 线路相关链接（如官网介绍页面） */
+    public String link;
+
+    @SerializedName("resource_links")
+    public List<String> resourceLinks;
 
     /** 线路名称 */
     public String name;

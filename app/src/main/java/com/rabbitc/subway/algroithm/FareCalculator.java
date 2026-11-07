@@ -362,7 +362,8 @@ public class FareCalculator {
         }
 
         // 3. 默认票价
-        return cache.getDefaultFare();
+        Double defaultFare = cache.getDefaultFare();
+        return defaultFare != null ? defaultFare : 2.0;
     }
 
     /**

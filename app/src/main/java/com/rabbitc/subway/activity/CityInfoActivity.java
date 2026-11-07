@@ -18,6 +18,7 @@ import androidx.core.content.ContextCompat;
 import com.rabbitc.subway.R;
 import com.rabbitc.subway.adapter.LineLegendAdapter;
 import com.rabbitc.subway.data.DataCache;
+import com.rabbitc.subway.data.NetworkMileage;
 import com.rabbitc.subway.data.LineLegendItem;
 import com.rabbitc.subway.data.parse.SpecialLineRule;
 import com.rabbitc.subway.data.parse.Surcharge;
@@ -144,15 +145,9 @@ public class CityInfoActivity extends BaseActivity {
         String version = cache.getVersion();
         String updateDate = cache.getUpdateDate();
 
-        // 计算总里程
-        Map<String, Double> lengthFutureMap = cache.getLineTotalLengthMap();
-        Map<String, Double> lengthCurrentMap = cache.getLineTotalLengthMapWithoutFuture();
-
-        double totalFuture = 0, totalCurrent = 0;
-        if (lengthFutureMap != null) {
-            for (double len : lengthFutureMap.values()) totalFuture += len;
-            for (double len : lengthCurrentMap.values()) totalCurrent += len;
-        }
+        // 同一物理区间在城市路网里程中只计一次。
+        double totalFuture = NetworkMileage.total(cache.getMetroData(), true);
+        double totalCurrent = NetworkMileage.total(cache.getMetroData(), false);
 
         boolean hasFuture = (Math.abs(totalFuture - totalCurrent) > 1e-3);
 

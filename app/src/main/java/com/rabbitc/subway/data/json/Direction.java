@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class Direction {
 
-    /** 方向 ID（v3：MetroLang 输出，如 "SZ4_0"），拥挤规则按此引用 */
+    /** MetroLang 方向 ID，用于共线关系。 */
     public String id;
 
     /** 该方向是否为快车/大站车（JSON: "is_fast"） */

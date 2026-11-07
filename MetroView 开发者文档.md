@@ -7,7 +7,7 @@
 
 ## 1. 项目定位
 
-MetroView（包名 `com.rabbitc.subway`）是 [Metro Editor](https://gitee.com/embed2026/metro_editor) 桌面端编辑器的配套 Android 客户端，承担"数据消费"角色：加载 Metro Editor 编译输出的 JSON/BMetro 数据文件，提供交互式地铁地图浏览与 9 种路径规划算法。
+MetroView（包名 `com.rabbitc.subway`）是 [Metro Editor](https://github.com/rabbitc999/MetroEditor) 桌面端编辑器的配套 Android 客户端，承担"数据消费"角色：加载 Metro Editor 编译输出的 JSON/BMetro 数据文件，提供交互式地铁地图浏览与 9 种路径规划算法。
 
 **核心原则：纯消费端，不包含任何编辑功能。**
 
@@ -298,7 +298,7 @@ Java ↔ JavaScript 通信：`SubwayMapView.AndroidBridge` 通过 `@JavascriptIn
 
 ## 10. 相关资源
 
-- [Metro Editor](https://gitee.com/embed2026/metro_editor) — 桌面端编辑器，本应用的数据源
+- [Metro Editor](https://github.com/rabbitc999/MetroEditor) — 桌面端编辑器，本应用的数据源
 - [D3.js](https://d3js.org/) — Web 端地图渲染库
 - [Gson](https://github.com/google/gson) — JSON 解析库
 

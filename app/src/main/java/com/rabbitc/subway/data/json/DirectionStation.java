@@ -17,4 +17,8 @@ public class DirectionStation {
     /** 该站停站时间（秒）（JSON: "dwell_time"） */
     @SerializedName("dwell_time")
     public Double dwellTime;
+
+    /** 从本站出发到下一站的实测行车秒数。 */
+    @SerializedName("run_time_seconds")
+    public Double runTimeSeconds;
 }

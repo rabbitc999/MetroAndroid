@@ -116,6 +116,13 @@ public class SubwayMapView extends WebView {
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
                 isPageLoaded = true;
+                int mode = getContext().getSharedPreferences("metro_v2", android.content.Context.MODE_PRIVATE)
+                        .getInt("night_mode", androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
+                boolean dark = mode == androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES
+                        || (mode == androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
+                        && (getResources().getConfiguration().uiMode & android.content.res.Configuration.UI_MODE_NIGHT_MASK)
+                        == android.content.res.Configuration.UI_MODE_NIGHT_YES);
+                evaluateJavascript("document.documentElement.dataset.theme = '" + (dark ? "dark" : "light") + "'", null);
                 // 页面完成后再注入缓存，避免 evaluateJavascript 早于脚本定义。
                 // 若有缓存数据，注入
                 if (cachedJsonData != null) {

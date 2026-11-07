@@ -164,7 +164,7 @@ public class StationUtils {
         // 3. 查询特殊换乘时间
         DataCache cache = DataCache.getInstance();
         Map<String, Double> specialMap = cache.getSpecialTransferTimeMap();
-        if (specialMap != null && specialMap.containsKey(fullKey1) || specialMap.containsKey(fullKey2)) {
+        if (specialMap != null && (specialMap.containsKey(fullKey1) || specialMap.containsKey(fullKey2))) {
             double specialTime = specialMap.getOrDefault(fullKey1, 0.0);
             if (specialTime > 0) {
                 return specialTime;

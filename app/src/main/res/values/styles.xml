@@ -140,4 +140,11 @@
         <item name="android:shadowDy">2</item>
         <item name="android:shadowColor">#20000000</item>
     </style>
+    <style name="MetroEditorOutlinedButtonTheme">
+        <item name="materialButtonStyle">@style/Widget.Material3.Button.OutlinedButton</item>
+    </style>
+
+    <style name="MetroEditorTextButtonTheme">
+        <item name="materialButtonStyle">@style/Widget.Material3.Button.TextButton</item>
+    </style>
 </resources>

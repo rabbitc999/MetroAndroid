@@ -144,13 +144,73 @@ let pendingZoomK = 1;
 // 已开通站点集合（在 drawMap 中填充）
 const activeStationSet = new Set();
 
+function serviceSegments(directions, city) {
+    const edgeKey = (a, b) => JSON.stringify(a < b ? [a, b] : [b, a]);
+    const active = directions.filter(dir => !dir.isFuture && dir.stationNames.length > 1);
+    const byId = new Map(active.filter(dir => dir.dirObj.id != null).map(dir => [dir.dirObj.id, dir]));
+    const edges = new Map(active.map(dir => {
+        const names = dir.stationNames;
+        const ends = dir.isLoop ? [...names.slice(1), names[0]] : names.slice(1);
+        return [dir.key, ends.map((end, index) => edgeKey(names[index], end))];
+    }));
+    const shared = new Map(active.map(dir => [dir.key, new Set()]));
+    const through = new Map(active.map(dir => [dir.key, new Set()]));
+    for (const dir of active) {
+        const ownEdges = edges.get(dir.key);
+        for (const id of dir.dirObj.via_directions || []) {
+            const other = byId.get(id);
+            if (!other || other.lineId === dir.lineId) continue;
+            const otherEdges = new Set(edges.get(other.key));
+            const overlap = ownEdges.filter(edge => otherEdges.has(edge));
+            for (const edge of overlap) {
+                shared.get(dir.key).add(edge);
+                shared.get(other.key).add(edge);
+            }
+            // VIA 方向驶入其他线路时，用虚线标出它借用的区段。
+            if (overlap.length > 0 && overlap.length < ownEdges.length) {
+                for (const edge of overlap) through.get(dir.key).add(edge);
+            } else if (overlap.length === 0 && !dir.isLoop && !other.isLoop) {
+                // 贯通方向也可能只在端点衔接，没有重叠的站间区段。
+                if (dir.stationNames.at(-1) === other.stationNames[0]) {
+                    through.get(dir.key).add(ownEdges.at(-1));
+                    through.get(other.key).add(edges.get(other.key)[0]);
+                } else if (other.stationNames.at(-1) === dir.stationNames[0]) {
+                    through.get(other.key).add(edges.get(other.key).at(-1));
+                    through.get(dir.key).add(ownEdges[0]);
+                }
+            }
+        }
+    }
+    // 老版内置上海地图没有 VIA 字段。
+    if (city === '上海') {
+        const names = ['宝山路', '上海火车站', '中潭路', '镇坪路', '曹杨路',
+            '金沙江路', '中山公园', '延安西路', '虹桥路', '宜山路'];
+        const corridor = new Set(names.slice(1).map((name, index) => edgeKey(names[index], name)));
+        const shanghai = active.filter(dir => dir.lineId === 'S3' || dir.lineId === 'S4');
+        const tracks = new Map(['S3', 'S4'].map(id => [id, new Set(
+            shanghai.filter(dir => dir.lineId === id).flatMap(dir => edges.get(dir.key))
+        )]));
+        for (const dir of shanghai) {
+            const other = tracks.get(dir.lineId === 'S3' ? 'S4' : 'S3');
+            for (const edge of edges.get(dir.key)) {
+                if (corridor.has(edge) && other.has(edge)) shared.get(dir.key).add(edge);
+            }
+        }
+    }
+    return new Map(active.map(dir => [dir.key, edges.get(dir.key).map(edge =>
+        through.get(dir.key).has(edge) ? 'through' : shared.get(dir.key).has(edge) ? 'shared' : null
+    )]));
+}
+
 // ============================================================
 //  主绘图函数
 // ============================================================
 function drawMap(data) {
     metroData = data;
     // drawMap 是渲染入口：先建立可复用索引，再创建 SVG 图层和交互处理器。
-    const stations = data.stations;
+    const stations = Array.isArray(data.stations)
+        ? Object.fromEntries(data.stations.map(station => [station.name, station]))
+        : data.stations;
     const lines = data.lines;
     const keyCity = data.key_city;
     d3.select("#loading").style("display", "none");
@@ -427,17 +487,18 @@ function drawMap(data) {
 
     // --- 12. 路径数据（跳过未来方向，不绘制未来线路） ---
     const pathData = [];
+    const services = serviceSegments(rawDirections, keyCity);
     for (const dir of rawDirections) {
         if (dir.isFuture) continue; // 不绘制未来线路
         const stationNames = dir.stationNames;
         if (stationNames.length < 2) continue;
 
-        const pts = stationNames
+        const coordinates = stationNames
             .map(name => {
                 const coord = getCoord(name, dir.lineId);
                 return coord ? { x: coord.x, y: coord.y } : null;
-            })
-            .filter(p => p !== null);
+            });
+        const pts = coordinates.filter(p => p !== null);
 
         if (pts.length < 2) continue;
 
@@ -465,7 +526,9 @@ function drawMap(data) {
             segmentTypes: dir.segmentTypes || [],
             effectiveStationNames: stationNames,
             smoothPoints: smoothPoints,
-            pts: pts
+            pts: pts,
+            coordinates: coordinates,
+            services: services.get(dir.key) || []
         });
     }
 
@@ -571,6 +634,40 @@ function drawMap(data) {
                 .attr("pointer-events", "none");
         });
     });
+
+    const servicePaths = [];
+    for (const line of pathData) {
+        line.services.forEach((type, index) => {
+            if (!type) return;
+            const a = line.coordinates[index];
+            const b = line.coordinates[(index + 1) % line.coordinates.length];
+            if (!a || !b) return;
+            const isInterpolated = line.smoothPoints.length === line.services.length * segPerSegment + 1;
+            const points = isInterpolated && line.pts.length === line.coordinates.length
+                ? line.smoothPoints.slice(index * segPerSegment, (index + 1) * segPerSegment + 1)
+                : [];
+            servicePaths.push({
+                type, groupKey: line.groupKey,
+                d: points.length > 1 ? "M" + points.map(p => p.join(",")).join("L")
+                    : `M${a.x},${a.y}L${b.x},${b.y}`
+            });
+        });
+    }
+    const overlay = pathGroup.append("g").attr("class", "service-overlay")
+        .attr("pointer-events", "none");
+    overlay.selectAll("path").data(servicePaths.sort((a, b) =>
+        Number(a.type === 'through') - Number(b.type === 'through')
+    )).join("path")
+        .attr("d", d => d.d)
+        .attr("fill", "none")
+        .attr("stroke", d => d.type === 'through' ? "#008577" : "#D68A00")
+        .attr("stroke-width", d => d.type === 'through' ? 2 : 4)
+        .attr("stroke-dasharray", d => d.type === 'through' ? "5 3" : null)
+        .attr("vector-effect", "non-scaling-stroke");
+    const legend = d3.select("#service-legend");
+    legend.property("hidden", servicePaths.length === 0);
+    legend.select(".shared-track").property("hidden", !servicePaths.some(path => path.type === 'shared'));
+    legend.select(".through-service").property("hidden", !servicePaths.some(path => path.type === 'through'));
 
     // --- 17. 站点（圆 + 标签） ---
     stationGroup = g.append("g").attr("class", "stations");
@@ -707,7 +804,6 @@ function drawMap(data) {
         .attr("opacity", 1.0)
         .text(d => d.name)
         .style("font-family", "Microsoft YaHei, PingFang SC, sans-serif")
-        .style("text-shadow", "0 0 4px #fff, 0 0 4px #fff, 0 0 8px #fff")
         .style("user-select", "none")
         .style("font-weight", "500");
 
@@ -834,6 +930,9 @@ function updateStyles(k) {
 
     const isHighlight = (currentMode === 'highlight');
     const isRoute = (currentMode === 'route');
+
+    pathGroup.selectAll(".service-overlay path")
+        .attr("opacity", d => isRoute || (isHighlight && d.groupKey !== currentHighlightGroupKey) ? 0.15 : 1);
 
     // 线路样式
     pathElements
@@ -984,6 +1083,9 @@ function applyStylesSmoothly(k) {
     const isRoute = (currentMode === 'route');
 
     // 线路样式（与原来完全一样）
+    pathGroup.selectAll(".service-overlay path")
+        .attr("opacity", d => isRoute || (isHighlight && d.groupKey !== currentHighlightGroupKey) ? 0.15 : 1);
+
     pathElements
         .attr("stroke-width", d => {
             if (isHighlight && d.groupKey === currentHighlightGroupKey) {
@@ -1256,7 +1358,8 @@ function clearTempMode() {
 // ---------- Android 注入接口 ----------
 function loadDataFromAndroid(jsonData) {
     // AndroidBridge 传入的值可能是对象，也可能是转义后的 JSON 字符串。
-    console.log('接收到数据:', jsonData);
+    const controls = document.getElementById('map-controls');
+    controls.hidden = true;
     if (jsonData) {
         try {
             let data = jsonData;
@@ -1265,16 +1368,39 @@ function loadDataFromAndroid(jsonData) {
             }
             console.log('数据解析成功，站点数:', Object.keys(data.stations).length);
             drawMap(data);
+            controls.hidden = false;
             if (window.Android && window.Android.onMapReady) {
                 window.Android.onMapReady();
             }
         } catch (e) {
             console.error('加载失败:', e);
+            showMapLoadError();
         }
     } else {
-        console.warn('数据为空');
+        showMapLoadError();
     }
 }
+
+function showMapLoadError() {
+    const container = document.getElementById('container');
+    let status = document.getElementById('loading');
+    if (!status) {
+        status = document.createElement('div');
+        status.id = 'loading';
+        status.setAttribute('role', 'status');
+        container.appendChild(status);
+    }
+    status.style.display = 'block';
+    status.textContent = '无法加载地图，请返回并选择有效的地图文件。';
+}
+
+document.getElementById('zoom-in').addEventListener('click', () => {
+    svg.transition().duration(180).call(zoomBehavior.scaleBy, 1.4);
+});
+document.getElementById('zoom-out').addEventListener('click', () => {
+    svg.transition().duration(180).call(zoomBehavior.scaleBy, 1 / 1.4);
+});
+document.getElementById('zoom-reset').addEventListener('click', () => zoomToPoints(null));
 
 // ---------- Android 调用的其他接口 ----------
 function drawPathFromAndroid(stationNames) {

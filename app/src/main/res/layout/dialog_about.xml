@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="网名：最爱小兔糖糖\n邮箱：rabbitc999@outlook.com\nGitee：rabbitc999\nB站：最爱小兔糖糖"
+        android:text="网名：最爱小兔糖糖\n邮箱：rabbitc999@outlook.com\nGitHub：rabbitc999\nB站：最爱小兔糖糖"
         android:textSize="16sp"
         android:lineSpacingExtra="4dp" />
 

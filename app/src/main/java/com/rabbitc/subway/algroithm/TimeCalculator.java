@@ -79,7 +79,7 @@ public class TimeCalculator {
             if (distance > 0) {
                 String lineId = GraphKeyUtils.getLineIdFromDirKey(dirKey);
                 int maxSpeed = getLineMaxSpeed(lineId);
-                trainTime += computeSegmentTime(distance, maxSpeed, lineId, dirKey, prevStation, station);
+                trainTime += metroGraph.computeRunTime(distance, maxSpeed, lineId, dirKey, prevStation, station);
             }
             prevStation = station;
         }
@@ -222,7 +222,8 @@ public class TimeCalculator {
         int minutesOfDay = cal.get(Calendar.HOUR_OF_DAY) * 60 + cal.get(Calendar.MINUTE);
 
         for (CrowdRule rule : rules) {
-            if (!rule.directionKey.equals(dirKey)) continue;
+            if (dirKey == null || !dirKey.equals(rule.directionKey)
+                    || !Double.isFinite(rule.factor) || rule.factor <= 0) continue;
             // 检查星期
             if (rule.days != null && !rule.days.isEmpty()) {
                 String dayName = getDayOfWeekString(dayOfWeek);
@@ -297,27 +298,6 @@ public class TimeCalculator {
 
 
     public static double findCrowdFactor(String dirKey, long travelTimeMillis) {
-        DataCache cache = DataCache.getInstance();
-        List<CrowdRule> rules = cache.getCrowdRules();
-        if (rules == null || rules.isEmpty()) return 1.0;
-
-        Calendar cal = Calendar.getInstance();
-        cal.setTimeInMillis(travelTimeMillis);
-        int dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
-        int minutesOfDay = cal.get(Calendar.HOUR_OF_DAY) * 60 + cal.get(Calendar.MINUTE);
-
-        for (CrowdRule rule : rules) {
-            if (!rule.directionKey.equals(dirKey)) continue;
-            if (rule.days != null && !rule.days.isEmpty()) {
-                String dayName = getDayOfWeekString(dayOfWeek);
-                if (!rule.days.contains(dayName)) continue;
-            }
-            int start = parseTimeToMinutes(rule.startTime);
-            int end = parseTimeToMinutes(rule.endTime);
-            if (minutesOfDay >= start && minutesOfDay < end) {
-                return rule.factor;
-            }
-        }
-        return 1.0;
+        return findCrowdFactor(dirKey, travelTimeMillis, DataCache.getInstance());
     }
 }

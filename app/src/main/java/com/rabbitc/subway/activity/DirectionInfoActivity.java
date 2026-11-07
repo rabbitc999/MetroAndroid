@@ -194,13 +194,9 @@ public class DirectionInfoActivity extends BaseActivity {
 
         String baseName = lineInfo.name != null ? lineInfo.name : selectedLineId;
         String city = lineInfo.city != null ? lineInfo.city : keyCity;
-        String formation = (lineInfo.formation != null && !lineInfo.formation.isEmpty())
-                ? String.join(",", lineInfo.formation) : "未知";
+        String formation = lineInfo.formation != null ? lineInfo.formation : "未知";
         int openYearInt = lineInfo.openYear;
         String openYear = openYearInt > 0 ? String.valueOf(openYearInt) : "未知";
-        String link = (lineInfo.link != null && !lineInfo.link.isEmpty())
-                ? String.join(",", lineInfo.link) : "";
-        if (TextUtils.isEmpty(link)) link = "暂无";
         int maxSpeed = lineInfo.maxspeed;
 
         selectedLineDisplayName = city.equals(keyCity) ? baseName : city + baseName;
@@ -239,7 +235,7 @@ public class DirectionInfoActivity extends BaseActivity {
         }
         tvShortTurnCount.setText("小交路数量：" + (shortTurnSets.size() > 0 ? shortTurnSets.size() : "无"));
 
-        setupTagsAndLink(lineInfo, cache, link);
+        setupTagsAndLink(lineInfo, cache, baseName);
 
         Boolean hasFuture = cache.getHasFutureMap() != null ? cache.getHasFutureMap().get(selectedLineId) : Boolean.FALSE;
 
@@ -292,7 +288,7 @@ public class DirectionInfoActivity extends BaseActivity {
 
         LoadResult result = new LoadResult();
         result.displayList = buildDisplayList(mainDirs, mLineColor);
-        attachTransferInfo(result.displayList, cache.getStationIndex(), linesObj, keyCity);
+        attachTransferInfo(result.displayList, metroData.stations, linesObj, keyCity);
 
         // ====== 计算时间、发车间隔、拥挤度、基础参数 ======
         String currentTime = new SimpleDateFormat("HH:mm", Locale.getDefault()).format(new Date());
@@ -371,63 +367,33 @@ public class DirectionInfoActivity extends BaseActivity {
         result.maxHeadwayStr = globalMaxInterval == -1 ? "最大间隔：无数据" : String.format(Locale.getDefault(), "最大间隔：%d秒", globalMaxInterval);
         result.minHeadwayStr = globalMinInterval == -1 ? "最小间隔：无数据" : String.format(Locale.getDefault(), "最小间隔：%d秒", globalMinInterval);
 
-        // 3. 拥挤度
+        // 拥挤规则提供行程时间修正系数。线路级页面取当前命中方向中的最高值。
+        boolean inOperation = opStart == null || opEnd == null
+                || isTimeInRange(currentTime, opStart, opEnd);
         List<CrowdRule> crowdRules = cache.getCrowdRules();
         double currentFactor = -1;
-        double globalMaxFactor = -1;
-        double globalMinFactor = -1;
-
+        double maxFactor = -1;
+        double minFactor = Double.POSITIVE_INFINITY;
         if (crowdRules != null) {
-            List<CrowdRule> lineRules = new ArrayList<>();
+            String directionPrefix = selectedLineId + "|";
             for (CrowdRule rule : crowdRules) {
-                if (rule.directionKey != null && rule.directionKey.startsWith(selectedLineId + "|")) {
-                    if (opStart != null && opEnd != null) {
-                        if (rule.startTime.compareTo(opStart) >= 0 && rule.endTime.compareTo(opEnd) <= 0) {
-                            lineRules.add(rule);
-                        }
-                    } else {
-                        lineRules.add(rule);
-                    }
+                if (rule.directionKey == null || !rule.directionKey.startsWith(directionPrefix)
+                        || !Double.isFinite(rule.factor) || rule.factor <= 0) {
+                    continue;
                 }
-            }
-
-            if (!lineRules.isEmpty()) {
-                globalMaxFactor = Collections.max(lineRules, Comparator.comparingDouble(r -> r.factor)).factor;
-                globalMinFactor = Collections.min(lineRules, Comparator.comparingDouble(r -> r.factor)).factor;
-
-                boolean inOperation = false;
-                if (opStart != null && opEnd != null) {
-                    inOperation = isTimeInRange(currentTime, opStart, opEnd);
-                } else {
-                    inOperation = true;
-                }
-
-                if (inOperation) {
-                    double currentMax = -1;
-                    for (CrowdRule rule : lineRules) {
-                        if ((rule.days == null || rule.days.contains(currentDay)) &&
-                                isTimeInRange(currentTime, rule.startTime, rule.endTime)) {
-                            if (rule.factor > currentMax) currentMax = rule.factor;
-                        }
-                    }
-                    if (currentMax >= 0) currentFactor = currentMax;
+                maxFactor = Math.max(maxFactor, rule.factor);
+                minFactor = Math.min(minFactor, rule.factor);
+                if (inOperation && (rule.days == null || rule.days.isEmpty() || rule.days.contains(currentDay))
+                        && isTimeInRange(currentTime, rule.startTime, rule.endTime)) {
+                    currentFactor = Math.max(currentFactor, rule.factor);
                 }
             }
         }
 
-        double displayCurrent = (currentFactor == -1) ? 1.0 : currentFactor;
-        double displayMax = (globalMaxFactor == -1) ? 1.0 : globalMaxFactor;
-        double displayMin;
-        if (globalMinFactor == -1) {
-            displayMin = 1.0;
-        } else {
-            displayMin = Math.max(globalMinFactor, 1.0);
-        }
-        displayMin = Math.min(displayCurrent, displayMin);
-
-        result.currentCrowdStr = String.format(Locale.getDefault(), "当前拥挤度：%.1f (%s)", displayCurrent, getCrowdLevel(displayCurrent));
-        result.maxCrowdStr = String.format(Locale.getDefault(), "最大拥挤度：%.1f (%s)", displayMax, getCrowdLevel(displayMax));
-        result.minCrowdStr = String.format(Locale.getDefault(), "最小拥挤度：%.1f (%s)", displayMin, getCrowdLevel(displayMin));
+        result.currentCrowdStr = !inOperation ? "当前估算：非运营时段"
+                : formatCrowdFactor("当前估算峰值", currentFactor);
+        result.maxCrowdStr = formatCrowdFactor("规则上限", maxFactor);
+        result.minCrowdStr = formatCrowdFactor("规则下限", minFactor);
 
         // 4. 技术参数
         Double power = cache.getLinePowerKwMap().get(selectedLineId);
@@ -507,14 +473,11 @@ public class DirectionInfoActivity extends BaseActivity {
         listViewStations.setAdapter(adapter);
     }
 
-    /**
-     * 根据拥挤度因子返回等级文字
-     */
-    private String getCrowdLevel(double factor) {
-        if (factor >= 1.7) return "拥挤";
-        else if (factor >= 1.5) return "还好";
-        else if (factor >= 1.2) return "一般";
-        else return "舒适";
+    private String formatCrowdFactor(String label, double factor) {
+        if (!Double.isFinite(factor) || factor <= 0) {
+            return label + "：无数据";
+        }
+        return String.format(Locale.getDefault(), "%s：%.2f×", label, factor);
     }
 
     // 辅助方法：判断当前时间是否在区间内
@@ -524,7 +487,7 @@ public class DirectionInfoActivity extends BaseActivity {
             Date now = sdf.parse(current);
             Date s = sdf.parse(start);
             Date e = sdf.parse(end);
-            return now.after(s) && now.before(e);
+            return !now.before(s) && now.before(e);
         } catch (Exception e) {
             return false;
         }
@@ -545,7 +508,7 @@ public class DirectionInfoActivity extends BaseActivity {
     }
 
     // ---------- 辅助方法：设置标签和链接 ----------
-    private void setupTagsAndLink(Line lineInfo, DataCache cache, String link) {
+    private void setupTagsAndLink(Line lineInfo, DataCache cache, String lineName) {
         lineTagsContainer.removeAllViews();
         List<String> tags = new ArrayList<>();
 
@@ -588,37 +551,49 @@ public class DirectionInfoActivity extends BaseActivity {
             lineTagsContainer.addView(emptyTag);
         }
 
-        // 设置链接（可点击）
         tvLink.removeAllViews();
-        if (!TextUtils.isEmpty(link) && !link.equals("暂无")) {
-            TextView linkView = new TextView(this);
-            linkView.setText("点我");
-            linkView.setTextSize(12);
-            linkView.setTextColor(Color.WHITE);
-            linkView.setPadding(12, 4, 12, 4);
-            GradientDrawable drawable = new GradientDrawable();
-            drawable.setShape(GradientDrawable.RECTANGLE);
-            drawable.setCornerRadius(8);
-            drawable.setColor(Color.parseColor("#2196F3"));
-            linkView.setBackground(drawable);
-            linkView.setOnClickListener(v -> {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(link));
-                startActivity(intent);
-            });
-            tvLink.addView(linkView);
-        } else {
-            TextView noLinkView = new TextView(this);
-            noLinkView.setText("暂无");
-            noLinkView.setTextSize(12);
-            noLinkView.setTextColor(Color.GRAY);
-            noLinkView.setPadding(12, 4, 12, 4);
-            GradientDrawable drawable = new GradientDrawable();
-            drawable.setShape(GradientDrawable.RECTANGLE);
-            drawable.setCornerRadius(8);
-            drawable.setColor(Color.parseColor("#E0E0E0"));
-            noLinkView.setBackground(drawable);
-            tvLink.addView(noLinkView);
+        String city = TextUtils.isEmpty(lineInfo.city) ? cache.getKeyCity() : lineInfo.city;
+        String query = TextUtils.isEmpty(city) || lineName.startsWith(city)
+                ? lineName : city + "地铁" + lineName.replaceFirst("^地铁", "");
+        List<String> sources = new ArrayList<>();
+        if (lineInfo.resourceLinks != null) sources.addAll(lineInfo.resourceLinks);
+        else if (!TextUtils.isEmpty(lineInfo.link)) Collections.addAll(sources, lineInfo.link.split(" / "));
+        Uri wikipedia = Uri.parse("https://zh.wikipedia.org/w/index.php").buildUpon()
+                .appendQueryParameter("search", query).build();
+        Uri baidu = Uri.parse("https://baike.baidu.com/search/word").buildUpon()
+                .appendQueryParameter("word", query).build();
+        Uri wikiArticle = null;
+        Uri baiduArticle = null;
+        List<Uri> others = new ArrayList<>();
+        for (String source : sources) {
+            Uri uri = Uri.parse(source);
+            String host = uri.getHost();
+            if (host == null || !("https".equals(uri.getScheme()) || "http".equals(uri.getScheme()))) continue;
+            if (host.equals("wikipedia.org") || host.endsWith(".wikipedia.org")) {
+                if (wikiArticle == null) wikiArticle = uri;
+            } else if (host.equals("baike.baidu.com")) {
+                if (baiduArticle == null) baiduArticle = uri;
+            } else if (!others.contains(uri)) {
+                others.add(uri);
+            }
         }
+        addResourceLink("维基百科 · 线路沿革与站序", wikiArticle != null ? wikiArticle : wikipedia);
+        addResourceLink("百度百科 · 线路概况与运营资料", baiduArticle != null ? baiduArticle : baidu);
+        for (Uri uri : others) addResourceLink(uri.getHost(), uri);
+    }
+
+    private void addResourceLink(String label, Uri uri) {
+        TextView link = (TextView) getLayoutInflater()
+                .inflate(R.layout.item_direction_resource_link, tvLink, false);
+        link.setText(label);
+        link.setOnClickListener(v -> {
+            try {
+                startActivity(new Intent(Intent.ACTION_VIEW, uri));
+            } catch (android.content.ActivityNotFoundException e) {
+                Toast.makeText(this, "找不到可打开链接的浏览器", Toast.LENGTH_SHORT).show();
+            }
+        });
+        tvLink.addView(link);
     }
 
     private TextView createTagView(String tagText) {
