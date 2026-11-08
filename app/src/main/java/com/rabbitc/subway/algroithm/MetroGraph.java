@@ -91,12 +91,6 @@ public class MetroGraph {
 
             // 线路基本信息
             String lineName = (line.name != null) ? line.name : lineId;
-            // 深圳地铁 2 号线与 8 号线贯通运营，统一使用乘客熟悉的组合名称。
-            if ("深圳".equals(line.city) && ("SZ2_8".equals(lineId)
-                    || "2号线".equals(lineName) || "8号线".equals(lineName)
-                    || lineName.contains("2号线/8号线"))) {
-                lineName = "2号线/8号线";
-            }
             lineNameMap.put(lineId, lineName);
 
             String city = (line.city != null) ? line.city : "广州";

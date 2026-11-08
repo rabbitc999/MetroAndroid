@@ -24,6 +24,8 @@ import com.rabbitc.subway.data.parse.SpecialLineRule;
 import com.rabbitc.subway.data.parse.Surcharge;
 import com.rabbitc.subway.data.parse.FareSegment;
 import com.rabbitc.subway.data.parse.LinearExtension;
+import com.rabbitc.subway.data.json.MetroData;
+import com.rabbitc.subway.data.json.OperatorCompany;
 import com.rabbitc.subway.utils.LegendBuilder;
 import com.rabbitc.subway.utils.WidgetUtils;
 import com.rabbitc.subway.widget.LegendListView;
@@ -43,7 +45,7 @@ public class CityInfoActivity extends BaseActivity {
     private static final int REQUEST_LINE_DETAIL = 100;
 
     // ---------- 视图 ----------
-    private TextView tvCityName, tvVersion, tvUpdateDate, tvTotalMileage, tvFutureMileage;
+    private TextView tvCityName, tvVersion, tvUpdateDate, tvTotalMileage, tvFutureMileage, tvOperators;
     private TableLayout priceTable;
     private LegendListView lineListView;
 
@@ -125,6 +127,7 @@ public class CityInfoActivity extends BaseActivity {
         priceTable = findViewById(R.id.cityPriceTable);
         lineListView = findViewById(R.id.legendListView);
         tvFutureMileage = findViewById(R.id.cityFutureMileage);
+        tvOperators = findViewById(R.id.cityOperators);
         legendAdapter = new LineLegendAdapter(this, legendItems);
         lineListView.setAdapter(legendAdapter);
         startEndBar = findViewById(R.id.startEndBar);
@@ -157,6 +160,16 @@ public class CityInfoActivity extends BaseActivity {
         tvCityName.setText("城市：" + (TextUtils.isEmpty(city) ? "未知" : city));
         tvVersion.setText("文件版本：" + (TextUtils.isEmpty(version) ? "未知" : version));
         tvUpdateDate.setText("更新日期：" + (TextUtils.isEmpty(updateDate) ? "未知" : updateDate));
+        MetroData metroData = cache.getMetroData();
+        if (metroData != null && metroData.operatorCompanies != null && !metroData.operatorCompanies.isEmpty()) {
+            List<String> names = new ArrayList<>();
+            for (OperatorCompany company : metroData.operatorCompanies) {
+                if (!TextUtils.isEmpty(company.Name)) names.add(company.Name);
+            }
+            tvOperators.setText("运营公司：" + (names.isEmpty() ? "暂无数据" : TextUtils.join("、", names)));
+        } else {
+            tvOperators.setText("运营公司：暂无数据");
+        }
 
         if (hasFuture)
         {

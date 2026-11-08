@@ -71,6 +71,9 @@ public class MetroData {
     /** 覆盖的其他城市名称列表（JSON: "other_cities"） */
     @SerializedName("other_cities")
     public List<String> otherCities;
+    /** 线路运营公司元数据。 */
+    @SerializedName("operator_companies")
+    public List<OperatorCompany> operatorCompanies;
     /** 运营参数（换乘时间、停站时间、进站时间等） */
     @SerializedName("operation_params")
     public OperationParams operationParams;

@@ -1,0 +1,4830 @@
+{
+  "key_city": "合肥",
+  "author": "匿名",
+  "version": "V1.0",
+  "create_date": "",
+  "update_date": "2026-6-30",
+  "other_cities": [],
+  "operation_params": {
+    "inner_transfer_time": 300,
+    "out_station_transfer_time": 900,
+    "dwell_time": 45,
+    "entry_time": 120,
+    "avg_board_time": 3
+  },
+  "price": {
+    "currency": "CNY",
+    "pricingType": "distance",
+    "default_fare": 2,
+    "segments": [
+      {
+        "rangeStart": 0,
+        "rangeEnd": 8,
+        "fare": 2
+      },
+      {
+        "rangeStart": 8,
+        "rangeEnd": 14,
+        "fare": 3
+      },
+      {
+        "rangeStart": 14,
+        "rangeEnd": 21,
+        "fare": 4
+      },
+      {
+        "rangeStart": 21,
+        "rangeEnd": 29,
+        "fare": 5
+      }
+    ],
+    "linearExtension": {
+      "threshold": 29,
+      "baseFare": 5,
+      "ratePerKm": 0.111111
+    }
+  },
+  "transfer_types": [
+    {
+      "id": "SAME",
+      "name": "同台换乘",
+      "time": 120,
+      "status": "OPERATING",
+      "security_check": false
+    },
+    {
+      "id": "STAIR",
+      "name": "节点换乘",
+      "time": 180,
+      "status": "OPERATING",
+      "security_check": false
+    },
+    {
+      "id": "HALL",
+      "name": "站厅换乘",
+      "time": 240,
+      "status": "OPERATING",
+      "security_check": false
+    },
+    {
+      "id": "CHANNEL",
+      "name": "通道换乘",
+      "time": 300,
+      "status": "OPERATING",
+      "security_check": false
+    },
+    {
+      "id": "CHANNEL_LONG",
+      "name": "长距离通道换乘",
+      "time": 600,
+      "status": "OPERATING",
+      "security_check": false
+    },
+    {
+      "id": "CHANNEL_LONG_LONG",
+      "name": "长长距离通道换乘",
+      "time": 840,
+      "status": "OPERATING",
+      "security_check": false
+    },
+    {
+      "id": "OUT",
+      "name": "出站换乘",
+      "time": 600,
+      "status": "OUT_STATION",
+      "security_check": false
+    },
+    {
+      "id": "OUT_LONG",
+      "name": "长距离出站换乘",
+      "time": 900,
+      "status": "OUT_STATION",
+      "security_check": false
+    },
+    {
+      "id": "PENDING",
+      "name": "暂缓开通换乘",
+      "time": 300,
+      "status": "PENDING",
+      "security_check": false
+    }
+  ],
+  "stations": [
+    {
+      "name": "安大磬苑校区",
+      "lon": 117.186782,
+      "lat": 31.76133,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "安农大",
+      "lon": 117.260007,
+      "lat": 31.860182,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "安医大二附院",
+      "lon": 117.204377,
+      "lat": 31.792075,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "安医一附院北区",
+      "lon": 117.343168,
+      "lat": 31.938917,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "白水坝",
+      "lon": 117.273139,
+      "lat": 31.880546,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "包公园",
+      "lon": 117.295802,
+      "lat": 31.858243,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "包河苑",
+      "lon": 117.310825,
+      "lat": 31.795551,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "北城高铁站",
+      "lon": 117.250829,
+      "lat": 32.064798,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "北城世纪城",
+      "lon": 117.242652,
+      "lat": 32.01234,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "北五里井",
+      "lon": 117.26999,
+      "lat": 31.900498,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "北雁湖",
+      "lon": 117.151602,
+      "lat": 31.822846,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "滨湖会展中心",
+      "lon": 117.29664,
+      "lat": 31.756709,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "滨湖医院",
+      "lon": 117.286052,
+      "lat": 31.742829,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "滨湖竹园",
+      "lon": 117.258672,
+      "lat": 31.711398,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "丙子铺",
+      "lon": 117.291859,
+      "lat": 31.693401,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "漕冲",
+      "lon": 117.346077,
+      "lat": 31.869947,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "撮镇",
+      "lon": 117.486301,
+      "lat": 31.824181,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "大东门",
+      "lon": 117.295201,
+      "lat": 31.86588,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "大连路",
+      "lon": 117.326655,
+      "lat": 31.787533,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "大蜀山",
+      "lon": 117.180514,
+      "lat": 31.854027,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "大兴集",
+      "lon": 117.379802,
+      "lat": 31.836623,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "大学城北",
+      "lon": 117.20436,
+      "lat": 31.776983,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "稻香楼",
+      "lon": 117.268625,
+      "lat": 31.851429,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "店埠河",
+      "lon": 117.466171,
+      "lat": 31.877071,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "东二十埠",
+      "lon": 117.361443,
+      "lat": 31.870105,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "东七里",
+      "lon": 117.334136,
+      "lat": 31.869097,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "东五里井",
+      "lon": 117.318918,
+      "lat": 31.869692,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "窦桥湾",
+      "lon": 117.346674,
+      "lat": 31.886888,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "渡江纪念馆",
+      "lon": 117.324672,
+      "lat": 31.715055,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "对河",
+      "lon": 117.450834,
+      "lat": 31.874576,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "繁华大道",
+      "lon": 117.204375,
+      "lat": 31.783195,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "方庙",
+      "lon": 117.338264,
+      "lat": 31.8869,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "方兴湖",
+      "lon": 117.333108,
+      "lat": 31.720109,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "肥东站",
+      "lon": 117.480341,
+      "lat": 31.861421,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "肥西人民医院",
+      "lon": 117.166707,
+      "lat": 31.746151,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "淝南",
+      "lon": 117.275955,
+      "lat": 31.801692,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "翡翠公园",
+      "lon": 117.190577,
+      "lat": 31.784232,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "伏龙",
+      "lon": 117.394933,
+      "lat": 31.839989,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "复兴集",
+      "lon": 117.139526,
+      "lat": 31.817752,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "钢红",
+      "lon": 117.372233,
+      "lat": 31.829942,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "高王",
+      "lon": 117.285891,
+      "lat": 31.775108,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "葛大店",
+      "lon": 117.297614,
+      "lat": 31.816522,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "葛大店南",
+      "lon": 117.307942,
+      "lat": 31.810914,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "工大翡翠湖校区",
+      "lon": 117.199562,
+      "lat": 31.767302,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "工经学院",
+      "lon": 117.320222,
+      "lat": 31.816621,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "馆驿",
+      "lon": 117.155122,
+      "lat": 31.686164,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "贵阳路",
+      "lon": 117.258629,
+      "lat": 31.700476,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "桂王",
+      "lon": 117.435708,
+      "lat": 31.876715,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "桂庄",
+      "lon": 117.121162,
+      "lat": 31.852572,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "国防科技大学",
+      "lon": 117.225763,
+      "lat": 31.842778,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "海棠",
+      "lon": 117.272884,
+      "lat": 31.889655,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "合肥大剧院",
+      "lon": 117.218241,
+      "lat": 31.816365,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "合肥大学",
+      "lon": 117.254772,
+      "lat": 31.755599,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "合肥火车站",
+      "lon": 117.309993,
+      "lat": 31.885325,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "合肥南站",
+      "lon": 117.284523,
+      "lat": 31.801979,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "合肥七中",
+      "lon": 117.09507,
+      "lat": 31.831396,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "合肥四中",
+      "lon": 117.343143,
+      "lat": 31.742746,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "合肥西站",
+      "lon": 117.230631,
+      "lat": 31.872269,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "合工大南区",
+      "lon": 117.295155,
+      "lat": 31.849164,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "和睦湖",
+      "lon": 117.486439,
+      "lat": 31.85501,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "荷塘路",
+      "lon": 117.254278,
+      "lat": 31.938083,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "洪岗",
+      "lon": 117.225347,
+      "lat": 31.834429,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "花园大道",
+      "lon": 117.328701,
+      "lat": 31.774928,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "华山路",
+      "lon": 117.305408,
+      "lat": 31.715076,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "淮南路",
+      "lon": 117.290764,
+      "lat": 31.889251,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "黄河路",
+      "lon": 117.328667,
+      "lat": 31.767661,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "徽园",
+      "lon": 117.216118,
+      "lat": 31.782791,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "汲桥路",
+      "lon": 117.258315,
+      "lat": 31.942957,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "金斗公园",
+      "lon": 117.297082,
+      "lat": 31.724982,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "金桂",
+      "lon": 117.182242,
+      "lat": 31.818203,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "金梅路",
+      "lon": 117.249337,
+      "lat": 31.977582,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "金小郢",
+      "lon": 117.111116,
+      "lat": 31.784331,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "九联圩",
+      "lon": 117.28067,
+      "lat": 31.693424,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "开福寺",
+      "lon": 117.179912,
+      "lat": 31.833719,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "科大先研院",
+      "lon": 117.128599,
+      "lat": 31.832188,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "科学大道",
+      "lon": 117.203339,
+      "lat": 31.857925,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "乐平",
+      "lon": 117.170695,
+      "lat": 31.697334,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "李湾",
+      "lon": 117.150998,
+      "lat": 31.720738,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "凉亭",
+      "lon": 117.157229,
+      "lat": 31.725784,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "量子科学中心",
+      "lon": 117.109725,
+      "lat": 31.831673,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "凌大塘",
+      "lon": 117.270044,
+      "lat": 31.816275,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "菱湖公园",
+      "lon": 117.266792,
+      "lat": 31.915863,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "柳树塘",
+      "lon": 117.193567,
+      "lat": 31.81325,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "六中菱湖校区",
+      "lon": 117.264403,
+      "lat": 31.93212,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "龙岗",
+      "lon": 117.370732,
+      "lat": 31.870251,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "龙塘",
+      "lon": 117.409455,
+      "lat": 31.838454,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "庐阳经开区",
+      "lon": 117.275024,
+      "lat": 31.924681,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "陆军兵种大学",
+      "lon": 117.240145,
+      "lat": 31.832768,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "骆岗",
+      "lon": 117.285921,
+      "lat": 31.785377,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "马桥",
+      "lon": 117.486384,
+      "lat": 31.845563,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "梅冲湖",
+      "lon": 117.248506,
+      "lat": 31.996735,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "梦城",
+      "lon": 117.196205,
+      "lat": 31.834544,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "明光路",
+      "lon": 117.299022,
+      "lat": 31.871943,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "明珠广场",
+      "lon": 117.225857,
+      "lat": 31.778337,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南岗",
+      "lon": 117.111588,
+      "lat": 31.852242,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南屏路",
+      "lon": 117.252144,
+      "lat": 31.810486,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南七里",
+      "lon": 117.251435,
+      "lat": 31.83219,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南沙河",
+      "lon": 117.486293,
+      "lat": 31.834568,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南新庄",
+      "lon": 117.225232,
+      "lat": 31.863066,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南艳湖北",
+      "lon": 117.24484,
+      "lat": 31.772669,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南艳湖南",
+      "lon": 117.265059,
+      "lat": 31.758134,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南站南广场",
+      "lon": 117.286045,
+      "lat": 31.794542,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "排头",
+      "lon": 117.474933,
+      "lat": 31.873684,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "汽车西站",
+      "lon": 117.130732,
+      "lat": 31.852714,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "勤劳村",
+      "lon": 117.355734,
+      "lat": 31.899249,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "青龙岗",
+      "lon": 117.083148,
+      "lat": 31.832012,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "清水冲",
+      "lon": 117.280935,
+      "lat": 31.715148,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "秋浦河路",
+      "lon": 117.296433,
+      "lat": 31.825138,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "芮祠",
+      "lon": 117.160348,
+      "lat": 31.703247,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "三里庵",
+      "lon": 117.251731,
+      "lat": 31.857193,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "三里街",
+      "lon": 117.308405,
+      "lat": 31.869547,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "三十埠",
+      "lon": 117.39163,
+      "lat": 31.870789,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "三十埠东",
+      "lon": 117.41404,
+      "lat": 31.87378,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "三孝口",
+      "lon": 117.269831,
+      "lat": 31.863096,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "烧脉岗",
+      "lon": 117.096426,
+      "lat": 31.757164,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "沈湾",
+      "lon": 117.314156,
+      "lat": 31.715059,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "省博物院",
+      "lon": 117.210048,
+      "lat": 31.802875,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "省儿童医院新区",
+      "lon": 117.17033,
+      "lat": 31.687445,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "省立医院北区",
+      "lon": 117.240605,
+      "lat": 32.046555,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "省文化和非遗馆",
+      "lon": 117.31924,
+      "lat": 31.742768,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "省行政中心东",
+      "lon": 117.333319,
+      "lat": 31.733286,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "盛大",
+      "lon": 117.29633,
+      "lat": 31.794456,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "十里村",
+      "lon": 117.341605,
+      "lat": 31.906474,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "十里庙",
+      "lon": 117.217725,
+      "lat": 31.856901,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "市博物馆",
+      "lon": 117.360598,
+      "lat": 31.833453,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "市第三医院",
+      "lon": 117.264208,
+      "lat": 31.830872,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "市儿童医院",
+      "lon": 117.349809,
+      "lat": 31.837654,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "市政务中心",
+      "lon": 117.226406,
+      "lat": 31.823752,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "蜀山西",
+      "lon": 117.162446,
+      "lat": 31.853272,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "双墩",
+      "lon": 117.240459,
+      "lat": 32.03045,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "双凤",
+      "lon": 117.251464,
+      "lat": 31.958462,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "四牌楼",
+      "lon": 117.28417,
+      "lat": 31.863655,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "四泉桥",
+      "lon": 117.251065,
+      "lat": 31.888606,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "四十埠",
+      "lon": 117.152734,
+      "lat": 31.710351,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "松荫桥",
+      "lon": 117.218069,
+      "lat": 31.835223,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "嵩山路",
+      "lon": 117.309692,
+      "lat": 31.742774,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "唐大楼",
+      "lon": 117.329664,
+      "lat": 31.830117,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "唐桥",
+      "lon": 117.329814,
+      "lat": 31.855493,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "塘西河公园",
+      "lon": 117.297052,
+      "lat": 31.733454,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "桃花潭",
+      "lon": 117.132379,
+      "lat": 31.784248,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "陶冲湖东",
+      "lon": 117.339361,
+      "lat": 31.928486,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "天都路",
+      "lon": 117.234904,
+      "lat": 31.778324,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "天鹅湖",
+      "lon": 117.222169,
+      "lat": 31.810225,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "天鹅湖东",
+      "lon": 117.232993,
+      "lat": 31.811193,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "天柱路",
+      "lon": 117.192996,
+      "lat": 31.856158,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "铜锣寨路",
+      "lon": 117.089358,
+      "lat": 31.780891,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "图书馆",
+      "lon": 117.210023,
+      "lat": 31.811089,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "万达城",
+      "lon": 117.296631,
+      "lat": 31.70781,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "万年埠",
+      "lon": 117.296557,
+      "lat": 31.70038,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "王岗",
+      "lon": 117.384068,
+      "lat": 31.870563,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "望湖城",
+      "lon": 117.286507,
+      "lat": 31.807335,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "望湖城南",
+      "lon": 117.297205,
+      "lat": 31.806984,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "望湖城西",
+      "lon": 117.283558,
+      "lat": 31.810765,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "卫岗",
+      "lon": 117.280522,
+      "lat": 31.832958,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "魏庄",
+      "lon": 117.089221,
+      "lat": 31.761513,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "文浍苑",
+      "lon": 117.362659,
+      "lat": 31.911467,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "五里墩",
+      "lon": 117.235662,
+      "lat": 31.853112,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "五里庙",
+      "lon": 117.318295,
+      "lat": 31.839178,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "西七里塘",
+      "lon": 117.225408,
+      "lat": 31.854504,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "相城路",
+      "lon": 117.402182,
+      "lat": 31.92695,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "祥和",
+      "lon": 117.422927,
+      "lat": 31.87585,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "新海大道",
+      "lon": 117.353361,
+      "lat": 31.892262,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "新海公园",
+      "lon": 117.336693,
+      "lat": 31.898402,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "兴华苑",
+      "lon": 117.30806,
+      "lat": 31.905456,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "杏花村",
+      "lon": 117.240121,
+      "lat": 31.882527,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "杏花公园",
+      "lon": 117.273253,
+      "lat": 31.872802,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "杏林",
+      "lon": 117.278875,
+      "lat": 31.905511,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "幸福坝",
+      "lon": 117.175164,
+      "lat": 31.752938,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "休宁路",
+      "lon": 117.263666,
+      "lat": 31.820468,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "薛河",
+      "lon": 117.263672,
+      "lat": 31.809677,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "鸭林冲",
+      "lon": 117.302158,
+      "lat": 31.889823,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "扬子江路",
+      "lon": 117.333392,
+      "lat": 31.754998,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "尧渡河路",
+      "lon": 117.319344,
+      "lat": 31.827168,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "姚公庙",
+      "lon": 117.243831,
+      "lat": 31.810725,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "瑶海公园",
+      "lon": 117.308818,
+      "lat": 31.892017,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "要素大市场",
+      "lon": 117.280869,
+      "lat": 31.752428,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "一里井",
+      "lon": 117.281653,
+      "lat": 31.889028,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "一六八中学",
+      "lon": 117.244852,
+      "lat": 31.761886,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "义城",
+      "lon": 117.333399,
+      "lat": 31.742705,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "义兴",
+      "lon": 117.320175,
+      "lat": 31.796666,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "幼儿师范",
+      "lon": 117.366779,
+      "lat": 31.923287,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "玉兰大道",
+      "lon": 117.170393,
+      "lat": 31.822647,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "云川公园",
+      "lon": 117.270399,
+      "lat": 31.715166,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "云谷路",
+      "lon": 117.296668,
+      "lat": 31.715139,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "站塘",
+      "lon": 117.33536,
+      "lat": 31.877989,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "张洼",
+      "lon": 117.316734,
+      "lat": 31.919945,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "长安集",
+      "lon": 117.139573,
+      "lat": 31.805132,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "长淮",
+      "lon": 117.303554,
+      "lat": 31.877582,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "振兴路",
+      "lon": 117.14628,
+      "lat": 31.852956,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "郑河",
+      "lon": 117.262466,
+      "lat": 31.888778,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "职教城",
+      "lon": 117.377414,
+      "lat": 31.926954,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "职教城东",
+      "lon": 117.391811,
+      "lat": 31.926979,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "中国科大东区",
+      "lon": 117.267609,
+      "lat": 31.843665,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "朱岗",
+      "lon": 117.296183,
+      "lat": 31.834118,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "竹丝滩",
+      "lon": 117.325344,
+      "lat": 31.887117,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "竹西",
+      "lon": 117.270968,
+      "lat": 31.805558,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "紫庐",
+      "lon": 117.297077,
+      "lat": 31.742693,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "紫云湖",
+      "lon": 117.110223,
+      "lat": 31.757134,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "综保区",
+      "lon": 117.348131,
+      "lat": 31.952614,
+      "city": "合肥",
+      "otherNames": [],
+      "lines": []
+    }
+  ],
+  "lines": {
+    "L1": {
+      "name": "1号线",
+      "color": "#E61F26",
+      "city": "",
+      "formation": [
+        "6B"
+      ],
+      "maxspeed": 80,
+      "open_year": 2016,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%90%88%E8%82%A5%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A1%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "L1_0",
+          "start": "九联圩",
+          "end": "张洼",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "九联圩",
+              "city": "合肥",
+              "next": 1.0586248894175385,
+              "dwell_time": null
+            },
+            {
+              "name": "丙子铺",
+              "city": "合肥",
+              "next": 0.8943043980385335,
+              "dwell_time": null
+            },
+            {
+              "name": "万年埠",
+              "city": "合肥",
+              "next": 0.826209104715921,
+              "dwell_time": null
+            },
+            {
+              "name": "万达城",
+              "city": "合肥",
+              "next": 0.8149562587613766,
+              "dwell_time": null
+            },
+            {
+              "name": "云谷路",
+              "city": "合肥",
+              "next": 1.095193449165666,
+              "dwell_time": null
+            },
+            {
+              "name": "金斗公园",
+              "city": "合肥",
+              "next": 0.9420489924513739,
+              "dwell_time": null
+            },
+            {
+              "name": "塘西河公园",
+              "city": "合肥",
+              "next": 1.0273340665953206,
+              "dwell_time": null
+            },
+            {
+              "name": "紫庐",
+              "city": "合肥",
+              "next": 1.5590579140678698,
+              "dwell_time": null
+            },
+            {
+              "name": "滨湖会展中心",
+              "city": "合肥",
+              "next": 2.2843541673394094,
+              "dwell_time": null
+            },
+            {
+              "name": "高王",
+              "city": "合肥",
+              "next": 1.1418658000566029,
+              "dwell_time": null
+            },
+            {
+              "name": "骆岗",
+              "city": "合肥",
+              "next": 1.0191702971141061,
+              "dwell_time": null
+            },
+            {
+              "name": "南站南广场",
+              "city": "合肥",
+              "next": 0.8393738641632865,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥南站",
+              "city": "合肥",
+              "next": 0.6243747461157464,
+              "dwell_time": null
+            },
+            {
+              "name": "望湖城",
+              "city": "合肥",
+              "next": 1.4646000159370656,
+              "dwell_time": null
+            },
+            {
+              "name": "葛大店",
+              "city": "合肥",
+              "next": 0.9645329573180063,
+              "dwell_time": null
+            },
+            {
+              "name": "秋浦河路",
+              "city": "合肥",
+              "next": 0.9988111057912342,
+              "dwell_time": null
+            },
+            {
+              "name": "朱岗",
+              "city": "合肥",
+              "next": 1.6758569130312577,
+              "dwell_time": null
+            },
+            {
+              "name": "合工大南区",
+              "city": "合肥",
+              "next": 1.011387919693404,
+              "dwell_time": null
+            },
+            {
+              "name": "包公园",
+              "city": "合肥",
+              "next": 0.851091532946596,
+              "dwell_time": null
+            },
+            {
+              "name": "大东门",
+              "city": "合肥",
+              "next": 0.7646640570191238,
+              "dwell_time": null
+            },
+            {
+              "name": "明光路",
+              "city": "合肥",
+              "next": 0.7591456648118418,
+              "dwell_time": null
+            },
+            {
+              "name": "长淮",
+              "city": "合肥",
+              "next": 1.0540039937774086,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥火车站",
+              "city": "合肥",
+              "next": 0.7523413311362097,
+              "dwell_time": null
+            },
+            {
+              "name": "瑶海公园",
+              "city": "合肥",
+              "next": 1.4960629705040973,
+              "dwell_time": null
+            },
+            {
+              "name": "兴华苑",
+              "city": "合肥",
+              "next": 1.8072001139630283,
+              "dwell_time": null
+            },
+            {
+              "name": "张洼",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "L1_1",
+          "start": "张洼",
+          "end": "九联圩",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "张洼",
+              "city": "合肥",
+              "next": 1.8072001139630283,
+              "dwell_time": null
+            },
+            {
+              "name": "兴华苑",
+              "city": "合肥",
+              "next": 1.4960629705040973,
+              "dwell_time": null
+            },
+            {
+              "name": "瑶海公园",
+              "city": "合肥",
+              "next": 0.7523413311362097,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥火车站",
+              "city": "合肥",
+              "next": 1.0540039937774086,
+              "dwell_time": null
+            },
+            {
+              "name": "长淮",
+              "city": "合肥",
+              "next": 0.7591456648118418,
+              "dwell_time": null
+            },
+            {
+              "name": "明光路",
+              "city": "合肥",
+              "next": 0.7646640570191238,
+              "dwell_time": null
+            },
+            {
+              "name": "大东门",
+              "city": "合肥",
+              "next": 0.851091532946596,
+              "dwell_time": null
+            },
+            {
+              "name": "包公园",
+              "city": "合肥",
+              "next": 1.011387919693404,
+              "dwell_time": null
+            },
+            {
+              "name": "合工大南区",
+              "city": "合肥",
+              "next": 1.6758569130312577,
+              "dwell_time": null
+            },
+            {
+              "name": "朱岗",
+              "city": "合肥",
+              "next": 0.9988111057912342,
+              "dwell_time": null
+            },
+            {
+              "name": "秋浦河路",
+              "city": "合肥",
+              "next": 0.9645329573180063,
+              "dwell_time": null
+            },
+            {
+              "name": "葛大店",
+              "city": "合肥",
+              "next": 1.4646000159370656,
+              "dwell_time": null
+            },
+            {
+              "name": "望湖城",
+              "city": "合肥",
+              "next": 0.6243747461157464,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥南站",
+              "city": "合肥",
+              "next": 0.8393738641632865,
+              "dwell_time": null
+            },
+            {
+              "name": "南站南广场",
+              "city": "合肥",
+              "next": 1.0191702971141061,
+              "dwell_time": null
+            },
+            {
+              "name": "骆岗",
+              "city": "合肥",
+              "next": 1.1418658000566029,
+              "dwell_time": null
+            },
+            {
+              "name": "高王",
+              "city": "合肥",
+              "next": 2.2843541673394094,
+              "dwell_time": null
+            },
+            {
+              "name": "滨湖会展中心",
+              "city": "合肥",
+              "next": 1.5590579140678698,
+              "dwell_time": null
+            },
+            {
+              "name": "紫庐",
+              "city": "合肥",
+              "next": 1.0273340665953206,
+              "dwell_time": null
+            },
+            {
+              "name": "塘西河公园",
+              "city": "合肥",
+              "next": 0.9420489924513739,
+              "dwell_time": null
+            },
+            {
+              "name": "金斗公园",
+              "city": "合肥",
+              "next": 1.095193449165666,
+              "dwell_time": null
+            },
+            {
+              "name": "云谷路",
+              "city": "合肥",
+              "next": 0.8149562587613766,
+              "dwell_time": null
+            },
+            {
+              "name": "万达城",
+              "city": "合肥",
+              "next": 0.826209104715921,
+              "dwell_time": null
+            },
+            {
+              "name": "万年埠",
+              "city": "合肥",
+              "next": 0.8943043980385335,
+              "dwell_time": null
+            },
+            {
+              "name": "丙子铺",
+              "city": "合肥",
+              "next": 1.0586248894175385,
+              "dwell_time": null
+            },
+            {
+              "name": "九联圩",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "L2": {
+      "name": "2号线",
+      "color": "#0168B3",
+      "city": "",
+      "formation": [
+        "6B"
+      ],
+      "maxspeed": 80,
+      "open_year": 2017,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%90%88%E8%82%A5%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A2%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "L2_0",
+          "start": "撮镇",
+          "end": "南岗",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "撮镇",
+              "city": "合肥",
+              "next": 1.1549835456706001,
+              "dwell_time": null
+            },
+            {
+              "name": "南沙河",
+              "city": "合肥",
+              "next": 1.2226201267917618,
+              "dwell_time": null
+            },
+            {
+              "name": "马桥",
+              "city": "合肥",
+              "next": 1.0504727681242165,
+              "dwell_time": null
+            },
+            {
+              "name": "和睦湖",
+              "city": "合肥",
+              "next": 0.9164449831192875,
+              "dwell_time": null
+            },
+            {
+              "name": "肥东站",
+              "city": "合肥",
+              "next": 1.456084610489822,
+              "dwell_time": null
+            },
+            {
+              "name": "排头",
+              "city": "合肥",
+              "next": 0.9090527535764374,
+              "dwell_time": null
+            },
+            {
+              "name": "店埠河",
+              "city": "合肥",
+              "next": 1.4745496496993094,
+              "dwell_time": null
+            },
+            {
+              "name": "对河",
+              "city": "合肥",
+              "next": 1.4479625968463252,
+              "dwell_time": null
+            },
+            {
+              "name": "桂王",
+              "city": "合肥",
+              "next": 1.210682773977345,
+              "dwell_time": null
+            },
+            {
+              "name": "祥和",
+              "city": "合肥",
+              "next": 0.870169683097818,
+              "dwell_time": null
+            },
+            {
+              "name": "三十埠东",
+              "city": "合肥",
+              "next": 2.1421493615535603,
+              "dwell_time": null
+            },
+            {
+              "name": "三十埠",
+              "city": "合肥",
+              "next": 0.7145333221588587,
+              "dwell_time": null
+            },
+            {
+              "name": "王岗",
+              "city": "合肥",
+              "next": 1.2598204125216501,
+              "dwell_time": null
+            },
+            {
+              "name": "龙岗",
+              "city": "合肥",
+              "next": 0.8773294938631803,
+              "dwell_time": null
+            },
+            {
+              "name": "东二十埠",
+              "city": "合肥",
+              "next": 1.4511515678217992,
+              "dwell_time": null
+            },
+            {
+              "name": "漕冲",
+              "city": "合肥",
+              "next": 1.131575255829844,
+              "dwell_time": null
+            },
+            {
+              "name": "东七里",
+              "city": "合肥",
+              "next": 1.4386012687558265,
+              "dwell_time": null
+            },
+            {
+              "name": "东五里井",
+              "city": "合肥",
+              "next": 0.9929010350047064,
+              "dwell_time": null
+            },
+            {
+              "name": "三里街",
+              "city": "合肥",
+              "next": 1.3118905090220045,
+              "dwell_time": null
+            },
+            {
+              "name": "大东门",
+              "city": "合肥",
+              "next": 1.0707173577270552,
+              "dwell_time": null
+            },
+            {
+              "name": "四牌楼",
+              "city": "合肥",
+              "next": 1.355586872185957,
+              "dwell_time": null
+            },
+            {
+              "name": "三孝口",
+              "city": "合肥",
+              "next": 0.9827400994869269,
+              "dwell_time": null
+            },
+            {
+              "name": "安农大",
+              "city": "合肥",
+              "next": 0.8493466671949044,
+              "dwell_time": null
+            },
+            {
+              "name": "三里庵",
+              "city": "合肥",
+              "next": 1.5840653063307932,
+              "dwell_time": null
+            },
+            {
+              "name": "五里墩",
+              "city": "合肥",
+              "next": 0.9807690358906528,
+              "dwell_time": null
+            },
+            {
+              "name": "西七里塘",
+              "city": "合肥",
+              "next": 0.7730377453694663,
+              "dwell_time": null
+            },
+            {
+              "name": "十里庙",
+              "city": "合肥",
+              "next": 1.3634503371203417,
+              "dwell_time": null
+            },
+            {
+              "name": "科学大道",
+              "city": "合肥",
+              "next": 0.9964139179689525,
+              "dwell_time": null
+            },
+            {
+              "name": "天柱路",
+              "city": "合肥",
+              "next": 1.202471975784455,
+              "dwell_time": null
+            },
+            {
+              "name": "大蜀山",
+              "city": "合肥",
+              "next": 1.7085679358981134,
+              "dwell_time": null
+            },
+            {
+              "name": "蜀山西",
+              "city": "合肥",
+              "next": 1.5272753118545919,
+              "dwell_time": null
+            },
+            {
+              "name": "振兴路",
+              "city": "合肥",
+              "next": 1.4687522162836981,
+              "dwell_time": null
+            },
+            {
+              "name": "汽车西站",
+              "city": "合肥",
+              "next": 0.9040244944903657,
+              "dwell_time": null
+            },
+            {
+              "name": "桂庄",
+              "city": "合肥",
+              "next": 0.9050109136810514,
+              "dwell_time": null
+            },
+            {
+              "name": "南岗",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "L2_1",
+          "start": "南岗",
+          "end": "撮镇",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "南岗",
+              "city": "合肥",
+              "next": 0.9050109136810514,
+              "dwell_time": null
+            },
+            {
+              "name": "桂庄",
+              "city": "合肥",
+              "next": 0.9040244944903657,
+              "dwell_time": null
+            },
+            {
+              "name": "汽车西站",
+              "city": "合肥",
+              "next": 1.4687522162836981,
+              "dwell_time": null
+            },
+            {
+              "name": "振兴路",
+              "city": "合肥",
+              "next": 1.5272753118545919,
+              "dwell_time": null
+            },
+            {
+              "name": "蜀山西",
+              "city": "合肥",
+              "next": 1.7085679358981134,
+              "dwell_time": null
+            },
+            {
+              "name": "大蜀山",
+              "city": "合肥",
+              "next": 1.202471975784455,
+              "dwell_time": null
+            },
+            {
+              "name": "天柱路",
+              "city": "合肥",
+              "next": 0.9964139179689525,
+              "dwell_time": null
+            },
+            {
+              "name": "科学大道",
+              "city": "合肥",
+              "next": 1.3634503371203417,
+              "dwell_time": null
+            },
+            {
+              "name": "十里庙",
+              "city": "合肥",
+              "next": 0.7730377453694663,
+              "dwell_time": null
+            },
+            {
+              "name": "西七里塘",
+              "city": "合肥",
+              "next": 0.9807690358906528,
+              "dwell_time": null
+            },
+            {
+              "name": "五里墩",
+              "city": "合肥",
+              "next": 1.5840653063307932,
+              "dwell_time": null
+            },
+            {
+              "name": "三里庵",
+              "city": "合肥",
+              "next": 0.8493466671949044,
+              "dwell_time": null
+            },
+            {
+              "name": "安农大",
+              "city": "合肥",
+              "next": 0.9827400994869269,
+              "dwell_time": null
+            },
+            {
+              "name": "三孝口",
+              "city": "合肥",
+              "next": 1.355586872185957,
+              "dwell_time": null
+            },
+            {
+              "name": "四牌楼",
+              "city": "合肥",
+              "next": 1.0707173577270552,
+              "dwell_time": null
+            },
+            {
+              "name": "大东门",
+              "city": "合肥",
+              "next": 1.3118905090220045,
+              "dwell_time": null
+            },
+            {
+              "name": "三里街",
+              "city": "合肥",
+              "next": 0.9929010350047064,
+              "dwell_time": null
+            },
+            {
+              "name": "东五里井",
+              "city": "合肥",
+              "next": 1.4386012687558265,
+              "dwell_time": null
+            },
+            {
+              "name": "东七里",
+              "city": "合肥",
+              "next": 1.131575255829844,
+              "dwell_time": null
+            },
+            {
+              "name": "漕冲",
+              "city": "合肥",
+              "next": 1.4511515678217992,
+              "dwell_time": null
+            },
+            {
+              "name": "东二十埠",
+              "city": "合肥",
+              "next": 0.8773294938631803,
+              "dwell_time": null
+            },
+            {
+              "name": "龙岗",
+              "city": "合肥",
+              "next": 1.2598204125216501,
+              "dwell_time": null
+            },
+            {
+              "name": "王岗",
+              "city": "合肥",
+              "next": 0.7145333221588587,
+              "dwell_time": null
+            },
+            {
+              "name": "三十埠",
+              "city": "合肥",
+              "next": 2.1421493615535603,
+              "dwell_time": null
+            },
+            {
+              "name": "三十埠东",
+              "city": "合肥",
+              "next": 0.870169683097818,
+              "dwell_time": null
+            },
+            {
+              "name": "祥和",
+              "city": "合肥",
+              "next": 1.210682773977345,
+              "dwell_time": null
+            },
+            {
+              "name": "桂王",
+              "city": "合肥",
+              "next": 1.4479625968463252,
+              "dwell_time": null
+            },
+            {
+              "name": "对河",
+              "city": "合肥",
+              "next": 1.4745496496993094,
+              "dwell_time": null
+            },
+            {
+              "name": "店埠河",
+              "city": "合肥",
+              "next": 0.9090527535764374,
+              "dwell_time": null
+            },
+            {
+              "name": "排头",
+              "city": "合肥",
+              "next": 1.456084610489822,
+              "dwell_time": null
+            },
+            {
+              "name": "肥东站",
+              "city": "合肥",
+              "next": 0.9164449831192875,
+              "dwell_time": null
+            },
+            {
+              "name": "和睦湖",
+              "city": "合肥",
+              "next": 1.0504727681242165,
+              "dwell_time": null
+            },
+            {
+              "name": "马桥",
+              "city": "合肥",
+              "next": 1.2226201267917618,
+              "dwell_time": null
+            },
+            {
+              "name": "南沙河",
+              "city": "合肥",
+              "next": 1.1549835456706001,
+              "dwell_time": null
+            },
+            {
+              "name": "撮镇",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "L3": {
+      "name": "3号线",
+      "color": "#00833D",
+      "city": "",
+      "formation": [
+        "6B"
+      ],
+      "maxspeed": 80,
+      "open_year": 2019,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%90%88%E8%82%A5%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A3%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "L3_0",
+          "start": "馆驿",
+          "end": "相城路",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "馆驿",
+              "city": "合肥",
+              "next": 1.4460055804158631,
+              "dwell_time": null
+            },
+            {
+              "name": "省儿童医院新区",
+              "city": "合肥",
+              "next": 1.100150298385812,
+              "dwell_time": null
+            },
+            {
+              "name": "乐平",
+              "city": "合肥",
+              "next": 1.1792023230938171,
+              "dwell_time": null
+            },
+            {
+              "name": "芮祠",
+              "city": "合肥",
+              "next": 1.0690129283570013,
+              "dwell_time": null
+            },
+            {
+              "name": "四十埠",
+              "city": "合肥",
+              "next": 1.1665979826943769,
+              "dwell_time": null
+            },
+            {
+              "name": "李湾",
+              "city": "合肥",
+              "next": 0.8137239236105928,
+              "dwell_time": null
+            },
+            {
+              "name": "凉亭",
+              "city": "合肥",
+              "next": 2.4356346264480973,
+              "dwell_time": null
+            },
+            {
+              "name": "肥西人民医院",
+              "city": "合肥",
+              "next": 1.0995418296763846,
+              "dwell_time": null
+            },
+            {
+              "name": "幸福坝",
+              "city": "合肥",
+              "next": 1.4413087739263055,
+              "dwell_time": null
+            },
+            {
+              "name": "安大磬苑校区",
+              "city": "合肥",
+              "next": 1.3786882661244235,
+              "dwell_time": null
+            },
+            {
+              "name": "工大翡翠湖校区",
+              "city": "合肥",
+              "next": 1.1681312599785043,
+              "dwell_time": null
+            },
+            {
+              "name": "大学城北",
+              "city": "合肥",
+              "next": 0.6907452936063637,
+              "dwell_time": null
+            },
+            {
+              "name": "繁华大道",
+              "city": "合肥",
+              "next": 0.9874123305684366,
+              "dwell_time": null
+            },
+            {
+              "name": "安医大二附院",
+              "city": "合肥",
+              "next": 1.3150724733469827,
+              "dwell_time": null
+            },
+            {
+              "name": "省博物院",
+              "city": "合肥",
+              "next": 0.9133594442597568,
+              "dwell_time": null
+            },
+            {
+              "name": "图书馆",
+              "city": "合肥",
+              "next": 0.9732191988603077,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥大剧院",
+              "city": "合肥",
+              "next": 1.1268718628282257,
+              "dwell_time": null
+            },
+            {
+              "name": "市政务中心",
+              "city": "合肥",
+              "next": 1.1914379504793906,
+              "dwell_time": null
+            },
+            {
+              "name": "洪岗",
+              "city": "合肥",
+              "next": 0.9291990644032159,
+              "dwell_time": null
+            },
+            {
+              "name": "国防科技大学",
+              "city": "合肥",
+              "next": 1.304304594082326,
+              "dwell_time": null
+            },
+            {
+              "name": "西七里塘",
+              "city": "合肥",
+              "next": 0.9521973703426712,
+              "dwell_time": null
+            },
+            {
+              "name": "南新庄",
+              "city": "合肥",
+              "next": 1.1433067975930693,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥西站",
+              "city": "合肥",
+              "next": 1.4505291230980206,
+              "dwell_time": null
+            },
+            {
+              "name": "杏花村",
+              "city": "合肥",
+              "next": 1.2347496756924456,
+              "dwell_time": null
+            },
+            {
+              "name": "四泉桥",
+              "city": "合肥",
+              "next": 1.0765733089032792,
+              "dwell_time": null
+            },
+            {
+              "name": "郑河",
+              "city": "合肥",
+              "next": 0.9884121583062074,
+              "dwell_time": null
+            },
+            {
+              "name": "海棠",
+              "city": "合肥",
+              "next": 0.8308327868496826,
+              "dwell_time": null
+            },
+            {
+              "name": "一里井",
+              "city": "合肥",
+              "next": 0.8605506265987183,
+              "dwell_time": null
+            },
+            {
+              "name": "淮南路",
+              "city": "合肥",
+              "next": 1.0776113152659152,
+              "dwell_time": null
+            },
+            {
+              "name": "鸭林冲",
+              "city": "合肥",
+              "next": 0.8929523685111673,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥火车站",
+              "city": "合肥",
+              "next": 1.463007160331815,
+              "dwell_time": null
+            },
+            {
+              "name": "竹丝滩",
+              "city": "合肥",
+              "next": 1.2200777876253812,
+              "dwell_time": null
+            },
+            {
+              "name": "方庙",
+              "city": "合肥",
+              "next": 0.7940305420075867,
+              "dwell_time": null
+            },
+            {
+              "name": "窦桥湾",
+              "city": "合肥",
+              "next": 0.8692891222479711,
+              "dwell_time": null
+            },
+            {
+              "name": "新海大道",
+              "city": "合肥",
+              "next": 0.8085740161637709,
+              "dwell_time": null
+            },
+            {
+              "name": "勤劳村",
+              "city": "合肥",
+              "next": 1.5076661104392595,
+              "dwell_time": null
+            },
+            {
+              "name": "文浍苑",
+              "city": "合肥",
+              "next": 1.3706440197706935,
+              "dwell_time": null
+            },
+            {
+              "name": "幼儿师范",
+              "city": "合肥",
+              "next": 1.0833497966737007,
+              "dwell_time": null
+            },
+            {
+              "name": "职教城",
+              "city": "合肥",
+              "next": 1.358702570193594,
+              "dwell_time": null
+            },
+            {
+              "name": "职教城东",
+              "city": "合肥",
+              "next": 0.9787561055699983,
+              "dwell_time": null
+            },
+            {
+              "name": "相城路",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "L3_1",
+          "start": "相城路",
+          "end": "馆驿",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "相城路",
+              "city": "合肥",
+              "next": 0.9787561055699983,
+              "dwell_time": null
+            },
+            {
+              "name": "职教城东",
+              "city": "合肥",
+              "next": 1.358702570193594,
+              "dwell_time": null
+            },
+            {
+              "name": "职教城",
+              "city": "合肥",
+              "next": 1.0833497966737007,
+              "dwell_time": null
+            },
+            {
+              "name": "幼儿师范",
+              "city": "合肥",
+              "next": 1.3706440197706935,
+              "dwell_time": null
+            },
+            {
+              "name": "文浍苑",
+              "city": "合肥",
+              "next": 1.5076661104392595,
+              "dwell_time": null
+            },
+            {
+              "name": "勤劳村",
+              "city": "合肥",
+              "next": 0.8085740161637709,
+              "dwell_time": null
+            },
+            {
+              "name": "新海大道",
+              "city": "合肥",
+              "next": 0.8692891222479711,
+              "dwell_time": null
+            },
+            {
+              "name": "窦桥湾",
+              "city": "合肥",
+              "next": 0.7940305420075867,
+              "dwell_time": null
+            },
+            {
+              "name": "方庙",
+              "city": "合肥",
+              "next": 1.2200777876253812,
+              "dwell_time": null
+            },
+            {
+              "name": "竹丝滩",
+              "city": "合肥",
+              "next": 1.463007160331815,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥火车站",
+              "city": "合肥",
+              "next": 0.8929523685111673,
+              "dwell_time": null
+            },
+            {
+              "name": "鸭林冲",
+              "city": "合肥",
+              "next": 1.0776113152659152,
+              "dwell_time": null
+            },
+            {
+              "name": "淮南路",
+              "city": "合肥",
+              "next": 0.8605506265987183,
+              "dwell_time": null
+            },
+            {
+              "name": "一里井",
+              "city": "合肥",
+              "next": 0.8308327868496826,
+              "dwell_time": null
+            },
+            {
+              "name": "海棠",
+              "city": "合肥",
+              "next": 0.9884121583062074,
+              "dwell_time": null
+            },
+            {
+              "name": "郑河",
+              "city": "合肥",
+              "next": 1.0765733089032792,
+              "dwell_time": null
+            },
+            {
+              "name": "四泉桥",
+              "city": "合肥",
+              "next": 1.2347496756924456,
+              "dwell_time": null
+            },
+            {
+              "name": "杏花村",
+              "city": "合肥",
+              "next": 1.4505291230980206,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥西站",
+              "city": "合肥",
+              "next": 1.1433067975930693,
+              "dwell_time": null
+            },
+            {
+              "name": "南新庄",
+              "city": "合肥",
+              "next": 0.9521973703426712,
+              "dwell_time": null
+            },
+            {
+              "name": "西七里塘",
+              "city": "合肥",
+              "next": 1.304304594082326,
+              "dwell_time": null
+            },
+            {
+              "name": "国防科技大学",
+              "city": "合肥",
+              "next": 0.9291990644032159,
+              "dwell_time": null
+            },
+            {
+              "name": "洪岗",
+              "city": "合肥",
+              "next": 1.1914379504793906,
+              "dwell_time": null
+            },
+            {
+              "name": "市政务中心",
+              "city": "合肥",
+              "next": 1.1268718628282257,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥大剧院",
+              "city": "合肥",
+              "next": 0.9732191988603077,
+              "dwell_time": null
+            },
+            {
+              "name": "图书馆",
+              "city": "合肥",
+              "next": 0.9133594442597568,
+              "dwell_time": null
+            },
+            {
+              "name": "省博物院",
+              "city": "合肥",
+              "next": 1.3150724733469827,
+              "dwell_time": null
+            },
+            {
+              "name": "安医大二附院",
+              "city": "合肥",
+              "next": 0.9874123305684366,
+              "dwell_time": null
+            },
+            {
+              "name": "繁华大道",
+              "city": "合肥",
+              "next": 0.6907452936063637,
+              "dwell_time": null
+            },
+            {
+              "name": "大学城北",
+              "city": "合肥",
+              "next": 1.1681312599785043,
+              "dwell_time": null
+            },
+            {
+              "name": "工大翡翠湖校区",
+              "city": "合肥",
+              "next": 1.3786882661244235,
+              "dwell_time": null
+            },
+            {
+              "name": "安大磬苑校区",
+              "city": "合肥",
+              "next": 1.4413087739263055,
+              "dwell_time": null
+            },
+            {
+              "name": "幸福坝",
+              "city": "合肥",
+              "next": 1.0995418296763846,
+              "dwell_time": null
+            },
+            {
+              "name": "肥西人民医院",
+              "city": "合肥",
+              "next": 2.4356346264480973,
+              "dwell_time": null
+            },
+            {
+              "name": "凉亭",
+              "city": "合肥",
+              "next": 0.8137239236105928,
+              "dwell_time": null
+            },
+            {
+              "name": "李湾",
+              "city": "合肥",
+              "next": 1.1665979826943769,
+              "dwell_time": null
+            },
+            {
+              "name": "四十埠",
+              "city": "合肥",
+              "next": 1.0690129283570013,
+              "dwell_time": null
+            },
+            {
+              "name": "芮祠",
+              "city": "合肥",
+              "next": 1.1792023230938171,
+              "dwell_time": null
+            },
+            {
+              "name": "乐平",
+              "city": "合肥",
+              "next": 1.100150298385812,
+              "dwell_time": null
+            },
+            {
+              "name": "省儿童医院新区",
+              "city": "合肥",
+              "next": 1.4460055804158631,
+              "dwell_time": null
+            },
+            {
+              "name": "馆驿",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "L4": {
+      "name": "4号线",
+      "color": "#F79727",
+      "city": "",
+      "formation": [
+        "6B"
+      ],
+      "maxspeed": 80,
+      "open_year": 2021,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%90%88%E8%82%A5%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A4%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "L4_0",
+          "start": "紫云湖",
+          "end": "综保区",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "紫云湖",
+              "city": "合肥",
+              "next": 1.3044786377492759,
+              "dwell_time": null
+            },
+            {
+              "name": "烧脉岗",
+              "city": "合肥",
+              "next": 0.8353981871523976,
+              "dwell_time": null
+            },
+            {
+              "name": "魏庄",
+              "city": "合肥",
+              "next": 2.154777185636513,
+              "dwell_time": null
+            },
+            {
+              "name": "铜锣寨路",
+              "city": "合肥",
+              "next": 2.091871911623029,
+              "dwell_time": null
+            },
+            {
+              "name": "金小郢",
+              "city": "合肥",
+              "next": 2.009798870619264,
+              "dwell_time": null
+            },
+            {
+              "name": "桃花潭",
+              "city": "合肥",
+              "next": 2.419683416529467,
+              "dwell_time": null
+            },
+            {
+              "name": "长安集",
+              "city": "合肥",
+              "next": 1.4032889402186937,
+              "dwell_time": null
+            },
+            {
+              "name": "复兴集",
+              "city": "合肥",
+              "next": 1.2738412627146551,
+              "dwell_time": null
+            },
+            {
+              "name": "北雁湖",
+              "city": "合肥",
+              "next": 1.7755231538634233,
+              "dwell_time": null
+            },
+            {
+              "name": "玉兰大道",
+              "city": "合肥",
+              "next": 1.2237361917408216,
+              "dwell_time": null
+            },
+            {
+              "name": "金桂",
+              "city": "合肥",
+              "next": 1.2034881743795909,
+              "dwell_time": null
+            },
+            {
+              "name": "柳树塘",
+              "city": "合肥",
+              "next": 1.5734082369886557,
+              "dwell_time": null
+            },
+            {
+              "name": "图书馆",
+              "city": "合肥",
+              "next": 1.151725802924821,
+              "dwell_time": null
+            },
+            {
+              "name": "天鹅湖",
+              "city": "合肥",
+              "next": 1.0284396667388347,
+              "dwell_time": null
+            },
+            {
+              "name": "天鹅湖东",
+              "city": "合肥",
+              "next": 1.025432944949429,
+              "dwell_time": null
+            },
+            {
+              "name": "姚公庙",
+              "city": "合肥",
+              "next": 0.7859700525325828,
+              "dwell_time": null
+            },
+            {
+              "name": "南屏路",
+              "city": "合肥",
+              "next": 1.093029959352292,
+              "dwell_time": null
+            },
+            {
+              "name": "薛河",
+              "city": "合肥",
+              "next": 0.8277124111986439,
+              "dwell_time": null
+            },
+            {
+              "name": "竹西",
+              "city": "合肥",
+              "next": 0.6378829330470176,
+              "dwell_time": null
+            },
+            {
+              "name": "淝南",
+              "city": "合肥",
+              "next": 0.8103218731490903,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥南站",
+              "city": "合肥",
+              "next": 1.3213576282080566,
+              "dwell_time": null
+            },
+            {
+              "name": "望湖城南",
+              "city": "合肥",
+              "next": 1.1046985333431216,
+              "dwell_time": null
+            },
+            {
+              "name": "葛大店南",
+              "city": "合肥",
+              "next": 1.322528525371336,
+              "dwell_time": null
+            },
+            {
+              "name": "工经学院",
+              "city": "合肥",
+              "next": 1.1757047010814754,
+              "dwell_time": null
+            },
+            {
+              "name": "尧渡河路",
+              "city": "合肥",
+              "next": 1.339124748008693,
+              "dwell_time": null
+            },
+            {
+              "name": "五里庙",
+              "city": "合肥",
+              "next": 2.1154068661210936,
+              "dwell_time": null
+            },
+            {
+              "name": "唐桥",
+              "city": "合肥",
+              "next": 1.5667985735033685,
+              "dwell_time": null
+            },
+            {
+              "name": "东七里",
+              "city": "合肥",
+              "next": 0.9954791914418512,
+              "dwell_time": null
+            },
+            {
+              "name": "站塘",
+              "city": "合肥",
+              "next": 1.0280976145437897,
+              "dwell_time": null
+            },
+            {
+              "name": "方庙",
+              "city": "合肥",
+              "next": 1.2875369319357597,
+              "dwell_time": null
+            },
+            {
+              "name": "新海公园",
+              "city": "合肥",
+              "next": 1.01026348022661,
+              "dwell_time": null
+            },
+            {
+              "name": "十里村",
+              "city": "合肥",
+              "next": 2.456772554502031,
+              "dwell_time": null
+            },
+            {
+              "name": "陶冲湖东",
+              "city": "合肥",
+              "next": 1.2142388779004654,
+              "dwell_time": null
+            },
+            {
+              "name": "安医一附院北区",
+              "city": "合肥",
+              "next": 1.593403695288927,
+              "dwell_time": null
+            },
+            {
+              "name": "综保区",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "L4_1",
+          "start": "综保区",
+          "end": "紫云湖",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "综保区",
+              "city": "合肥",
+              "next": 1.593403695288927,
+              "dwell_time": null
+            },
+            {
+              "name": "安医一附院北区",
+              "city": "合肥",
+              "next": 1.2142388779004654,
+              "dwell_time": null
+            },
+            {
+              "name": "陶冲湖东",
+              "city": "合肥",
+              "next": 2.456772554502031,
+              "dwell_time": null
+            },
+            {
+              "name": "十里村",
+              "city": "合肥",
+              "next": 1.01026348022661,
+              "dwell_time": null
+            },
+            {
+              "name": "新海公园",
+              "city": "合肥",
+              "next": 1.2875369319357597,
+              "dwell_time": null
+            },
+            {
+              "name": "方庙",
+              "city": "合肥",
+              "next": 1.0280976145437897,
+              "dwell_time": null
+            },
+            {
+              "name": "站塘",
+              "city": "合肥",
+              "next": 0.9954791914418512,
+              "dwell_time": null
+            },
+            {
+              "name": "东七里",
+              "city": "合肥",
+              "next": 1.5667985735033685,
+              "dwell_time": null
+            },
+            {
+              "name": "唐桥",
+              "city": "合肥",
+              "next": 2.1154068661210936,
+              "dwell_time": null
+            },
+            {
+              "name": "五里庙",
+              "city": "合肥",
+              "next": 1.339124748008693,
+              "dwell_time": null
+            },
+            {
+              "name": "尧渡河路",
+              "city": "合肥",
+              "next": 1.1757047010814754,
+              "dwell_time": null
+            },
+            {
+              "name": "工经学院",
+              "city": "合肥",
+              "next": 1.322528525371336,
+              "dwell_time": null
+            },
+            {
+              "name": "葛大店南",
+              "city": "合肥",
+              "next": 1.1046985333431216,
+              "dwell_time": null
+            },
+            {
+              "name": "望湖城南",
+              "city": "合肥",
+              "next": 1.3213576282080566,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥南站",
+              "city": "合肥",
+              "next": 0.8103218731490903,
+              "dwell_time": null
+            },
+            {
+              "name": "淝南",
+              "city": "合肥",
+              "next": 0.6378829330470176,
+              "dwell_time": null
+            },
+            {
+              "name": "竹西",
+              "city": "合肥",
+              "next": 0.8277124111986439,
+              "dwell_time": null
+            },
+            {
+              "name": "薛河",
+              "city": "合肥",
+              "next": 1.093029959352292,
+              "dwell_time": null
+            },
+            {
+              "name": "南屏路",
+              "city": "合肥",
+              "next": 0.7859700525325828,
+              "dwell_time": null
+            },
+            {
+              "name": "姚公庙",
+              "city": "合肥",
+              "next": 1.025432944949429,
+              "dwell_time": null
+            },
+            {
+              "name": "天鹅湖东",
+              "city": "合肥",
+              "next": 1.0284396667388347,
+              "dwell_time": null
+            },
+            {
+              "name": "天鹅湖",
+              "city": "合肥",
+              "next": 1.151725802924821,
+              "dwell_time": null
+            },
+            {
+              "name": "图书馆",
+              "city": "合肥",
+              "next": 1.5734082369886557,
+              "dwell_time": null
+            },
+            {
+              "name": "柳树塘",
+              "city": "合肥",
+              "next": 1.2034881743795909,
+              "dwell_time": null
+            },
+            {
+              "name": "金桂",
+              "city": "合肥",
+              "next": 1.2237361917408216,
+              "dwell_time": null
+            },
+            {
+              "name": "玉兰大道",
+              "city": "合肥",
+              "next": 1.7755231538634233,
+              "dwell_time": null
+            },
+            {
+              "name": "北雁湖",
+              "city": "合肥",
+              "next": 1.2738412627146551,
+              "dwell_time": null
+            },
+            {
+              "name": "复兴集",
+              "city": "合肥",
+              "next": 1.4032889402186937,
+              "dwell_time": null
+            },
+            {
+              "name": "长安集",
+              "city": "合肥",
+              "next": 2.419683416529467,
+              "dwell_time": null
+            },
+            {
+              "name": "桃花潭",
+              "city": "合肥",
+              "next": 2.009798870619264,
+              "dwell_time": null
+            },
+            {
+              "name": "金小郢",
+              "city": "合肥",
+              "next": 2.091871911623029,
+              "dwell_time": null
+            },
+            {
+              "name": "铜锣寨路",
+              "city": "合肥",
+              "next": 2.154777185636513,
+              "dwell_time": null
+            },
+            {
+              "name": "魏庄",
+              "city": "合肥",
+              "next": 0.8353981871523976,
+              "dwell_time": null
+            },
+            {
+              "name": "烧脉岗",
+              "city": "合肥",
+              "next": 1.3044786377492759,
+              "dwell_time": null
+            },
+            {
+              "name": "紫云湖",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "L5": {
+      "name": "5号线",
+      "color": "#C1D62F",
+      "city": "",
+      "formation": [
+        "6B"
+      ],
+      "maxspeed": 80,
+      "open_year": 2020,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%90%88%E8%82%A5%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A5%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "L5_0",
+          "start": "贵阳路",
+          "end": "汲桥路",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "贵阳路",
+              "city": "合肥",
+              "next": 1.2144794787054802,
+              "dwell_time": null
+            },
+            {
+              "name": "滨湖竹园",
+              "city": "合肥",
+              "next": 1.1857747670524228,
+              "dwell_time": null
+            },
+            {
+              "name": "云川公园",
+              "city": "合肥",
+              "next": 0.9966080364174011,
+              "dwell_time": null
+            },
+            {
+              "name": "清水冲",
+              "city": "合肥",
+              "next": 1.488193663331432,
+              "dwell_time": null
+            },
+            {
+              "name": "云谷路",
+              "city": "合肥",
+              "next": 0.8267515210534346,
+              "dwell_time": null
+            },
+            {
+              "name": "华山路",
+              "city": "合肥",
+              "next": 0.8274810825972415,
+              "dwell_time": null
+            },
+            {
+              "name": "沈湾",
+              "city": "合肥",
+              "next": 0.9947153879047633,
+              "dwell_time": null
+            },
+            {
+              "name": "渡江纪念馆",
+              "city": "合肥",
+              "next": 0.9759803647424765,
+              "dwell_time": null
+            },
+            {
+              "name": "方兴湖",
+              "city": "合肥",
+              "next": 1.4653534661512047,
+              "dwell_time": null
+            },
+            {
+              "name": "省行政中心东",
+              "city": "合肥",
+              "next": 1.0473737841601114,
+              "dwell_time": null
+            },
+            {
+              "name": "义城",
+              "city": "合肥",
+              "next": 1.3669212815623275,
+              "dwell_time": null
+            },
+            {
+              "name": "扬子江路",
+              "city": "合肥",
+              "next": 1.4772267568762472,
+              "dwell_time": null
+            },
+            {
+              "name": "黄河路",
+              "city": "合肥",
+              "next": 0.8080610403163007,
+              "dwell_time": null
+            },
+            {
+              "name": "花园大道",
+              "city": "合肥",
+              "next": 1.4148933134174622,
+              "dwell_time": null
+            },
+            {
+              "name": "大连路",
+              "city": "合肥",
+              "next": 1.1859218784880636,
+              "dwell_time": null
+            },
+            {
+              "name": "义兴",
+              "city": "合肥",
+              "next": 0.8923039915043469,
+              "dwell_time": null
+            },
+            {
+              "name": "包河苑",
+              "city": "合肥",
+              "next": 1.3753082519937216,
+              "dwell_time": null
+            },
+            {
+              "name": "盛大",
+              "city": "合肥",
+              "next": 1.394575505090951,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥南站",
+              "city": "合肥",
+              "next": 0.9812066049555015,
+              "dwell_time": null
+            },
+            {
+              "name": "望湖城西",
+              "city": "合肥",
+              "next": 1.4163174213214305,
+              "dwell_time": null
+            },
+            {
+              "name": "凌大塘",
+              "city": "合肥",
+              "next": 0.7619308684946974,
+              "dwell_time": null
+            },
+            {
+              "name": "休宁路",
+              "city": "合肥",
+              "next": 1.158006348983511,
+              "dwell_time": null
+            },
+            {
+              "name": "市第三医院",
+              "city": "合肥",
+              "next": 1.4583480073136752,
+              "dwell_time": null
+            },
+            {
+              "name": "中国科大东区",
+              "city": "合肥",
+              "next": 0.8686360466909988,
+              "dwell_time": null
+            },
+            {
+              "name": "稻香楼",
+              "city": "合肥",
+              "next": 1.302303521352033,
+              "dwell_time": null
+            },
+            {
+              "name": "三孝口",
+              "city": "合肥",
+              "next": 1.1266009250217452,
+              "dwell_time": null
+            },
+            {
+              "name": "杏花公园",
+              "city": "合肥",
+              "next": 0.8611619818559964,
+              "dwell_time": null
+            },
+            {
+              "name": "白水坝",
+              "city": "合肥",
+              "next": 1.013162094417696,
+              "dwell_time": null
+            },
+            {
+              "name": "海棠",
+              "city": "合肥",
+              "next": 1.236256133237861,
+              "dwell_time": null
+            },
+            {
+              "name": "北五里井",
+              "city": "合肥",
+              "next": 1.734975386072864,
+              "dwell_time": null
+            },
+            {
+              "name": "菱湖公园",
+              "city": "合肥",
+              "next": 1.8217048711866226,
+              "dwell_time": null
+            },
+            {
+              "name": "六中菱湖校区",
+              "city": "合肥",
+              "next": 1.334955061108523,
+              "dwell_time": null
+            },
+            {
+              "name": "汲桥路",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "L5_1",
+          "start": "汲桥路",
+          "end": "贵阳路",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "汲桥路",
+              "city": "合肥",
+              "next": 1.334955061108523,
+              "dwell_time": null
+            },
+            {
+              "name": "六中菱湖校区",
+              "city": "合肥",
+              "next": 1.8217048711866226,
+              "dwell_time": null
+            },
+            {
+              "name": "菱湖公园",
+              "city": "合肥",
+              "next": 1.734975386072864,
+              "dwell_time": null
+            },
+            {
+              "name": "北五里井",
+              "city": "合肥",
+              "next": 1.236256133237861,
+              "dwell_time": null
+            },
+            {
+              "name": "海棠",
+              "city": "合肥",
+              "next": 1.013162094417696,
+              "dwell_time": null
+            },
+            {
+              "name": "白水坝",
+              "city": "合肥",
+              "next": 0.8611619818559964,
+              "dwell_time": null
+            },
+            {
+              "name": "杏花公园",
+              "city": "合肥",
+              "next": 1.1266009250217452,
+              "dwell_time": null
+            },
+            {
+              "name": "三孝口",
+              "city": "合肥",
+              "next": 1.302303521352033,
+              "dwell_time": null
+            },
+            {
+              "name": "稻香楼",
+              "city": "合肥",
+              "next": 0.8686360466909988,
+              "dwell_time": null
+            },
+            {
+              "name": "中国科大东区",
+              "city": "合肥",
+              "next": 1.4583480073136752,
+              "dwell_time": null
+            },
+            {
+              "name": "市第三医院",
+              "city": "合肥",
+              "next": 1.158006348983511,
+              "dwell_time": null
+            },
+            {
+              "name": "休宁路",
+              "city": "合肥",
+              "next": 0.7619308684946974,
+              "dwell_time": null
+            },
+            {
+              "name": "凌大塘",
+              "city": "合肥",
+              "next": 1.4163174213214305,
+              "dwell_time": null
+            },
+            {
+              "name": "望湖城西",
+              "city": "合肥",
+              "next": 0.9812066049555015,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥南站",
+              "city": "合肥",
+              "next": 1.394575505090951,
+              "dwell_time": null
+            },
+            {
+              "name": "盛大",
+              "city": "合肥",
+              "next": 1.3753082519937216,
+              "dwell_time": null
+            },
+            {
+              "name": "包河苑",
+              "city": "合肥",
+              "next": 0.8923039915043469,
+              "dwell_time": null
+            },
+            {
+              "name": "义兴",
+              "city": "合肥",
+              "next": 1.1859218784880636,
+              "dwell_time": null
+            },
+            {
+              "name": "大连路",
+              "city": "合肥",
+              "next": 1.4148933134174622,
+              "dwell_time": null
+            },
+            {
+              "name": "花园大道",
+              "city": "合肥",
+              "next": 0.8080610403163007,
+              "dwell_time": null
+            },
+            {
+              "name": "黄河路",
+              "city": "合肥",
+              "next": 1.4772267568762472,
+              "dwell_time": null
+            },
+            {
+              "name": "扬子江路",
+              "city": "合肥",
+              "next": 1.3669212815623275,
+              "dwell_time": null
+            },
+            {
+              "name": "义城",
+              "city": "合肥",
+              "next": 1.0473737841601114,
+              "dwell_time": null
+            },
+            {
+              "name": "省行政中心东",
+              "city": "合肥",
+              "next": 1.4653534661512047,
+              "dwell_time": null
+            },
+            {
+              "name": "方兴湖",
+              "city": "合肥",
+              "next": 0.9759803647424765,
+              "dwell_time": null
+            },
+            {
+              "name": "渡江纪念馆",
+              "city": "合肥",
+              "next": 0.9947153879047633,
+              "dwell_time": null
+            },
+            {
+              "name": "沈湾",
+              "city": "合肥",
+              "next": 0.8274810825972415,
+              "dwell_time": null
+            },
+            {
+              "name": "华山路",
+              "city": "合肥",
+              "next": 0.8267515210534346,
+              "dwell_time": null
+            },
+            {
+              "name": "云谷路",
+              "city": "合肥",
+              "next": 1.488193663331432,
+              "dwell_time": null
+            },
+            {
+              "name": "清水冲",
+              "city": "合肥",
+              "next": 0.9966080364174011,
+              "dwell_time": null
+            },
+            {
+              "name": "云川公园",
+              "city": "合肥",
+              "next": 1.1857747670524228,
+              "dwell_time": null
+            },
+            {
+              "name": "滨湖竹园",
+              "city": "合肥",
+              "next": 1.2144794787054802,
+              "dwell_time": null
+            },
+            {
+              "name": "贵阳路",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "L6": {
+      "name": "6号线",
+      "color": "#BA96C4",
+      "city": "",
+      "formation": [
+        "6B"
+      ],
+      "maxspeed": 80,
+      "open_year": 2025,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%90%88%E8%82%A5%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A6%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "L6_0",
+          "start": "龙塘",
+          "end": "青龙岗",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "龙塘",
+              "city": "合肥",
+              "next": 1.3823804175463879,
+              "dwell_time": null
+            },
+            {
+              "name": "伏龙",
+              "city": "合肥",
+              "next": 1.4775368974572927,
+              "dwell_time": null
+            },
+            {
+              "name": "大兴集",
+              "city": "合肥",
+              "next": 1.0311048859763723,
+              "dwell_time": null
+            },
+            {
+              "name": "钢红",
+              "city": "合肥",
+              "next": 1.166449018460415,
+              "dwell_time": null
+            },
+            {
+              "name": "市博物馆",
+              "city": "合肥",
+              "next": 1.121160046402986,
+              "dwell_time": null
+            },
+            {
+              "name": "市儿童医院",
+              "city": "合肥",
+              "next": 2.079446083819825,
+              "dwell_time": null
+            },
+            {
+              "name": "唐大楼",
+              "city": "合肥",
+              "next": 1.0286443890374934,
+              "dwell_time": null
+            },
+            {
+              "name": "尧渡河路",
+              "city": "合肥",
+              "next": 2.3205421314925427,
+              "dwell_time": null
+            },
+            {
+              "name": "朱岗",
+              "city": "合肥",
+              "next": 1.4851000250667623,
+              "dwell_time": null
+            },
+            {
+              "name": "卫岗",
+              "city": "合肥",
+              "next": 1.5585605489484733,
+              "dwell_time": null
+            },
+            {
+              "name": "市第三医院",
+              "city": "合肥",
+              "next": 1.215553245077465,
+              "dwell_time": null
+            },
+            {
+              "name": "南七里",
+              "city": "合肥",
+              "next": 1.0685083948524006,
+              "dwell_time": null
+            },
+            {
+              "name": "陆军兵种大学",
+              "city": "合肥",
+              "next": 1.410107748563198,
+              "dwell_time": null
+            },
+            {
+              "name": "洪岗",
+              "city": "合肥",
+              "next": 0.6931854772915697,
+              "dwell_time": null
+            },
+            {
+              "name": "松荫桥",
+              "city": "合肥",
+              "next": 2.066832091230466,
+              "dwell_time": null
+            },
+            {
+              "name": "梦城",
+              "city": "合肥",
+              "next": 1.5419141563143703,
+              "dwell_time": null
+            },
+            {
+              "name": "开福寺",
+              "city": "合肥",
+              "next": 2.9351573600541863,
+              "dwell_time": null
+            },
+            {
+              "name": "北雁湖",
+              "city": "合肥",
+              "next": 2.4087302367863015,
+              "dwell_time": null
+            },
+            {
+              "name": "科大先研院",
+              "city": "合肥",
+              "next": 1.783969096480789,
+              "dwell_time": null
+            },
+            {
+              "name": "量子科学中心",
+              "city": "合肥",
+              "next": 1.384824202982262,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥七中",
+              "city": "合肥",
+              "next": 1.1283695160198133,
+              "dwell_time": null
+            },
+            {
+              "name": "青龙岗",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "L6_1",
+          "start": "青龙岗",
+          "end": "龙塘",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "青龙岗",
+              "city": "合肥",
+              "next": 1.1283695160198133,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥七中",
+              "city": "合肥",
+              "next": 1.384824202982262,
+              "dwell_time": null
+            },
+            {
+              "name": "量子科学中心",
+              "city": "合肥",
+              "next": 1.783969096480789,
+              "dwell_time": null
+            },
+            {
+              "name": "科大先研院",
+              "city": "合肥",
+              "next": 2.4087302367863015,
+              "dwell_time": null
+            },
+            {
+              "name": "北雁湖",
+              "city": "合肥",
+              "next": 2.9351573600541863,
+              "dwell_time": null
+            },
+            {
+              "name": "开福寺",
+              "city": "合肥",
+              "next": 1.5419141563143703,
+              "dwell_time": null
+            },
+            {
+              "name": "梦城",
+              "city": "合肥",
+              "next": 2.066832091230466,
+              "dwell_time": null
+            },
+            {
+              "name": "松荫桥",
+              "city": "合肥",
+              "next": 0.6931854772915697,
+              "dwell_time": null
+            },
+            {
+              "name": "洪岗",
+              "city": "合肥",
+              "next": 1.410107748563198,
+              "dwell_time": null
+            },
+            {
+              "name": "陆军兵种大学",
+              "city": "合肥",
+              "next": 1.0685083948524006,
+              "dwell_time": null
+            },
+            {
+              "name": "南七里",
+              "city": "合肥",
+              "next": 1.215553245077465,
+              "dwell_time": null
+            },
+            {
+              "name": "市第三医院",
+              "city": "合肥",
+              "next": 1.5585605489484733,
+              "dwell_time": null
+            },
+            {
+              "name": "卫岗",
+              "city": "合肥",
+              "next": 1.4851000250667623,
+              "dwell_time": null
+            },
+            {
+              "name": "朱岗",
+              "city": "合肥",
+              "next": 2.3205421314925427,
+              "dwell_time": null
+            },
+            {
+              "name": "尧渡河路",
+              "city": "合肥",
+              "next": 1.0286443890374934,
+              "dwell_time": null
+            },
+            {
+              "name": "唐大楼",
+              "city": "合肥",
+              "next": 2.079446083819825,
+              "dwell_time": null
+            },
+            {
+              "name": "市儿童医院",
+              "city": "合肥",
+              "next": 1.121160046402986,
+              "dwell_time": null
+            },
+            {
+              "name": "市博物馆",
+              "city": "合肥",
+              "next": 1.166449018460415,
+              "dwell_time": null
+            },
+            {
+              "name": "钢红",
+              "city": "合肥",
+              "next": 1.0311048859763723,
+              "dwell_time": null
+            },
+            {
+              "name": "大兴集",
+              "city": "合肥",
+              "next": 1.4775368974572927,
+              "dwell_time": null
+            },
+            {
+              "name": "伏龙",
+              "city": "合肥",
+              "next": 1.3823804175463879,
+              "dwell_time": null
+            },
+            {
+              "name": "龙塘",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "L7": {
+      "name": "7号线",
+      "color": "#F1C646",
+      "city": "",
+      "formation": [
+        "6B"
+      ],
+      "maxspeed": 80,
+      "open_year": 2026,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%90%88%E8%82%A5%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A7%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "L7_0",
+          "start": "翡翠公园",
+          "end": "合肥四中",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "翡翠公园",
+              "city": "合肥",
+              "next": 1.309281950759647,
+              "dwell_time": null
+            },
+            {
+              "name": "繁华大道",
+              "city": "合肥",
+              "next": 1.1108720212021954,
+              "dwell_time": null
+            },
+            {
+              "name": "徽园",
+              "city": "合肥",
+              "next": 1.0453366419587973,
+              "dwell_time": null
+            },
+            {
+              "name": "明珠广场",
+              "city": "合肥",
+              "next": 0.855178307676625,
+              "dwell_time": null
+            },
+            {
+              "name": "天都路",
+              "city": "合肥",
+              "next": 1.130296681766191,
+              "dwell_time": null
+            },
+            {
+              "name": "南艳湖北",
+              "city": "合肥",
+              "next": 1.1990170868363554,
+              "dwell_time": null
+            },
+            {
+              "name": "一六八中学",
+              "city": "合肥",
+              "next": 1.1697727209327222,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥大学",
+              "city": "合肥",
+              "next": 1.0126381191443203,
+              "dwell_time": null
+            },
+            {
+              "name": "南艳湖南",
+              "city": "合肥",
+              "next": 1.623908114664638,
+              "dwell_time": null
+            },
+            {
+              "name": "要素大市场",
+              "city": "合肥",
+              "next": 1.1744998731521163,
+              "dwell_time": null
+            },
+            {
+              "name": "滨湖医院",
+              "city": "合肥",
+              "next": 1.0426598660849653,
+              "dwell_time": null
+            },
+            {
+              "name": "紫庐",
+              "city": "合肥",
+              "next": 1.1929387263961737,
+              "dwell_time": null
+            },
+            {
+              "name": "嵩山路",
+              "city": "合肥",
+              "next": 0.9028817132746392,
+              "dwell_time": null
+            },
+            {
+              "name": "省文化和非遗馆",
+              "city": "合肥",
+              "next": 1.3389273588372068,
+              "dwell_time": null
+            },
+            {
+              "name": "义城",
+              "city": "合肥",
+              "next": 0.9214274215718139,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥四中",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "L7_1",
+          "start": "合肥四中",
+          "end": "翡翠公园",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "合肥四中",
+              "city": "合肥",
+              "next": 0.9214274215718139,
+              "dwell_time": null
+            },
+            {
+              "name": "义城",
+              "city": "合肥",
+              "next": 1.3389273588372068,
+              "dwell_time": null
+            },
+            {
+              "name": "省文化和非遗馆",
+              "city": "合肥",
+              "next": 0.9028817132746392,
+              "dwell_time": null
+            },
+            {
+              "name": "嵩山路",
+              "city": "合肥",
+              "next": 1.1929387263961737,
+              "dwell_time": null
+            },
+            {
+              "name": "紫庐",
+              "city": "合肥",
+              "next": 1.0426598660849653,
+              "dwell_time": null
+            },
+            {
+              "name": "滨湖医院",
+              "city": "合肥",
+              "next": 1.1744998731521163,
+              "dwell_time": null
+            },
+            {
+              "name": "要素大市场",
+              "city": "合肥",
+              "next": 1.623908114664638,
+              "dwell_time": null
+            },
+            {
+              "name": "南艳湖南",
+              "city": "合肥",
+              "next": 1.0126381191443203,
+              "dwell_time": null
+            },
+            {
+              "name": "合肥大学",
+              "city": "合肥",
+              "next": 1.1697727209327222,
+              "dwell_time": null
+            },
+            {
+              "name": "一六八中学",
+              "city": "合肥",
+              "next": 1.1990170868363554,
+              "dwell_time": null
+            },
+            {
+              "name": "南艳湖北",
+              "city": "合肥",
+              "next": 1.130296681766191,
+              "dwell_time": null
+            },
+            {
+              "name": "天都路",
+              "city": "合肥",
+              "next": 0.855178307676625,
+              "dwell_time": null
+            },
+            {
+              "name": "明珠广场",
+              "city": "合肥",
+              "next": 1.0453366419587973,
+              "dwell_time": null
+            },
+            {
+              "name": "徽园",
+              "city": "合肥",
+              "next": 1.1108720212021954,
+              "dwell_time": null
+            },
+            {
+              "name": "繁华大道",
+              "city": "合肥",
+              "next": 1.309281950759647,
+              "dwell_time": null
+            },
+            {
+              "name": "翡翠公园",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "L8": {
+      "name": "8号线",
+      "color": "#5CAEE0",
+      "city": "",
+      "formation": [
+        "6B"
+      ],
+      "maxspeed": 100,
+      "open_year": 2024,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%90%88%E8%82%A5%E8%BD%A8%E9%81%93%E4%BA%A4%E9%80%9A1%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "L8_0",
+          "start": "北城高铁站",
+          "end": "一里井",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "北城高铁站",
+              "city": "合肥",
+              "next": 2.250208,
+              "dwell_time": null
+            },
+            {
+              "name": "省立医院北区",
+              "city": "合肥",
+              "next": 1.800311,
+              "dwell_time": null
+            },
+            {
+              "name": "双墩",
+              "city": "合肥",
+              "next": 2.02612,
+              "dwell_time": null
+            },
+            {
+              "name": "北城世纪城",
+              "city": "合肥",
+              "next": 1.824246,
+              "dwell_time": null
+            },
+            {
+              "name": "梅冲湖",
+              "city": "合肥",
+              "next": 2.132954,
+              "dwell_time": null
+            },
+            {
+              "name": "金梅路",
+              "city": "合肥",
+              "next": 2.135655,
+              "dwell_time": null
+            },
+            {
+              "name": "双凤",
+              "city": "合肥",
+              "next": 2.288295,
+              "dwell_time": null
+            },
+            {
+              "name": "荷塘路",
+              "city": "合肥",
+              "next": 1.199886,
+              "dwell_time": null
+            },
+            {
+              "name": "六中菱湖校区",
+              "city": "合肥",
+              "next": 1.324101,
+              "dwell_time": null
+            },
+            {
+              "name": "庐阳经开区",
+              "city": "合肥",
+              "next": 2.168863,
+              "dwell_time": null
+            },
+            {
+              "name": "杏林",
+              "city": "合肥",
+              "next": 1.851523,
+              "dwell_time": null
+            },
+            {
+              "name": "一里井",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "L8_1",
+          "start": "一里井",
+          "end": "北城高铁站",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "一里井",
+              "city": "合肥",
+              "next": 1.851523,
+              "dwell_time": null
+            },
+            {
+              "name": "杏林",
+              "city": "合肥",
+              "next": 2.168863,
+              "dwell_time": null
+            },
+            {
+              "name": "庐阳经开区",
+              "city": "合肥",
+              "next": 1.324101,
+              "dwell_time": null
+            },
+            {
+              "name": "六中菱湖校区",
+              "city": "合肥",
+              "next": 1.199886,
+              "dwell_time": null
+            },
+            {
+              "name": "荷塘路",
+              "city": "合肥",
+              "next": 2.288295,
+              "dwell_time": null
+            },
+            {
+              "name": "双凤",
+              "city": "合肥",
+              "next": 2.135655,
+              "dwell_time": null
+            },
+            {
+              "name": "金梅路",
+              "city": "合肥",
+              "next": 2.132954,
+              "dwell_time": null
+            },
+            {
+              "name": "梅冲湖",
+              "city": "合肥",
+              "next": 1.824246,
+              "dwell_time": null
+            },
+            {
+              "name": "北城世纪城",
+              "city": "合肥",
+              "next": 2.02612,
+              "dwell_time": null
+            },
+            {
+              "name": "双墩",
+              "city": "合肥",
+              "next": 1.800311,
+              "dwell_time": null
+            },
+            {
+              "name": "省立医院北区",
+              "city": "合肥",
+              "next": 2.250208,
+              "dwell_time": null
+            },
+            {
+              "name": "北城高铁站",
+              "city": "合肥",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    }
+  },
+  "transfers": [
+    {
+      "type": "HALL",
+      "station": "大东门",
+      "from": "L1",
+      "to": "L2",
+      "time": 240
+    },
+    {
+      "type": "CHANNEL",
+      "station": "合肥南站",
+      "from": "L1",
+      "to": "L4",
+      "time": 300
+    },
+    {
+      "type": "CHANNEL",
+      "station": "合肥南站",
+      "from": "L4",
+      "to": "L5",
+      "time": 300
+    },
+    {
+      "type": "SAME",
+      "station": "合肥南站",
+      "from": "L1",
+      "to": "L5",
+      "time": 120
+    },
+    {
+      "type": "STAIR",
+      "station": "西七里塘",
+      "from": "L2",
+      "to": "L3",
+      "time": 180
+    },
+    {
+      "type": "HALL",
+      "station": "三孝口",
+      "from": "L2",
+      "to": "L5",
+      "time": 240
+    },
+    {
+      "type": "PENDING",
+      "station": "义城",
+      "from": "L7",
+      "to": "L5",
+      "time": 300
+    },
+    {
+      "type": "STAIR",
+      "station": "朱岗",
+      "from": "L1",
+      "to": "L6",
+      "time": 180
+    },
+    {
+      "type": "STAIR",
+      "station": "卫岗",
+      "from": "L5",
+      "to": "L6",
+      "time": 180
+    },
+    {
+      "type": "HALL",
+      "station": "方庙",
+      "from": "L3",
+      "to": "L4",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "图书馆",
+      "from": "L3",
+      "to": "L4",
+      "time": 240
+    },
+    {
+      "type": "STAIR",
+      "station": "海棠",
+      "from": "L3",
+      "to": "L5",
+      "time": 180
+    },
+    {
+      "type": "STAIR",
+      "station": "一里井",
+      "from": "L3",
+      "to": "L8",
+      "time": 180
+    },
+    {
+      "type": "STAIR",
+      "station": "杏林",
+      "from": "L5",
+      "to": "L8",
+      "time": 180
+    },
+    {
+      "type": "SAME",
+      "station": "北雁湖",
+      "from": "L4",
+      "to": "L6",
+      "time": 120
+    }
+  ],
+  "open_times": [],
+  "headway_rules": [],
+  "crowd_rules": [],
+  "dwell_rules": [],
+  "speed_limits": [],
+  "special_line_rules": [],
+  "operator_companies": [
+    {
+      "Id": "合肥_METRO",
+      "Name": "合肥市轨道交通集团有限公司",
+      "ShortName": "合肥市轨道交通集团",
+      "EnName": "合肥 Metro",
+      "Country": "中国",
+      "City": "合肥",
+      "Founded": null,
+      "Website": null,
+      "Hotline": null,
+      "Description": "合肥城市轨道交通运营单位",
+      "LogoBase64": null,
+      "Lines": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8"
+      ]
+    }
+  ]
+}

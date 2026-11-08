@@ -357,11 +357,6 @@ public final class DataParser {
 
             String city = line.city != null ? line.city : keyCity;
             String baseName = line.name != null ? line.name : lineId;
-            if ("深圳".equals(city) && ("SZ2_8".equals(lineId)
-                    || "2号线".equals(baseName) || "8号线".equals(baseName)
-                    || baseName.contains("2号线/8号线"))) {
-                baseName = "2号线/8号线";
-            }
             String color = line.color != null ? line.color : "#999999";
             if (!color.startsWith("#")) color = "#" + color;
             String displayName = city.equals(keyCity) ? baseName : city + baseName;

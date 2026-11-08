@@ -101,6 +101,15 @@
                     android:text="更新日期："
                     android:textColor="#666"
                     android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cityOperators"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="运营公司：暂无数据"
+                    android:textColor="#666"
+                    android:textSize="14sp" />
             </LinearLayout>
         </LinearLayout>
 

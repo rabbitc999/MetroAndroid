@@ -1,0 +1,6446 @@
+{
+  "key_city": "南京",
+  "author": "匿名",
+  "version": "V1.0",
+  "create_date": "2026-6-30",
+  "update_date": "2026-7-18",
+  "other_cities": [
+    "镇江",
+    "马鞍山"
+  ],
+  "operation_params": {
+    "inner_transfer_time": 300,
+    "out_station_transfer_time": 600,
+    "dwell_time": 45,
+    "entry_time": 120,
+    "avg_board_time": 3
+  },
+  "price": {
+    "currency": "CNY",
+    "pricingType": "distance",
+    "default_fare": 2,
+    "segments": [
+      {
+        "rangeStart": 0,
+        "rangeEnd": 4,
+        "fare": 2
+      },
+      {
+        "rangeStart": 4,
+        "rangeEnd": 9,
+        "fare": 3
+      },
+      {
+        "rangeStart": 9,
+        "rangeEnd": 16,
+        "fare": 4
+      },
+      {
+        "rangeStart": 16,
+        "rangeEnd": 25,
+        "fare": 5
+      },
+      {
+        "rangeStart": 25,
+        "rangeEnd": 36,
+        "fare": 6
+      },
+      {
+        "rangeStart": 36,
+        "rangeEnd": 49,
+        "fare": 7
+      },
+      {
+        "rangeStart": 49,
+        "rangeEnd": 64,
+        "fare": 8
+      },
+      {
+        "rangeStart": 64,
+        "rangeEnd": 81,
+        "fare": 9
+      },
+      {
+        "rangeStart": 81,
+        "rangeEnd": 100,
+        "fare": 10
+      }
+    ],
+    "linearExtension": {
+      "threshold": 100,
+      "baseFare": 10,
+      "ratePerKm": 0.1
+    }
+  },
+  "transfer_types": [
+    {
+      "id": "SAME",
+      "name": "同台换乘",
+      "time": 120,
+      "status": "OPERATING",
+      "security_check": false
+    },
+    {
+      "id": "STAIR",
+      "name": "节点换乘",
+      "time": 180,
+      "status": "OPERATING",
+      "security_check": false
+    },
+    {
+      "id": "HALL",
+      "name": "站厅换乘",
+      "time": 240,
+      "status": "OPERATING",
+      "security_check": false
+    },
+    {
+      "id": "CHANNEL",
+      "name": "通道换乘",
+      "time": 300,
+      "status": "OPERATING",
+      "security_check": false
+    },
+    {
+      "id": "CHANNEL_LONG",
+      "name": "长距离通道换乘",
+      "time": 600,
+      "status": "OPERATING",
+      "security_check": false
+    },
+    {
+      "id": "CHANNEL_LONG_LONG",
+      "name": "长长距离通道换乘",
+      "time": 840,
+      "status": "OPERATING",
+      "security_check": false
+    },
+    {
+      "id": "OUT",
+      "name": "出站换乘",
+      "time": 600,
+      "status": "OUT_STATION",
+      "security_check": false
+    },
+    {
+      "id": "OUT_LONG",
+      "name": "长距离出站换乘",
+      "time": 900,
+      "status": "OUT_STATION",
+      "security_check": false
+    },
+    {
+      "id": "PENDING",
+      "name": "暂缓开通换乘",
+      "time": 300,
+      "status": "PENDING",
+      "security_check": false
+    }
+  ],
+  "stations": [
+    {
+      "name": "安德门",
+      "lon": 118.756801,
+      "lat": 31.992893,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "奥体东",
+      "lon": 118.723936,
+      "lat": 32.006573,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "奥体中心",
+      "lon": 118.712763,
+      "lat": 32.011224,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "八百桥",
+      "lon": 118.92815,
+      "lat": 32.429322,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "八卦洲大桥南",
+      "lon": 118.837339,
+      "lat": 32.147703,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "笆斗山",
+      "lon": 118.824703,
+      "lat": 32.14566,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "百家湖",
+      "lon": 118.815659,
+      "lat": 31.933997,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "百水桥",
+      "lon": 118.909673,
+      "lat": 32.055562,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "板桥",
+      "lon": 118.635455,
+      "lat": 31.909728,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "板桥南",
+      "lon": 118.618472,
+      "lat": 31.892842,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "草场门·南艺·二师",
+      "lon": 118.75031,
+      "lat": 32.062445,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "常府街",
+      "lon": 118.786931,
+      "lat": 32.03542,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "朝天宫",
+      "lon": 118.767389,
+      "lat": 32.034727,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "承天大道",
+      "lon": 118.823718,
+      "lat": 32.003358,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "诚信大道",
+      "lon": 118.824722,
+      "lat": 31.910176,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "崇明",
+      "lon": 119.173292,
+      "lat": 31.944865,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "春江路",
+      "lon": 118.742657,
+      "lat": 31.964187,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "慈湖高新区",
+      "lon": 118.517826,
+      "lat": 31.753432,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "翠屏山",
+      "lon": 118.779523,
+      "lat": 31.944629,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "大厂",
+      "lon": 118.735012,
+      "lat": 32.23108,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "大明路",
+      "lon": 118.794841,
+      "lat": 31.988048,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "大士茶亭",
+      "lon": 118.752128,
+      "lat": 32.033744,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "大校场",
+      "lon": 118.818309,
+      "lat": 32.000148,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "大行宫",
+      "lon": 118.789632,
+      "lat": 32.04307,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "丁家庄",
+      "lon": 118.844867,
+      "lat": 32.113712,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "丁家庄南",
+      "lon": 118.855002,
+      "lat": 32.109748,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "东大成贤学院",
+      "lon": 118.702298,
+      "lat": 32.158429,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "东大九龙湖校区",
+      "lon": 118.825139,
+      "lat": 31.897977,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "东郊小镇",
+      "lon": 118.947725,
+      "lat": 32.05397,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "东流",
+      "lon": 118.959732,
+      "lat": 32.079439,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "东麒路",
+      "lon": 118.883797,
+      "lat": 32.001632,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "东山",
+      "lon": 118.838563,
+      "lat": 31.955603,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "东山香樟园",
+      "lon": 118.834177,
+      "lat": 31.973833,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "方家营",
+      "lon": 118.742213,
+      "lat": 32.106488,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "方洲广场",
+      "lon": 118.845038,
+      "lat": 32.361623,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "凤凰山公园",
+      "lon": 118.840108,
+      "lat": 32.349156,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "夫子庙",
+      "lon": 118.785641,
+      "lat": 32.026261,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "浮桥",
+      "lon": 118.790949,
+      "lat": 32.05144,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "福建路",
+      "lon": 118.754301,
+      "lat": 32.082102,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "岗子村",
+      "lon": 118.810715,
+      "lat": 32.067475,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "高淳",
+      "lon": 118.872224,
+      "lat": 31.343191,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "高家冲",
+      "lon": 118.512135,
+      "lat": 31.911135,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "高庙路",
+      "lon": 118.683316,
+      "lat": 31.97086,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "高桥门",
+      "lon": 118.837078,
+      "lat": 32.007483,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "高新开发区",
+      "lon": 118.714417,
+      "lat": 32.179841,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "葛塘",
+      "lon": 118.748592,
+      "lat": 32.246601,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "共青团路",
+      "lon": 118.768923,
+      "lat": 31.995654,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "姑孰",
+      "lon": 118.519493,
+      "lat": 31.560092,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "古平岗",
+      "lon": 118.752789,
+      "lat": 32.073128,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "古泉",
+      "lon": 119.003937,
+      "lat": 32.051363,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "鼓楼",
+      "lon": 118.778315,
+      "lat": 32.060772,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "光华门",
+      "lon": 118.80968,
+      "lat": 32.025576,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "汉中门",
+      "lon": 118.761797,
+      "lat": 32.044693,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "河定桥",
+      "lon": 118.814709,
+      "lat": 31.953505,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "河海大学·佛城西路",
+      "lon": 118.78636,
+      "lat": 31.91582,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "红山动物园",
+      "lon": 118.796811,
+      "lat": 32.097989,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "宏运大道",
+      "lon": 118.798789,
+      "lat": 31.961089,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "虹桥",
+      "lon": 118.759924,
+      "lat": 32.077176,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "湖北路・二中",
+      "lon": 118.518472,
+      "lat": 31.701916,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "湖南路・安工大",
+      "lon": 118.518503,
+      "lat": 31.683912,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "花神庙",
+      "lon": 118.780539,
+      "lat": 31.979824,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "华阳",
+      "lon": 119.174966,
+      "lat": 31.974441,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "化工园",
+      "lon": 118.780465,
+      "lat": 32.287545,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "黄梅",
+      "lon": 119.110729,
+      "lat": 32.010088,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "汇通路",
+      "lon": 118.926557,
+      "lat": 32.080315,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "机场跑道旧址",
+      "lon": 118.808594,
+      "lat": 31.994328,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "鸡鸣寺",
+      "lon": 118.792625,
+      "lat": 32.059204,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "吉祥庵",
+      "lon": 118.816401,
+      "lat": 32.128858,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "吉印大道",
+      "lon": 118.790197,
+      "lat": 31.888394,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "集庆门大街",
+      "lon": 118.734577,
+      "lat": 32.030263,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "嘉陵江东街",
+      "lon": 118.72269,
+      "lat": 31.984133,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "贾西",
+      "lon": 118.729013,
+      "lat": 31.961243,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "江宁滨江开发区",
+      "lon": 118.585994,
+      "lat": 31.857733,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "江宁镇",
+      "lon": 118.602321,
+      "lat": 31.87952,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "江心洲",
+      "lon": 118.698741,
+      "lat": 32.034349,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "蒋王庙",
+      "lon": 118.825987,
+      "lat": 32.079729,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "金马路",
+      "lon": 118.900969,
+      "lat": 32.073976,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "金牛湖",
+      "lon": 118.959593,
+      "lat": 32.467517,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "经天路",
+      "lon": 118.971503,
+      "lat": 32.118257,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "景明佳园",
+      "lon": 118.773485,
+      "lat": 31.964386,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "静海寺",
+      "lon": 118.732809,
+      "lat": 32.094068,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "九华山",
+      "lon": 118.800632,
+      "lat": 32.059529,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "九龙湖",
+      "lon": 118.815759,
+      "lat": 31.917856,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "九龙湖南",
+      "lon": 118.804783,
+      "lat": 31.895071,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "句容",
+      "lon": 119.164618,
+      "lat": 31.923985,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "聚宝山",
+      "lon": 118.859746,
+      "lat": 32.096161,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "卡子门",
+      "lon": 118.791227,
+      "lat": 31.996935,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "科宁路",
+      "lon": 118.84429,
+      "lat": 31.926359,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "空港新城江宁",
+      "lon": 118.882539,
+      "lat": 31.739894,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "空港新城溧水",
+      "lon": 118.984425,
+      "lat": 31.735764,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "兰花塘",
+      "lon": 118.569852,
+      "lat": 31.960354,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "溧水",
+      "lon": 119.039244,
+      "lat": 31.664002,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "林场",
+      "lon": 118.666249,
+      "lat": 32.165694,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "林山",
+      "lon": 118.526029,
+      "lat": 31.920811,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "灵山",
+      "lon": 118.938867,
+      "lat": 32.080034,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "刘村",
+      "lon": 118.660032,
+      "lat": 31.946447,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "柳洲东路",
+      "lon": 118.741053,
+      "lat": 32.141931,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "六合开发区",
+      "lon": 118.800152,
+      "lat": 32.307246,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "龙池",
+      "lon": 118.815368,
+      "lat": 32.32127,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "龙华路",
+      "lon": 118.630151,
+      "lat": 32.06697,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "龙江",
+      "lon": 118.734366,
+      "lat": 32.060186,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "龙眠大道",
+      "lon": 118.872099,
+      "lat": 31.942097,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "禄口机场",
+      "lon": 118.868705,
+      "lat": 31.732457,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "绿博园",
+      "lon": 118.710293,
+      "lat": 32.026917,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "螺塘路",
+      "lon": 118.696033,
+      "lat": 31.96277,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "马鞍山经开区",
+      "lon": 118.518003,
+      "lat": 31.628202,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "马骡圩",
+      "lon": 118.583478,
+      "lat": 31.975186,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "马群",
+      "lon": 118.889694,
+      "lat": 32.051885,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "迈皋桥",
+      "lon": 118.804388,
+      "lat": 32.104922,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "毛纺厂路",
+      "lon": 118.721466,
+      "lat": 32.136696,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "孟北",
+      "lon": 118.982135,
+      "lat": 32.086617,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "梦都大街",
+      "lon": 118.716738,
+      "lat": 32.017666,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "梦都大街东",
+      "lon": 118.741171,
+      "lat": 32.005924,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "明发广场",
+      "lon": 118.795351,
+      "lat": 31.979294,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "明故宫",
+      "lon": 118.814483,
+      "lat": 32.041314,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "明觉",
+      "lon": 118.89729,
+      "lat": 31.548556,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "秣陵",
+      "lon": 118.829876,
+      "lat": 31.843237,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "秣周东路",
+      "lon": 118.825975,
+      "lat": 31.871045,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "莫愁湖",
+      "lon": 118.753717,
+      "lat": 32.039173,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "牧龙",
+      "lon": 118.573406,
+      "lat": 31.842208,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "苜蓿园",
+      "lon": 118.829972,
+      "lat": 32.042308,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "幕府山",
+      "lon": 118.79347,
+      "lat": 32.116507,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "幕府西路",
+      "lon": 118.765235,
+      "lat": 32.106301,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南大仙林校区",
+      "lon": 118.954477,
+      "lat": 32.11091,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南湖",
+      "lon": 118.749055,
+      "lat": 32.025781,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南京工业大学",
+      "lon": 118.643039,
+      "lat": 32.069114,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南京交院",
+      "lon": 118.899786,
+      "lat": 31.915108,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南京林业大学·新庄",
+      "lon": 118.805164,
+      "lat": 32.07867,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南京南站",
+      "lon": 118.792143,
+      "lat": 31.971556,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南京西站",
+      "lon": 118.736263,
+      "lat": 32.098201,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南京猿人洞",
+      "lon": 119.046937,
+      "lat": 32.063412,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南京站",
+      "lon": 118.791314,
+      "lat": 32.089094,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "南医大·江苏经贸学院",
+      "lon": 118.885208,
+      "lat": 31.935665,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "平良大街",
+      "lon": 118.697453,
+      "lat": 31.979643,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "浦口万汇城",
+      "lon": 118.652776,
+      "lat": 32.063626,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "七桥瓮",
+      "lon": 118.820165,
+      "lat": 32.010913,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "麒麟门",
+      "lon": 118.922524,
+      "lat": 32.055303,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "前庄",
+      "lon": 118.838774,
+      "lat": 31.91251,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "桥林新城",
+      "lon": 118.542468,
+      "lat": 31.931976,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "青春广场",
+      "lon": 118.767639,
+      "lat": 32.070571,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "青莲街",
+      "lon": 118.686719,
+      "lat": 31.964309,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "清凉山",
+      "lon": 118.754742,
+      "lat": 32.050486,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "泉都大街",
+      "lon": 119.046848,
+      "lat": 32.035108,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "群力",
+      "lon": 119.009091,
+      "lat": 31.72303,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "软件大道",
+      "lon": 118.769409,
+      "lat": 31.978755,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "三山街",
+      "lon": 118.776255,
+      "lat": 32.025012,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "上海路",
+      "lon": 118.770809,
+      "lat": 32.044218,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "上秦淮西",
+      "lon": 118.831224,
+      "lat": 31.852112,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "上元门",
+      "lon": 118.764687,
+      "lat": 32.11756,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "神机营",
+      "lon": 118.819581,
+      "lat": 31.991697,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "沈桥",
+      "lon": 118.886871,
+      "lat": 32.4022,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "胜太路",
+      "lon": 118.816069,
+      "lat": 31.945851,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "胜太西路",
+      "lon": 118.802135,
+      "lat": 31.945685,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "石湫",
+      "lon": 118.902406,
+      "lat": 31.642517,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "石门坎",
+      "lon": 118.819607,
+      "lat": 32.019582,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "石碛河",
+      "lon": 118.553072,
+      "lat": 31.940137,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "石杨路",
+      "lon": 118.869169,
+      "lat": 32.007532,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "双龙大道",
+      "lon": 118.811932,
+      "lat": 31.96575,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "双垅",
+      "lon": 118.56251,
+      "lat": 31.950394,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "太白",
+      "lon": 118.510272,
+      "lat": 31.526999,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "太清路",
+      "lon": 118.69809,
+      "lat": 31.968732,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "泰冯路",
+      "lon": 118.713208,
+      "lat": 32.155728,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "泰山新村",
+      "lon": 118.711047,
+      "lat": 32.146478,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "汤山",
+      "lon": 119.062781,
+      "lat": 32.04999,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "天保",
+      "lon": 118.672266,
+      "lat": 31.955219,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "天保街",
+      "lon": 118.674075,
+      "lat": 31.967854,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "天隆寺",
+      "lon": 118.757947,
+      "lat": 31.981148,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "天润城",
+      "lon": 118.728718,
+      "lat": 32.152992,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "天印大道",
+      "lon": 118.858488,
+      "lat": 31.939846,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "天元西路",
+      "lon": 118.803476,
+      "lat": 31.929589,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "铁心桥",
+      "lon": 118.75904,
+      "lat": 31.966485,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "通济门",
+      "lon": 118.799315,
+      "lat": 32.027693,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "铜井",
+      "lon": 118.55023,
+      "lat": 31.809021,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "铜山",
+      "lon": 118.876658,
+      "lat": 31.69825,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "童世界",
+      "lon": 119.158472,
+      "lat": 31.993805,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "团结圩",
+      "lon": 118.882778,
+      "lat": 31.39796,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "万寿",
+      "lon": 118.829768,
+      "lat": 32.122083,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "王家湾",
+      "lon": 118.833085,
+      "lat": 32.087625,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "文德路",
+      "lon": 118.621525,
+      "lat": 32.059525,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "文靖路",
+      "lon": 118.836557,
+      "lat": 31.96041,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "卧龙湖",
+      "lon": 119.037865,
+      "lat": 31.688406,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "无想山",
+      "lon": 119.041423,
+      "lat": 31.61031,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "吴侯街",
+      "lon": 118.688179,
+      "lat": 31.977399,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "五台山",
+      "lon": 118.771288,
+      "lat": 32.052209,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "五塘广场",
+      "lon": 118.772436,
+      "lat": 32.112538,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "武定门",
+      "lon": 118.789221,
+      "lat": 32.015642,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "西安门",
+      "lon": 118.800392,
+      "lat": 32.042116,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "西岗桦墅",
+      "lon": 118.991167,
+      "lat": 32.101056,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "西善桥",
+      "lon": 118.685727,
+      "lat": 31.948913,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "下关",
+      "lon": 118.736482,
+      "lat": 32.088869,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "下马坊",
+      "lon": 118.843353,
+      "lat": 32.039791,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "仙鹤门",
+      "lon": 118.899959,
+      "lat": 32.087168,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "仙林湖",
+      "lon": 118.987418,
+      "lat": 32.127575,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "仙林中心",
+      "lon": 118.925434,
+      "lat": 32.100925,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "仙新路",
+      "lon": 118.890354,
+      "lat": 32.12901,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "翔宇路北",
+      "lon": 118.816504,
+      "lat": 31.793359,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "翔宇路南",
+      "lon": 118.823997,
+      "lat": 31.756811,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "小龙湾",
+      "lon": 118.827696,
+      "lat": 31.93182,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "小市",
+      "lon": 118.7804,
+      "lat": 32.097074,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "小行",
+      "lon": 118.739475,
+      "lat": 31.984589,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "晓庄",
+      "lon": 118.813528,
+      "lat": 32.120266,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "孝陵卫",
+      "lon": 118.852739,
+      "lat": 32.037647,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "卸甲甸",
+      "lon": 118.725402,
+      "lat": 32.21684,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "新城科技园",
+      "lon": 118.73291,
+      "lat": 31.995741,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "新街口",
+      "lon": 118.778693,
+      "lat": 32.043777,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "新模范马路",
+      "lon": 118.778445,
+      "lat": 32.081934,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "新亭路",
+      "lon": 118.840394,
+      "lat": 31.944503,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "信息工程大学",
+      "lon": 118.721763,
+      "lat": 32.204651,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "星火路",
+      "lon": 118.691683,
+      "lat": 32.159403,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "兴隆大街",
+      "lon": 118.730941,
+      "lat": 32.01736,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "幸庄",
+      "lon": 119.040773,
+      "lat": 31.626485,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "雄州",
+      "lon": 118.831703,
+      "lat": 32.336591,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "徐庄·苏宁总部",
+      "lon": 118.883332,
+      "lat": 32.087517,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "玄武门",
+      "lon": 118.778928,
+      "lat": 32.072327,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "学则路",
+      "lon": 118.911847,
+      "lat": 32.093542,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "盐仓桥",
+      "lon": 118.747558,
+      "lat": 32.087611,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "燕子矶",
+      "lon": 118.816755,
+      "lat": 32.138256,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "羊山公园",
+      "lon": 118.935074,
+      "lat": 32.10606,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "阳湖",
+      "lon": 118.518467,
+      "lat": 31.652206,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "杨庄",
+      "lon": 118.857681,
+      "lat": 32.008895,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "尧化门",
+      "lon": 118.882675,
+      "lat": 32.124695,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "尧化新村",
+      "lon": 118.870719,
+      "lat": 32.11748,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "应天大街",
+      "lon": 118.744071,
+      "lat": 32.018538,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "永初路",
+      "lon": 118.707021,
+      "lat": 31.976135,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "油坊桥",
+      "lon": 118.716354,
+      "lat": 31.968389,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "鱼嘴",
+      "lon": 118.664603,
+      "lat": 31.969009,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "雨花经济开发区",
+      "lon": 118.661412,
+      "lat": 31.929657,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "雨花门",
+      "lon": 118.787305,
+      "lat": 32.005763,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "雨花台",
+      "lon": 118.775921,
+      "lat": 31.99483,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "雨润大街",
+      "lon": 118.717371,
+      "lat": 31.985842,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "雨山东路",
+      "lon": 118.518463,
+      "lat": 31.673283,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "雨山路",
+      "lon": 118.611387,
+      "lat": 32.048057,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "元通",
+      "lon": 118.716167,
+      "lat": 31.997534,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "云锦路",
+      "lon": 118.742359,
+      "lat": 32.036946,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "云南路",
+      "lon": 118.769388,
+      "lat": 32.06127,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "张府园",
+      "lon": 118.778615,
+      "lat": 32.032869,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "长江大桥北",
+      "lon": 118.724739,
+      "lat": 32.130863,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "长芦",
+      "lon": 118.771568,
+      "lat": 32.275681,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "柘塘",
+      "lon": 118.932861,
+      "lat": 31.758821,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "正方中路",
+      "lon": 118.800666,
+      "lat": 31.847209,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "中国药科大学",
+      "lon": 118.909023,
+      "lat": 31.899839,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "中华门",
+      "lon": 118.769294,
+      "lat": 32.008949,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "中山湖",
+      "lon": 119.039865,
+      "lat": 31.648729,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "中胜",
+      "lon": 118.727964,
+      "lat": 31.989958,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "钟阜路",
+      "lon": 118.766476,
+      "lat": 32.093234,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "钟灵街",
+      "lon": 118.863908,
+      "lat": 32.041629,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "珠江路",
+      "lon": 118.778948,
+      "lat": 32.052967,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    },
+    {
+      "name": "竹山路",
+      "lon": 118.839461,
+      "lat": 31.934136,
+      "city": "南京",
+      "otherNames": [],
+      "lines": []
+    }
+  ],
+  "lines": {
+    "NJ10": {
+      "name": "10号线",
+      "color": "#F8BC28",
+      "city": "",
+      "formation": [
+        "6A"
+      ],
+      "maxspeed": 80,
+      "open_year": 2014,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%9C%B0%E9%93%8110%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "NJ10_0",
+          "start": "东麒路",
+          "end": "雨山路",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "东麒路",
+              "city": "南京",
+              "next": 1.53,
+              "dwell_time": null
+            },
+            {
+              "name": "石杨路",
+              "city": "南京",
+              "next": 1.09,
+              "dwell_time": null
+            },
+            {
+              "name": "杨庄",
+              "city": "南京",
+              "next": 1.95,
+              "dwell_time": null
+            },
+            {
+              "name": "高桥门",
+              "city": "南京",
+              "next": 1.34,
+              "dwell_time": null
+            },
+            {
+              "name": "承天大道",
+              "city": "南京",
+              "next": 0.62,
+              "dwell_time": null
+            },
+            {
+              "name": "大校场",
+              "city": "南京",
+              "next": 1.12,
+              "dwell_time": null
+            },
+            {
+              "name": "机场跑道旧址",
+              "city": "南京",
+              "next": 1.66,
+              "dwell_time": null
+            },
+            {
+              "name": "卡子门",
+              "city": "南京",
+              "next": 1.46,
+              "dwell_time": null
+            },
+            {
+              "name": "雨花台",
+              "city": "南京",
+              "next": 0.67,
+              "dwell_time": null
+            },
+            {
+              "name": "共青团路",
+              "city": "南京",
+              "next": 1.18,
+              "dwell_time": null
+            },
+            {
+              "name": "安德门",
+              "city": "南京",
+              "next": 1.88,
+              "dwell_time": null
+            },
+            {
+              "name": "小行",
+              "city": "南京",
+              "next": 1.24,
+              "dwell_time": null
+            },
+            {
+              "name": "中胜",
+              "city": "南京",
+              "next": 1.4,
+              "dwell_time": null
+            },
+            {
+              "name": "元通",
+              "city": "南京",
+              "next": 1.56,
+              "dwell_time": null
+            },
+            {
+              "name": "奥体中心",
+              "city": "南京",
+              "next": 0.81,
+              "dwell_time": null
+            },
+            {
+              "name": "梦都大街",
+              "city": "南京",
+              "next": 1.19,
+              "dwell_time": null
+            },
+            {
+              "name": "绿博园",
+              "city": "南京",
+              "next": 1.37,
+              "dwell_time": null
+            },
+            {
+              "name": "江心洲",
+              "city": "南京",
+              "next": 5.42,
+              "dwell_time": null
+            },
+            {
+              "name": "浦口万汇城",
+              "city": "南京",
+              "next": 1.1,
+              "dwell_time": null
+            },
+            {
+              "name": "南京工业大学",
+              "city": "南京",
+              "next": 1.24,
+              "dwell_time": null
+            },
+            {
+              "name": "龙华路",
+              "city": "南京",
+              "next": 1.16,
+              "dwell_time": null
+            },
+            {
+              "name": "文德路",
+              "city": "南京",
+              "next": 1.59,
+              "dwell_time": null
+            },
+            {
+              "name": "雨山路",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "NJ10_1",
+          "start": "雨山路",
+          "end": "东麒路",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "雨山路",
+              "city": "南京",
+              "next": 1.59,
+              "dwell_time": null
+            },
+            {
+              "name": "文德路",
+              "city": "南京",
+              "next": 1.16,
+              "dwell_time": null
+            },
+            {
+              "name": "龙华路",
+              "city": "南京",
+              "next": 1.24,
+              "dwell_time": null
+            },
+            {
+              "name": "南京工业大学",
+              "city": "南京",
+              "next": 1.1,
+              "dwell_time": null
+            },
+            {
+              "name": "浦口万汇城",
+              "city": "南京",
+              "next": 5.42,
+              "dwell_time": null
+            },
+            {
+              "name": "江心洲",
+              "city": "南京",
+              "next": 1.37,
+              "dwell_time": null
+            },
+            {
+              "name": "绿博园",
+              "city": "南京",
+              "next": 1.19,
+              "dwell_time": null
+            },
+            {
+              "name": "梦都大街",
+              "city": "南京",
+              "next": 0.81,
+              "dwell_time": null
+            },
+            {
+              "name": "奥体中心",
+              "city": "南京",
+              "next": 1.56,
+              "dwell_time": null
+            },
+            {
+              "name": "元通",
+              "city": "南京",
+              "next": 1.4,
+              "dwell_time": null
+            },
+            {
+              "name": "中胜",
+              "city": "南京",
+              "next": 1.24,
+              "dwell_time": null
+            },
+            {
+              "name": "小行",
+              "city": "南京",
+              "next": 1.88,
+              "dwell_time": null
+            },
+            {
+              "name": "安德门",
+              "city": "南京",
+              "next": 1.18,
+              "dwell_time": null
+            },
+            {
+              "name": "共青团路",
+              "city": "南京",
+              "next": 0.67,
+              "dwell_time": null
+            },
+            {
+              "name": "雨花台",
+              "city": "南京",
+              "next": 1.46,
+              "dwell_time": null
+            },
+            {
+              "name": "卡子门",
+              "city": "南京",
+              "next": 1.66,
+              "dwell_time": null
+            },
+            {
+              "name": "机场跑道旧址",
+              "city": "南京",
+              "next": 1.12,
+              "dwell_time": null
+            },
+            {
+              "name": "大校场",
+              "city": "南京",
+              "next": 0.62,
+              "dwell_time": null
+            },
+            {
+              "name": "承天大道",
+              "city": "南京",
+              "next": 1.34,
+              "dwell_time": null
+            },
+            {
+              "name": "高桥门",
+              "city": "南京",
+              "next": 1.95,
+              "dwell_time": null
+            },
+            {
+              "name": "杨庄",
+              "city": "南京",
+              "next": 1.09,
+              "dwell_time": null
+            },
+            {
+              "name": "石杨路",
+              "city": "南京",
+              "next": 1.53,
+              "dwell_time": null
+            },
+            {
+              "name": "东麒路",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "NJ2": {
+      "name": "2号线",
+      "color": "#C8003F",
+      "city": "",
+      "formation": [
+        "6A"
+      ],
+      "maxspeed": 80,
+      "open_year": 2010,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%9C%B0%E9%93%812%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "NJ2_0",
+          "start": "经天路",
+          "end": "鱼嘴",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "经天路",
+              "city": "南京",
+              "next": 1.8,
+              "dwell_time": null
+            },
+            {
+              "name": "南大仙林校区",
+              "city": "南京",
+              "next": 1.91,
+              "dwell_time": null
+            },
+            {
+              "name": "羊山公园",
+              "city": "南京",
+              "next": 1.07,
+              "dwell_time": null
+            },
+            {
+              "name": "仙林中心",
+              "city": "南京",
+              "next": 1.52,
+              "dwell_time": null
+            },
+            {
+              "name": "学则路",
+              "city": "南京",
+              "next": 1.33,
+              "dwell_time": null
+            },
+            {
+              "name": "仙鹤门",
+              "city": "南京",
+              "next": 1.49,
+              "dwell_time": null
+            },
+            {
+              "name": "金马路",
+              "city": "南京",
+              "next": 2.66,
+              "dwell_time": null
+            },
+            {
+              "name": "马群",
+              "city": "南京",
+              "next": 2.69,
+              "dwell_time": null
+            },
+            {
+              "name": "钟灵街",
+              "city": "南京",
+              "next": 1.13,
+              "dwell_time": null
+            },
+            {
+              "name": "孝陵卫",
+              "city": "南京",
+              "next": 0.91,
+              "dwell_time": null
+            },
+            {
+              "name": "下马坊",
+              "city": "南京",
+              "next": 1.29,
+              "dwell_time": null
+            },
+            {
+              "name": "苜蓿园",
+              "city": "南京",
+              "next": 1.46,
+              "dwell_time": null
+            },
+            {
+              "name": "明故宫",
+              "city": "南京",
+              "next": 1.33,
+              "dwell_time": null
+            },
+            {
+              "name": "西安门",
+              "city": "南京",
+              "next": 1.02,
+              "dwell_time": null
+            },
+            {
+              "name": "大行宫",
+              "city": "南京",
+              "next": 1.03,
+              "dwell_time": null
+            },
+            {
+              "name": "新街口",
+              "city": "南京",
+              "next": 0.74,
+              "dwell_time": null
+            },
+            {
+              "name": "上海路",
+              "city": "南京",
+              "next": 0.85,
+              "dwell_time": null
+            },
+            {
+              "name": "汉中门",
+              "city": "南京",
+              "next": 1,
+              "dwell_time": null
+            },
+            {
+              "name": "莫愁湖",
+              "city": "南京",
+              "next": 1.08,
+              "dwell_time": null
+            },
+            {
+              "name": "云锦路",
+              "city": "南京",
+              "next": 1.08,
+              "dwell_time": null
+            },
+            {
+              "name": "集庆门大街",
+              "city": "南京",
+              "next": 1.47,
+              "dwell_time": null
+            },
+            {
+              "name": "兴隆大街",
+              "city": "南京",
+              "next": 1.37,
+              "dwell_time": null
+            },
+            {
+              "name": "奥体东",
+              "city": "南京",
+              "next": 1.21,
+              "dwell_time": null
+            },
+            {
+              "name": "元通",
+              "city": "南京",
+              "next": 1.34,
+              "dwell_time": null
+            },
+            {
+              "name": "雨润大街",
+              "city": "南京",
+              "next": 1.93,
+              "dwell_time": null
+            },
+            {
+              "name": "油坊桥",
+              "city": "南京",
+              "next": 2.01,
+              "dwell_time": null
+            },
+            {
+              "name": "螺塘路",
+              "city": "南京",
+              "next": 0.89,
+              "dwell_time": null
+            },
+            {
+              "name": "青莲街",
+              "city": "南京",
+              "next": 1.26,
+              "dwell_time": null
+            },
+            {
+              "name": "天保街",
+              "city": "南京",
+              "next": 0.9,
+              "dwell_time": null
+            },
+            {
+              "name": "鱼嘴",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "NJ2_1",
+          "start": "鱼嘴",
+          "end": "经天路",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "鱼嘴",
+              "city": "南京",
+              "next": 0.9,
+              "dwell_time": null
+            },
+            {
+              "name": "天保街",
+              "city": "南京",
+              "next": 1.26,
+              "dwell_time": null
+            },
+            {
+              "name": "青莲街",
+              "city": "南京",
+              "next": 0.89,
+              "dwell_time": null
+            },
+            {
+              "name": "螺塘路",
+              "city": "南京",
+              "next": 2.01,
+              "dwell_time": null
+            },
+            {
+              "name": "油坊桥",
+              "city": "南京",
+              "next": 1.93,
+              "dwell_time": null
+            },
+            {
+              "name": "雨润大街",
+              "city": "南京",
+              "next": 1.34,
+              "dwell_time": null
+            },
+            {
+              "name": "元通",
+              "city": "南京",
+              "next": 1.21,
+              "dwell_time": null
+            },
+            {
+              "name": "奥体东",
+              "city": "南京",
+              "next": 1.37,
+              "dwell_time": null
+            },
+            {
+              "name": "兴隆大街",
+              "city": "南京",
+              "next": 1.47,
+              "dwell_time": null
+            },
+            {
+              "name": "集庆门大街",
+              "city": "南京",
+              "next": 1.08,
+              "dwell_time": null
+            },
+            {
+              "name": "云锦路",
+              "city": "南京",
+              "next": 1.08,
+              "dwell_time": null
+            },
+            {
+              "name": "莫愁湖",
+              "city": "南京",
+              "next": 1,
+              "dwell_time": null
+            },
+            {
+              "name": "汉中门",
+              "city": "南京",
+              "next": 0.85,
+              "dwell_time": null
+            },
+            {
+              "name": "上海路",
+              "city": "南京",
+              "next": 0.74,
+              "dwell_time": null
+            },
+            {
+              "name": "新街口",
+              "city": "南京",
+              "next": 1.03,
+              "dwell_time": null
+            },
+            {
+              "name": "大行宫",
+              "city": "南京",
+              "next": 1.02,
+              "dwell_time": null
+            },
+            {
+              "name": "西安门",
+              "city": "南京",
+              "next": 1.33,
+              "dwell_time": null
+            },
+            {
+              "name": "明故宫",
+              "city": "南京",
+              "next": 1.46,
+              "dwell_time": null
+            },
+            {
+              "name": "苜蓿园",
+              "city": "南京",
+              "next": 1.29,
+              "dwell_time": null
+            },
+            {
+              "name": "下马坊",
+              "city": "南京",
+              "next": 0.91,
+              "dwell_time": null
+            },
+            {
+              "name": "孝陵卫",
+              "city": "南京",
+              "next": 1.13,
+              "dwell_time": null
+            },
+            {
+              "name": "钟灵街",
+              "city": "南京",
+              "next": 2.69,
+              "dwell_time": null
+            },
+            {
+              "name": "马群",
+              "city": "南京",
+              "next": 2.66,
+              "dwell_time": null
+            },
+            {
+              "name": "金马路",
+              "city": "南京",
+              "next": 1.49,
+              "dwell_time": null
+            },
+            {
+              "name": "仙鹤门",
+              "city": "南京",
+              "next": 1.33,
+              "dwell_time": null
+            },
+            {
+              "name": "学则路",
+              "city": "南京",
+              "next": 1.52,
+              "dwell_time": null
+            },
+            {
+              "name": "仙林中心",
+              "city": "南京",
+              "next": 1.07,
+              "dwell_time": null
+            },
+            {
+              "name": "羊山公园",
+              "city": "南京",
+              "next": 1.91,
+              "dwell_time": null
+            },
+            {
+              "name": "南大仙林校区",
+              "city": "南京",
+              "next": 1.8,
+              "dwell_time": null
+            },
+            {
+              "name": "经天路",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "NJ1": {
+      "name": "1号线",
+      "color": "#00A2E1",
+      "city": "",
+      "formation": [
+        "6A"
+      ],
+      "maxspeed": 80,
+      "open_year": 2005,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%9C%B0%E9%93%811%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "NJ1_0",
+          "start": "八卦洲大桥南",
+          "end": "中国药科大学",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "八卦洲大桥南",
+              "city": "南京",
+              "next": 1.21,
+              "dwell_time": null
+            },
+            {
+              "name": "笆斗山",
+              "city": "南京",
+              "next": 1.11,
+              "dwell_time": null
+            },
+            {
+              "name": "燕子矶",
+              "city": "南京",
+              "next": 1.05,
+              "dwell_time": null
+            },
+            {
+              "name": "吉祥庵",
+              "city": "南京",
+              "next": 0.99,
+              "dwell_time": null
+            },
+            {
+              "name": "晓庄",
+              "city": "南京",
+              "next": 1.91,
+              "dwell_time": null
+            },
+            {
+              "name": "迈皋桥",
+              "city": "南京",
+              "next": 1.05,
+              "dwell_time": null
+            },
+            {
+              "name": "红山动物园",
+              "city": "南京",
+              "next": 1.12,
+              "dwell_time": null
+            },
+            {
+              "name": "南京站",
+              "city": "南京",
+              "next": 1.45,
+              "dwell_time": null
+            },
+            {
+              "name": "新模范马路",
+              "city": "南京",
+              "next": 1.07,
+              "dwell_time": null
+            },
+            {
+              "name": "玄武门",
+              "city": "南京",
+              "next": 1.29,
+              "dwell_time": null
+            },
+            {
+              "name": "鼓楼",
+              "city": "南京",
+              "next": 0.87,
+              "dwell_time": null
+            },
+            {
+              "name": "珠江路",
+              "city": "南京",
+              "next": 1.04,
+              "dwell_time": null
+            },
+            {
+              "name": "新街口",
+              "city": "南京",
+              "next": 1.19,
+              "dwell_time": null
+            },
+            {
+              "name": "张府园",
+              "city": "南京",
+              "next": 0.9,
+              "dwell_time": null
+            },
+            {
+              "name": "三山街",
+              "city": "南京",
+              "next": 1.9,
+              "dwell_time": null
+            },
+            {
+              "name": "中华门",
+              "city": "南京",
+              "next": 2.08,
+              "dwell_time": null
+            },
+            {
+              "name": "安德门",
+              "city": "南京",
+              "next": 1.41,
+              "dwell_time": null
+            },
+            {
+              "name": "天隆寺",
+              "city": "南京",
+              "next": 1.11,
+              "dwell_time": null
+            },
+            {
+              "name": "软件大道",
+              "city": "南京",
+              "next": 1.06,
+              "dwell_time": null
+            },
+            {
+              "name": "花神庙",
+              "city": "南京",
+              "next": 1.43,
+              "dwell_time": null
+            },
+            {
+              "name": "南京南站",
+              "city": "南京",
+              "next": 1.98,
+              "dwell_time": null
+            },
+            {
+              "name": "双龙大道",
+              "city": "南京",
+              "next": 1.39,
+              "dwell_time": null
+            },
+            {
+              "name": "河定桥",
+              "city": "南京",
+              "next": 0.86,
+              "dwell_time": null
+            },
+            {
+              "name": "胜太路",
+              "city": "南京",
+              "next": 1.32,
+              "dwell_time": null
+            },
+            {
+              "name": "百家湖",
+              "city": "南京",
+              "next": 1.16,
+              "dwell_time": null
+            },
+            {
+              "name": "小龙湾",
+              "city": "南京",
+              "next": 1.14,
+              "dwell_time": null
+            },
+            {
+              "name": "竹山路",
+              "city": "南京",
+              "next": 1.9,
+              "dwell_time": null
+            },
+            {
+              "name": "天印大道",
+              "city": "南京",
+              "next": 1.31,
+              "dwell_time": null
+            },
+            {
+              "name": "龙眠大道",
+              "city": "南京",
+              "next": 1.43,
+              "dwell_time": null
+            },
+            {
+              "name": "南医大·江苏经贸学院",
+              "city": "南京",
+              "next": 2.67,
+              "dwell_time": null
+            },
+            {
+              "name": "南京交院",
+              "city": "南京",
+              "next": 1.91,
+              "dwell_time": null
+            },
+            {
+              "name": "中国药科大学",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": [
+            {
+              "name": "1号线原线",
+              "stations": [
+                "迈皋桥",
+                "红山动物园",
+                "南京站",
+                "新模范马路",
+                "玄武门",
+                "鼓楼",
+                "珠江路",
+                "新街口",
+                "张府园",
+                "三山街",
+                "中华门",
+                "安德门",
+                "天隆寺",
+                "软件大道",
+                "花神庙",
+                "南京南站",
+                "双龙大道",
+                "河定桥",
+                "胜太路",
+                "百家湖",
+                "小龙湾",
+                "竹山路",
+                "天印大道",
+                "龙眠大道",
+                "南医大·江苏经贸学院",
+                "南京交院",
+                "中国药科大学"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "NJ1_1",
+          "start": "中国药科大学",
+          "end": "八卦洲大桥南",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "中国药科大学",
+              "city": "南京",
+              "next": 1.91,
+              "dwell_time": null
+            },
+            {
+              "name": "南京交院",
+              "city": "南京",
+              "next": 2.67,
+              "dwell_time": null
+            },
+            {
+              "name": "南医大·江苏经贸学院",
+              "city": "南京",
+              "next": 1.43,
+              "dwell_time": null
+            },
+            {
+              "name": "龙眠大道",
+              "city": "南京",
+              "next": 1.31,
+              "dwell_time": null
+            },
+            {
+              "name": "天印大道",
+              "city": "南京",
+              "next": 1.9,
+              "dwell_time": null
+            },
+            {
+              "name": "竹山路",
+              "city": "南京",
+              "next": 1.14,
+              "dwell_time": null
+            },
+            {
+              "name": "小龙湾",
+              "city": "南京",
+              "next": 1.16,
+              "dwell_time": null
+            },
+            {
+              "name": "百家湖",
+              "city": "南京",
+              "next": 1.32,
+              "dwell_time": null
+            },
+            {
+              "name": "胜太路",
+              "city": "南京",
+              "next": 0.86,
+              "dwell_time": null
+            },
+            {
+              "name": "河定桥",
+              "city": "南京",
+              "next": 1.39,
+              "dwell_time": null
+            },
+            {
+              "name": "双龙大道",
+              "city": "南京",
+              "next": 1.98,
+              "dwell_time": null
+            },
+            {
+              "name": "南京南站",
+              "city": "南京",
+              "next": 1.43,
+              "dwell_time": null
+            },
+            {
+              "name": "花神庙",
+              "city": "南京",
+              "next": 1.06,
+              "dwell_time": null
+            },
+            {
+              "name": "软件大道",
+              "city": "南京",
+              "next": 1.11,
+              "dwell_time": null
+            },
+            {
+              "name": "天隆寺",
+              "city": "南京",
+              "next": 1.41,
+              "dwell_time": null
+            },
+            {
+              "name": "安德门",
+              "city": "南京",
+              "next": 2.08,
+              "dwell_time": null
+            },
+            {
+              "name": "中华门",
+              "city": "南京",
+              "next": 1.9,
+              "dwell_time": null
+            },
+            {
+              "name": "三山街",
+              "city": "南京",
+              "next": 0.9,
+              "dwell_time": null
+            },
+            {
+              "name": "张府园",
+              "city": "南京",
+              "next": 1.19,
+              "dwell_time": null
+            },
+            {
+              "name": "新街口",
+              "city": "南京",
+              "next": 1.04,
+              "dwell_time": null
+            },
+            {
+              "name": "珠江路",
+              "city": "南京",
+              "next": 0.87,
+              "dwell_time": null
+            },
+            {
+              "name": "鼓楼",
+              "city": "南京",
+              "next": 1.29,
+              "dwell_time": null
+            },
+            {
+              "name": "玄武门",
+              "city": "南京",
+              "next": 1.07,
+              "dwell_time": null
+            },
+            {
+              "name": "新模范马路",
+              "city": "南京",
+              "next": 1.45,
+              "dwell_time": null
+            },
+            {
+              "name": "南京站",
+              "city": "南京",
+              "next": 1.12,
+              "dwell_time": null
+            },
+            {
+              "name": "红山动物园",
+              "city": "南京",
+              "next": 1.05,
+              "dwell_time": null
+            },
+            {
+              "name": "迈皋桥",
+              "city": "南京",
+              "next": 1.91,
+              "dwell_time": null
+            },
+            {
+              "name": "晓庄",
+              "city": "南京",
+              "next": 0.99,
+              "dwell_time": null
+            },
+            {
+              "name": "吉祥庵",
+              "city": "南京",
+              "next": 1.05,
+              "dwell_time": null
+            },
+            {
+              "name": "燕子矶",
+              "city": "南京",
+              "next": 1.11,
+              "dwell_time": null
+            },
+            {
+              "name": "笆斗山",
+              "city": "南京",
+              "next": 1.21,
+              "dwell_time": null
+            },
+            {
+              "name": "八卦洲大桥南",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "NJ3": {
+      "name": "3号线",
+      "color": "#009551",
+      "city": "",
+      "formation": [
+        "6A"
+      ],
+      "maxspeed": 80,
+      "open_year": 2015,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%9C%B0%E9%93%813%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "NJ3_0",
+          "start": "林场",
+          "end": "秣陵",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "林场",
+              "city": "南京",
+              "next": 2.49,
+              "dwell_time": null
+            },
+            {
+              "name": "星火路",
+              "city": "南京",
+              "next": 1.01,
+              "dwell_time": null
+            },
+            {
+              "name": "东大成贤学院",
+              "city": "南京",
+              "next": 1.07,
+              "dwell_time": null
+            },
+            {
+              "name": "泰冯路",
+              "city": "南京",
+              "next": 1.49,
+              "dwell_time": null
+            },
+            {
+              "name": "天润城",
+              "city": "南京",
+              "next": 1.69,
+              "dwell_time": null
+            },
+            {
+              "name": "柳洲东路",
+              "city": "南京",
+              "next": 3.51,
+              "dwell_time": null
+            },
+            {
+              "name": "上元门",
+              "city": "南京",
+              "next": 0.92,
+              "dwell_time": null
+            },
+            {
+              "name": "五塘广场",
+              "city": "南京",
+              "next": 1.88,
+              "dwell_time": null
+            },
+            {
+              "name": "小市",
+              "city": "南京",
+              "next": 1.22,
+              "dwell_time": null
+            },
+            {
+              "name": "南京站",
+              "city": "南京",
+              "next": 1.91,
+              "dwell_time": null
+            },
+            {
+              "name": "南京林业大学·新庄",
+              "city": "南京",
+              "next": 2.47,
+              "dwell_time": null
+            },
+            {
+              "name": "鸡鸣寺",
+              "city": "南京",
+              "next": 0.88,
+              "dwell_time": null
+            },
+            {
+              "name": "浮桥",
+              "city": "南京",
+              "next": 0.83,
+              "dwell_time": null
+            },
+            {
+              "name": "大行宫",
+              "city": "南京",
+              "next": 0.99,
+              "dwell_time": null
+            },
+            {
+              "name": "常府街",
+              "city": "南京",
+              "next": 1.03,
+              "dwell_time": null
+            },
+            {
+              "name": "夫子庙",
+              "city": "南京",
+              "next": 1.23,
+              "dwell_time": null
+            },
+            {
+              "name": "武定门",
+              "city": "南京",
+              "next": 1.11,
+              "dwell_time": null
+            },
+            {
+              "name": "雨花门",
+              "city": "南京",
+              "next": 0.97,
+              "dwell_time": null
+            },
+            {
+              "name": "卡子门",
+              "city": "南京",
+              "next": 1.13,
+              "dwell_time": null
+            },
+            {
+              "name": "大明路",
+              "city": "南京",
+              "next": 0.97,
+              "dwell_time": null
+            },
+            {
+              "name": "明发广场",
+              "city": "南京",
+              "next": 0.89,
+              "dwell_time": null
+            },
+            {
+              "name": "南京南站",
+              "city": "南京",
+              "next": 1.32,
+              "dwell_time": null
+            },
+            {
+              "name": "宏运大道",
+              "city": "南京",
+              "next": 1.74,
+              "dwell_time": null
+            },
+            {
+              "name": "胜太西路",
+              "city": "南京",
+              "next": 1.79,
+              "dwell_time": null
+            },
+            {
+              "name": "天元西路",
+              "city": "南京",
+              "next": 1.75,
+              "dwell_time": null
+            },
+            {
+              "name": "九龙湖",
+              "city": "南京",
+              "next": 1.2,
+              "dwell_time": null
+            },
+            {
+              "name": "诚信大道",
+              "city": "南京",
+              "next": 1.36,
+              "dwell_time": null
+            },
+            {
+              "name": "东大九龙湖校区",
+              "city": "南京",
+              "next": 3,
+              "dwell_time": null
+            },
+            {
+              "name": "秣周东路",
+              "city": "南京",
+              "next": 2.16,
+              "dwell_time": null
+            },
+            {
+              "name": "上秦淮西",
+              "city": "南京",
+              "next": 1,
+              "dwell_time": null
+            },
+            {
+              "name": "秣陵",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "NJ3_1",
+          "start": "秣陵",
+          "end": "林场",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "秣陵",
+              "city": "南京",
+              "next": 1,
+              "dwell_time": null
+            },
+            {
+              "name": "上秦淮西",
+              "city": "南京",
+              "next": 2.16,
+              "dwell_time": null
+            },
+            {
+              "name": "秣周东路",
+              "city": "南京",
+              "next": 3,
+              "dwell_time": null
+            },
+            {
+              "name": "东大九龙湖校区",
+              "city": "南京",
+              "next": 1.36,
+              "dwell_time": null
+            },
+            {
+              "name": "诚信大道",
+              "city": "南京",
+              "next": 1.2,
+              "dwell_time": null
+            },
+            {
+              "name": "九龙湖",
+              "city": "南京",
+              "next": 1.75,
+              "dwell_time": null
+            },
+            {
+              "name": "天元西路",
+              "city": "南京",
+              "next": 1.79,
+              "dwell_time": null
+            },
+            {
+              "name": "胜太西路",
+              "city": "南京",
+              "next": 1.74,
+              "dwell_time": null
+            },
+            {
+              "name": "宏运大道",
+              "city": "南京",
+              "next": 1.32,
+              "dwell_time": null
+            },
+            {
+              "name": "南京南站",
+              "city": "南京",
+              "next": 0.89,
+              "dwell_time": null
+            },
+            {
+              "name": "明发广场",
+              "city": "南京",
+              "next": 0.97,
+              "dwell_time": null
+            },
+            {
+              "name": "大明路",
+              "city": "南京",
+              "next": 1.13,
+              "dwell_time": null
+            },
+            {
+              "name": "卡子门",
+              "city": "南京",
+              "next": 0.97,
+              "dwell_time": null
+            },
+            {
+              "name": "雨花门",
+              "city": "南京",
+              "next": 1.11,
+              "dwell_time": null
+            },
+            {
+              "name": "武定门",
+              "city": "南京",
+              "next": 1.23,
+              "dwell_time": null
+            },
+            {
+              "name": "夫子庙",
+              "city": "南京",
+              "next": 1.03,
+              "dwell_time": null
+            },
+            {
+              "name": "常府街",
+              "city": "南京",
+              "next": 0.99,
+              "dwell_time": null
+            },
+            {
+              "name": "大行宫",
+              "city": "南京",
+              "next": 0.83,
+              "dwell_time": null
+            },
+            {
+              "name": "浮桥",
+              "city": "南京",
+              "next": 0.88,
+              "dwell_time": null
+            },
+            {
+              "name": "鸡鸣寺",
+              "city": "南京",
+              "next": 2.47,
+              "dwell_time": null
+            },
+            {
+              "name": "南京林业大学·新庄",
+              "city": "南京",
+              "next": 1.91,
+              "dwell_time": null
+            },
+            {
+              "name": "南京站",
+              "city": "南京",
+              "next": 1.22,
+              "dwell_time": null
+            },
+            {
+              "name": "小市",
+              "city": "南京",
+              "next": 1.88,
+              "dwell_time": null
+            },
+            {
+              "name": "五塘广场",
+              "city": "南京",
+              "next": 0.92,
+              "dwell_time": null
+            },
+            {
+              "name": "上元门",
+              "city": "南京",
+              "next": 3.51,
+              "dwell_time": null
+            },
+            {
+              "name": "柳洲东路",
+              "city": "南京",
+              "next": 1.69,
+              "dwell_time": null
+            },
+            {
+              "name": "天润城",
+              "city": "南京",
+              "next": 1.49,
+              "dwell_time": null
+            },
+            {
+              "name": "泰冯路",
+              "city": "南京",
+              "next": 1.07,
+              "dwell_time": null
+            },
+            {
+              "name": "东大成贤学院",
+              "city": "南京",
+              "next": 1.01,
+              "dwell_time": null
+            },
+            {
+              "name": "星火路",
+              "city": "南京",
+              "next": 2.49,
+              "dwell_time": null
+            },
+            {
+              "name": "林场",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "NJ_S1": {
+      "name": "S1号线",
+      "color": "#45BDB4",
+      "city": "",
+      "formation": [
+        "6B"
+      ],
+      "maxspeed": 100,
+      "open_year": 2003,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%9C%B0%E9%93%81S1%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "NJ_S1_0",
+          "start": "空港新城江宁",
+          "end": "南京南站",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "空港新城江宁",
+              "city": "南京",
+              "next": 1.55,
+              "dwell_time": null
+            },
+            {
+              "name": "禄口机场",
+              "city": "南京",
+              "next": 5,
+              "dwell_time": null
+            },
+            {
+              "name": "翔宇路南",
+              "city": "南京",
+              "next": 4.11,
+              "dwell_time": null
+            },
+            {
+              "name": "翔宇路北",
+              "city": "南京",
+              "next": 6.17,
+              "dwell_time": null
+            },
+            {
+              "name": "正方中路",
+              "city": "南京",
+              "next": 4.69,
+              "dwell_time": null
+            },
+            {
+              "name": "吉印大道",
+              "city": "南京",
+              "next": 3.06,
+              "dwell_time": null
+            },
+            {
+              "name": "河海大学·佛城西路",
+              "city": "南京",
+              "next": 3.27,
+              "dwell_time": null
+            },
+            {
+              "name": "翠屏山",
+              "city": "南京",
+              "next": 3.39,
+              "dwell_time": null
+            },
+            {
+              "name": "南京南站",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "NJ_S1_1",
+          "start": "南京南站",
+          "end": "空港新城江宁",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "南京南站",
+              "city": "南京",
+              "next": 3.39,
+              "dwell_time": null
+            },
+            {
+              "name": "翠屏山",
+              "city": "南京",
+              "next": 3.27,
+              "dwell_time": null
+            },
+            {
+              "name": "河海大学·佛城西路",
+              "city": "南京",
+              "next": 3.06,
+              "dwell_time": null
+            },
+            {
+              "name": "吉印大道",
+              "city": "南京",
+              "next": 4.69,
+              "dwell_time": null
+            },
+            {
+              "name": "正方中路",
+              "city": "南京",
+              "next": 6.17,
+              "dwell_time": null
+            },
+            {
+              "name": "翔宇路北",
+              "city": "南京",
+              "next": 4.11,
+              "dwell_time": null
+            },
+            {
+              "name": "翔宇路南",
+              "city": "南京",
+              "next": 5,
+              "dwell_time": null
+            },
+            {
+              "name": "禄口机场",
+              "city": "南京",
+              "next": 1.55,
+              "dwell_time": null
+            },
+            {
+              "name": "空港新城江宁",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "NJ_S8": {
+      "name": "S8号线",
+      "color": "#EDA155",
+      "city": "",
+      "formation": [
+        "4B"
+      ],
+      "maxspeed": 100,
+      "open_year": 2014,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%9C%B0%E9%93%81S8%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "NJ_S8_0",
+          "start": "金牛湖",
+          "end": "长江大桥北",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "金牛湖",
+              "city": "南京",
+              "next": 5.17,
+              "dwell_time": null
+            },
+            {
+              "name": "八百桥",
+              "city": "南京",
+              "next": 4.91,
+              "dwell_time": null
+            },
+            {
+              "name": "沈桥",
+              "city": "南京",
+              "next": 5.99,
+              "dwell_time": null
+            },
+            {
+              "name": "方洲广场",
+              "city": "南京",
+              "next": 1.46,
+              "dwell_time": null
+            },
+            {
+              "name": "凤凰山公园",
+              "city": "南京",
+              "next": 1.6,
+              "dwell_time": null
+            },
+            {
+              "name": "雄州",
+              "city": "南京",
+              "next": 2.29,
+              "dwell_time": null
+            },
+            {
+              "name": "龙池",
+              "city": "南京",
+              "next": 2.11,
+              "dwell_time": null
+            },
+            {
+              "name": "六合开发区",
+              "city": "南京",
+              "next": 2.87,
+              "dwell_time": null
+            },
+            {
+              "name": "化工园",
+              "city": "南京",
+              "next": 1.56,
+              "dwell_time": null
+            },
+            {
+              "name": "长芦",
+              "city": "南京",
+              "next": 3.89,
+              "dwell_time": null
+            },
+            {
+              "name": "葛塘",
+              "city": "南京",
+              "next": 2.15,
+              "dwell_time": null
+            },
+            {
+              "name": "大厂",
+              "city": "南京",
+              "next": 1.82,
+              "dwell_time": null
+            },
+            {
+              "name": "卸甲甸",
+              "city": "南京",
+              "next": 1.4,
+              "dwell_time": null
+            },
+            {
+              "name": "信息工程大学",
+              "city": "南京",
+              "next": 2.84,
+              "dwell_time": null
+            },
+            {
+              "name": "高新开发区",
+              "city": "南京",
+              "next": 2.63,
+              "dwell_time": null
+            },
+            {
+              "name": "泰冯路",
+              "city": "南京",
+              "next": 1.13,
+              "dwell_time": null
+            },
+            {
+              "name": "泰山新村",
+              "city": "南京",
+              "next": 1.47,
+              "dwell_time": null
+            },
+            {
+              "name": "毛纺厂路",
+              "city": "南京",
+              "next": 0.71,
+              "dwell_time": null
+            },
+            {
+              "name": "长江大桥北",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": [
+            {
+              "name": "S8号线原线",
+              "stations": [
+                "金牛湖",
+                "八百桥",
+                "沈桥",
+                "方洲广场",
+                "凤凰山公园",
+                "雄州",
+                "龙池",
+                "六合开发区",
+                "化工园",
+                "长芦",
+                "葛塘",
+                "大厂",
+                "卸甲甸",
+                "信息工程大学",
+                "高新开发区",
+                "泰冯路"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "NJ_S8_1",
+          "start": "长江大桥北",
+          "end": "金牛湖",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "长江大桥北",
+              "city": "南京",
+              "next": 0.71,
+              "dwell_time": null
+            },
+            {
+              "name": "毛纺厂路",
+              "city": "南京",
+              "next": 1.47,
+              "dwell_time": null
+            },
+            {
+              "name": "泰山新村",
+              "city": "南京",
+              "next": 1.13,
+              "dwell_time": null
+            },
+            {
+              "name": "泰冯路",
+              "city": "南京",
+              "next": 2.63,
+              "dwell_time": null
+            },
+            {
+              "name": "高新开发区",
+              "city": "南京",
+              "next": 2.84,
+              "dwell_time": null
+            },
+            {
+              "name": "信息工程大学",
+              "city": "南京",
+              "next": 1.4,
+              "dwell_time": null
+            },
+            {
+              "name": "卸甲甸",
+              "city": "南京",
+              "next": 1.82,
+              "dwell_time": null
+            },
+            {
+              "name": "大厂",
+              "city": "南京",
+              "next": 2.15,
+              "dwell_time": null
+            },
+            {
+              "name": "葛塘",
+              "city": "南京",
+              "next": 3.89,
+              "dwell_time": null
+            },
+            {
+              "name": "长芦",
+              "city": "南京",
+              "next": 1.56,
+              "dwell_time": null
+            },
+            {
+              "name": "化工园",
+              "city": "南京",
+              "next": 2.87,
+              "dwell_time": null
+            },
+            {
+              "name": "六合开发区",
+              "city": "南京",
+              "next": 2.11,
+              "dwell_time": null
+            },
+            {
+              "name": "龙池",
+              "city": "南京",
+              "next": 2.29,
+              "dwell_time": null
+            },
+            {
+              "name": "雄州",
+              "city": "南京",
+              "next": 1.6,
+              "dwell_time": null
+            },
+            {
+              "name": "凤凰山公园",
+              "city": "南京",
+              "next": 1.46,
+              "dwell_time": null
+            },
+            {
+              "name": "方洲广场",
+              "city": "南京",
+              "next": 5.99,
+              "dwell_time": null
+            },
+            {
+              "name": "沈桥",
+              "city": "南京",
+              "next": 4.91,
+              "dwell_time": null
+            },
+            {
+              "name": "八百桥",
+              "city": "南京",
+              "next": 5.17,
+              "dwell_time": null
+            },
+            {
+              "name": "金牛湖",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "NJ_S3": {
+      "name": "S3号线",
+      "color": "#B984AC",
+      "city": "",
+      "formation": [
+        "6B"
+      ],
+      "maxspeed": 100,
+      "open_year": 2017,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%9C%B0%E9%93%81S3%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "NJ_S3_0",
+          "start": "高家冲",
+          "end": "南京南站",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "高家冲",
+              "city": "南京",
+              "next": 1.7,
+              "dwell_time": null
+            },
+            {
+              "name": "林山",
+              "city": "南京",
+              "next": 1.99,
+              "dwell_time": null
+            },
+            {
+              "name": "桥林新城",
+              "city": "南京",
+              "next": 1.35,
+              "dwell_time": null
+            },
+            {
+              "name": "石碛河",
+              "city": "南京",
+              "next": 1.45,
+              "dwell_time": null
+            },
+            {
+              "name": "双垅",
+              "city": "南京",
+              "next": 1.31,
+              "dwell_time": null
+            },
+            {
+              "name": "兰花塘",
+              "city": "南京",
+              "next": 2.09,
+              "dwell_time": null
+            },
+            {
+              "name": "马骡圩",
+              "city": "南京",
+              "next": 7.9,
+              "dwell_time": null
+            },
+            {
+              "name": "刘村",
+              "city": "南京",
+              "next": 1.51,
+              "dwell_time": null
+            },
+            {
+              "name": "天保",
+              "city": "南京",
+              "next": 2.03,
+              "dwell_time": null
+            },
+            {
+              "name": "高庙路",
+              "city": "南京",
+              "next": 0.86,
+              "dwell_time": null
+            },
+            {
+              "name": "吴侯街",
+              "city": "南京",
+              "next": 0.91,
+              "dwell_time": null
+            },
+            {
+              "name": "平良大街",
+              "city": "南京",
+              "next": 0.98,
+              "dwell_time": null
+            },
+            {
+              "name": "永初路",
+              "city": "南京",
+              "next": 1.15,
+              "dwell_time": null
+            },
+            {
+              "name": "油坊桥",
+              "city": "南京",
+              "next": 1.57,
+              "dwell_time": null
+            },
+            {
+              "name": "贾西",
+              "city": "南京",
+              "next": 1.33,
+              "dwell_time": null
+            },
+            {
+              "name": "春江路",
+              "city": "南京",
+              "next": 1.57,
+              "dwell_time": null
+            },
+            {
+              "name": "铁心桥",
+              "city": "南京",
+              "next": 1.38,
+              "dwell_time": null
+            },
+            {
+              "name": "景明佳园",
+              "city": "南京",
+              "next": 2.04,
+              "dwell_time": null
+            },
+            {
+              "name": "南京南站",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "NJ_S3_1",
+          "start": "南京南站",
+          "end": "高家冲",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "南京南站",
+              "city": "南京",
+              "next": 2.04,
+              "dwell_time": null
+            },
+            {
+              "name": "景明佳园",
+              "city": "南京",
+              "next": 1.38,
+              "dwell_time": null
+            },
+            {
+              "name": "铁心桥",
+              "city": "南京",
+              "next": 1.57,
+              "dwell_time": null
+            },
+            {
+              "name": "春江路",
+              "city": "南京",
+              "next": 1.33,
+              "dwell_time": null
+            },
+            {
+              "name": "贾西",
+              "city": "南京",
+              "next": 1.57,
+              "dwell_time": null
+            },
+            {
+              "name": "油坊桥",
+              "city": "南京",
+              "next": 1.15,
+              "dwell_time": null
+            },
+            {
+              "name": "永初路",
+              "city": "南京",
+              "next": 0.98,
+              "dwell_time": null
+            },
+            {
+              "name": "平良大街",
+              "city": "南京",
+              "next": 0.91,
+              "dwell_time": null
+            },
+            {
+              "name": "吴侯街",
+              "city": "南京",
+              "next": 0.86,
+              "dwell_time": null
+            },
+            {
+              "name": "高庙路",
+              "city": "南京",
+              "next": 2.03,
+              "dwell_time": null
+            },
+            {
+              "name": "天保",
+              "city": "南京",
+              "next": 1.51,
+              "dwell_time": null
+            },
+            {
+              "name": "刘村",
+              "city": "南京",
+              "next": 7.9,
+              "dwell_time": null
+            },
+            {
+              "name": "马骡圩",
+              "city": "南京",
+              "next": 2.09,
+              "dwell_time": null
+            },
+            {
+              "name": "兰花塘",
+              "city": "南京",
+              "next": 1.31,
+              "dwell_time": null
+            },
+            {
+              "name": "双垅",
+              "city": "南京",
+              "next": 1.45,
+              "dwell_time": null
+            },
+            {
+              "name": "石碛河",
+              "city": "南京",
+              "next": 1.35,
+              "dwell_time": null
+            },
+            {
+              "name": "桥林新城",
+              "city": "南京",
+              "next": 1.99,
+              "dwell_time": null
+            },
+            {
+              "name": "林山",
+              "city": "南京",
+              "next": 1.7,
+              "dwell_time": null
+            },
+            {
+              "name": "高家冲",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "NJ_S7": {
+      "name": "S7号线",
+      "color": "#E99A96",
+      "city": "",
+      "formation": [
+        "6B"
+      ],
+      "maxspeed": 100,
+      "open_year": 2003,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%9C%B0%E9%93%81S7%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "NJ_S7_0",
+          "start": "空港新城江宁",
+          "end": "无想山",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "空港新城江宁",
+              "city": "南京",
+              "next": 5.2,
+              "dwell_time": null
+            },
+            {
+              "name": "柘塘",
+              "city": "南京",
+              "next": 5.51,
+              "dwell_time": null
+            },
+            {
+              "name": "空港新城溧水",
+              "city": "南京",
+              "next": 2.73,
+              "dwell_time": null
+            },
+            {
+              "name": "群力",
+              "city": "南京",
+              "next": 4.72,
+              "dwell_time": null
+            },
+            {
+              "name": "卧龙湖",
+              "city": "南京",
+              "next": 2.72,
+              "dwell_time": null
+            },
+            {
+              "name": "溧水",
+              "city": "南京",
+              "next": 1.7,
+              "dwell_time": null
+            },
+            {
+              "name": "中山湖",
+              "city": "南京",
+              "next": 2.47,
+              "dwell_time": null
+            },
+            {
+              "name": "幸庄",
+              "city": "南京",
+              "next": 1.8,
+              "dwell_time": null
+            },
+            {
+              "name": "无想山",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "NJ_S7_1",
+          "start": "无想山",
+          "end": "空港新城江宁",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "无想山",
+              "city": "南京",
+              "next": 1.8,
+              "dwell_time": null
+            },
+            {
+              "name": "幸庄",
+              "city": "南京",
+              "next": 2.47,
+              "dwell_time": null
+            },
+            {
+              "name": "中山湖",
+              "city": "南京",
+              "next": 1.7,
+              "dwell_time": null
+            },
+            {
+              "name": "溧水",
+              "city": "南京",
+              "next": 2.72,
+              "dwell_time": null
+            },
+            {
+              "name": "卧龙湖",
+              "city": "南京",
+              "next": 4.72,
+              "dwell_time": null
+            },
+            {
+              "name": "群力",
+              "city": "南京",
+              "next": 2.73,
+              "dwell_time": null
+            },
+            {
+              "name": "空港新城溧水",
+              "city": "南京",
+              "next": 5.51,
+              "dwell_time": null
+            },
+            {
+              "name": "柘塘",
+              "city": "南京",
+              "next": 5.2,
+              "dwell_time": null
+            },
+            {
+              "name": "空港新城江宁",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "NJ_S9": {
+      "name": "S9号线",
+      "color": "#F8BC28",
+      "city": "",
+      "formation": [
+        "6B"
+      ],
+      "maxspeed": 80,
+      "open_year": 2026,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%9C%B0%E9%93%81S9%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "NJ_S9_0",
+          "start": "高淳",
+          "end": "翔宇路南",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "高淳",
+              "city": "南京",
+              "next": 6.17,
+              "dwell_time": null
+            },
+            {
+              "name": "团结圩",
+              "city": "南京",
+              "next": 16.8,
+              "dwell_time": null
+            },
+            {
+              "name": "明觉",
+              "city": "南京",
+              "next": 10.46,
+              "dwell_time": null
+            },
+            {
+              "name": "石湫",
+              "city": "南京",
+              "next": 6.66,
+              "dwell_time": null
+            },
+            {
+              "name": "铜山",
+              "city": "南京",
+              "next": 8.2,
+              "dwell_time": null
+            },
+            {
+              "name": "翔宇路南",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "NJ_S9_1",
+          "start": "翔宇路南",
+          "end": "高淳",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "翔宇路南",
+              "city": "南京",
+              "next": 8.2,
+              "dwell_time": null
+            },
+            {
+              "name": "铜山",
+              "city": "南京",
+              "next": 6.66,
+              "dwell_time": null
+            },
+            {
+              "name": "石湫",
+              "city": "南京",
+              "next": 10.46,
+              "dwell_time": null
+            },
+            {
+              "name": "明觉",
+              "city": "南京",
+              "next": 16.8,
+              "dwell_time": null
+            },
+            {
+              "name": "团结圩",
+              "city": "南京",
+              "next": 6.17,
+              "dwell_time": null
+            },
+            {
+              "name": "高淳",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "NJ4": {
+      "name": "4号线",
+      "color": "#7B6FB1",
+      "city": "",
+      "formation": [
+        "6B"
+      ],
+      "maxspeed": 80,
+      "open_year": 2017,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%9C%B0%E9%93%814%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "NJ4_0",
+          "start": "龙江",
+          "end": "仙林湖",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "龙江",
+              "city": "南京",
+              "next": 1.53,
+              "dwell_time": null
+            },
+            {
+              "name": "草场门·南艺·二师",
+              "city": "南京",
+              "next": 1.79,
+              "dwell_time": null
+            },
+            {
+              "name": "云南路",
+              "city": "南京",
+              "next": 0.81,
+              "dwell_time": null
+            },
+            {
+              "name": "鼓楼",
+              "city": "南京",
+              "next": 1.35,
+              "dwell_time": null
+            },
+            {
+              "name": "鸡鸣寺",
+              "city": "南京",
+              "next": 0.79,
+              "dwell_time": null
+            },
+            {
+              "name": "九华山",
+              "city": "南京",
+              "next": 1.31,
+              "dwell_time": null
+            },
+            {
+              "name": "岗子村",
+              "city": "南京",
+              "next": 1.98,
+              "dwell_time": null
+            },
+            {
+              "name": "蒋王庙",
+              "city": "南京",
+              "next": 1.09,
+              "dwell_time": null
+            },
+            {
+              "name": "王家湾",
+              "city": "南京",
+              "next": 2.68,
+              "dwell_time": null
+            },
+            {
+              "name": "聚宝山",
+              "city": "南京",
+              "next": 2.42,
+              "dwell_time": null
+            },
+            {
+              "name": "徐庄·苏宁总部",
+              "city": "南京",
+              "next": 2.24,
+              "dwell_time": null
+            },
+            {
+              "name": "金马路",
+              "city": "南京",
+              "next": 2.49,
+              "dwell_time": null
+            },
+            {
+              "name": "汇通路",
+              "city": "南京",
+              "next": 1.16,
+              "dwell_time": null
+            },
+            {
+              "name": "灵山",
+              "city": "南京",
+              "next": 1.97,
+              "dwell_time": null
+            },
+            {
+              "name": "东流",
+              "city": "南京",
+              "next": 2.26,
+              "dwell_time": null
+            },
+            {
+              "name": "孟北",
+              "city": "南京",
+              "next": 1.83,
+              "dwell_time": null
+            },
+            {
+              "name": "西岗桦墅",
+              "city": "南京",
+              "next": 2.97,
+              "dwell_time": null
+            },
+            {
+              "name": "仙林湖",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "NJ4_1",
+          "start": "仙林湖",
+          "end": "龙江",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "仙林湖",
+              "city": "南京",
+              "next": 2.97,
+              "dwell_time": null
+            },
+            {
+              "name": "西岗桦墅",
+              "city": "南京",
+              "next": 1.83,
+              "dwell_time": null
+            },
+            {
+              "name": "孟北",
+              "city": "南京",
+              "next": 2.26,
+              "dwell_time": null
+            },
+            {
+              "name": "东流",
+              "city": "南京",
+              "next": 1.97,
+              "dwell_time": null
+            },
+            {
+              "name": "灵山",
+              "city": "南京",
+              "next": 1.16,
+              "dwell_time": null
+            },
+            {
+              "name": "汇通路",
+              "city": "南京",
+              "next": 2.49,
+              "dwell_time": null
+            },
+            {
+              "name": "金马路",
+              "city": "南京",
+              "next": 2.24,
+              "dwell_time": null
+            },
+            {
+              "name": "徐庄·苏宁总部",
+              "city": "南京",
+              "next": 2.42,
+              "dwell_time": null
+            },
+            {
+              "name": "聚宝山",
+              "city": "南京",
+              "next": 2.68,
+              "dwell_time": null
+            },
+            {
+              "name": "王家湾",
+              "city": "南京",
+              "next": 1.09,
+              "dwell_time": null
+            },
+            {
+              "name": "蒋王庙",
+              "city": "南京",
+              "next": 1.98,
+              "dwell_time": null
+            },
+            {
+              "name": "岗子村",
+              "city": "南京",
+              "next": 1.31,
+              "dwell_time": null
+            },
+            {
+              "name": "九华山",
+              "city": "南京",
+              "next": 0.79,
+              "dwell_time": null
+            },
+            {
+              "name": "鸡鸣寺",
+              "city": "南京",
+              "next": 1.35,
+              "dwell_time": null
+            },
+            {
+              "name": "鼓楼",
+              "city": "南京",
+              "next": 0.81,
+              "dwell_time": null
+            },
+            {
+              "name": "云南路",
+              "city": "南京",
+              "next": 1.79,
+              "dwell_time": null
+            },
+            {
+              "name": "草场门·南艺·二师",
+              "city": "南京",
+              "next": 1.53,
+              "dwell_time": null
+            },
+            {
+              "name": "龙江",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "NJ6": {
+      "name": "6号线",
+      "color": "#45BDB4",
+      "city": "",
+      "formation": [
+        "6B"
+      ],
+      "maxspeed": 80,
+      "open_year": 2024,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%9C%B0%E9%93%816%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "NJ6_0",
+          "start": "句容",
+          "end": "马群",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "句容",
+              "city": "南京",
+              "next": 2.46,
+              "dwell_time": null
+            },
+            {
+              "name": "崇明",
+              "city": "南京",
+              "next": 3.29,
+              "dwell_time": null
+            },
+            {
+              "name": "华阳",
+              "city": "南京",
+              "next": 2.66,
+              "dwell_time": null
+            },
+            {
+              "name": "童世界",
+              "city": "南京",
+              "next": 4.85,
+              "dwell_time": null
+            },
+            {
+              "name": "黄梅",
+              "city": "南京",
+              "next": 6.63,
+              "dwell_time": null
+            },
+            {
+              "name": "泉都大街",
+              "city": "南京",
+              "next": 2.23,
+              "dwell_time": null
+            },
+            {
+              "name": "汤山",
+              "city": "南京",
+              "next": 2.11,
+              "dwell_time": null
+            },
+            {
+              "name": "南京猿人洞",
+              "city": "南京",
+              "next": 4.27,
+              "dwell_time": null
+            },
+            {
+              "name": "古泉",
+              "city": "南京",
+              "next": 5.31,
+              "dwell_time": null
+            },
+            {
+              "name": "东郊小镇",
+              "city": "南京",
+              "next": 2.38,
+              "dwell_time": null
+            },
+            {
+              "name": "麒麟门",
+              "city": "南京",
+              "next": 1.21,
+              "dwell_time": null
+            },
+            {
+              "name": "百水桥",
+              "city": "南京",
+              "next": 1.93,
+              "dwell_time": null
+            },
+            {
+              "name": "马群",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "NJ6_1",
+          "start": "马群",
+          "end": "句容",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "马群",
+              "city": "南京",
+              "next": 1.93,
+              "dwell_time": null
+            },
+            {
+              "name": "百水桥",
+              "city": "南京",
+              "next": 1.21,
+              "dwell_time": null
+            },
+            {
+              "name": "麒麟门",
+              "city": "南京",
+              "next": 2.38,
+              "dwell_time": null
+            },
+            {
+              "name": "东郊小镇",
+              "city": "南京",
+              "next": 5.31,
+              "dwell_time": null
+            },
+            {
+              "name": "古泉",
+              "city": "南京",
+              "next": 4.27,
+              "dwell_time": null
+            },
+            {
+              "name": "南京猿人洞",
+              "city": "南京",
+              "next": 2.11,
+              "dwell_time": null
+            },
+            {
+              "name": "汤山",
+              "city": "南京",
+              "next": 2.23,
+              "dwell_time": null
+            },
+            {
+              "name": "泉都大街",
+              "city": "南京",
+              "next": 6.63,
+              "dwell_time": null
+            },
+            {
+              "name": "黄梅",
+              "city": "南京",
+              "next": 4.85,
+              "dwell_time": null
+            },
+            {
+              "name": "童世界",
+              "city": "南京",
+              "next": 2.66,
+              "dwell_time": null
+            },
+            {
+              "name": "华阳",
+              "city": "南京",
+              "next": 3.29,
+              "dwell_time": null
+            },
+            {
+              "name": "崇明",
+              "city": "南京",
+              "next": 2.46,
+              "dwell_time": null
+            },
+            {
+              "name": "句容",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "NJ7": {
+      "name": "7号线",
+      "color": "#246F36",
+      "city": "",
+      "formation": [
+        "6A"
+      ],
+      "maxspeed": 80,
+      "open_year": 2022,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%9C%B0%E9%93%817%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "NJ7_0",
+          "start": "西善桥",
+          "end": "仙新路",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "西善桥",
+              "city": "南京",
+              "next": 1.94,
+              "dwell_time": null
+            },
+            {
+              "name": "螺塘路",
+              "city": "南京",
+              "next": 0.57,
+              "dwell_time": null
+            },
+            {
+              "name": "太清路",
+              "city": "南京",
+              "next": 1.33,
+              "dwell_time": null
+            },
+            {
+              "name": "永初路",
+              "city": "南京",
+              "next": 1.59,
+              "dwell_time": null
+            },
+            {
+              "name": "嘉陵江东街",
+              "city": "南京",
+              "next": 0.81,
+              "dwell_time": null
+            },
+            {
+              "name": "中胜",
+              "city": "南京",
+              "next": 0.8,
+              "dwell_time": null
+            },
+            {
+              "name": "新城科技园",
+              "city": "南京",
+              "next": 1.37,
+              "dwell_time": null
+            },
+            {
+              "name": "梦都大街东",
+              "city": "南京",
+              "next": 1.43,
+              "dwell_time": null
+            },
+            {
+              "name": "应天大街",
+              "city": "南京",
+              "next": 0.93,
+              "dwell_time": null
+            },
+            {
+              "name": "南湖",
+              "city": "南京",
+              "next": 0.93,
+              "dwell_time": null
+            },
+            {
+              "name": "大士茶亭",
+              "city": "南京",
+              "next": 0.67,
+              "dwell_time": null
+            },
+            {
+              "name": "莫愁湖",
+              "city": "南京",
+              "next": 1.23,
+              "dwell_time": null
+            },
+            {
+              "name": "清凉山",
+              "city": "南京",
+              "next": 1.42,
+              "dwell_time": null
+            },
+            {
+              "name": "草场门·南艺·二师",
+              "city": "南京",
+              "next": 1.17,
+              "dwell_time": null
+            },
+            {
+              "name": "古平岗",
+              "city": "南京",
+              "next": 1.01,
+              "dwell_time": null
+            },
+            {
+              "name": "福建路",
+              "city": "南京",
+              "next": 1.69,
+              "dwell_time": null
+            },
+            {
+              "name": "钟阜路",
+              "city": "南京",
+              "next": 1.46,
+              "dwell_time": null
+            },
+            {
+              "name": "幕府西路",
+              "city": "南京",
+              "next": 0.92,
+              "dwell_time": null
+            },
+            {
+              "name": "五塘广场",
+              "city": "南京",
+              "next": 2.07,
+              "dwell_time": null
+            },
+            {
+              "name": "幕府山",
+              "city": "南京",
+              "next": 2.02,
+              "dwell_time": null
+            },
+            {
+              "name": "晓庄",
+              "city": "南京",
+              "next": 1.46,
+              "dwell_time": null
+            },
+            {
+              "name": "万寿",
+              "city": "南京",
+              "next": 1.7,
+              "dwell_time": null
+            },
+            {
+              "name": "丁家庄",
+              "city": "南京",
+              "next": 1.05,
+              "dwell_time": null
+            },
+            {
+              "name": "丁家庄南",
+              "city": "南京",
+              "next": 1.71,
+              "dwell_time": null
+            },
+            {
+              "name": "尧化新村",
+              "city": "南京",
+              "next": 1.38,
+              "dwell_time": null
+            },
+            {
+              "name": "尧化门",
+              "city": "南京",
+              "next": 0.87,
+              "dwell_time": null
+            },
+            {
+              "name": "仙新路",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "NJ7_1",
+          "start": "仙新路",
+          "end": "西善桥",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "仙新路",
+              "city": "南京",
+              "next": 0.87,
+              "dwell_time": null
+            },
+            {
+              "name": "尧化门",
+              "city": "南京",
+              "next": 1.38,
+              "dwell_time": null
+            },
+            {
+              "name": "尧化新村",
+              "city": "南京",
+              "next": 1.71,
+              "dwell_time": null
+            },
+            {
+              "name": "丁家庄南",
+              "city": "南京",
+              "next": 1.05,
+              "dwell_time": null
+            },
+            {
+              "name": "丁家庄",
+              "city": "南京",
+              "next": 1.7,
+              "dwell_time": null
+            },
+            {
+              "name": "万寿",
+              "city": "南京",
+              "next": 1.46,
+              "dwell_time": null
+            },
+            {
+              "name": "晓庄",
+              "city": "南京",
+              "next": 2.02,
+              "dwell_time": null
+            },
+            {
+              "name": "幕府山",
+              "city": "南京",
+              "next": 2.07,
+              "dwell_time": null
+            },
+            {
+              "name": "五塘广场",
+              "city": "南京",
+              "next": 0.92,
+              "dwell_time": null
+            },
+            {
+              "name": "幕府西路",
+              "city": "南京",
+              "next": 1.46,
+              "dwell_time": null
+            },
+            {
+              "name": "钟阜路",
+              "city": "南京",
+              "next": 1.69,
+              "dwell_time": null
+            },
+            {
+              "name": "福建路",
+              "city": "南京",
+              "next": 1.01,
+              "dwell_time": null
+            },
+            {
+              "name": "古平岗",
+              "city": "南京",
+              "next": 1.17,
+              "dwell_time": null
+            },
+            {
+              "name": "草场门·南艺·二师",
+              "city": "南京",
+              "next": 1.42,
+              "dwell_time": null
+            },
+            {
+              "name": "清凉山",
+              "city": "南京",
+              "next": 1.23,
+              "dwell_time": null
+            },
+            {
+              "name": "莫愁湖",
+              "city": "南京",
+              "next": 0.67,
+              "dwell_time": null
+            },
+            {
+              "name": "大士茶亭",
+              "city": "南京",
+              "next": 0.93,
+              "dwell_time": null
+            },
+            {
+              "name": "南湖",
+              "city": "南京",
+              "next": 0.93,
+              "dwell_time": null
+            },
+            {
+              "name": "应天大街",
+              "city": "南京",
+              "next": 1.43,
+              "dwell_time": null
+            },
+            {
+              "name": "梦都大街东",
+              "city": "南京",
+              "next": 1.37,
+              "dwell_time": null
+            },
+            {
+              "name": "新城科技园",
+              "city": "南京",
+              "next": 0.8,
+              "dwell_time": null
+            },
+            {
+              "name": "中胜",
+              "city": "南京",
+              "next": 0.81,
+              "dwell_time": null
+            },
+            {
+              "name": "嘉陵江东街",
+              "city": "南京",
+              "next": 1.59,
+              "dwell_time": null
+            },
+            {
+              "name": "永初路",
+              "city": "南京",
+              "next": 1.33,
+              "dwell_time": null
+            },
+            {
+              "name": "太清路",
+              "city": "南京",
+              "next": 0.57,
+              "dwell_time": null
+            },
+            {
+              "name": "螺塘路",
+              "city": "南京",
+              "next": 1.94,
+              "dwell_time": null
+            },
+            {
+              "name": "西善桥",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "NJ5": {
+      "name": "5号线",
+      "color": "#FEE818",
+      "city": "",
+      "formation": [
+        "6A"
+      ],
+      "maxspeed": 80,
+      "open_year": 2024,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%9C%B0%E9%93%815%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "NJ5_0",
+          "start": "方家营",
+          "end": "吉印大道",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "方家营",
+              "city": "南京",
+              "next": 1.08,
+              "dwell_time": null
+            },
+            {
+              "name": "南京西站",
+              "city": "南京",
+              "next": 0.56,
+              "dwell_time": null
+            },
+            {
+              "name": "静海寺",
+              "city": "南京",
+              "next": 0.67,
+              "dwell_time": null
+            },
+            {
+              "name": "下关",
+              "city": "南京",
+              "next": 1.05,
+              "dwell_time": null
+            },
+            {
+              "name": "盐仓桥",
+              "city": "南京",
+              "next": 0.88,
+              "dwell_time": null
+            },
+            {
+              "name": "福建路",
+              "city": "南京",
+              "next": 0.77,
+              "dwell_time": null
+            },
+            {
+              "name": "虹桥",
+              "city": "南京",
+              "next": 1.03,
+              "dwell_time": null
+            },
+            {
+              "name": "青春广场",
+              "city": "南京",
+              "next": 0.97,
+              "dwell_time": null
+            },
+            {
+              "name": "云南路",
+              "city": "南京",
+              "next": 1.1,
+              "dwell_time": null
+            },
+            {
+              "name": "五台山",
+              "city": "南京",
+              "next": 0.9,
+              "dwell_time": null
+            },
+            {
+              "name": "上海路",
+              "city": "南京",
+              "next": 1.09,
+              "dwell_time": null
+            },
+            {
+              "name": "朝天宫",
+              "city": "南京",
+              "next": 1.42,
+              "dwell_time": null
+            },
+            {
+              "name": "三山街",
+              "city": "南京",
+              "next": 0.75,
+              "dwell_time": null
+            },
+            {
+              "name": "夫子庙",
+              "city": "南京",
+              "next": 1.29,
+              "dwell_time": null
+            },
+            {
+              "name": "通济门",
+              "city": "南京",
+              "next": 1.01,
+              "dwell_time": null
+            },
+            {
+              "name": "光华门",
+              "city": "南京",
+              "next": 1.15,
+              "dwell_time": null
+            },
+            {
+              "name": "石门坎",
+              "city": "南京",
+              "next": 0.97,
+              "dwell_time": null
+            },
+            {
+              "name": "七桥瓮",
+              "city": "南京",
+              "next": 1.17,
+              "dwell_time": null
+            },
+            {
+              "name": "大校场",
+              "city": "南京",
+              "next": 1.01,
+              "dwell_time": null
+            },
+            {
+              "name": "神机营",
+              "city": "南京",
+              "next": 2.42,
+              "dwell_time": null
+            },
+            {
+              "name": "东山香樟园",
+              "city": "南京",
+              "next": 1.51,
+              "dwell_time": null
+            },
+            {
+              "name": "文靖路",
+              "city": "南京",
+              "next": 0.57,
+              "dwell_time": null
+            },
+            {
+              "name": "东山",
+              "city": "南京",
+              "next": 1.25,
+              "dwell_time": null
+            },
+            {
+              "name": "新亭路",
+              "city": "南京",
+              "next": 1.21,
+              "dwell_time": null
+            },
+            {
+              "name": "竹山路",
+              "city": "南京",
+              "next": 0.88,
+              "dwell_time": null
+            },
+            {
+              "name": "科宁路",
+              "city": "南京",
+              "next": 1.63,
+              "dwell_time": null
+            },
+            {
+              "name": "前庄",
+              "city": "南京",
+              "next": 1.17,
+              "dwell_time": null
+            },
+            {
+              "name": "诚信大道",
+              "city": "南京",
+              "next": 2.74,
+              "dwell_time": null
+            },
+            {
+              "name": "九龙湖南",
+              "city": "南京",
+              "next": 1.62,
+              "dwell_time": null
+            },
+            {
+              "name": "吉印大道",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "NJ5_1",
+          "start": "吉印大道",
+          "end": "方家营",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "吉印大道",
+              "city": "南京",
+              "next": 1.62,
+              "dwell_time": null
+            },
+            {
+              "name": "九龙湖南",
+              "city": "南京",
+              "next": 2.74,
+              "dwell_time": null
+            },
+            {
+              "name": "诚信大道",
+              "city": "南京",
+              "next": 1.17,
+              "dwell_time": null
+            },
+            {
+              "name": "前庄",
+              "city": "南京",
+              "next": 1.63,
+              "dwell_time": null
+            },
+            {
+              "name": "科宁路",
+              "city": "南京",
+              "next": 0.88,
+              "dwell_time": null
+            },
+            {
+              "name": "竹山路",
+              "city": "南京",
+              "next": 1.21,
+              "dwell_time": null
+            },
+            {
+              "name": "新亭路",
+              "city": "南京",
+              "next": 1.25,
+              "dwell_time": null
+            },
+            {
+              "name": "东山",
+              "city": "南京",
+              "next": 0.57,
+              "dwell_time": null
+            },
+            {
+              "name": "文靖路",
+              "city": "南京",
+              "next": 1.51,
+              "dwell_time": null
+            },
+            {
+              "name": "东山香樟园",
+              "city": "南京",
+              "next": 2.42,
+              "dwell_time": null
+            },
+            {
+              "name": "神机营",
+              "city": "南京",
+              "next": 1.01,
+              "dwell_time": null
+            },
+            {
+              "name": "大校场",
+              "city": "南京",
+              "next": 1.17,
+              "dwell_time": null
+            },
+            {
+              "name": "七桥瓮",
+              "city": "南京",
+              "next": 0.97,
+              "dwell_time": null
+            },
+            {
+              "name": "石门坎",
+              "city": "南京",
+              "next": 1.15,
+              "dwell_time": null
+            },
+            {
+              "name": "光华门",
+              "city": "南京",
+              "next": 1.01,
+              "dwell_time": null
+            },
+            {
+              "name": "通济门",
+              "city": "南京",
+              "next": 1.29,
+              "dwell_time": null
+            },
+            {
+              "name": "夫子庙",
+              "city": "南京",
+              "next": 0.75,
+              "dwell_time": null
+            },
+            {
+              "name": "三山街",
+              "city": "南京",
+              "next": 1.42,
+              "dwell_time": null
+            },
+            {
+              "name": "朝天宫",
+              "city": "南京",
+              "next": 1.09,
+              "dwell_time": null
+            },
+            {
+              "name": "上海路",
+              "city": "南京",
+              "next": 0.9,
+              "dwell_time": null
+            },
+            {
+              "name": "五台山",
+              "city": "南京",
+              "next": 1.1,
+              "dwell_time": null
+            },
+            {
+              "name": "云南路",
+              "city": "南京",
+              "next": 0.97,
+              "dwell_time": null
+            },
+            {
+              "name": "青春广场",
+              "city": "南京",
+              "next": 1.03,
+              "dwell_time": null
+            },
+            {
+              "name": "虹桥",
+              "city": "南京",
+              "next": 0.77,
+              "dwell_time": null
+            },
+            {
+              "name": "福建路",
+              "city": "南京",
+              "next": 0.88,
+              "dwell_time": null
+            },
+            {
+              "name": "盐仓桥",
+              "city": "南京",
+              "next": 1.05,
+              "dwell_time": null
+            },
+            {
+              "name": "下关",
+              "city": "南京",
+              "next": 0.67,
+              "dwell_time": null
+            },
+            {
+              "name": "静海寺",
+              "city": "南京",
+              "next": 0.56,
+              "dwell_time": null
+            },
+            {
+              "name": "南京西站",
+              "city": "南京",
+              "next": 1.08,
+              "dwell_time": null
+            },
+            {
+              "name": "方家营",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    },
+    "NJ_S2": {
+      "name": "S2号线",
+      "color": "#B02427",
+      "city": "",
+      "formation": [
+        "6B"
+      ],
+      "maxspeed": 100,
+      "open_year": 2025,
+      "power_kw": 0,
+      "brake": 0,
+      "link": [
+        "https://baike.baidu.com/item/%E5%8D%97%E4%BA%AC%E5%9C%B0%E9%93%81S2%E5%8F%B7%E7%BA%BF"
+      ],
+      "image": "",
+      "disabled": false,
+      "special": false,
+      "pending": [],
+      "direction": [
+        {
+          "id": "NJ_S2_0",
+          "start": "太白",
+          "end": "西善桥",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "太白",
+              "city": "南京",
+              "next": 3.78,
+              "dwell_time": null
+            },
+            {
+              "name": "姑孰",
+              "city": "南京",
+              "next": 7.57,
+              "dwell_time": null
+            },
+            {
+              "name": "马鞍山经开区",
+              "city": "南京",
+              "next": 2.67,
+              "dwell_time": null
+            },
+            {
+              "name": "阳湖",
+              "city": "南京",
+              "next": 2.34,
+              "dwell_time": null
+            },
+            {
+              "name": "雨山东路",
+              "city": "南京",
+              "next": 1.18,
+              "dwell_time": null
+            },
+            {
+              "name": "湖南路・安工大",
+              "city": "南京",
+              "next": 2,
+              "dwell_time": null
+            },
+            {
+              "name": "湖北路・二中",
+              "city": "南京",
+              "next": 5.73,
+              "dwell_time": null
+            },
+            {
+              "name": "慈湖高新区",
+              "city": "南京",
+              "next": 6.9,
+              "dwell_time": null
+            },
+            {
+              "name": "铜井",
+              "city": "南京",
+              "next": 4.29,
+              "dwell_time": null
+            },
+            {
+              "name": "牧龙",
+              "city": "南京",
+              "next": 2.1,
+              "dwell_time": null
+            },
+            {
+              "name": "江宁滨江开发区",
+              "city": "南京",
+              "next": 2.87,
+              "dwell_time": null
+            },
+            {
+              "name": "江宁镇",
+              "city": "南京",
+              "next": 2.13,
+              "dwell_time": null
+            },
+            {
+              "name": "板桥南",
+              "city": "南京",
+              "next": 2.47,
+              "dwell_time": null
+            },
+            {
+              "name": "板桥",
+              "city": "南京",
+              "next": 3.3,
+              "dwell_time": null
+            },
+            {
+              "name": "雨花经济开发区",
+              "city": "南京",
+              "next": 3.15,
+              "dwell_time": null
+            },
+            {
+              "name": "西善桥",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        },
+        {
+          "id": "NJ_S2_1",
+          "start": "西善桥",
+          "end": "太白",
+          "is_loop": false,
+          "is_future": false,
+          "direction_type": "",
+          "station": [
+            {
+              "name": "西善桥",
+              "city": "南京",
+              "next": 3.15,
+              "dwell_time": null
+            },
+            {
+              "name": "雨花经济开发区",
+              "city": "南京",
+              "next": 3.3,
+              "dwell_time": null
+            },
+            {
+              "name": "板桥",
+              "city": "南京",
+              "next": 2.47,
+              "dwell_time": null
+            },
+            {
+              "name": "板桥南",
+              "city": "南京",
+              "next": 2.13,
+              "dwell_time": null
+            },
+            {
+              "name": "江宁镇",
+              "city": "南京",
+              "next": 2.87,
+              "dwell_time": null
+            },
+            {
+              "name": "江宁滨江开发区",
+              "city": "南京",
+              "next": 2.1,
+              "dwell_time": null
+            },
+            {
+              "name": "牧龙",
+              "city": "南京",
+              "next": 4.29,
+              "dwell_time": null
+            },
+            {
+              "name": "铜井",
+              "city": "南京",
+              "next": 6.9,
+              "dwell_time": null
+            },
+            {
+              "name": "慈湖高新区",
+              "city": "南京",
+              "next": 5.73,
+              "dwell_time": null
+            },
+            {
+              "name": "湖北路・二中",
+              "city": "南京",
+              "next": 2,
+              "dwell_time": null
+            },
+            {
+              "name": "湖南路・安工大",
+              "city": "南京",
+              "next": 1.18,
+              "dwell_time": null
+            },
+            {
+              "name": "雨山东路",
+              "city": "南京",
+              "next": 2.34,
+              "dwell_time": null
+            },
+            {
+              "name": "阳湖",
+              "city": "南京",
+              "next": 2.67,
+              "dwell_time": null
+            },
+            {
+              "name": "马鞍山经开区",
+              "city": "南京",
+              "next": 7.57,
+              "dwell_time": null
+            },
+            {
+              "name": "姑孰",
+              "city": "南京",
+              "next": 3.78,
+              "dwell_time": null
+            },
+            {
+              "name": "太白",
+              "city": "南京",
+              "next": null,
+              "dwell_time": null
+            }
+          ],
+          "routings": []
+        }
+      ]
+    }
+  },
+  "transfers": [
+    {
+      "type": "STAIR",
+      "station": "新街口",
+      "from": "NJ1",
+      "to": "NJ2",
+      "time": 180
+    },
+    {
+      "type": "HALL",
+      "station": "大行宫",
+      "from": "NJ2",
+      "to": "NJ3",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "南京南站",
+      "from": "NJ1",
+      "to": "NJ3",
+      "time": 240
+    },
+    {
+      "type": "CHANNEL",
+      "station": "南京南站",
+      "from": "NJ1",
+      "to": "NJ_S1",
+      "time": 300
+    },
+    {
+      "type": "CHANNEL",
+      "station": "南京南站",
+      "from": "NJ1",
+      "to": "NJ_S3",
+      "time": 300
+    },
+    {
+      "type": "CHANNEL",
+      "station": "南京南站",
+      "from": "NJ3",
+      "to": "NJ_S1",
+      "time": 300
+    },
+    {
+      "type": "CHANNEL",
+      "station": "南京南站",
+      "from": "NJ3",
+      "to": "NJ_S3",
+      "time": 300
+    },
+    {
+      "type": "CHANNEL",
+      "station": "南京南站",
+      "from": "NJ_S1",
+      "to": "NJ_S3",
+      "time": 300
+    },
+    {
+      "type": "HALL",
+      "station": "安德门",
+      "from": "NJ1",
+      "to": "NJ10",
+      "time": 240
+    },
+    {
+      "type": "STAIR",
+      "station": "元通",
+      "from": "NJ2",
+      "to": "NJ10",
+      "time": 180
+    },
+    {
+      "type": "HALL",
+      "station": "鼓楼",
+      "from": "NJ1",
+      "to": "NJ4",
+      "time": 240
+    },
+    {
+      "type": "STAIR",
+      "station": "鸡鸣寺",
+      "from": "NJ3",
+      "to": "NJ4",
+      "time": 180
+    },
+    {
+      "type": "HALL",
+      "station": "泰冯路",
+      "from": "NJ3",
+      "to": "NJ_S8",
+      "time": 240
+    },
+    {
+      "type": "STAIR",
+      "station": "油坊桥",
+      "from": "NJ2",
+      "to": "NJ_S3",
+      "time": 180
+    },
+    {
+      "type": "HALL",
+      "station": "螺塘路",
+      "from": "NJ2",
+      "to": "NJ7",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "永初路",
+      "from": "NJ_S3",
+      "to": "NJ7",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "晓庄",
+      "from": "NJ1",
+      "to": "NJ7",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "竹山路",
+      "from": "NJ1",
+      "to": "NJ5",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "诚信大道",
+      "from": "NJ3",
+      "to": "NJ5",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "吉印大道",
+      "from": "NJ_S1",
+      "to": "NJ5",
+      "time": 240
+    },
+    {
+      "type": "CHANNEL",
+      "station": "马群",
+      "from": "NJ2",
+      "to": "NJ6",
+      "time": 300
+    },
+    {
+      "type": "HALL",
+      "station": "金马路",
+      "from": "NJ2",
+      "to": "NJ4",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "福建路",
+      "from": "NJ7",
+      "to": "NJ5",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "上海路",
+      "from": "NJ2",
+      "to": "NJ5",
+      "time": 240
+    },
+    {
+      "type": "STAIR",
+      "station": "三山街",
+      "from": "NJ1",
+      "to": "NJ5",
+      "time": 180
+    },
+    {
+      "type": "HALL",
+      "station": "夫子庙",
+      "from": "NJ3",
+      "to": "NJ5",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "卡子门",
+      "from": "NJ3",
+      "to": "NJ10",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "南京站",
+      "from": "NJ1",
+      "to": "NJ3",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "翔宇路南",
+      "from": "NJ_S1",
+      "to": "NJ_S9",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "空港新城江宁",
+      "from": "NJ_S1",
+      "to": "NJ_S7",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "草场门·南艺·二师",
+      "from": "NJ4",
+      "to": "NJ7",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "五塘广场",
+      "from": "NJ3",
+      "to": "NJ7",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "中胜",
+      "from": "NJ10",
+      "to": "NJ7",
+      "time": 240
+    },
+    {
+      "type": "HALL",
+      "station": "莫愁湖",
+      "from": "NJ2",
+      "to": "NJ7",
+      "time": 240
+    }
+  ],
+  "open_times": [],
+  "headway_rules": [],
+  "crowd_rules": [],
+  "dwell_rules": [],
+  "speed_limits": [],
+  "special_line_rules": [],
+  "operator_companies": [
+    {
+      "Id": "南京_METRO",
+      "Name": "南京地铁集团有限公司",
+      "ShortName": "南京地铁集团",
+      "EnName": "南京 Metro",
+      "Country": "中国",
+      "City": "南京",
+      "Founded": null,
+      "Website": null,
+      "Hotline": null,
+      "Description": "南京城市轨道交通运营单位",
+      "LogoBase64": null,
+      "Lines": [
+        "NJ10",
+        "NJ2",
+        "NJ1",
+        "NJ3",
+        "NJ_S1",
+        "NJ_S8",
+        "NJ_S3",
+        "NJ_S7",
+        "NJ_S9",
+        "NJ4",
+        "NJ6",
+        "NJ7",
+        "NJ5",
+        "NJ_S2"
+      ]
+    }
+  ]
+}
