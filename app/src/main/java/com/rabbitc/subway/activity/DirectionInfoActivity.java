@@ -53,6 +53,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.LinkedHashSet;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -320,7 +321,7 @@ public class DirectionInfoActivity extends BaseActivity {
         if (headwayRules != null) {
             List<HeadwayRule> lineRules = new ArrayList<>();
             for (HeadwayRule rule : headwayRules) {
-                if (rule.lineId.equals(selectedLineId)) {
+                if (rule.lineId != null && rule.lineId.equals(selectedLineId)) {
                     if (opStart != null && opEnd != null) {
                         if (rule.startTime.compareTo(opStart) >= 0 && rule.endTime.compareTo(opEnd) <= 0) {
                             lineRules.add(rule);
@@ -779,17 +780,24 @@ public class DirectionInfoActivity extends BaseActivity {
             if (item.type != 1) continue;
             String station = item.stationName;
             Station stInfo = stationsObj.get(station);
-            if (stInfo == null) continue;
-            List<StationLine> lines = stInfo.lines;
-            if (lines == null) continue;
-
             Map<String, TransferLineInfo> unique = new LinkedHashMap<>();
-            for (StationLine lineEntry : lines) {
-                String lid = lineEntry.id;
+            Set<String> lineIds = new LinkedHashSet<>();
+            if (stInfo != null && stInfo.lines != null) {
+                for (StationLine lineEntry : stInfo.lines) {
+                    if (lineEntry.id != null) lineIds.add(lineEntry.id);
+                }
+            }
+            // 兼容旧版内置地图：站点 lines 可能为空，方向站点列表仍包含完整线路索引。
+            Map<String, List<String>> directionStations = DataCache.getInstance().getDirStations();
+            if (directionStations != null) {
+                for (Map.Entry<String, List<String>> entry : directionStations.entrySet()) {
+                    if (entry.getValue().contains(station)) {
+                        lineIds.add(GraphKeyUtils.getLineIdFromDirKey(entry.getKey()));
+                    }
+                }
+            }
+            for (String lid : lineIds) {
                 if (lid == null) continue;
-                String start = lineEntry.start;
-                String end = lineEntry.end;
-                String dirKey = GraphKeyUtils.makeDirKey(lid, start, end);
 
                 // 获取线路显示名和颜色
                 String display = getLineDisplayName(lid, linesObj, keyCity);

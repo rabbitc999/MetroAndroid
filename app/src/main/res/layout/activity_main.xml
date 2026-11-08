@@ -517,7 +517,6 @@
                 android:layout_marginBottom="4dp"
                 android:insetTop="2dp"
                 android:insetBottom="2dp"
-                android:backgroundTint="?attr/colorSurfaceContainerHigh"
                 android:text="城市详情" />
 
             <com.google.android.material.button.MaterialButton
@@ -541,7 +540,6 @@
                 android:layout_marginBottom="4dp"
                 android:insetTop="2dp"
                 android:insetBottom="2dp"
-                android:backgroundTint="?attr/colorSurfaceContainerHigh"
                 android:text="站点信息" />
 
             <com.google.android.material.divider.MaterialDivider

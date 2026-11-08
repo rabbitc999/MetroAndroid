@@ -92,8 +92,10 @@ public class MetroGraph {
             // 线路基本信息
             String lineName = (line.name != null) ? line.name : lineId;
             // 深圳地铁 2 号线与 8 号线贯通运营，统一使用乘客熟悉的组合名称。
-            if ("深圳".equals(line.city) && ("2号线".equals(lineName) || "8号线".equals(lineName))) {
-                lineName = "2/8号线";
+            if ("深圳".equals(line.city) && ("SZ2_8".equals(lineId)
+                    || "2号线".equals(lineName) || "8号线".equals(lineName)
+                    || lineName.contains("2号线/8号线"))) {
+                lineName = "2号线/8号线";
             }
             lineNameMap.put(lineId, lineName);
 
@@ -179,18 +181,29 @@ public class MetroGraph {
             String stationName = stEntry.getKey();
             Station stInfo = stEntry.getValue();
 
-            List<StationLine> lines = stInfo.lines;
-            if (lines == null) continue;
-
             // 收集该站点所有有效方向键（排除已关闭的线路）
             Set<String> dirKeys = new HashSet<>();
-            for (StationLine lineEntry : lines) {
-                String id = lineEntry.id;
-                String start = lineEntry.start;
-                String end = lineEntry.end;
-                String status = StationUtils.getStationLineStatus(stationName, id);
-                if (StationUtils.isClosed(status)) continue;
-                dirKeys.add(GraphKeyUtils.makeDirKey(id, start, end));
+            if (stInfo.lines != null) {
+                for (StationLine lineEntry : stInfo.lines) {
+                    String id = lineEntry.id;
+                    String start = lineEntry.start;
+                    String end = lineEntry.end;
+                    String status = StationUtils.getStationLineStatus(stationName, id);
+                    if (StationUtils.isClosed(status)) continue;
+                    dirKeys.add(GraphKeyUtils.makeDirKey(id, start, end));
+                }
+            }
+            // 部分旧版内置地图的站点 lines 数组为空，方向列表才是唯一可靠索引。
+            if (dirKeys.isEmpty()) {
+                for (Map.Entry<String, List<String>> entry : dirStations.entrySet()) {
+                    if (entry.getValue().contains(stationName)) {
+                        String dirKey = entry.getKey();
+                        String lineId = GraphKeyUtils.getLineIdFromDirKey(dirKey);
+                        if (!StationUtils.isClosed(StationUtils.getStationLineStatus(stationName, lineId))) {
+                            dirKeys.add(dirKey);
+                        }
+                    }
+                }
             }
 
             // 建立换乘边（不同方向之间）
@@ -285,16 +298,18 @@ public class MetroGraph {
         Pair<Double, Double> fare1 = FareCalculator.calculateFareWithoutSpecial(shortest.path, this);
         Pair<Double, Double> fare2 = FareCalculator.calculateFareWithSpecial(result2.path, this);
 
-        double cost1 = fare1.first * weight.moneyWeight + result1.cost;
-        double cost2 = fare2.first * weight.moneyWeight + result2.cost;
+        double fare1Value = fare1.first != null ? fare1.first : 2.0;
+        double fare2Value = fare2.first != null ? fare2.first : 2.0;
+        double cost1 = fare1Value * weight.moneyWeight + result1.cost;
+        double cost2 = fare2Value * weight.moneyWeight + result2.cost;
 
-        result1.totalMoney = fare1.first;
-        result1.specialMoney = fare1.second;
-        result2.totalMoney = fare2.first;
-        result2.specialMoney = fare2.second;
+        result1.totalMoney = fare1Value;
+        result1.specialMoney = fare1.second != null ? fare1.second : 0.0;
+        result2.totalMoney = fare2Value;
+        result2.specialMoney = fare2.second != null ? fare2.second : 0.0;
 
         if (weight.moneyWeight == Double.POSITIVE_INFINITY && result1.transfers != -1) {
-            result1.totalMoney = fare1.first;
+            result1.totalMoney = fare1Value;
             result1.specialMoney = 0;
             return result1;
         } else if (result1.transfers == -1) {
@@ -516,7 +531,8 @@ public class MetroGraph {
         for (int i = 0; i < path.size() - 1; i++) {
             String dir1 = GraphKeyUtils.parseNode(path.get(i))[0];
             String dir2 = GraphKeyUtils.parseNode(path.get(i + 1))[0];
-            if (!dir1.equals(dir2)) transfers++;
+            if (!GraphKeyUtils.getLineIdFromDirKey(dir1)
+                    .equals(GraphKeyUtils.getLineIdFromDirKey(dir2))) transfers++;
         }
         return transfers;
     }

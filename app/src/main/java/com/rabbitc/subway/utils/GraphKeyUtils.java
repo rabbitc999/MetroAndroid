@@ -125,18 +125,17 @@ public class GraphKeyUtils {
     }
 
     /**
-     * 计算路径中的换乘次数（方向变化的次数）。
+     * 计算路径中的换乘次数（线路变化的次数）。同一线路切换正反方向不属于换乘。
      *
      * @param path 路径节点列表
      * @return 换乘次数
      */
     public static int countTransfers(List<String> path) {
-        // 图节点携带方向键，方向变化即可视为一次换乘（同站不同方向也适用）。
         int transfers = 0;
         for (int i = 0; i < path.size() - 1; i++) {
             String dir1 = parseNode(path.get(i))[0];
             String dir2 = parseNode(path.get(i + 1))[0];
-            if (!dir1.equals(dir2)) transfers++;
+            if (!getLineIdFromDirKey(dir1).equals(getLineIdFromDirKey(dir2))) transfers++;
         }
         return transfers;
     }

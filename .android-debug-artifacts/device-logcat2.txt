@@ -1,0 +1,554 @@
+--------- beginning of main
+11-08 17:29:42.621  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:42.621  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:42.621  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3785.128418,R:1715.058228,G:1567.553223,B:627.521301, lux: 78.452209
+11-08 17:29:42.687  2604  4796 I NetworkAccelerateSwitchService: EVENT_RSSI_POLL. mRssiPoll=true
+11-08 17:29:42.687  2604  4796 I NetworkAccelerateSwitchService: getAverageWifiRssi:29
+11-08 17:29:42.688  2604  4796 D NetworkAccelerateSwitchService: checkIntervalModeChange mMovementState:5 mIntervalMode:0 mIsBadLinkLayerQoE:false mBadLinkLayerQoETimes = 0
+11-08 17:29:43.622  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:43.623  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:43.623  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3815.129639,R:1732.558838,G:1575.053467,B:632.521484, lux: 80.190178
+11-08 17:29:43.623  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:43.623  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:43.623  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3810.129395,R:1725.058594,G:1572.553345,B:632.521484, lux: 79.947762
+11-08 17:29:43.726  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:43.726  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:43.726  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3810.129395,R:1730.058716,G:1580.053589,B:630.021362, lux: 80.347610
+11-08 17:29:43.821  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:43.822  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:43.822  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3812.629395,R:1730.058716,G:1570.053345,B:630.021362, lux: 80.128746
+11-08 17:29:43.822  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:43.822  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:43.822  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3787.628662,R:1720.058350,G:1562.553101,B:630.021362, lux: 77.961571
+11-08 17:29:43.822  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:43.822  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:43.822  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3812.629395,R:1730.058716,G:1580.053589,B:632.521484, lux: 80.293564
+11-08 17:29:43.822  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:43.822  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:43.822  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3817.629639,R:1730.058716,G:1575.053467,B:632.521484, lux: 80.523399
+11-08 17:29:43.823  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:43.823  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:43.823  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3812.629395,R:1727.558594,G:1575.053467,B:630.021362, lux: 80.458321
+11-08 17:29:43.919  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:43.919  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:43.919  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3782.628418,R:1715.058228,G:1560.052979,B:627.521301, lux: 77.892288
+11-08 17:29:43.919  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:43.919  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:43.919  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3812.629395,R:1732.558838,G:1577.553589,B:632.521484, lux: 80.075256
+11-08 17:29:43.920  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:43.920  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:43.920  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3812.629395,R:1732.558838,G:1577.553589,B:632.521484, lux: 80.075256
+11-08 17:29:43.920  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:43.920  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:43.920  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3807.629150,R:1730.058716,G:1575.053467,B:635.021545, lux: 79.338524
+11-08 17:29:43.930  7700 15444 I .rabbitc.subway: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+11-08 17:29:43.932  7700  7700 W FinalizerDaemon: type=1400 audit(0.0:83201): avc:  denied  { getopt } for  path="/dev/socket/usap_pool_primary" scontext=u:r:untrusted_app:s0:c59,c257,c512,c768 tcontext=u:r:zygote:s0 tclass=unix_stream_socket permissive=0 app=com.rabbitc.subway
+11-08 17:29:43.934  7700 15446 W .rabbitc.subway: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/ContentCatcherOS2/ContentCatcherOS2.apk' with 1 weak references
+11-08 17:29:43.934  7700 15446 W .rabbitc.subway: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/RtMiCloudSDK/RtMiCloudSDK.apk' with 1 weak references
+11-08 17:29:43.934  7700 15446 W .rabbitc.subway: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/app/miuisystem/miuisystem.apk' with 1 weak references
+11-08 17:29:44.023  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.023  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.023  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3805.129150,R:1722.558472,G:1575.053467,B:635.021545, lux: 79.433548
+11-08 17:29:44.023  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.023  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.023  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3787.628662,R:1717.558350,G:1562.553101,B:630.021362, lux: 78.068626
+11-08 17:29:44.024  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.024  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.024  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3810.129395,R:1727.558594,G:1572.553345,B:630.021362, lux: 80.120911
+11-08 17:29:44.024  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.024  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.024  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3815.129639,R:1727.558594,G:1572.553345,B:632.521484, lux: 80.293037
+11-08 17:29:44.025  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.025  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.025  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3807.629150,R:1727.558594,G:1577.553589,B:635.021545, lux: 79.556839
+11-08 17:29:44.121  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.121  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.121  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3805.129150,R:1727.558594,G:1575.053467,B:632.521484, lux: 79.499634
+11-08 17:29:44.121  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.121  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.122  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3780.128418,R:1715.058228,G:1562.553101,B:630.021362, lux: 77.497185
+11-08 17:29:44.122  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.122  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.122  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3817.629639,R:1732.558838,G:1575.053467,B:635.021545, lux: 80.136139
+11-08 17:29:44.122  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.122  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.122  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3810.129395,R:1730.058716,G:1572.553345,B:630.021362, lux: 80.013840
+11-08 17:29:44.122  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.122  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.122  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3810.129395,R:1725.058594,G:1575.053467,B:630.021362, lux: 80.339226
+11-08 17:29:44.133  2604  3448 I MiuiNetworkPolicy: bandwidth: 0 KB/s, Max bandwidth: 3847 KB/s
+11-08 17:29:44.223  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.223  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.223  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3810.129395,R:1727.558594,G:1575.053467,B:632.521484, lux: 79.951973
+11-08 17:29:44.223  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.223  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.223  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3782.628418,R:1717.558350,G:1562.553101,B:632.521484, lux: 77.336090
+11-08 17:29:44.223  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.223  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.223  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3812.629395,R:1732.558838,G:1577.553589,B:635.021545, lux: 79.795059
+11-08 17:29:44.224  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.224  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.224  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3815.129639,R:1727.558594,G:1575.053467,B:630.021362, lux: 80.684494
+11-08 17:29:44.224  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.224  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.224  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3815.129639,R:1727.558594,G:1577.553589,B:632.521484, lux: 80.515549
+11-08 17:29:44.322  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.322  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.322  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3807.629150,R:1730.058716,G:1577.553589,B:637.521667, lux: 79.169571
+11-08 17:29:44.323  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.323  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.323  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3787.628662,R:1720.058350,G:1567.553223,B:627.521301, lux: 78.464279
+11-08 17:29:44.323  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.323  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.323  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3815.129639,R:1727.558594,G:1575.053467,B:632.521484, lux: 80.404305
+11-08 17:29:44.323  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.323  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.323  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3810.129395,R:1725.058594,G:1575.053467,B:635.021545, lux: 79.778831
+11-08 17:29:44.324  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.324  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.324  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3807.629150,R:1730.058716,G:1575.053467,B:632.521484, lux: 79.618729
+11-08 17:29:44.422  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.422  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.422  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3807.629150,R:1725.058594,G:1572.553345,B:630.021362, lux: 80.001785
+11-08 17:29:44.422  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.422  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.422  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3787.628662,R:1717.558350,G:1567.553223,B:630.021362, lux: 78.291138
+11-08 17:29:44.422  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.422  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.422  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3817.629639,R:1727.558594,G:1577.553589,B:632.521484, lux: 80.741714
+11-08 17:29:44.422  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.422  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.422  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3810.129395,R:1727.558594,G:1580.053589,B:632.521484, lux: 80.174477
+11-08 17:29:44.423  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.423  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.423  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3805.129150,R:1727.558594,G:1570.053345,B:630.021362, lux: 79.557320
+11-08 17:29:44.515  1449 17499 I QC2Comp : [hevcDLowLat_53] Stats: Pending(0) i/p-done(0) Works: Q: 1727/Done 1728|Work-Rate: Q(0.0/s Avg=0.1/s) Done(0.000/s Avg=0.130/s)| Stream: 30.00fps 0.0Kbps
+11-08 17:29:44.515  1449 17499 I QC2Comp : [hevcDLowLat_53] Mem-usage:  [In-1D: 5 bufs 74.160 MB] [1D-75: 4 bufs 0.062 MB] [2D-76: 23 bufs 30.906 MB] [1D-75: 15 bufs 0.234 MB] | Total: 105.363 MB
+11-08 17:29:44.522  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.522  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.522  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3802.629150,R:1725.058594,G:1575.053467,B:632.521484, lux: 79.380531
+11-08 17:29:44.607  1401  1718 I SDM     : HWEventsDRM::SetEventState: Setup vsync event for CRTC 104, Connector 57
+11-08 17:29:44.611  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:44.612  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:44.620  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.620  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.620  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3805.129150,R:1725.058594,G:1572.553345,B:627.521301, lux: 80.055824
+11-08 17:29:44.620  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.620  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.620  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3785.128418,R:1717.558350,G:1565.053101,B:630.021362, lux: 77.953705
+11-08 17:29:44.620  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.620  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.620  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3817.629639,R:1732.558838,G:1575.053467,B:632.521484, lux: 80.416344
+11-08 17:29:44.620  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.621  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.621  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3812.629395,R:1727.558594,G:1572.553345,B:632.521484, lux: 80.066864
+11-08 17:29:44.621  2261  3439 I libsensor-displayalgo: the value of channelCali C:2640.309885,R:1295.642681,G:1013.816193,B:343.844872,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.621  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.621  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6452.549024,G:4773.130710,B:2743.826644,EVENT C:3805.129150,R:1727.558594,G:1577.553589,B:630.021362, lux: 79.891083
+11-08 17:29:44.627  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:44.631   321   698 W chromium: [WARNING:cookie_manager.cc(548)] SetCanonicalCookie for incognitoMojoCookieManager
+11-08 17:29:44.633  1401  1951 I vendor.qti.hardware.display.composer-service: FrameNotifyProcess Sensor: notify citsensorservice to trigger cwb
+11-08 17:29:44.633  2261  2306 I libcitsensorservice@2.0-impl: msg_transfer
+11-08 17:29:44.633  2261  3433 I libsensor-parseRGB: request dump start
+11-08 17:29:44.633  2261  3433 D vendor.xiaomi.sensor.citsensorservice@2.0-service: handle id:11 wxh:1280x2712 uwxuh:1220x2712 size: 10416128 fd:15 fd_meta:16 flags:0x4000228 usage:0x33  format:0x3 layer_count: 1 reserved_size = 0
+11-08 17:29:44.634  1401  1718 D SDM     : HWCSession::SetCWBOutputBuffer: CWB config passed by cwb_client : tappoint 1  CWB_ROI : (817.000000 7.000000 978.000000 128.000000)
+11-08 17:29:44.634  1401  3440 D SDM     : HWCSession::ProcessRequests: Successfully configured CWB buffer.
+11-08 17:29:44.646  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:44.650  1401  3440 D SDM     : HWCSession::ProcessRequests: Pushing release fence in fenece wait queue.
+11-08 17:29:44.650  1401  3440 D SDM     : HWCSession::ProcessRequests: Creating AsyncFenceWaits async thread.
+11-08 17:29:44.650  1401  3440 D SDM     : HWCSession::ProcessRequests: Remove current CWB request from the pending request queue.
+11-08 17:29:44.650  1401  3440 D SDM     : HWCSession::ProcessRequests: No pending cwb requests found in the queue.
+11-08 17:29:44.664  1401  1544 D SDM     : HWDeviceDRM::SetupConcurrentWriteback: Tear down the Concurrent Writeback topology
+11-08 17:29:44.669  1401  3444 D SDM     : HWCSession::NotifyCWBStatus: Notify the client about buffer status 0.
+11-08 17:29:44.670  1401  3444 D SDM     : HWCSession::PerformFenceWaits: Remove current release fence from the pending fence wait queue.
+11-08 17:29:44.670  1401  3444 D SDM     : HWCSession::PerformFenceWaits: CWB fence queue is empty. No pending release fence to wait on.
+11-08 17:29:44.670  2261  3434 D libsensor-parseRGB: the value of RGB [6346.676552 4693.993784 2697.942353 5596.531657 4134.377096 2375.964691 5984.588029 4424.755437 2543.024635 6305.687373 4663.951647 2680.748734]
+11-08 17:29:44.721  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:44.722  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:44.722  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3805.129150,R:1722.558472,G:1572.553345,B:632.521484, lux: 81.887917
+11-08 17:29:44.885 15313 15349 I :widgetProvider: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+11-08 17:29:44.886 15313 15351 D JavaheapMonitor: Java heap used=7M max=512M, proc: com.xiaomi.market:widgetProvider
+11-08 17:29:44.886 15313 15351 V JavaheapMonitor: Check java heap usage finished! Next check delay: 0
+--------- beginning of system
+11-08 17:29:45.515  2099  2099 I wificond: station_bandwidth: P
+11-08 17:29:45.516  2604 14612 D WifiScoreReportInjector: mCcaBusyRate change to 5; mBeaconLostRate change to 3
+11-08 17:29:45.517  2604  3450 E WifiClientModeImpl[1320900933:wlan0]: Failed to get mlo info
+11-08 17:29:45.517  2604  4743 D SLM-SRV-SLAService: checktemp temperature = 31087 temperature_average = 30858 isPerformanceMode = false thermal_enable_slm = true
+11-08 17:29:45.519  1401  1718 I SDM     : HWEventsDRM::SetEventState: Setup vsync event for CRTC 104, Connector 57
+11-08 17:29:45.531  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:45.532  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:45.546  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:45.550  1401  1951 I vendor.qti.hardware.display.composer-service: FrameNotifyProcess Sensor: notify citsensorservice to trigger cwb
+11-08 17:29:45.551  2261  2306 I libcitsensorservice@2.0-impl: msg_transfer
+11-08 17:29:45.551  2261  3433 I libsensor-parseRGB: request dump start
+11-08 17:29:45.551  2261  3433 D vendor.xiaomi.sensor.citsensorservice@2.0-service: handle id:11 wxh:1280x2712 uwxuh:1220x2712 size: 10416128 fd:15 fd_meta:16 flags:0x4000228 usage:0x33  format:0x3 layer_count: 1 reserved_size = 0
+11-08 17:29:45.551  1401  1718 D SDM     : HWCSession::SetCWBOutputBuffer: CWB config passed by cwb_client : tappoint 1  CWB_ROI : (817.000000 7.000000 978.000000 128.000000)
+11-08 17:29:45.551  1401  3440 D SDM     : HWCSession::ProcessRequests: Successfully configured CWB buffer.
+11-08 17:29:45.564  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:45.568  1401  3440 D SDM     : HWCSession::ProcessRequests: Pushing release fence in fenece wait queue.
+11-08 17:29:45.568  1401  3440 D SDM     : HWCSession::ProcessRequests: Creating AsyncFenceWaits async thread.
+11-08 17:29:45.568  1401  3440 D SDM     : HWCSession::ProcessRequests: Remove current CWB request from the pending request queue.
+11-08 17:29:45.568  1401  3440 D SDM     : HWCSession::ProcessRequests: No pending cwb requests found in the queue.
+11-08 17:29:45.582  1401  1544 D SDM     : HWDeviceDRM::SetupConcurrentWriteback: Tear down the Concurrent Writeback topology
+11-08 17:29:45.587  1401  3444 D SDM     : HWCSession::NotifyCWBStatus: Notify the client about buffer status 0.
+11-08 17:29:45.588  1401  3444 D SDM     : HWCSession::PerformFenceWaits: Remove current release fence from the pending fence wait queue.
+11-08 17:29:45.588  1401  3444 D SDM     : HWCSession::PerformFenceWaits: CWB fence queue is empty. No pending release fence to wait on.
+11-08 17:29:45.588  2261  3434 D libsensor-parseRGB: the value of RGB [6346.676552 4693.993784 2697.942353 5596.531657 4134.377096 2375.964691 5984.588029 4424.755437 2543.024635 6305.687373 4663.951647 2680.748734]
+11-08 17:29:45.622  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:45.622  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:45.622  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3765.127930,R:1707.557983,G:1560.052979,B:625.021240, lux: 79.195961
+11-08 17:29:45.692  2604  4796 I NetworkAccelerateSwitchService: EVENT_RSSI_POLL. mRssiPoll=true
+11-08 17:29:45.693  2604  4796 I NetworkAccelerateSwitchService: getAverageWifiRssi:29
+11-08 17:29:45.694  2604  4796 D NetworkAccelerateSwitchService: checkIntervalModeChange mMovementState:5 mIntervalMode:0 mIsBadLinkLayerQoE:false mBadLinkLayerQoETimes = 0
+11-08 17:29:45.721  6056  6770 I VA_AliveCore:AssistInteractionService: onProcessChanged: processName=com.miui.voiceassist;isRunning=true
+11-08 17:29:46.621  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:46.622  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:46.622  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3790.128662,R:1715.058228,G:1570.053345,B:630.021362, lux: 81.021057
+11-08 17:29:46.622  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:46.622  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:46.622  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3792.628662,R:1712.558105,G:1567.553223,B:630.021362, lux: 81.243019
+11-08 17:29:46.722  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:46.722  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:46.722  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3785.128418,R:1707.557983,G:1567.553223,B:630.021362, lux: 80.778648
+11-08 17:29:46.821  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:46.821  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:46.821  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3770.127930,R:1707.557983,G:1555.052734,B:625.021240, lux: 79.425758
+11-08 17:29:46.822  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:46.822  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:46.822  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3792.628662,R:1712.558105,G:1572.553345,B:630.021362, lux: 81.465530
+11-08 17:29:46.822  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:46.822  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:46.822  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3790.128662,R:1715.058228,G:1567.553223,B:630.021362, lux: 80.909813
+11-08 17:29:46.822  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:46.822  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:46.822  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3790.128662,R:1715.058228,G:1570.053345,B:632.521484, lux: 80.740852
+11-08 17:29:46.822  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:46.822  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:46.822  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3792.628662,R:1715.058228,G:1570.053345,B:632.521484, lux: 80.967010
+11-08 17:29:46.923  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:46.923  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:46.923  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3765.127930,R:1705.057861,G:1562.553101,B:630.021362, lux: 78.853889
+11-08 17:29:46.924  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:46.924  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:46.924  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3790.128662,R:1712.558105,G:1570.053345,B:627.521301, lux: 81.408318
+11-08 17:29:46.924  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:46.924  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:46.924  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3782.628418,R:1712.558105,G:1570.053345,B:630.021362, lux: 80.449631
+11-08 17:29:46.924  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:46.924  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:46.924  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3785.128418,R:1717.558350,G:1567.553223,B:630.021362, lux: 80.350418
+11-08 17:29:46.925  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:46.925  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:46.925  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3782.628418,R:1715.058228,G:1570.053345,B:632.521484, lux: 80.062363
+11-08 17:29:47.022  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.022  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.022  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3785.128418,R:1710.058105,G:1570.053345,B:627.521301, lux: 81.063042
+11-08 17:29:47.121  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.121  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.121  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3765.127930,R:1705.057861,G:1560.052979,B:625.021240, lux: 79.303017
+11-08 17:29:47.121  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.121  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.121  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3792.628662,R:1712.558105,G:1570.053345,B:630.021362, lux: 81.354279
+11-08 17:29:47.122  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.122  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.122  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3787.628662,R:1715.058228,G:1570.053345,B:630.021362, lux: 80.794907
+11-08 17:29:47.122  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.122  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.122  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3790.128662,R:1715.058228,G:1565.053101,B:630.021362, lux: 80.798546
+11-08 17:29:47.122  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.122  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.122  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3782.628418,R:1715.058228,G:1567.553223,B:630.021362, lux: 80.231316
+11-08 17:29:47.138  2604  3448 I MiuiNetworkPolicy: bandwidth: 0 KB/s, Max bandwidth: 3847 KB/s
+11-08 17:29:47.218 15704 15704 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+11-08 17:29:47.219 15704 15704 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+11-08 17:29:47.219  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.219  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.219  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3770.127930,R:1707.557983,G:1562.553101,B:625.021240, lux: 79.759537
+11-08 17:29:47.219  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.219  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.219  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3797.628906,R:1717.558350,G:1570.053345,B:632.521484, lux: 81.312286
+11-08 17:29:47.220  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.220  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.220  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3792.628662,R:1715.058228,G:1572.553345,B:632.521484, lux: 81.078270
+11-08 17:29:47.220  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.220  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.220  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3790.128662,R:1715.058228,G:1567.553223,B:630.021362, lux: 80.909813
+11-08 17:29:47.220  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.221  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.221  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3782.628418,R:1712.558105,G:1567.553223,B:630.021362, lux: 80.338371
+11-08 17:29:47.319  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.319  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.319  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3787.628662,R:1717.558350,G:1570.053345,B:630.021362, lux: 80.687843
+11-08 17:29:47.419  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.419  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.420  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3792.628662,R:1712.558105,G:1565.053101,B:632.521484, lux: 80.851555
+11-08 17:29:47.519  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.519  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.519  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3772.628174,R:1705.057861,G:1562.553101,B:630.021362, lux: 79.532379
+11-08 17:29:47.519  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.519  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.519  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3790.128662,R:1715.058228,G:1567.553223,B:630.021362, lux: 80.909813
+11-08 17:29:47.519  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.519  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.519  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3790.128662,R:1717.558350,G:1570.053345,B:627.521301, lux: 81.194191
+11-08 17:29:47.519  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.519  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.519  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3790.128662,R:1712.558105,G:1567.553223,B:630.021362, lux: 81.016869
+11-08 17:29:47.519  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.519  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.519  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3787.628662,R:1712.558105,G:1567.553223,B:627.521301, lux: 81.070908
+11-08 17:29:47.550 15708 15708 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-08 17:29:47.554 15708 15708 I AndroidRuntime: Using default boot image
+11-08 17:29:47.554 15708 15708 I AndroidRuntime: Leaving lock profiling enabled
+11-08 17:29:47.557 15708 15708 I app_process: Using CollectorTypeCC GC.
+11-08 17:29:47.557 15708 15708 I app_process: MMAP_TRYLOCK is supported in uffd errno:2 addr:0x72baee5000 size:4096
+11-08 17:29:47.620  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.620  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.620  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3790.128662,R:1715.058228,G:1567.553223,B:627.521301, lux: 81.190002
+11-08 17:29:47.628 15708 15708 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+11-08 17:29:47.636 15708 15708 D nativeloader: Load libicu_jni.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+11-08 17:29:47.636 15708 15708 D app_process: u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/8/icu") succeeded. 
+11-08 17:29:47.636 15708 15708 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt75l.dat
+11-08 17:29:47.637 15708 15708 D nativeloader: Load libjavacore.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+11-08 17:29:47.638 15708 15708 D nativeloader: Load libopenjdk.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+11-08 17:29:47.641 15708 15708 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+11-08 17:29:47.642 15708 15708 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*2496447986]#PCL[/system/framework/android.test.base.jar*724373495]} | PCL[/system/framework/android.test.runner.jar*2496447986])
+11-08 17:29:47.667 15708 15708 W libc    : Access denied finding property "ro.vendor.mi_fake_32bit_support"
+11-08 17:29:47.667 15708 15708 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+11-08 17:29:47.668 15708 15708 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-08 17:29:47.664 15708 15708 W binder:15708_1: type=1400 audit(0.0:83202): avc:  denied  { read write } for  name="metis" dev="tmpfs" ino=1077 scontext=u:r:shell:s0 tcontext=u:object_r:migt_dev:s0 tclass=chr_file permissive=0
+11-08 17:29:47.664 15708 15708 W binder:15708_2: type=1400 audit(0.0:83203): avc:  denied  { read write } for  name="metis" dev="tmpfs" ino=1077 scontext=u:r:shell:s0 tcontext=u:object_r:migt_dev:s0 tclass=chr_file permissive=0
+11-08 17:29:47.674 15708 15708 W MiuiStubRegistry: Failed to collect stub providers in com.miui.autoui.MIUIAutoUIStub$$: /system_ext/framework/miui-framework.autoui.jar not exist
+11-08 17:29:47.674 15708 15708 W MiuiStubRegistry: Failed to collect stub providers in android.hovermode.MiuiHoverModeStub$$: /system_ext/framework/miui-framework.hovermode.jar not exist
+11-08 17:29:47.674 15708 15708 W MiuiFrameworkImpl: MiuiFrameworkImpl already collected
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: Failed to collect stub providers
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: java.lang.ClassNotFoundException: android.powerconsumption.MiuiDrawableStub$$
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at java.lang.Class.classForName(Native Method)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at java.lang.Class.forName(Class.java:607)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at com.miui.base.MiuiStubRegistry.collectStubProviders(MiuiStubRegistry.java:149)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at com.miui.base.MiuiStubRegistry.init(MiuiStubRegistry.java:82)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at com.miui.base.MiuiStubRegistry.init(MiuiStubRegistry.java:56)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at android.powerconsumption.MiuiDrawableStub.<clinit>(MiuiDrawableStub.java:13)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at com.miui.base.MiuiFrameworkRouter.init(MiuiFrameworkRouter.java:48)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at com.miui.base.MiuiStubRegistry.<clinit>(MiuiStubRegistry.java:52)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at com.miui.base.MiuiStubUtil.getInstance(MiuiStubUtil.java:50)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at miui.mqsas.ScoutUtilsStub.<clinit>(ScoutUtilsStub.java:10)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at android.os.perfdebug.MessageMonitor.<clinit>(MessageMonitor.java:23)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at android.os.Looper.<init>(Looper.java:389)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at android.os.Looper.prepare(Looper.java:129)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at android.os.Looper.prepareMainLooper(Looper.java:141)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at com.android.uiautomator.core.UiAutomationShellWrapper.connect(UiAutomationShellWrapper.java:33)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at com.android.commands.uiautomator.DumpCommand.run(DumpCommand.java:78)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:404)
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: Caused by: java.lang.ClassNotFoundException: android.powerconsumption.MiuiDrawableStub$$
+11-08 17:29:47.676 15708 15708 W MiuiStubRegistry: 	... 19 more
+11-08 17:29:47.679 15708 15708 I MessageMonitor: Load libmiui_runtime
+11-08 17:29:47.680 15708 15708 D nativeloader: Load libmiui_runtime.so using system ns (caller=/system_ext/framework/miui-framework.jar): ok
+11-08 17:29:47.680 15708 15708 E app_process: register_android_view_SurfaceRuntimeShader  
+11-08 17:29:47.680 15708 15708 E app_process: register_android_view_SurfaceRuntimeShader  0
+11-08 17:29:47.683 15708 15708 D UiAutomationConnection: Created on user UserHandle{0}
+11-08 17:29:47.683 15708 15708 I UiAutomation: Initialized for user 0 on display 0
+11-08 17:29:47.683 15708 15708 W UiAutomation: Created with deprecatead constructor, assumes DEFAULT_DISPLAY
+11-08 17:29:47.685  2604  4274 D AccessibilityManagerService: changeCurrentUserForTestAutomationIfNeededLocked(0): ignoring because device doesn't support visible background users
+11-08 17:29:47.685  2604  4274 I UiAutomationManager: Registering UiTestAutomationService (id=com.android.server.accessibility/UiAutomation, flags=0x0) when called by user 0
+11-08 17:29:47.687  2604  4274 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-08 17:29:47.687  2604  3064 W SettingsProvider: Failed to notify for 999: content://settings/secure/accessibility_enabled
+11-08 17:29:47.687  2604  3064 W SettingsProvider: java.lang.SecurityException: Failed to find provider settings for user 999; expected to find a valid ContentProvider for this authority
+11-08 17:29:47.687  2604  3064 W SettingsProvider: 	at com.android.server.content.ContentService.notifyChange(ContentService.java:457)
+11-08 17:29:47.687  2604  3064 W SettingsProvider: 	at android.content.ContentResolver.notifyChange(ContentResolver.java:2932)
+11-08 17:29:47.687  2604  3064 W SettingsProvider: 	at android.content.ContentResolver.notifyChange(ContentResolver.java:2921)
+11-08 17:29:47.687  2604  3064 W SettingsProvider: 	at android.content.ContentResolver.notifyChange(ContentResolver.java:2915)
+11-08 17:29:47.687  2604  3064 W SettingsProvider: 	at com.android.providers.settings.SettingsProvider$SettingsRegistry$MyHandler.handleMessage(SettingsProvider.java:3995)
+11-08 17:29:47.687  2604  3064 W SettingsProvider: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-08 17:29:47.687  2604  3064 W SettingsProvider: 	at android.os.Looper.loopOnce(Looper.java:249)
+11-08 17:29:47.687  2604  3064 W SettingsProvider: 	at android.os.Looper.loop(Looper.java:337)
+11-08 17:29:47.687  2604  3064 W SettingsProvider: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+11-08 17:29:47.688  1401  1718 I SDM     : HWEventsDRM::SetEventState: Setup vsync event for CRTC 104, Connector 57
+11-08 17:29:47.688  1564  1564 D MI-SF   : isTpIdleScene ,mAverageFrameRate is 60, 0 
+11-08 17:29:47.688  1564  1564 D DisplayModeController: setDesiredMode 4630946377747519618 {mode={fps=120.00 Hz, modePtr={id=1, vsyncRate=120.00 Hz, peakRefreshRate=120.00 Hz}}, emitEvent=true, force=false}
+11-08 17:29:47.692  2604 12137 D FileUtils: Rounded bytes from 11827490816 to 16000000000
+11-08 17:29:47.692  2604 12137 D FileUtils: Rounded bytes from 11827490816 to 16000000000
+11-08 17:29:47.695  2604  4274 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-08 17:29:47.696  2604  3064 W SettingsProvider: Failed to notify for 999: content://settings/secure/accessibility_enabled
+11-08 17:29:47.696  2604  3064 W SettingsProvider: java.lang.SecurityException: Failed to find provider settings for user 999; expected to find a valid ContentProvider for this authority
+11-08 17:29:47.696  2604  3064 W SettingsProvider: 	at com.android.server.content.ContentService.notifyChange(ContentService.java:457)
+11-08 17:29:47.696  2604  3064 W SettingsProvider: 	at android.content.ContentResolver.notifyChange(ContentResolver.java:2932)
+11-08 17:29:47.696  2604  3064 W SettingsProvider: 	at android.content.ContentResolver.notifyChange(ContentResolver.java:2921)
+11-08 17:29:47.696  2604  3064 W SettingsProvider: 	at android.content.ContentResolver.notifyChange(ContentResolver.java:2915)
+11-08 17:29:47.696  2604  3064 W SettingsProvider: 	at com.android.providers.settings.SettingsProvider$SettingsRegistry$MyHandler.handleMessage(SettingsProvider.java:3995)
+11-08 17:29:47.696  2604  3064 W SettingsProvider: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-08 17:29:47.696  2604  3064 W SettingsProvider: 	at android.os.Looper.loopOnce(Looper.java:249)
+11-08 17:29:47.696  2604  3064 W SettingsProvider: 	at android.os.Looper.loop(Looper.java:337)
+11-08 17:29:47.696  2604  3064 W SettingsProvider: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+11-08 17:29:47.701  1401  1718 I SDM     : HWCDisplay::SetActiveConfigWithConstraints: config: 1, WxH 1220x2712, fps 120
+11-08 17:29:47.702  1401  1718 W SDM     : HWDeviceDRM::GetSupportedBitClkRate: Requested rate not supported: 1098000000
+11-08 17:29:47.702  1401  1718 I SDM     : HWDeviceDRM::UpdateMixerAttributes: Mixer WxH 1220x2712-0 for Peripheral
+11-08 17:29:47.703  1401  1718 I SDM     : HWCDisplay::SubmitDisplayConfig: Active configuration changed from config 0 to 1
+11-08 17:29:47.703  1401  1718 I SDM     : HWCDisplay::SubmitDisplayConfig: Active WxH 1220x2712, timing_fps: 120, sf_fps: 120, ddic_idle_mode:0, ddic_auto_mode: 0, ddic_min_fps: 0
+11-08 17:29:47.704  1401  1544 I SDM     : HWDeviceDRM::SetupAtomic: Setting mode: WxH: 1220x2712, vrefresh: 120, hskew: 0
+11-08 17:29:47.704  1401  1951 I vendor.qti.hardware.display.composer-service: FrameNotifyProcess Sensor: notify citsensorservice to trigger cwb
+11-08 17:29:47.705  1466  1565 D FPSMonitor: threadFuncFpsMonitor display 0, fps 120
+11-08 17:29:47.705  2261  2306 I libcitsensorservice@2.0-impl: msg_transfer
+11-08 17:29:47.705  2261  3433 I libsensor-parseRGB: request dump start
+11-08 17:29:47.706  2261  3433 D vendor.xiaomi.sensor.citsensorservice@2.0-service: handle id:11 wxh:1280x2712 uwxuh:1220x2712 size: 10416128 fd:15 fd_meta:16 flags:0x4000228 usage:0x33  format:0x3 layer_count: 1 reserved_size = 0
+11-08 17:29:47.706  1401  1718 D SDM     : HWCSession::SetCWBOutputBuffer: CWB config passed by cwb_client : tappoint 1  CWB_ROI : (817.000000 7.000000 978.000000 128.000000)
+11-08 17:29:47.706  1401  3440 D SDM     : HWCSession::ProcessRequests: Successfully configured CWB buffer.
+11-08 17:29:47.711 12206 12206 I SafetyCenterAccessibilityListener: accessibility event occurred, safety center feature not enabled.
+11-08 17:29:47.711  2604  2604 D BatterySaverPolicy: accessibility changed to true, updating policy.
+11-08 17:29:47.712 29510 29510 I SafetyCenterAccessibilityListener: accessibility event occurred, safety center feature not enabled.
+11-08 17:29:47.712  2604  2604 D AS.AudioService: Accessibility volume enabled = false
+11-08 17:29:47.719  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.719  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.719  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3782.628418,R:1715.058228,G:1567.553223,B:630.021362, lux: 80.231316
+11-08 17:29:47.719  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.719  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.719  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3790.128662,R:1715.058228,G:1565.053101,B:630.021362, lux: 80.798546
+11-08 17:29:47.719  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.720  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.720  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3800.128906,R:1722.558472,G:1572.553345,B:635.021545, lux: 81.155388
+11-08 17:29:47.720  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.720  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.720  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3790.128662,R:1717.558350,G:1567.553223,B:630.021362, lux: 80.802742
+11-08 17:29:47.720  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.720  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.720  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3787.628662,R:1712.558105,G:1565.053101,B:627.521301, lux: 80.959648
+11-08 17:29:47.730  2604  3571 D HyperStabilitySdkService: checkDmabufStatus done, exceedLimitsList:[], totalDmabufSize:0
+11-08 17:29:47.742  1401  3440 D SDM     : HWCSession::ProcessRequests: Pushing release fence in fenece wait queue.
+11-08 17:29:47.742  1401  3440 D SDM     : HWCSession::ProcessRequests: Creating AsyncFenceWaits async thread.
+11-08 17:29:47.742  1401  3440 D SDM     : HWCSession::ProcessRequests: Remove current CWB request from the pending request queue.
+11-08 17:29:47.742  1401  3440 D SDM     : HWCSession::ProcessRequests: No pending cwb requests found in the queue.
+11-08 17:29:47.746  1401  1544 D SDM     : HWDeviceDRM::SetupConcurrentWriteback: Tear down the Concurrent Writeback topology
+11-08 17:29:47.757  1401  3444 D SDM     : HWCSession::NotifyCWBStatus: Notify the client about buffer status 0.
+11-08 17:29:47.757  1401  3444 D SDM     : HWCSession::PerformFenceWaits: Remove current release fence from the pending fence wait queue.
+11-08 17:29:47.757  1401  3444 D SDM     : HWCSession::PerformFenceWaits: CWB fence queue is empty. No pending release fence to wait on.
+11-08 17:29:47.758  2261  3434 D libsensor-parseRGB: the value of RGB [6346.676552 4693.993784 2697.942353 5596.531657 4134.377096 2375.964691 5984.588029 4424.755437 2543.024635 6305.687373 4663.951647 2680.748734]
+11-08 17:29:47.822  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:47.822  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:47.822  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3767.627930,R:1700.057739,G:1562.553101,B:627.521301, lux: 79.574348
+11-08 17:29:48.534  2099  2099 I wificond: station_bandwidth: P
+11-08 17:29:48.535  2604 14612 D WifiScoreReportInjector: mCcaBusyRate change to 5; mBeaconLostRate change to 0
+11-08 17:29:48.536  2604  3450 E WifiClientModeImpl[1320900933:wlan0]: Failed to get mlo info
+11-08 17:29:48.538  1401  1718 I SDM     : HWEventsDRM::SetEventState: Setup vsync event for CRTC 104, Connector 57
+11-08 17:29:48.543  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:48.545  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:48.550  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:48.557  1401  1951 I vendor.qti.hardware.display.composer-service: FrameNotifyProcess Sensor: notify citsensorservice to trigger cwb
+11-08 17:29:48.557  2261  2302 I libcitsensorservice@2.0-impl: msg_transfer
+11-08 17:29:48.557  2261  3433 I libsensor-parseRGB: request dump start
+11-08 17:29:48.557  2261  3433 D vendor.xiaomi.sensor.citsensorservice@2.0-service: handle id:11 wxh:1280x2712 uwxuh:1220x2712 size: 10416128 fd:15 fd_meta:16 flags:0x4000228 usage:0x33  format:0x3 layer_count: 1 reserved_size = 0
+11-08 17:29:48.557  1401  1718 D SDM     : HWCSession::SetCWBOutputBuffer: CWB config passed by cwb_client : tappoint 1  CWB_ROI : (817.000000 7.000000 978.000000 128.000000)
+11-08 17:29:48.559  1401  3440 D SDM     : HWCSession::ProcessRequests: Successfully configured CWB buffer.
+11-08 17:29:48.560  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:48.568  1401  3440 D SDM     : HWCSession::ProcessRequests: Pushing release fence in fenece wait queue.
+11-08 17:29:48.568  1401  3440 D SDM     : HWCSession::ProcessRequests: Creating AsyncFenceWaits async thread.
+11-08 17:29:48.568  1401  3440 D SDM     : HWCSession::ProcessRequests: Remove current CWB request from the pending request queue.
+11-08 17:29:48.568  1401  3440 D SDM     : HWCSession::ProcessRequests: No pending cwb requests found in the queue.
+11-08 17:29:48.572  1401  1544 D SDM     : HWDeviceDRM::SetupConcurrentWriteback: Tear down the Concurrent Writeback topology
+11-08 17:29:48.583  1401  3444 D SDM     : HWCSession::NotifyCWBStatus: Notify the client about buffer status 0.
+11-08 17:29:48.584  1401  3444 D SDM     : HWCSession::PerformFenceWaits: Remove current release fence from the pending fence wait queue.
+11-08 17:29:48.584  1401  3444 D SDM     : HWCSession::PerformFenceWaits: CWB fence queue is empty. No pending release fence to wait on.
+11-08 17:29:48.584  2261  3434 D libsensor-parseRGB: the value of RGB [6346.676552 4693.993784 2697.942353 5596.531657 4134.377096 2375.964691 5984.588029 4424.755437 2543.024635 6305.687373 4663.951647 2680.748734]
+11-08 17:29:48.620  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:48.621  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:48.621  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:48.621  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3780.128418,R:1707.557983,G:1567.553223,B:630.021362, lux: 80.326324
+11-08 17:29:48.621  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:48.626  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:48.635  4451  4451 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+11-08 17:29:48.696  2604  4796 I NetworkAccelerateSwitchService: EVENT_RSSI_POLL. mRssiPoll=true
+11-08 17:29:48.696  2604  4796 I NetworkAccelerateSwitchService: getAverageWifiRssi:29
+11-08 17:29:48.697  2604  4796 D NetworkAccelerateSwitchService: checkIntervalModeChange mMovementState:5 mIntervalMode:0 mIsBadLinkLayerQoE:false mBadLinkLayerQoETimes = 0
+11-08 17:29:48.751  2604  2680 I ClipboardServiceI: checkProviderWakePathForClipboard: primaryClip is null
+11-08 17:29:48.754 27311 15726 I MMKV    : <MMKV.cpp:1189::sync> MMKV::sync, SyncFlag = 0
+11-08 17:29:48.803  1564  1564 D MI-SF   : setIdleFps choose FPS:60, mode:0
+11-08 17:29:48.803  1564  1564 D DisplayModeController: setDesiredMode 4630946377747519618 {mode={fps=60.00 Hz, modePtr={id=0, vsyncRate=60.00 Hz, peakRefreshRate=60.00 Hz}}, emitEvent=false, force=false}
+11-08 17:29:48.804  1401  1718 I SDM     : HWEventsDRM::SetEventState: Setup vsync event for CRTC 104, Connector 57
+11-08 17:29:48.806  1401  1718 I SDM     : HWCDisplay::SetActiveConfigWithConstraints: config: 0, WxH 1220x2712, fps 60
+11-08 17:29:48.807  1401  1718 W SDM     : HWDeviceDRM::GetSupportedBitClkRate: Requested rate not supported: 1098000000
+11-08 17:29:48.807  1401  1718 I SDM     : HWDeviceDRM::UpdateMixerAttributes: Mixer WxH 1220x2712-0 for Peripheral
+11-08 17:29:48.807  1401  1718 I SDM     : HWCDisplay::SubmitDisplayConfig: Active configuration changed from config 1 to 0
+11-08 17:29:48.807  1401  1718 I SDM     : HWCDisplay::SubmitDisplayConfig: Active WxH 1220x2712, timing_fps: 60, sf_fps: 60, ddic_idle_mode:0, ddic_auto_mode: 0, ddic_min_fps: 0
+11-08 17:29:48.809  1401  1544 I SDM     : HWDeviceDRM::SetupAtomic: Setting mode: WxH: 1220x2712, vrefresh: 60, hskew: 0
+11-08 17:29:48.811  1466  1565 D FPSMonitor: threadFuncFpsMonitor display 0, fps 60
+11-08 17:29:49.515  1449 17499 I QC2Comp : [hevcDLowLat_53] Stats: Pending(0) i/p-done(0) Works: Q: 1727/Done 1728|Work-Rate: Q(0.0/s Avg=0.1/s) Done(0.000/s Avg=0.130/s)| Stream: 30.00fps 0.0Kbps
+11-08 17:29:49.516  1449 17499 I QC2Comp : [hevcDLowLat_53] Mem-usage:  [In-1D: 5 bufs 74.160 MB] [1D-75: 4 bufs 0.062 MB] [2D-76: 23 bufs 30.906 MB] [1D-75: 15 bufs 0.234 MB] | Total: 105.363 MB
+11-08 17:29:49.623  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:49.623  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:49.623  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3720.126221,R:1675.056885,G:1542.552368,B:620.021057, lux: 76.298332
+11-08 17:29:49.623  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:49.623  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:49.623  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3720.126221,R:1677.557007,G:1542.552368,B:622.521118, lux: 75.911079
+11-08 17:29:49.652 15708 15708 W uiautomator: type=1400 audit(0.0:83204): avc:  denied  { read } for  name="u:object_r:qemu_sf_lcd_density_prop:s0" dev="tmpfs" ino=331 scontext=u:r:shell:s0 tcontext=u:object_r:qemu_sf_lcd_density_prop:s0 tclass=file permissive=0
+11-08 17:29:49.652 15708 15708 W uiautomator: type=1400 audit(0.0:83205): avc:  denied  { read } for  name="u:object_r:qemu_sf_lcd_density_prop:s0" dev="tmpfs" ino=331 scontext=u:r:shell:s0 tcontext=u:object_r:qemu_sf_lcd_density_prop:s0 tclass=file permissive=0
+11-08 17:29:49.653 15708 15708 W libc    : Access denied finding property "qemu.sf.lcd_density"
+11-08 17:29:49.653 15708 15708 W libc    : Access denied finding property "qemu.sf.lcd_density"
+11-08 17:29:49.658 15708 15708 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@1210e; boundsInParent: Rect(0, 0 - 1076, 0); boundsInScreen: Rect(72, 1182 - 1148, 1182); boundsInWindow: Rect(72, 1182 - 1148, 1182); packageName: com.rabbitc.subway; className: android.widget.LinearLayout; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; containerTitle: null; viewIdResName: null; uniqueId: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; granularScrollingSupported: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]; isTextSelectable: false
+11-08 17:29:49.659 15708 15708 W AccessibilityNodeInfoDumper: Fetch time: 2ms
+11-08 17:29:49.660  1401  1718 I SDM     : HWEventsDRM::SetEventState: Setup vsync event for CRTC 104, Connector 57
+11-08 17:29:49.661  1564  1564 D MI-SF   : isTpIdleScene ,mAverageFrameRate is 60, 0 
+11-08 17:29:49.661  1564  1564 D DisplayModeController: setDesiredMode 4630946377747519618 {mode={fps=120.00 Hz, modePtr={id=1, vsyncRate=120.00 Hz, peakRefreshRate=120.00 Hz}}, emitEvent=true, force=false}
+11-08 17:29:49.661  2604  2680 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+11-08 17:29:49.661  2604  2680 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+11-08 17:29:49.662  2604  3064 W SettingsProvider: Failed to notify for 999: content://settings/secure/accessibility_enabled
+11-08 17:29:49.662  2604  3064 W SettingsProvider: java.lang.SecurityException: Failed to find provider settings for user 999; expected to find a valid ContentProvider for this authority
+11-08 17:29:49.662  2604  3064 W SettingsProvider: 	at com.android.server.content.ContentService.notifyChange(ContentService.java:457)
+11-08 17:29:49.662  2604  3064 W SettingsProvider: 	at android.content.ContentResolver.notifyChange(ContentResolver.java:2932)
+11-08 17:29:49.662  2604  3064 W SettingsProvider: 	at android.content.ContentResolver.notifyChange(ContentResolver.java:2921)
+11-08 17:29:49.662  2604  3064 W SettingsProvider: 	at android.content.ContentResolver.notifyChange(ContentResolver.java:2915)
+11-08 17:29:49.662  2604  3064 W SettingsProvider: 	at com.android.providers.settings.SettingsProvider$SettingsRegistry$MyHandler.handleMessage(SettingsProvider.java:3995)
+11-08 17:29:49.662  2604  3064 W SettingsProvider: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-08 17:29:49.662  2604  3064 W SettingsProvider: 	at android.os.Looper.loopOnce(Looper.java:249)
+11-08 17:29:49.662  2604  3064 W SettingsProvider: 	at android.os.Looper.loop(Looper.java:337)
+11-08 17:29:49.662  2604  3064 W SettingsProvider: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+11-08 17:29:49.663 15708 15708 D AndroidRuntime: Shutting down VM
+11-08 17:29:49.664  2604 12140 D FileUtils: Rounded bytes from 11827490816 to 16000000000
+11-08 17:29:49.665  2604  4274 D FileUtils: Rounded bytes from 11827490816 to 16000000000
+11-08 17:29:49.672  2604  2604 D BatterySaverPolicy: accessibility changed to false, updating policy.
+11-08 17:29:49.682  1401  1718 I SDM     : HWCDisplay::SetActiveConfigWithConstraints: config: 1, WxH 1220x2712, fps 120
+11-08 17:29:49.683  1401  1718 W SDM     : HWDeviceDRM::GetSupportedBitClkRate: Requested rate not supported: 1098000000
+11-08 17:29:49.683  1401  1718 I SDM     : HWDeviceDRM::UpdateMixerAttributes: Mixer WxH 1220x2712-0 for Peripheral
+11-08 17:29:49.683  1401  1718 I SDM     : HWCDisplay::SubmitDisplayConfig: Active configuration changed from config 0 to 1
+11-08 17:29:49.683  1401  1718 I SDM     : HWCDisplay::SubmitDisplayConfig: Active WxH 1220x2712, timing_fps: 120, sf_fps: 120, ddic_idle_mode:0, ddic_auto_mode: 0, ddic_min_fps: 0
+11-08 17:29:49.685  1401  1544 I SDM     : HWDeviceDRM::SetupAtomic: Setting mode: WxH: 1220x2712, vrefresh: 120, hskew: 0
+11-08 17:29:49.686  1401  1951 I vendor.qti.hardware.display.composer-service: FrameNotifyProcess Sensor: notify citsensorservice to trigger cwb
+11-08 17:29:49.686  2261  3521 I libcitsensorservice@2.0-impl: msg_transfer
+11-08 17:29:49.686  2261  3433 I libsensor-parseRGB: request dump start
+11-08 17:29:49.686  2261  3433 D vendor.xiaomi.sensor.citsensorservice@2.0-service: handle id:11 wxh:1280x2712 uwxuh:1220x2712 size: 10416128 fd:15 fd_meta:16 flags:0x4000228 usage:0x33  format:0x3 layer_count: 1 reserved_size = 0
+11-08 17:29:49.687  1401  1718 D SDM     : HWCSession::SetCWBOutputBuffer: CWB config passed by cwb_client : tappoint 1  CWB_ROI : (817.000000 7.000000 978.000000 128.000000)
+11-08 17:29:49.687  1401  3440 D SDM     : HWCSession::ProcessRequests: Successfully configured CWB buffer.
+11-08 17:29:49.689  1466  1565 D FPSMonitor: threadFuncFpsMonitor display 0, fps 120
+11-08 17:29:49.720  1401  3440 D SDM     : HWCSession::ProcessRequests: Pushing release fence in fenece wait queue.
+11-08 17:29:49.721  1401  3440 D SDM     : HWCSession::ProcessRequests: Creating AsyncFenceWaits async thread.
+11-08 17:29:49.721  1401  3440 D SDM     : HWCSession::ProcessRequests: Remove current CWB request from the pending request queue.
+11-08 17:29:49.722  1401  3440 D SDM     : HWCSession::ProcessRequests: No pending cwb requests found in the queue.
+11-08 17:29:49.722  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:49.722  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:49.722  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3715.126221,R:1672.556763,G:1540.052246,B:617.520935, lux: 76.122009
+11-08 17:29:49.723  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:49.723  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:49.723  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3697.625488,R:1657.556274,G:1532.552002,B:617.520935, lux: 74.847420
+11-08 17:29:49.723  2261  3439 I libsensor-displayalgo: ##### the value of lux: 75.911079, cct: 0.000000
+11-08 17:29:49.723  2261  3439 I libsensor-ssccalapi: value of set_lux: 75.911079
+11-08 17:29:49.723  2261  3439 I libsensor-ssccalapi: value of set cct: 0.000000
+11-08 17:29:49.723  2261  3439 I sensors : send_request:296,  send_request suid high 48dd16bd suid low 2c177798
+11-08 17:29:49.725  2261  3407 I sensors : handle_resp_cb:364, _fifo_resp not empty
+11-08 17:29:49.725  2261  3407 I sensors : handle_resp_cb:377,  handle_resp_cb suid high 48dd16bd suid low 2c177798,_fifo_resp.begin() df2332d0
+11-08 17:29:49.725  2261  3407 I sensors : handle_resp_cb:379, _fifo_resp still not empty
+11-08 17:29:49.725  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:49.725  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:49.725  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3720.126221,R:1675.056885,G:1540.052246,B:617.520935, lux: 76.467270
+11-08 17:29:49.725  2261  3439 I libsensor-displayalgo: the value of channelCali C:2609.538598,R:1279.903492,G:1000.403741,B:340.087583,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:49.725  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:49.725  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3720.126221,R:1672.556763,G:1545.052490,B:620.021057, lux: 76.516640
+11-08 17:29:49.726  1401  1544 D SDM     : HWDeviceDRM::SetupConcurrentWriteback: Tear down the Concurrent Writeback topology
+11-08 17:29:49.735  1401  3444 D SDM     : HWCSession::NotifyCWBStatus: Notify the client about buffer status 0.
+11-08 17:29:49.735  1401  3444 D SDM     : HWCSession::PerformFenceWaits: Remove current release fence from the pending fence wait queue.
+11-08 17:29:49.735  1401  3444 D SDM     : HWCSession::PerformFenceWaits: CWB fence queue is empty. No pending release fence to wait on.
+11-08 17:29:49.735  2261  3434 D libsensor-parseRGB: the value of RGB [6346.676552 4693.993784 2697.942353 5395.606086 3984.747360 2289.981251 5984.588029 4424.755437 2543.024635 6007.227546 4442.255497 2552.982464]
+11-08 17:29:49.821  2261  3439 I libsensor-displayalgo: the value of channelCali C:2532.043346,R:1249.264644,G:968.029973,B:330.931902,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:49.821  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:49.821  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6346.676552,G:4693.993784,B:2697.942353,EVENT C:3712.625977,R:1672.556763,G:1542.552368,B:617.520935, lux: 82.120079
+11-08 17:29:50.142  2604  3448 I MiuiNetworkPolicy: bandwidth: 0 KB/s, Max bandwidth: 3847 KB/s
+11-08 17:29:50.514  5853  5853 I adbd    : in ShellService: export ANDROID_LOG_TAGS=''; exec logcat '-d' '-t' '500'

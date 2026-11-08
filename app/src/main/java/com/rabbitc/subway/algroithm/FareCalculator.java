@@ -36,7 +36,8 @@ public class FareCalculator {
     public static Pair<Double, Double> calculateFareWithSpecial(List<String> path, MetroGraph metroGraph) {
         if (path == null || path.size() < 2) {
             DataCache cache = DataCache.getInstance();
-            return new Pair<>(cache.getDefaultFare(), 0.0);
+            Double defaultFare = cache.getDefaultFare();
+            return new Pair<>(defaultFare != null ? defaultFare : 2.0, 0.0);
         }
         List<FareSegmentDetail> details = calculateFareDetails(path, metroGraph, false);
         double total = 0.0, special = 0.0;
@@ -61,7 +62,8 @@ public class FareCalculator {
     public static Pair<Double, Double> calculateFareWithoutSpecial(List<String> path, MetroGraph metroGraph) {
         if (path == null || path.size() < 2) {
             DataCache cache = DataCache.getInstance();
-            return new Pair<>(cache.getDefaultFare(), 0.0);
+            Double defaultFare = cache.getDefaultFare();
+            return new Pair<>(defaultFare != null ? defaultFare : 2.0, 0.0);
         }
         List<FareSegmentDetail> details = calculateFareDetails(path, metroGraph, true);
         double total = 0.0;

@@ -1,0 +1,316 @@
+--------- beginning of main
+11-08 17:29:14.677 18484 15582 D TrafficStats: tagSocket(191) with statsTag=0xffffffff, statsUid=-1
+11-08 17:29:14.680  8278  8457 I libc    : kill: send 15 to pid 15578
+11-08 17:29:14.681  7700 15490 E LB      : fail to open node: No such file or directory
+11-08 17:29:14.689  7700 15490 E LB      : fail to open node: No such file or directory
+11-08 17:29:14.698  7700 15490 E LB      : fail to open node: No such file or directory
+11-08 17:29:14.707  7700 15490 E LB      : fail to open node: No such file or directory
+11-08 17:29:14.715  7700 15490 E LB      : fail to open node: No such file or directory
+11-08 17:29:14.788  2604 12436 I GpoUtil : doStartEngineByInstance()
+11-08 17:29:14.788  2604 12436 I GpoUtil : gnss engine status: 2
+11-08 17:29:14.788  1310  1310 I LocSvc_GnssInterface: ===> start line 302 
+11-08 17:29:14.789  1310  1310 I LocSvc_APIClientBase: locAPIStartTracking:355] start new session: 180
+11-08 17:29:14.789  1310  1428 I LocSvc_api_v02: ---> locClientSendReq line 2422 QMI_LOC_REG_EVENTS_REQ_V02
+11-08 17:29:14.790 18484 21767 D TrafficStats: tagSocket(180) with statsTag=0xffffffff, statsUid=-1
+11-08 17:29:14.790  1310  2551 I LocSvc_ApiV02: <--- globalEventCb line 233 QMI_LOC_EVENT_REPORT_IND_V02
+11-08 17:29:14.790  1310  2551 E LocSvc_ApiV02: reportLocEvent:3882] Loc event report: 0 KlobucharIonoMode_valid:0: leapSec_valid:0: tauC_valid:0 featureStatusReport_valid: 1 featureStatusReport: 42
+11-08 17:29:14.790  1310  1416 I LocSvc_GnssAdapter: proc:5442] ReportQwesFeatureStatus before caps 100a0eff 
+11-08 17:29:14.790  1310  1416 I LocSvc_GnssAdapter: setQwesFeatureStatus:249] Feature : 1 isValid: 0
+11-08 17:29:14.790  1310  1416 I LocSvc_GnssAdapter: setQwesFeatureStatus:249] Feature : 2 isValid: 1
+11-08 17:29:14.790  1310  1416 I LocSvc_GnssAdapter: setQwesFeatureStatus:249] Feature : 13 isValid: 0
+11-08 17:29:14.790  1310  2551 I LocSvc_ApiV02: <--- globalEventCb line 233 QMI_LOC_SYSTEM_INFO_REQ_V02
+11-08 17:29:14.790  1310  1416 I LocSvc_GnssAdapter: setQwesFeatureStatus:249] Feature : 3 isValid: 0
+11-08 17:29:14.790  1310  1416 I LocSvc_GnssAdapter: setQwesFeatureStatus:249] Feature : 4 isValid: 1
+11-08 17:29:14.790  1310  1416 I LocSvc_GnssAdapter: setQwesFeatureStatus:249] Feature : 5 isValid: 0
+11-08 17:29:14.790  1310  2551 E LocSvc_ApiV02: reportSystemInfo:4405] system info type: 1, leap second valid: 1 current gps time:valid:0, week: 0, msec: 0,current leap second:valid 0, seconds 0, next gps time: valid 0, week: 0, msec: 0,next leap second: valid 0, seconds 0
+11-08 17:29:14.790  1310  1416 I LocSvc_GnssAdapter: setQwesFeatureStatus:249] Feature : 6 isValid: 1
+11-08 17:29:14.790  1310  1416 I LocSvc_GnssAdapter: setQwesFeatureStatus:249] Feature : 7 isValid: 0
+11-08 17:29:14.790  1310  1416 I LocSvc_GnssAdapter: setQwesFeatureStatus:249] Feature : 8 isValid: 0
+11-08 17:29:14.790  1310  1416 I LocSvc_GnssAdapter: proc:5445] ReportQwesFeatureStatus After caps 100a0eff 
+11-08 17:29:14.790  1310  1428 I LocSvc_api_v02: ---> locClientSendReq line 2422 QMI_LOC_SET_OPERATION_MODE_REQ_V02
+11-08 17:29:14.791  1282  1303 D qcc_file_agent: qccfagent_initialize_hal_impl: gQccWaitPreviousJobFin: 0
+11-08 17:29:14.791  1282  1303 D qcc_file_agent: QCC file agent already initialized0
+11-08 17:29:14.791  1282  1303 D qccsyshal: QccsyshalImpl::qccfagent_initialize_sys_hal_V1_1() FileAgentConfigs-clientId:200
+11-08 17:29:14.791  2604  3357 D GnssCallbackJni: gnssSetCapabilitesCb: 871u
+11-08 17:29:14.791  1310  2551 I LocSvc_ApiV02: <--- globalRespCb line 261 QMI_LOC_SET_OPERATION_MODE_REQ_V02
+11-08 17:29:14.791  1310  1428 I LocSvc_api_v02: ---> locClientSendReq line 2422 QMI_LOC_START_REQ_V02
+11-08 17:29:14.791  1282  1303 V qcc_file_agent: API qccfagent_start_download_hal_impl() called, file agent sys lib date: 2024-10-10
+11-08 17:29:14.791  1282  1303 D qcc_file_agent: qccfagent_start_download_hal_impl: gQccWaitPreviousJobFin: 0
+11-08 17:29:14.791  2604  3357 D GnssCallbackJni: gnssSetSystemInfoCb: yearOfHw=2016
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: dropped /data/misc/qcc/file_agent/200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b.req into dropbox /data/misc/qcc/down/200/200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b.req
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: clientID=200
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: version=2.2
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: key=v1/?uc=0x3E&mcc=%2D&di=1455&mb=0&fc=0x0A&fv=3%2E3&spf=xtra3int%2Ebin&pua=A%2F15%2FXiaomi%2F2312DRA50C%2Fparrot%2Funknown%2FQCX3
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: requestType=0
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: requestTimer=2592000
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: connType=2
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: connTimer=0
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: context=A/15/Xiaomi/2312DRA50C/parrot/unknown/QCX3/l5932421289898395351/-/0x43f+0x0000043fcb08d6cc/-/Redmi/1357005/1356991/00:BOOT.MXF.2.0-01018.3-WAIPIO-1.38410.3+01:TZ.XF.5.18-40341-8+03:AOP.HO.4.0-00546-WAIPIO_E-1+10:AQ3A.240912.001:OS2.0.209.0.VNRCNXM+11:MPSS.DE.3.1.1.c1-00021-NETRANI_GENALL_PACK-1.79677.42+12:ADSP.HT.5.7-01183-WAIPIO-1+16:CDSP.HT.2.8.1-00154-NETRANI-1+18:WLAN.HL.3.4.3-00347.2-QCAHLSWMTPLZ-1.44046.4.47379.2/4.5/1/A/2025-11-01/-/0
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: periodicInterval=0
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: transactionID=3
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: throttleCategory=INT
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: throttleLimit=4
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: throttleInterval=1440
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: @
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: immediate request
+11-08 17:29:14.792  1282  1303 V qcc_file_agent: qccfagent_start_download_hal_impl() current monitor child thread id: 518552767536
+11-08 17:29:14.792  1282  1303 D qccsyshal: QccsyshalImpl::qccfagent_start_download_sys_hal_V1_1() FileAgentDLParams->requestType:0
+11-08 17:29:14.792  2604  5123 D GnssCallbackJni: gnssSetCapabilitiesCb: 8704u
+11-08 17:29:14.792  2819  2824 D qcc_file_hidl: qccfagent_init_start_download(): qccsyshal::qccfagent_start_download_sys_hal() returns 0
+11-08 17:29:14.792 15000 15027 I QCC:CommonFileObserver: called onEvent event :128, path:200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b.req
+11-08 17:29:14.792 15000 15027 I QCC:JobRequest: reqPath: /data/misc/qcc/down/200/200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b.req
+11-08 17:29:14.792  6395  6452 D LocationServiceIDLClient: [gnssCapabilitiesCb][1445] [HC] <<= [HS]
+11-08 17:29:14.792 15000 15027 I QCC:JobManager: isLegacyReq version: 2.2
+11-08 17:29:14.793 15000 15027 I QCC:JobManager: isLegacyReq ret: false
+11-08 17:29:14.793 15000 15027 I QCC:JobService: getMd5Key= 90156bfe65ad7966e2de61e1f9a9fc6b
+11-08 17:29:14.793 15000 15027 I QCC:JobRequest: ver:2.2, key:v1/?uc=0x3E&mcc=%2D&di=1455&mb=0&fc=0x0A&fv=3%2E3&spf=xtra3int%2Ebin&pua=A%2F15%2FXiaomi%2F2312DRA50C%2Fparrot%2Funknown%2FQCX3, requestType:0, requestTimer:2592000, connType:2, connTimer:0, context:A/15/Xiaomi/2312DRA50C/parrot/unknown/QCX3/l5932421289898395351/-/0x43f+0x0000043fcb08d6cc/-/Redmi/1357005/1356991/00:BOOT.MXF.2.0-01018.3-WAIPIO-1.38410.3+01:TZ.XF.5.18-40341-8+03:AOP.HO.4.0-00546-WAIPIO_E-1+10:AQ3A.240912.001:OS2.0.209.0.VNRCNXM+11:MPSS.DE.3.1.1.c1-00021-NETRANI_GENALL_PACK-1.79677.42+12:ADSP.HT.5.7-01183-WAIPIO-1+16:CDSP.HT.2.8.1-00154-NETRANI-1+18:WLAN.HL.3.4.3-00347.2-QCAHLSWMTPLZ-1.44046.4.47379.2/4.5/1/A/2025-11-01/-/0, periodicInterval:0, tnxId:3, Category:INT, throttleLimit:4, throttleInterval:1440, hashKey:90156bfe65ad7966e2de61e1f9a9fc6b
+11-08 17:29:14.794  2604  3357 D GnssManager: gnss engine report: on
+11-08 17:29:14.794 15000 15027 I QCC:JobService: getCategoryFromReq ret: 3
+11-08 17:29:14.794 15000 15027 I QCC:JobManager: isJobRunning reqType: 0, jobType:3
+11-08 17:29:14.794 15000 15027 I QCC:JobManager: there is no activejob
+11-08 17:29:14.794 15000 15027 I QCC:JobManager: isJobRunning reqType: 0, jobType:3, ret:false
+11-08 17:29:14.794 15000 15027 I QCC:JobManager: setJobFromReq clientID:200, jobType:3
+11-08 17:29:14.794 15000 15027 I QCC:JobManager: splashCnt for contentStr = 20
+11-08 17:29:14.794 15000 15027 I QCC:JobManager: reqSource = null
+11-08 17:29:14.794 15000 15027 I QCC:JobManager: runJob , jobType:3, reqType:0
+11-08 17:29:14.795 15000 15027 I QCC:JobManager: On-Demand type 
+11-08 17:29:14.795 15000 15027 I QCC:FileElementsStore: getTSData clientid: 5854, type:0
+11-08 17:29:14.795 15000 15027 I QCC:FileElementsStore: getTSData ret : 1793894986000
+11-08 17:29:14.795 15000 15027 I QCC:JobManager: getLastSucceedTime jobType: 3, lsTime:1793894986000
+11-08 17:29:14.795 15000 15027 I QCC:JobManager: on-demand req proceed as normal
+11-08 17:29:14.796 15000 15027 I QCC:NetworkStat: getActiveNetwork(ctx) invoked.
+11-08 17:29:14.798 15000 15027 I QCC:NetworkStat: capabilities: [11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 28, 37]
+11-08 17:29:14.798 15000 15027 I QCC:NetworkStat: isConnectToInternet: true
+11-08 17:29:14.798 15000 15027 I QCC:NetworkStat: WIFI is available
+11-08 17:29:14.798 15000 15027 I QCC:NetworkStat: getActiveNetwork(ctx) invoked.
+11-08 17:29:14.799 15000 15027 I QCC:NetworkStat: capabilities: [11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 28, 37]
+11-08 17:29:14.799 15000 15027 I QCC:NetworkStat: isConnectToInternet: true
+11-08 17:29:14.799 15000 15027 I QCC:NetworkStat: WIFI is available
+11-08 17:29:14.799 15000 15027 I QCC:JobManager: given network available
+11-08 17:29:14.799 15000 15000 I QCC:JobEventHandler: JOB_EVENT_START_ON_DEMAND_SESSION , jobType: 3
+11-08 17:29:14.799 15000 15000 I QCC:JobManager: runJobOnDemandSessionStart, jobType:3
+11-08 17:29:14.800 15000 15000 I QCC:JobService: removeCurrentMetaFromClientID
+11-08 17:29:14.800 15000 15000 I QCC:JobService: findMetaNameFromClientID, clientID :200
+11-08 17:29:14.800 15000 15000 I QCC:JobManager: setJobProgressStatus statusFileName: 200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b-progress-3-700
+11-08 17:29:14.800 15000 15000 V QCC:OmaDMNative: qcc_hidl_create_file_to_system_dropbox() path=/data/misc/qcc/down/200/200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b-progress-3-700
+11-08 17:29:14.801  2819  2830 I LocSvc_ApiV02: <--- globalEventCb line 233 QMI_LOC_EVENT_INJECT_TIME_REQ_IND_V02
+11-08 17:29:14.801  2819  2830 W LocSvc_xtra2: onRequestNtpTime:263] NTP download req state:0 reqsource:2 cursource:65535 isGpsEnabled:1
+11-08 17:29:14.801  2819  2825 W LocSvc_IzatApiV02: operator():1913] time: 1794130155103; elapsedTimeMs: 1357005179; reference: 1121835567; uncertainty: 12000; timeSrc: 1
+11-08 17:29:14.801  2819  2825 I LocSvc_api_v02: ---> locClientSendReq line 2422 QMI_LOC_INJECT_UTC_TIME_REQ_V02
+11-08 17:29:14.801  2819  2827 I LocSvc_xtra2: downloadSntpTime:954] attempting to connect to time.xtracloud.net on handle 0x7fcafed00d
+11-08 17:29:14.804  1282  1303 V qccsyshal: QccsyshalImpl::move_to_sys_dropbox(), path=/down/200/200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b-progress-3-700 length=0 
+11-08 17:29:14.804  1282  1303 V qccsyshal: QccsyshalImpl::move_to_sys_dropbox(), nres=0 
+11-08 17:29:14.804  1282 10533 V qcc_file_agent: agent_monitor_thread_handler: event length: 80
+11-08 17:29:14.804  1282 10533 V qcc_file_agent: agent_check_download_result() 200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b-progress-3-700 want to check status file 200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b
+11-08 17:29:14.804  1282 10533 V qcc_file_agent: agent_check_download_result(): inprogress status 700 got for tid: 3
+11-08 17:29:14.804  1282 10533 V qcc_file_agent: agent_check_download_result(): /data/misc/qcc/down/200/200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b-progress-3-700 2remove 0, 1794130154, 1794130154, 1794130154
+11-08 17:29:14.804 15000 15000 I QCC:JobManager: setJobActiveRunningType: 3
+11-08 17:29:14.804  1282 10533 V qcc_file_agent: agent_monitor_thread_handler() checking result returns 1
+11-08 17:29:14.804 15000 15000 I QCC:ActiveCareService: handleMessage: 11
+11-08 17:29:14.804 15000 15000 I QCC:ApplicationManager: addJobQueue: 11, RunningMainJobType: 0
+11-08 17:29:14.804 15000 15000 I QCC:JobManager: getJobActiveRunningType: 3
+11-08 17:29:14.804 15000 15000 I QCC:JobManager: getJobRunState : 8
+11-08 17:29:14.804  2819  2830 I LocSvc_ApiV02: <--- globalRespCb line 261 QMI_LOC_INJECT_UTC_TIME_REQ_V02
+11-08 17:29:14.804 15000 15000 I QCC:TransferContants: getCheckQdmaTransfer :false
+11-08 17:29:14.804 15000 15000 I QCC:ApplicationManager: addJobQueue return: false
+11-08 17:29:14.805 15000 15000 I QCC:ActiveCareService: startJob mainJob: 11
+11-08 17:29:14.805 15000 15000 I QCC:ActiveCareService: DEVICE_INITIATED_FILE_DELIVERY_DOWNLOAD_ACTION
+11-08 17:29:14.807 15000 15000 I QCC:OperationMode: prepareProvisioned nProvisioned = 1
+11-08 17:29:14.807 15000 15000 I QCC:OperationMode: readOpMode read from file opMode : 3
+11-08 17:29:14.807 15000 15000 I QCC:OperationMode: readOpMode operationMode: 3
+11-08 17:29:14.807 15000 15000 I QCC:OperationMode: DEVICE_PROVISIONED done or need to opmode as 3
+11-08 17:29:14.807 15000 15000 I QCC:EmbargoesList: embargoes list exist 
+11-08 17:29:14.807 15000 15000 I QCC:EmbargoesList: line : EmbargoedMcc=~368~467~432~634~417~250[32,33,34,60]
+11-08 17:29:14.808 15000 15000 I QCC:EmbargoesList: match.find / ret: true
+11-08 17:29:14.808 15000 15000 I QCC:EmbargoesList: line : EmbargoedSID=
+11-08 17:29:14.809 15000 15000 I QCC:EmbargoesList: EmbargoesIsDeviceInRegulatedArea regulated:false
+11-08 17:29:14.809 15000 15000 I QCC:OperationMode: isRestrictedEmbargoesState : false
+11-08 17:29:14.810 15000 15000 I QCC:OperationMode: readOpMode read from file opMode : 3
+11-08 17:29:14.810 15000 15000 I QCC:OperationMode: readOpMode operationMode: 3
+11-08 17:29:14.810 15000 15000 I QCC:OperationMode: opModeRestricted opmode: 3
+11-08 17:29:14.810 15000 15000 I QCC:JobManager: getJobActiveRunningType: 3
+11-08 17:29:14.810 15000 15000 I QCC:FileDeliveryService: checkRAPReq(), jobType : 3
+11-08 17:29:14.810 15000 15000 I QCC:JobManager: isPresentReq: 3
+11-08 17:29:14.810 15000 15000 I QCC:JobManager: job is present
+11-08 17:29:14.810 15000 15000 I QCC:JobManager: getJobKey: v1/?uc=0x3E&mcc=%2D&di=1455&mb=0&fc=0x0A&fv=3%2E3&spf=xtra3int%2Ebin&pua=A%2F15%2FXiaomi%2F2312DRA50C%2Fparrot%2Funknown%2FQCX3
+11-08 17:29:14.810 15000 15000 I QCC:JobManager: runJobGetReqType ret: 0
+11-08 17:29:14.810 15000 15000 I QCC:JobManager: getVersion: 2.2
+11-08 17:29:14.810 15000 15000 I QCC:JobManager: isLegacyReq version: 2.2
+11-08 17:29:14.810 15000 15000 I QCC:JobManager: isLegacyReq ret: false
+11-08 17:29:14.810 15000 15000 I QCC:JobManager: getJobThrotLimit: 4
+11-08 17:29:14.810 15000 15000 I QCC:JobManager: getJobThrotInterval: 1440
+11-08 17:29:14.810 15000 15000 I QCC:RequestAcceptPolicy: >> REQUEST() invoked, clientid=200, upload=false, nReqType=0, category=INT, limit=4, interval=86400
+11-08 17:29:14.815 15000 15000 I QCC:FileDeliveryService: checkRAPReq ret: 0
+11-08 17:29:14.815 15000 15000 I QCC:ActiveCareService: checkRAPReq ret = 0
+11-08 17:29:14.815 15000 15000 I QCC:JobManager: getJobKey: v1/?uc=0x3E&mcc=%2D&di=1455&mb=0&fc=0x0A&fv=3%2E3&spf=xtra3int%2Ebin&pua=A%2F15%2FXiaomi%2F2312DRA50C%2Fparrot%2Funknown%2FQCX3
+11-08 17:29:14.816 15000 15000 I QCC:JobUtils: getCurrUtcTime :1794130154816
+11-08 17:29:14.816 15000 15000 I QCC:JobUtils: isTimedExpired jobType: 3
+11-08 17:29:14.817 15000 15000 I QCC:JobUtils: getExpiredDate timedUrl: https://pathcf.prod.xtracloud.cn/v1/?uc=0x3E&mcc=%2D&di=1455&mb=0&fc=0x0A&fv=3%2E3&spf=xtra3int%2Ebin&pua=A%2F15%2FXiaomi%2F2312DRA50C%2Fparrot%2Funknown%2FQCX3&XtraExpires=1794499786
+11-08 17:29:14.817 15000 15000 I QCC:JobUtils: getExpiredDate timedUrl: https://pathcf.prod.xtracloud.cn/v1/?uc=0x3E&mcc=%2D&di=1455&mb=0&fc=0x0A&fv=3%2E3&spf=xtra3int%2Ebin&pua=A%2F15%2FXiaomi%2F2312DRA50C%2Fparrot%2Funknown%2FQCX3&XtraExpires=1794499786
+11-08 17:29:14.817 15000 15000 I QCC:JobUtils: isTimedExpired currentUtc: 1794130154816, timedUrl: 1794499786000
+11-08 17:29:14.817 15000 15000 I QCC:JobUtils: isTimedExpired ret: false
+11-08 17:29:14.818 15000 15000 I QCC:JobManager: setJobRunState jobType: 3, jobRunState:9
+11-08 17:29:14.818 15000 15000 I QCC:JobManager: getJobKey: v1/?uc=0x3E&mcc=%2D&di=1455&mb=0&fc=0x0A&fv=3%2E3&spf=xtra3int%2Ebin&pua=A%2F15%2FXiaomi%2F2312DRA50C%2Fparrot%2Funknown%2FQCX3
+11-08 17:29:14.818 15000 15000 I QCC:JobManager: getVersion: 2.2
+11-08 17:29:14.818 15000 15000 I QCC:RequestAcceptPolicy: start() null, 200, null, 2.2, v1/?uc=0x3E&mcc=%2D&di=1455&mb=0&fc=0x0A&fv=3%2E3&spf=xtra3int%2Ebin&pua=A%2F15%2FXiaomi%2F2312DRA50C%2Fparrot%2Funknown%2FQCX3, INT, 0, 0, 1794130154
+11-08 17:29:14.818 15000 15000 I QCC:RequestAcceptPolicy: strClientId=200_INT, m_strXTRACategory=INT
+11-08 17:29:14.819 15000 15000 I QCC:ActiveCareService: RequestAcceptPolicy.start succeed
+11-08 17:29:14.820 15000 15000 I QCC:JobUtils: getUrl jobType: 3
+11-08 17:29:14.820 15000 15000 I QCC:JobUtils: getTimedUrl jobType: 3
+11-08 17:29:14.820 15000 15000 I QCC:JobUtils: getTimedUrl timedUrl: https://pathcf.prod.xtracloud.cn/v1/?uc=0x3E&mcc=%2D&di=1455&mb=0&fc=0x0A&fv=3%2E3&spf=xtra3int%2Ebin&pua=A%2F15%2FXiaomi%2F2312DRA50C%2Fparrot%2Funknown%2FQCX3&XtraExpires=1794499786
+11-08 17:29:14.820 15000 15000 I QCC:JobUtils: getUrl: https://pathcf.prod.xtracloud.cn/v1/?uc=0x3E&mcc=%2D&di=1455&mb=0&fc=0x0A&fv=3%2E3&spf=xtra3int%2Ebin&pua=A%2F15%2FXiaomi%2F2312DRA50C%2Fparrot%2Funknown%2FQCX3
+11-08 17:29:14.820 15000 15000 I QCC:SingleDownload: downloadReq :https://pathcf.prod.xtracloud.cn/v1/?uc=0x3E&mcc=%2D&di=1455&mb=0&fc=0x0A&fv=3%2E3&spf=xtra3int%2Ebin&pua=A%2F15%2FXiaomi%2F2312DRA50C%2Fparrot%2Funknown%2FQCX3
+11-08 17:29:14.820 15000 15000 I QCC:NetworkStat: getActiveNetwork(ctx) invoked.
+11-08 17:29:14.822 15000 15000 I QCC:NetworkStat: capabilities: [11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 28, 37]
+11-08 17:29:14.822 15000 15000 I QCC:NetworkStat: isConnectToInternet: true
+11-08 17:29:14.822 15000 15000 I QCC:NetworkStat: WIFI is available
+11-08 17:29:14.822  1310  2551 I LocSvc_ApiV02: <--- globalEventCb line 233 QMI_LOC_EVENT_REPORT_IND_V02
+11-08 17:29:14.822  1310  2551 E LocSvc_ApiV02: reportLocEvent:3882] Loc event report: 0 KlobucharIonoMode_valid:0: leapSec_valid:1: tauC_valid:1 featureStatusReport_valid: 0 featureStatusReport: 0
+11-08 17:29:14.822 15000 15000 I QCC:JobManager: getJobActiveRunningType: 3
+11-08 17:29:14.822 15000 15000 I QCC:JobManager: getJobContext: A/15/Xiaomi/2312DRA50C/parrot/unknown/QCX3/l5932421289898395351/-/0x43f+0x0000043fcb08d6cc/-/Redmi/1357005/1356991/00:BOOT.MXF.2.0-01018.3-WAIPIO-1.38410.3+01:TZ.XF.5.18-40341-8+03:AOP.HO.4.0-00546-WAIPIO_E-1+10:AQ3A.240912.001:OS2.0.209.0.VNRCNXM+11:MPSS.DE.3.1.1.c1-00021-NETRANI_GENALL_PACK-1.79677.42+12:ADSP.HT.5.7-01183-WAIPIO-1+16:CDSP.HT.2.8.1-00154-NETRANI-1+18:WLAN.HL.3.4.3-00347.2-QCAHLSWMTPLZ-1.44046.4.47379.2/4.5/1/A/2025-11-01/-/0
+11-08 17:29:14.822 15000 15000 I QCC:JobManager: getJobReqSrc : null
+11-08 17:29:14.822 15000 15000 I QCC:JobManager: getRetKey: 90156bfe65ad7966e2de61e1f9a9fc6b
+11-08 17:29:14.822 15000 15000 I QCC:JobManager: getJobActiveRunningType: 3
+11-08 17:29:14.823  1310  2551 I LocSvc_ApiV02: <--- globalEventCb line 233 QMI_LOC_SYSTEM_INFO_REQ_V02
+11-08 17:29:14.823  1310  2551 E LocSvc_ApiV02: reportSystemInfo:4405] system info type: 1, leap second valid: 1 current gps time:valid:1, week: 2444, msec: 34173121,current leap second:valid 1, seconds 18, next gps time: valid 0, week: 0, msec: 0,next leap second: valid 0, seconds 0
+11-08 17:29:14.823 15000 15000 W QCC:OmaDMNative: mtreeGetNative: env is null 
+11-08 17:29:14.823 15000 15000 I QCC:TransferUserAgent: makeUserAgent, userAgent = A/15/Xiaomi/2312DRA50C/parrot/unknown/QCX3.2/l5932421289898395351/-/-/-/-/1357005/-/-/4.5/-/-/-/-/0/0/QCC15.0-20240824-d141dcf/null/singleDL
+11-08 17:29:14.823 15000 15000 I QCC:JobUtils: getCurrUtcTime :1794130154823
+11-08 17:29:14.825 15000 15000 I QCC:ActiveCareService: IPTH_SESSION_TYPE_SINGLE_DOWNLOAD done
+11-08 17:29:14.837 15000 15593 D TrafficStats: tagSocket(127) with statsTag=0x5c436e00, statsUid=-1
+11-08 17:29:14.876  1401  1951 I vendor.qti.hardware.display.composer-service: FrameNotifyProcess Sensor: notify citsensorservice to trigger cwb
+11-08 17:29:14.877  2261  3521 I libcitsensorservice@2.0-impl: msg_transfer
+11-08 17:29:14.877  2261  3433 I libsensor-parseRGB: request dump start
+11-08 17:29:14.877  2261  3433 D vendor.xiaomi.sensor.citsensorservice@2.0-service: handle id:11 wxh:1280x2712 uwxuh:1220x2712 size: 10416128 fd:15 fd_meta:16 flags:0x4000228 usage:0x33  format:0x3 layer_count: 1 reserved_size = 0
+11-08 17:29:14.877  1401  1718 D SDM     : HWCSession::SetCWBOutputBuffer: CWB config passed by cwb_client : tappoint 1  CWB_ROI : (817.000000 7.000000 978.000000 128.000000)
+11-08 17:29:14.878  1401  3440 D SDM     : HWCSession::ProcessRequests: Successfully configured CWB buffer.
+11-08 17:29:14.885  1401  1951 I vendor.qti.hardware.display.composer-service: FrameNotifyProcess Sensor: notify citsensorservice to trigger cwb
+11-08 17:29:14.885  2261  3521 I libcitsensorservice@2.0-impl: msg_transfer
+11-08 17:29:14.885  2261  3433 I libsensor-parseRGB: request dump start
+11-08 17:29:14.885  2261  3433 D vendor.xiaomi.sensor.citsensorservice@2.0-service: handle id:11 wxh:1280x2712 uwxuh:1220x2712 size: 10416128 fd:15 fd_meta:16 flags:0x4000228 usage:0x33  format:0x3 layer_count: 1 reserved_size = 0
+11-08 17:29:14.887  1401  3440 D SDM     : HWCSession::ProcessRequests: Pushing release fence in fenece wait queue.
+11-08 17:29:14.887  1401  1718 D SDM     : HWCSession::SetCWBOutputBuffer: CWB config passed by cwb_client : tappoint 1  CWB_ROI : (817.000000 7.000000 978.000000 128.000000)
+11-08 17:29:14.887  1401  3440 D SDM     : HWCSession::ProcessRequests: Creating AsyncFenceWaits async thread.
+11-08 17:29:14.887  1401  3440 D SDM     : HWCSession::ProcessRequests: Remove current CWB request from the pending request queue.
+11-08 17:29:14.887  1401  3440 D SDM     : HWCSession::ProcessRequests: Successfully configured CWB buffer.
+11-08 17:29:14.895  1401  3440 D SDM     : HWCSession::ProcessRequests: Pushing release fence in fenece wait queue.
+11-08 17:29:14.895  1401  3440 D SDM     : HWCSession::ProcessRequests: Remove current CWB request from the pending request queue.
+11-08 17:29:14.895  1401  3440 D SDM     : HWCSession::ProcessRequests: No pending cwb requests found in the queue.
+11-08 17:29:14.900  2819  2827 W LocSvc_xtra2: downloadSntpTime:1181] Sntp time - utcTime:1794130155368uncertainty:45
+11-08 17:29:14.901  2819  2825 W LocSvc_IzatApiV02: operator():1913] time: 1794130155370; elapsedTimeMs: 1357005280; reference: 1357005278; uncertainty: 45; timeSrc: 2
+11-08 17:29:14.901  2819  2825 I LocSvc_api_v02: ---> locClientSendReq line 2422 QMI_LOC_INJECT_UTC_TIME_REQ_V02
+11-08 17:29:14.902  1401  1544 D SDM     : HWDeviceDRM::SetupConcurrentWriteback: Tear down the Concurrent Writeback topology
+11-08 17:29:14.903  1401  3444 D SDM     : HWCSession::NotifyCWBStatus: Notify the client about buffer status 0.
+11-08 17:29:14.904  2819  2830 I LocSvc_ApiV02: <--- globalRespCb line 261 QMI_LOC_INJECT_UTC_TIME_REQ_V02
+11-08 17:29:14.904  1401  3444 D SDM     : HWCSession::PerformFenceWaits: Remove current release fence from the pending fence wait queue.
+11-08 17:29:14.905  2261  3434 D libsensor-parseRGB: the value of RGB [7096.538205 5254.967967 3021.240583 4677.634841 3454.596389 1984.713427 6331.844652 4683.868384 2691.920170 7027.905844 5204.191913 2991.471458]
+11-08 17:29:14.911  1401  3444 D SDM     : HWCSession::NotifyCWBStatus: Notify the client about buffer status 0.
+11-08 17:29:14.912  1401  3444 D SDM     : HWCSession::PerformFenceWaits: Remove current release fence from the pending fence wait queue.
+11-08 17:29:14.912  1401  3444 D SDM     : HWCSession::PerformFenceWaits: CWB fence queue is empty. No pending release fence to wait on.
+11-08 17:29:14.912  2261  3434 D libsensor-parseRGB: the value of RGB [7096.538205 5254.967967 3021.240583 4677.634841 3454.596389 1984.713427 6331.844652 4683.868384 2691.920170 7027.905844 5204.191913 2991.471458]
+11-08 17:29:14.918  2261  3439 I libsensor-displayalgo: the value of channelCali C:2642.644971,R:1324.096894,G:1038.068728,B:348.478819,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 17:29:14.918  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 17:29:14.918  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:7096.538205,G:5254.967967,B:3021.240583,EVENT C:3765.127930,R:1715.058228,G:1555.052734,B:622.521118, lux: 77.094322
+11-08 17:29:14.947 18484 21736 I MiEngineNG: black gray apps blacklist 9530 up-to-date.
+11-08 17:29:14.949 18484 15602 D TrafficStats: tagSocket(203) with statsTag=0xffffffff, statsUid=-1
+11-08 17:29:14.953 15000 15593 I QCC:TransferStreamVolleyRequest: enter parseNetworkResponse, response.headers : {Accept-Ranges=bytes, Age=272, Cache-Control=max-age=900, Connection=keep-alive, Content-Length=221, Content-Type=application/octet-stream, Date=Sun, 08 Nov 2026 09:24:44 GMT, ETag="dfa4df70a0061412b62e143c83cc47ff", Last-Modified=Sun, 08 Nov 2026 09:15:10 GMT, Server=AmazonS3, Via=1.1 6636538a05247c80bd9b1634a2f35fb4.cloudfront.net (CloudFront), 1.1 80bfa2b30783ffe56faece3641ea4e86.cloudfront.net (CloudFront), X-Amz-Cf-Id=e5PF0aIvJYePl6pPs-csYhJ-YG3ouWLOhC9wVG-qG4lu6tSQUBW_KA==, X-Amz-Cf-Pop=SZX51-E1, x-amz-meta-xtra-di=2700|1455|65535|720|43200, x-amz-server-side-encryption=AES256, X-Android-Received-Millis=1794130154952, X-Android-Response-Source=NETWORK 200, X-Android-Selected-Protocol=http/1.1, X-Android-Sent-Millis=1794130154933, X-Cache=Hit from cloudfront}
+11-08 17:29:14.953 15000 15593 I QCC:TransferStreamVolleyRequest: enter parseNetworkResponse, mStatusCode : 200
+11-08 17:29:14.954 15000 15000 I QCC:TransferRequestManager: DL response.length : 221
+11-08 17:29:14.954 15000 15000 I QCC:TransferRequestManager: response.headers: Accept-Ranges=bytes
+11-08 17:29:14.954 15000 15000 I QCC:TransferRequestManager: response.headers: Age=272
+11-08 17:29:14.954 15000 15000 I QCC:TransferRequestManager: response.headers: Cache-Control=max-age=900
+11-08 17:29:14.954 15000 15000 I QCC:TransferRequestManager: response.headers: Connection=keep-alive
+11-08 17:29:14.954 15000 15000 I QCC:TransferRequestManager: response.headers: Content-Length=221
+11-08 17:29:14.954 15000 15000 I QCC:TransferRequestManager: response.headers: Content-Type=application/octet-stream
+11-08 17:29:14.954 15000 15000 I QCC:TransferRequestManager: response.headers: Date=Sun, 08 Nov 2026 09:24:44 GMT
+11-08 17:29:14.955 15000 15000 I QCC:TransferRequestManager: response.headers: ETag="dfa4df70a0061412b62e143c83cc47ff"
+11-08 17:29:14.955 15000 15000 I QCC:TransferRequestManager: response.headers: Last-Modified=Sun, 08 Nov 2026 09:15:10 GMT
+11-08 17:29:14.955 15000 15000 I QCC:TransferRequestManager: response.headers: Server=AmazonS3
+11-08 17:29:14.955 15000 15000 I QCC:TransferRequestManager: response.headers: Via=1.1 6636538a05247c80bd9b1634a2f35fb4.cloudfront.net (CloudFront), 1.1 80bfa2b30783ffe56faece3641ea4e86.cloudfront.net (CloudFront)
+11-08 17:29:14.955 15000 15000 I QCC:TransferRequestManager: response.headers: X-Amz-Cf-Id=e5PF0aIvJYePl6pPs-csYhJ-YG3ouWLOhC9wVG-qG4lu6tSQUBW_KA==
+11-08 17:29:14.955 15000 15000 I QCC:TransferRequestManager: response.headers: X-Amz-Cf-Pop=SZX51-E1
+11-08 17:29:14.955 15000 15000 I QCC:TransferRequestManager: response.headers: x-amz-meta-xtra-di=2700|1455|65535|720|43200
+11-08 17:29:14.955 15000 15000 I QCC:TransferRequestManager: response.headers: x-amz-server-side-encryption=AES256
+11-08 17:29:14.955 15000 15000 I QCC:TransferRequestManager: response.headers: X-Android-Received-Millis=1794130154952
+11-08 17:29:14.955 15000 15000 I QCC:TransferRequestManager: response.headers: X-Android-Response-Source=NETWORK 200
+11-08 17:29:14.955 15000 15000 I QCC:TransferRequestManager: response.headers: X-Android-Selected-Protocol=http/1.1
+11-08 17:29:14.955 15000 15000 I QCC:TransferRequestManager: response.headers: X-Android-Sent-Millis=1794130154933
+11-08 17:29:14.955 15000 15000 I QCC:TransferRequestManager: response.headers: X-Cache=Hit from cloudfront
+11-08 17:29:14.955 15000 15000 I QCC:TransferRequestManager: httpResp: x-amz-meta-xtra-di=2700|1455|65535|720|43200
+11-08 17:29:14.955 15000 15000 V QCC:OmaDMNative: qcc_hidl_create_file_to_system_dropbox() path=/data/misc/qcc/down/200/90156bfe65ad7966e2de61e1f9a9fc6b
+11-08 17:29:14.958 15000 15000 V QCC:OmaDMNative: qcc_hidl_create_file_to_system_dropbox() size: 221
+11-08 17:29:14.959  1282  1303 V qccsyshal: QccsyshalImpl::move_to_sys_dropbox(), path=/down/200/90156bfe65ad7966e2de61e1f9a9fc6b length=221 
+11-08 17:29:14.959  1282  1303 V qccsyshal: QccsyshalImpl::move_to_sys_dropbox(), nres=0 
+11-08 17:29:14.959  1282 10533 V qcc_file_agent: agent_monitor_thread_handler: event length: 64
+11-08 17:29:14.959  1282 10533 V qcc_file_agent: agent_check_download_result() 90156bfe65ad7966e2de61e1f9a9fc6b want to check status file 200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b
+11-08 17:29:14.959 15000 15000 I QCC:SingleDownload: resultCBMethod reqTag:0, statusCode: 200, size: 0, httpResp: x-amz-meta-xtra-di=2700|1455|65535|720|43200
+11-08 17:29:14.959 15000 15000 I QCC:JobManager: getJobActiveRunningType: 3
+11-08 17:29:14.959 15000 15000 I QCC:JobManager: getJobKey: v1/?uc=0x3E&mcc=%2D&di=1455&mb=0&fc=0x0A&fv=3%2E3&spf=xtra3int%2Ebin&pua=A%2F15%2FXiaomi%2F2312DRA50C%2Fparrot%2Funknown%2FQCX3
+11-08 17:29:14.959 15000 15000 I QCC:JobManager: getVersion: 2.2
+11-08 17:29:14.963 15000 15000 I QCC:JobUtils: getCurrUtcTime :1794130154963
+11-08 17:29:14.965 15000 15000 I QCC:RequestAcceptPolicy: >> update() invoked, clientid=200, strName=null, strVersion=2.2, strKey=v1/?uc=0x3E&mcc=%2D&di=1455&mb=0&fc=0x0A&fv=3%2E3&spf=xtra3int%2Ebin&pua=A%2F15%2FXiaomi%2F2312DRA50C%2Fparrot%2Funknown%2FQCX3, nReqType=0, lSize=0, nStatus=200
+11-08 17:29:14.967 15000 15000 I QCC:SingleDownload: dlReqStatus
+11-08 17:29:14.967 15000 15000 I QCC:JobManager: getJobActiveRunningType: 3
+11-08 17:29:14.967 15000 15000 I QCC:JobManager: getJobTransactionID: 3
+11-08 17:29:14.967 15000 15000 I QCC:JobManager: getRetKey: 90156bfe65ad7966e2de61e1f9a9fc6b
+11-08 17:29:14.967 15000 15000 I QCC:JobManager: getVersion: 2.2
+11-08 17:29:14.967 15000 15000 I QCC:SingleDownload: dlReqStatus statusFile:200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b-3-200
+11-08 17:29:14.967 15000 15000 V QCC:OmaDMNative: qcc_hidl_create_file_to_system_dropbox() path=/data/misc/qcc/down/200/200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b-3-200
+11-08 17:29:14.970 15000 15000 V QCC:OmaDMNative: qcc_hidl_create_file_to_system_dropbox() size: 44
+11-08 17:29:14.971  1282  1303 V qccsyshal: QccsyshalImpl::move_to_sys_dropbox(), path=/down/200/200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b-3-200 length=44 
+11-08 17:29:14.971  1282  1303 V qccsyshal: QccsyshalImpl::move_to_sys_dropbox(), nres=0 
+11-08 17:29:14.971  1282 10533 V qcc_file_agent: agent_monitor_thread_handler: event length: 64
+11-08 17:29:14.971  1282 10533 V qcc_file_agent: agent_check_download_result() 90156bfe65ad7966e2de61e1f9a9fc6b want to check status file 200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b
+11-08 17:29:14.971  1282 10533 V qcc_file_agent: agent_check_download_result() 200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b-3-200 want to check status file 200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b
+11-08 17:29:14.971  1282 10533 V qcc_file_agent: agent_check_download_result(): status 200 got for tid: 3
+11-08 17:29:14.971  1282 10533 D qcc_file_agent: httpRes: x-amz-meta-xtra-di=2700|1455|65535|720|43200
+11-08 17:29:14.971  1282 10533 V qcc_file_agent: agent_check_download_result(): /data/misc/qcc/down/200/200-2.2-90156bfe65ad7966e2de61e1f9a9fc6b-3-200 2remove 44, 1794130154, 1794130154, 1794130154
+11-08 17:29:14.971  1282 10533 V qcc_file_agent: successfully downloaded the file
+11-08 17:29:14.971  1282 10533 V qcc_file_agent: agent_monitor_thread_handler() checking result: got result /data/misc/qcc/down/200/90156bfe65ad7966e2de61e1f9a9fc6b
+11-08 17:29:14.971  1282 10533 V qcc_file_agent: agent_read_file: successfully sent /data/misc/qcc/down/200/90156bfe65ad7966e2de61e1f9a9fc6b. size:221
+11-08 17:29:14.971  1282 10533 V qcc_file_agent: client_recv_handler(): send result code 0(OK) to callback, key=v1/?uc=0x3E&mcc=%2D&di=1455&mb=0&fc=0x0A&fv=3%2E3&spf=xtra3int%2Ebin&pua=A%2F15%2FXiaomi%2F2312DRA50C%2Fparrot%2Funknown%2FQCX3 transaction id=3, spend 0(s)179(ms)
+11-08 17:29:14.971  1282 10533 I qccsyshal: qagent_process_download_result_v1_1() errorCode:0  dataLen: 221 transactionId:3
+11-08 17:29:14.971  1282 10533 V qcc_file_agent: immediate complete
+11-08 17:29:14.971  1282 10533 V qcc_file_agent: after immediate complete, has periodic
+11-08 17:29:14.972 15000 15000 I QCC:SingleDownload: dlReqStatus downloaded Done: 11/08/2026 17:29:14.971
+11-08 17:29:14.972 15000 15000 I QCC:JobManager: setJobActiveRunningType: 0
+11-08 17:29:14.972 15000 15000 I QCC:JobManager: setJobRunState jobType: 3, jobRunState:0
+11-08 17:29:14.972 15000 15000 I QCC:ActiveCareService: handleMessage: 13
+11-08 17:29:14.972 15000 15000 I QCC:ActiveCareService: RUNNING_DONE RunningMainJobType: 0
+11-08 17:29:14.974  2819  2824 W LocSvc_xtra2: onInjectXtraData:73] injectXtraData
+11-08 17:29:14.974  2819  2825 I LocSvc_api_v02: ---> locClientSendReq line 2422 QMI_LOC_INJECT_XTRA_DATA_REQ_V02
+11-08 17:29:14.983 15000 15000 I com.qti.qcc: This is non sticky GC, maxfree is 33554432 minfree is 8388608
+11-08 17:29:14.983 15000 15000 I com.qti.qcc: Explicit concurrent copying GC freed 1354KB AllocSpace bytes, 13(324KB) LOS objects, 90% free, 2459KB/26MB, paused 43us,16us total 10.483ms
+11-08 17:29:14.983 15000 15000 W QCC:ApplicationManager: getJobQueue empty or null 
+11-08 17:29:14.983 15000 15000 I QCC:ApplicationManager: runQueue: false
+11-08 17:29:14.983 15000 15000 I QCC:ActiveCareService: set exitAlarm
+11-08 17:29:14.983 15000 15011 W System  : A resource failed to call AbstractCursor.close. 
+11-08 17:29:15.004  2819  2830 I LocSvc_ApiV02: <--- globalRespCb line 261 QMI_LOC_INJECT_XTRA_DATA_REQ_V02
+11-08 17:29:15.040  2604 12436 D GnssBackgroundUsageOpt: removeByLmsUser10002604
+11-08 17:29:15.040  2604 12436 D IMiLocation:  remove, key:10002604networkcom.android.server.location.gnss.hal.Gpo4Client$$ExternalSyntheticLambda3@240021347
+11-08 17:29:15.040  2604 12436 D GnssBackgroundUsageOpt: removeByLmsUser: key:10002604networkcom.android.server.location.gnss.hal.Gpo4Client$$ExternalSyntheticLambda3@240021347
+11-08 17:29:15.041  2604 12436 D LocationManagerService: [0]network provider removed registration from 1000/android[GnssService]/ACA27BE8
+11-08 17:29:15.042  2604 12436 D GnssBackgroundUsageOpt: remove normal: key:10002604networkcom.android.server.location.gnss.hal.Gpo4Client$$ExternalSyntheticLambda3@240021347
+11-08 17:29:15.043  7120  7120 I MetokLocationProvider: setRequest: request =ProviderRequest[@0, WorkSource{10315 com.rabbitc.subway}] ; client =WorkSource{10315 com.rabbitc.subway}
+11-08 17:29:15.043  7120  7570 D MetokFileLogger: logInfo msg:11-08 17:29:15.043 - =MI NLP=onSetRequest: request =ProviderRequest[@0, WorkSource{10315 com.rabbitc.subway}] ; client =WorkSource{10315 com.rabbitc.subway}
+11-08 17:29:15.044  7120  7570 D MetokFileLogger: logInfo msg:11-08 17:29:15.043 - =MI NLP=NLPManagerrequestLocationUpdatescom.rabbitc.subway
+11-08 17:29:15.044  7120  7570 D MetokFileLogger: logInfo msg:11-08 17:29:15.044 - =MI NLP=NLPManagerpostRunnable lock
+11-08 17:29:15.045  7120  7570 D MetokFileLogger: logInfo msg:11-08 17:29:15.044 - =MI NLP=NLPManagerpostRunnable unlock
+11-08 17:29:15.208 18484 21736 I MiEngineNG: black grays chs 216 up-to-date.
+11-08 17:29:15.209 18484 15608 D TrafficStats: tagSocket(185) with statsTag=0xffffffff, statsUid=-1
+--------- beginning of system
+11-08 17:29:15.289  2099  2099 I wificond: station_bandwidth: P
+11-08 17:29:15.289  2604 14612 D WifiScoreReportInjector: mCcaBusyRate change to 3; mBeaconLostRate change to 3
+11-08 17:29:15.290  2604  3450 E WifiClientModeImpl[1320900933:wlan0]: Failed to get mlo info
+11-08 17:29:15.317  2604  2768 I ExtM    : reportMemPressure: 1, start flush
+11-08 17:29:15.318  2604  3956 E ExtM    : ExtM flush exist thrashing
+11-08 17:29:15.365  2604  3956 E ExtM    : can_flush_idle_pages:46851 flush_number_adjust: 20000
+11-08 17:29:15.365  2604  3956 D MFZ     : Report MEM_PRESSURE_LOW!  Flush Level is: 5 Need Flush: 20000 pages 
+11-08 17:29:15.413  2604  3956 D MFZ     : before Flush idle_stats: 80264 5 9 258 27 8 327 35 12514 33940
+11-08 17:29:15.413  2604  3956 W ExtM    : Flush thread start , 20000 pages need to flush
+11-08 17:29:15.414   878 15609 D vold    : flush task started
+11-08 17:29:15.415 15610 15610 D vold    :  flush Pid = 15610
+11-08 17:29:15.415 15610 15610 E vold    : maxCpuFreq=2400000
+11-08 17:29:15.415 15610 15610 E vold    : maxCpuFreq=2400000
+11-08 17:29:15.416 15610 15610 D vold    : set cpu affinity policy success
+11-08 17:29:15.429  5853  5853 I adbd    : in ShellService: export ANDROID_LOG_TAGS=''; exec logcat '-d' '-t' '300'

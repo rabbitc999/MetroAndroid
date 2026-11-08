@@ -1,0 +1,502 @@
+--------- beginning of system
+11-08 18:18:06.662  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.663  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.663  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.663  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.663  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.664  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.664  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.664  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.664  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.665  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.665  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.665  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.665  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.666  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.666  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.666  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.667  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.667  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.667  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.667  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.668  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.668  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.668  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.669  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.669  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.669  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.669  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.670  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.670  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.670  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.670  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.671  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.671  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.671  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.672  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.672  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.672  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.672  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.673  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.673  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.673  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.673  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.674  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.674  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.674  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.675  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.675  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.675  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.675  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.676  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.676  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.676  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.676  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.677  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.677  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.677  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.677  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.678  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.678  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.678  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.679  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.679  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.679  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.679  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.680  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.680  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.680  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.680  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.681  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.681  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.681  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.681  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.682  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.682  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.682  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.683  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.683  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.683  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.683  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.684  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.684  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.684  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.684  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.685  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.685  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.685  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.686  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.686  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.686  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.686  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.687  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.687  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.687  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.687  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.688  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.688  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.688  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.689  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.689  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.689  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.690  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.690  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.690  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.690  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.691  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.691  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.691  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.691  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.692  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.692  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.692  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.693  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.693  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.693  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.693  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.694  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.694  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.694  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.694  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.695  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.695  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.695  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.696  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.696  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.696  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.696  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.697  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.697  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.697  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.697  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.698  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.698  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.698  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.699  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.699  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.699  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.699  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.700  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.700  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.700  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.700  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.701  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.701  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.701  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.702  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.702  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.702  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.702  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.703  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.703  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.703  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.703  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.704  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.704  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.704  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.705  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.705  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.705  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.705  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.706  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.706  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.706  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.707  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.707  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.707  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.707  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.708  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.708  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.708  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.708  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.709  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.709  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.709  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.709  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.710  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.710  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.710  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.710  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.711  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.711  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.711  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.712  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.712  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.712  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.712  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.713  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.713  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.713  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.713  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.714  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.714  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.714  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.714  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.715  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.715  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.715  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.716  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.716  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.716  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.716  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.717  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.717  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.717  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.718  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.718  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.718  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.718  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.719  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.719  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.719  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.719  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.720  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.720  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.720  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.721  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.721  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.721  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.721  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.722  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.722  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.722  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.722  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.723  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.723  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.723  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.724  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.724  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.724  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.724  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.725  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.725  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.725  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.725  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.726  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.726  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.726  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.727  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.727  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.727  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.727  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.728  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.728  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.728  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.728  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.729  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.729  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.729  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.730  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.730  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.730  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.730  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.731  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.731  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.731  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.731  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.732  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.732  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.732  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.732  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.733  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.733  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.733  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.734  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.734  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.734  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.734  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.735  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.735  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.735  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.736  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.736  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.736  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.736  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.737  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.737  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.737  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.737  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.738  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.738  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.738  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.739  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.739  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.739  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.739  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.740  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.740  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.740  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.740  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.741  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.741  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.741  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.742  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.742  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.742  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.742  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.743  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.743  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.743  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.744  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.744  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.744  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.744  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.745  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.745  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.745  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.746  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.746  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.746  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.747  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.747  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.747  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.748  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.748  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.748  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.749  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.749  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.749  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.750  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.750  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.750  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.751  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.751  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.751  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.752  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.752  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.752  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.753  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.753  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.753  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.754  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.754  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.754  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.754  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.755  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.755  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.755  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.756  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.756  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.756  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.757  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.757  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.757  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.758  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.758  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.758  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.759  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.759  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.759  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.760  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.760  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.760  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.761  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.761  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.761  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.761  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.762  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.762  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.762  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.763  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.763  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.763  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.764  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.764  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.764  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.765  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.765  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.765  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.766  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.766  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.766  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.766  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.767  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.767  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.767  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.767  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.768  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.768  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.768  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.769  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.769  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.769  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.769  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.770  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.770  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.770  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.770  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.771  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.771  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.771  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.772  2604  3558 E RTMode  : pkgName: com.rabbitc.subway has no permission
+11-08 18:18:06.772  2604  7129 W MIUIInput: Input event injection from package: null action ACTION_UP
+--------- beginning of main
+11-08 18:18:06.772  2604  3354 I MIUIInput: [MotionEvent] publisher action=0x1, deviceId=-1, 121843079, channel '[Gesture Monitor] miui-gesture (server)'
+11-08 18:18:07.039  6056  6770 I VA_AliveCore:AssistInteractionService: onProcessChanged: processName=com.miui.voiceassist;isRunning=true
+11-08 18:18:07.120  2604  3448 I MiuiNetworkPolicy: bandwidth: 0 KB/s, Max bandwidth: 3847 KB/s
+11-08 18:18:07.328  1401  1951 I vendor.qti.hardware.display.composer-service: FrameNotifyProcess Sensor: notify citsensorservice to trigger cwb
+11-08 18:18:07.328  2261  2306 I libcitsensorservice@2.0-impl: msg_transfer
+11-08 18:18:07.329  2261  3433 I libsensor-parseRGB: request dump start
+11-08 18:18:07.329  2261  3433 D vendor.xiaomi.sensor.citsensorservice@2.0-service: handle id:11 wxh:1280x2712 uwxuh:1220x2712 size: 10416128 fd:15 fd_meta:16 flags:0x4000228 usage:0x33  format:0x3 layer_count: 1 reserved_size = 0
+11-08 18:18:07.329  1401  5955 D SDM     : HWCSession::SetCWBOutputBuffer: CWB config passed by cwb_client : tappoint 1  CWB_ROI : (817.000000 7.000000 978.000000 128.000000)
+11-08 18:18:07.330  1401  3440 D SDM     : HWCSession::ProcessRequests: Successfully configured CWB buffer.
+11-08 18:18:07.339  1401  3440 D SDM     : HWCSession::ProcessRequests: Pushing release fence in fenece wait queue.
+11-08 18:18:07.339  1401  3440 D SDM     : HWCSession::ProcessRequests: Creating AsyncFenceWaits async thread.
+11-08 18:18:07.339  1401  3440 D SDM     : HWCSession::ProcessRequests: Remove current CWB request from the pending request queue.
+11-08 18:18:07.339  1401  3440 D SDM     : HWCSession::ProcessRequests: No pending cwb requests found in the queue.
+11-08 18:18:07.344  1401  1544 D SDM     : HWDeviceDRM::SetupConcurrentWriteback: Tear down the Concurrent Writeback topology
+11-08 18:18:07.355  1401  3444 D SDM     : HWCSession::NotifyCWBStatus: Notify the client about buffer status 0.
+11-08 18:18:07.355  1401  3444 D SDM     : HWCSession::PerformFenceWaits: Remove current release fence from the pending fence wait queue.
+11-08 18:18:07.355  1401  3444 D SDM     : HWCSession::PerformFenceWaits: CWB fence queue is empty. No pending release fence to wait on.
+11-08 18:18:07.356  2261  3434 D libsensor-parseRGB: the value of RGB [6016.710830 5524.369136 4504.743647 5297.368509 4862.295103 3964.673611 5670.772526 5205.518097 4244.738995 5979.191559 5489.214701 4475.900140]
+11-08 18:18:07.419  2261  3439 I libsensor-displayalgo: the value of channelCali C:2950.760525,R:1288.023251,G:1219.477715,B:435.617728,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 18:18:07.419  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 18:18:07.419  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6016.710830,G:5524.369136,B:4504.743647,EVENT C:4232.643555,R:1742.559204,G:1835.062256,B:785.026672, lux: 84.732811
+11-08 18:18:07.670  1401  1951 I vendor.qti.hardware.display.composer-service: FrameNotifyProcess Sensor: notify citsensorservice to trigger cwb
+11-08 18:18:07.671  2261  2306 I libcitsensorservice@2.0-impl: msg_transfer
+11-08 18:18:07.671  2261  3433 I libsensor-parseRGB: request dump start
+11-08 18:18:07.671  2261  3433 D vendor.xiaomi.sensor.citsensorservice@2.0-service: handle id:11 wxh:1280x2712 uwxuh:1220x2712 size: 10416128 fd:15 fd_meta:16 flags:0x4000228 usage:0x33  format:0x3 layer_count: 1 reserved_size = 0
+11-08 18:18:07.671  1401  5955 D SDM     : HWCSession::SetCWBOutputBuffer: CWB config passed by cwb_client : tappoint 1  CWB_ROI : (817.000000 7.000000 978.000000 128.000000)
+11-08 18:18:07.673  1401  3440 D SDM     : HWCSession::ProcessRequests: Successfully configured CWB buffer.
+11-08 18:18:07.681  1401  3440 D SDM     : HWCSession::ProcessRequests: Pushing release fence in fenece wait queue.
+11-08 18:18:07.681  1401  3440 D SDM     : HWCSession::ProcessRequests: Creating AsyncFenceWaits async thread.
+11-08 18:18:07.681  1401  3440 D SDM     : HWCSession::ProcessRequests: Remove current CWB request from the pending request queue.
+11-08 18:18:07.682  1401  3440 D SDM     : HWCSession::ProcessRequests: No pending cwb requests found in the queue.
+11-08 18:18:07.686  1401  1544 D SDM     : HWDeviceDRM::SetupConcurrentWriteback: Tear down the Concurrent Writeback topology
+11-08 18:18:07.697  1401  3444 D SDM     : HWCSession::NotifyCWBStatus: Notify the client about buffer status 0.
+11-08 18:18:07.697  1401  3444 D SDM     : HWCSession::PerformFenceWaits: Remove current release fence from the pending fence wait queue.
+11-08 18:18:07.697  1401  3444 D SDM     : HWCSession::PerformFenceWaits: CWB fence queue is empty. No pending release fence to wait on.
+11-08 18:18:07.699  2261  3434 D libsensor-parseRGB: the value of RGB [6016.710830 5524.369136 4504.743647 5297.368509 4862.295103 3964.673611 5670.772526 5205.518097 4244.738995 5979.191559 5489.214701 4475.900140]
+11-08 18:18:07.719  2261  3439 I libsensor-displayalgo: the value of channelCali C:2950.760525,R:1288.023251,G:1219.477715,B:435.617728,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 18:18:07.719  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 18:18:07.720  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6016.710830,G:5524.369136,B:4504.743647,EVENT C:4230.143555,R:1742.559204,G:1835.062256,B:787.526733, lux: 84.226463
+11-08 18:18:07.904  2099  2099 I wificond: station_bandwidth: P
+11-08 18:18:07.906  2604 14612 D WifiScoreReportInjector: mCcaBusyRate change to 5; mBeaconLostRate change to 0
+11-08 18:18:07.908  2604  3450 E WifiClientModeImpl[1320900933:wlan0]: Failed to get mlo info
+11-08 18:18:08.080  1401  1951 I vendor.qti.hardware.display.composer-service: FrameNotifyProcess Sensor: notify citsensorservice to trigger cwb
+11-08 18:18:08.081  2261  3521 I libcitsensorservice@2.0-impl: msg_transfer
+11-08 18:18:08.081  2261  3433 I libsensor-parseRGB: request dump start
+11-08 18:18:08.082  2261  3433 D vendor.xiaomi.sensor.citsensorservice@2.0-service: handle id:11 wxh:1280x2712 uwxuh:1220x2712 size: 10416128 fd:15 fd_meta:16 flags:0x4000228 usage:0x33  format:0x3 layer_count: 1 reserved_size = 0
+11-08 18:18:08.082  1401  5955 D SDM     : HWCSession::SetCWBOutputBuffer: CWB config passed by cwb_client : tappoint 1  CWB_ROI : (817.000000 7.000000 978.000000 128.000000)
+11-08 18:18:08.082  1401  3440 D SDM     : HWCSession::ProcessRequests: Successfully configured CWB buffer.
+11-08 18:18:08.088  1401  1951 I vendor.qti.hardware.display.composer-service: FrameNotifyProcess Sensor: notify citsensorservice to trigger cwb
+11-08 18:18:08.088  2261  3521 I libcitsensorservice@2.0-impl: msg_transfer
+11-08 18:18:08.089  2261  3433 I libsensor-parseRGB: request dump start
+11-08 18:18:08.089  2261  3433 D vendor.xiaomi.sensor.citsensorservice@2.0-service: handle id:11 wxh:1280x2712 uwxuh:1220x2712 size: 10416128 fd:15 fd_meta:16 flags:0x4000228 usage:0x33  format:0x3 layer_count: 1 reserved_size = 0
+11-08 18:18:08.090  1401  3440 D SDM     : HWCSession::ProcessRequests: Pushing release fence in fenece wait queue.
+11-08 18:18:08.090  1401  5955 D SDM     : HWCSession::SetCWBOutputBuffer: CWB config passed by cwb_client : tappoint 1  CWB_ROI : (817.000000 7.000000 978.000000 128.000000)
+11-08 18:18:08.090  1401  3440 D SDM     : HWCSession::ProcessRequests: Creating AsyncFenceWaits async thread.
+11-08 18:18:08.090  1401  3440 D SDM     : HWCSession::ProcessRequests: Remove current CWB request from the pending request queue.
+11-08 18:18:08.090  1401  3440 D SDM     : HWCSession::ProcessRequests: Successfully configured CWB buffer.
+11-08 18:18:08.098  1401  3440 D SDM     : HWCSession::ProcessRequests: Pushing release fence in fenece wait queue.
+11-08 18:18:08.098  1401  3440 D SDM     : HWCSession::ProcessRequests: Remove current CWB request from the pending request queue.
+11-08 18:18:08.098  1401  3440 D SDM     : HWCSession::ProcessRequests: No pending cwb requests found in the queue.
+11-08 18:18:08.104  1401  1544 D SDM     : HWDeviceDRM::SetupConcurrentWriteback: Tear down the Concurrent Writeback topology
+11-08 18:18:08.106  1401  3444 D SDM     : HWCSession::NotifyCWBStatus: Notify the client about buffer status 0.
+11-08 18:18:08.106  1401  3444 D SDM     : HWCSession::PerformFenceWaits: Remove current release fence from the pending fence wait queue.
+11-08 18:18:08.107  2261  3434 D libsensor-parseRGB: the value of RGB [6016.710830 5524.369136 4504.743647 5297.368509 4862.295103 3964.673611 5670.772526 5205.518097 4244.738995 5979.191559 5489.214701 4475.900140]
+11-08 18:18:08.114  1401  3444 D SDM     : HWCSession::NotifyCWBStatus: Notify the client about buffer status 0.
+11-08 18:18:08.114  1401  3444 D SDM     : HWCSession::PerformFenceWaits: Remove current release fence from the pending fence wait queue.
+11-08 18:18:08.114  1401  3444 D SDM     : HWCSession::PerformFenceWaits: CWB fence queue is empty. No pending release fence to wait on.
+11-08 18:18:08.115  2261  3434 D libsensor-parseRGB: the value of RGB [6016.710830 5524.369136 4504.743647 5297.368509 4862.295103 3964.673611 5670.772526 5205.518097 4244.738995 5979.191559 5489.214701 4475.900140]
+11-08 18:18:08.219  2261  3439 I libsensor-displayalgo: the value of channelCali C:2950.760525,R:1288.023251,G:1219.477715,B:435.617728,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 18:18:08.219  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 18:18:08.219  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6016.710830,G:5524.369136,B:4504.743647,EVENT C:4245.144043,R:1745.059204,G:1840.062500,B:792.526917, lux: 85.138504
+11-08 18:18:08.521  2604  4743 D SLM-SRV-SLAService: checktemp temperature = 33633 temperature_average = 33637 isPerformanceMode = false thermal_enable_slm = true
+11-08 18:18:08.651  2604  4796 I NetworkAccelerateSwitchService: EVENT_RSSI_POLL. mRssiPoll=true
+11-08 18:18:08.651  2604  4796 I NetworkAccelerateSwitchService: getAverageWifiRssi:25
+11-08 18:18:08.652  2604  4796 D NetworkAccelerateSwitchService: checkIntervalModeChange mMovementState:5 mIntervalMode:0 mIsBadLinkLayerQoE:false mBadLinkLayerQoETimes = 0
+11-08 18:18:08.929  2604  4738 I NetworkBoostStatusManager: handle: 107
+11-08 18:18:08.930  4430  5581 E PhoneInterfaceManager: getServiceStateForSlot retuning null for invalid slotIndex=-1
+11-08 18:18:08.930  2604  4738 D NetworkBoostStatusManager: isModemSingnalStrengthStatus signalStrength or serviceState is null
+11-08 18:18:08.982 22190 22190 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+11-08 18:18:08.982 22190 22190 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+11-08 18:18:09.020  1564  1564 D MI-SF   : setIdleFps choose FPS:60, mode:0
+11-08 18:18:09.020  1564  1564 D DisplayModeController: setDesiredMode 4630946377747519618 {mode={fps=60.00 Hz, modePtr={id=0, vsyncRate=60.00 Hz, peakRefreshRate=60.00 Hz}}, emitEvent=false, force=false}
+11-08 18:18:09.020  1401  5955 I SDM     : HWEventsDRM::SetEventState: Setup vsync event for CRTC 104, Connector 57
+11-08 18:18:09.024  1401  5955 I SDM     : HWCDisplay::SetActiveConfigWithConstraints: config: 0, WxH 1220x2712, fps 60
+11-08 18:18:09.025  1401  5955 W SDM     : HWDeviceDRM::GetSupportedBitClkRate: Requested rate not supported: 1098000000
+11-08 18:18:09.025  1401  5955 I SDM     : HWDeviceDRM::UpdateMixerAttributes: Mixer WxH 1220x2712-0 for Peripheral
+11-08 18:18:09.025  1401  5955 I SDM     : HWCDisplay::SubmitDisplayConfig: Active configuration changed from config 1 to 0
+11-08 18:18:09.025  1401  5955 I SDM     : HWCDisplay::SubmitDisplayConfig: Active WxH 1220x2712, timing_fps: 60, sf_fps: 60, ddic_idle_mode:0, ddic_auto_mode: 0, ddic_min_fps: 0
+11-08 18:18:09.026  1401  1544 I SDM     : HWDeviceDRM::SetupAtomic: Setting mode: WxH: 1220x2712, vrefresh: 60, hskew: 0
+11-08 18:18:09.027  1401  1951 I vendor.qti.hardware.display.composer-service: FrameNotifyProcess Sensor: notify citsensorservice to trigger cwb
+11-08 18:18:09.027  2261  2306 I libcitsensorservice@2.0-impl: msg_transfer
+11-08 18:18:09.027  2261  3433 I libsensor-parseRGB: request dump start
+11-08 18:18:09.027  2261  3433 D vendor.xiaomi.sensor.citsensorservice@2.0-service: handle id:11 wxh:1280x2712 uwxuh:1220x2712 size: 10416128 fd:15 fd_meta:16 flags:0x4000228 usage:0x33  format:0x3 layer_count: 1 reserved_size = 0
+11-08 18:18:09.027  1401  5955 D SDM     : HWCSession::SetCWBOutputBuffer: CWB config passed by cwb_client : tappoint 1  CWB_ROI : (817.000000 7.000000 978.000000 128.000000)
+11-08 18:18:09.028  1401  3440 D SDM     : HWCSession::ProcessRequests: Successfully configured CWB buffer.
+11-08 18:18:09.030  1466  1565 D FPSMonitor: threadFuncFpsMonitor display 0, fps 60
+11-08 18:18:09.044  1401  3440 D SDM     : HWCSession::ProcessRequests: Pushing release fence in fenece wait queue.
+11-08 18:18:09.044  1401  3440 D SDM     : HWCSession::ProcessRequests: Creating AsyncFenceWaits async thread.
+11-08 18:18:09.044  1401  3440 D SDM     : HWCSession::ProcessRequests: Remove current CWB request from the pending request queue.
+11-08 18:18:09.044  1401  3440 D SDM     : HWCSession::ProcessRequests: No pending cwb requests found in the queue.
+11-08 18:18:09.060  1401  1544 D SDM     : HWDeviceDRM::SetupConcurrentWriteback: Tear down the Concurrent Writeback topology
+11-08 18:18:09.065  1401  3444 D SDM     : HWCSession::NotifyCWBStatus: Notify the client about buffer status 0.
+11-08 18:18:09.066  1401  3444 D SDM     : HWCSession::PerformFenceWaits: Remove current release fence from the pending fence wait queue.
+11-08 18:18:09.066  1401  3444 D SDM     : HWCSession::PerformFenceWaits: CWB fence queue is empty. No pending release fence to wait on.
+11-08 18:18:09.067  2261  3434 D libsensor-parseRGB: the value of RGB [6016.710830 5524.369136 4504.743647 5297.368509 4862.295103 3964.673611 5670.772526 5205.518097 4244.738995 5979.191559 5489.214701 4475.900140]
+11-08 18:18:09.118  2261  3439 I libsensor-displayalgo: the value of channelCali C:2950.760525,R:1288.023251,G:1219.477715,B:435.617728,scales C:1.001154,R:1.100389,G:0.978704,B:0.998327, hsv: -1.000000, ScreenId: 3
+11-08 18:18:09.119  2261  3439 E libsensor-displayalgo: value of coefs 5,849.651000,5.445000,-2.345000,2.740000,-6.765000, line 101
+11-08 18:18:09.119  2261  3439 D libsensor-displayalgo: brightness:1067.000000,R:6016.710830,G:5524.369136,B:4504.743647,EVENT C:4262.644531,R:1755.059570,G:1845.062622,B:790.026794, lux: 86.796135
+11-08 18:18:09.258  5853  5853 I adbd    : in ShellService: export ANDROID_LOG_TAGS=''; exec logcat '-d' '-t' '500'

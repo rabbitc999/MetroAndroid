@@ -59,13 +59,16 @@ public final class DataParser {
 
         // 3. 解析站点相关：先建立坐标和状态索引，后续图构建与页面查询都复用这些表。
         Map<String, double[]> stationCoords = new HashMap<>();
+        Map<String, Station> stationIndex = new HashMap<>();
         Map<String, Map<String, String>> stationLineStatus = new HashMap<>();
         Map<String, Map<String, String>> transferStatus = new HashMap<>();
         Map<String, Double> specialTransferTimeMap = new HashMap<>();
         if (data.stations != null) {
-            parseStations(data.stations, stationCoords, stationLineStatus, transferStatus, specialTransferTimeMap);
+            parseStations(data.stations, stationCoords, stationIndex, stationLineStatus,
+                    transferStatus, specialTransferTimeMap);
         }
         cache.setStationCoords(stationCoords);
+        cache.setStationIndex(stationIndex);
         cache.setStationLineStatusMap(stationLineStatus);
         cache.setTransferStatusMap(transferStatus);
         cache.setSpecialTransferTimeMap(specialTransferTimeMap);
@@ -230,12 +233,15 @@ public final class DataParser {
      */
     private static void parseStations(Map<String, Station> stations,
                                       Map<String, double[]> stationCoords,
+                                      Map<String, Station> stationIndex,
                                       Map<String, Map<String, String>> stationLineStatus,
                                       Map<String, Map<String, String>> transferStatus,
                                       Map<String, Double> specialTransferTimeMap) {
         for (Map.Entry<String, Station> entry : stations.entrySet()) {
             String name = entry.getKey();
             Station st = entry.getValue();
+            stationIndex.putIfAbsent(name, st);
+            stationLineStatus.putIfAbsent(name, new HashMap<>());
 
             // 坐标
             stationCoords.put(name, new double[]{st.lon, st.lat});
@@ -351,6 +357,11 @@ public final class DataParser {
 
             String city = line.city != null ? line.city : keyCity;
             String baseName = line.name != null ? line.name : lineId;
+            if ("深圳".equals(city) && ("SZ2_8".equals(lineId)
+                    || "2号线".equals(baseName) || "8号线".equals(baseName)
+                    || baseName.contains("2号线/8号线"))) {
+                baseName = "2号线/8号线";
+            }
             String color = line.color != null ? line.color : "#999999";
             if (!color.startsWith("#")) color = "#" + color;
             String displayName = city.equals(keyCity) ? baseName : city + baseName;
@@ -385,6 +396,9 @@ public final class DataParser {
 
                     String start = dir.start;
                     String end = dir.end;
+                    if (start == null || start.isEmpty() || end == null || end.isEmpty()) {
+                        continue;
+                    }
                     String dirKey = GraphKeyUtils.makeDirKey(lineId, start, end);
 
                     // 未来标记
@@ -475,6 +489,7 @@ public final class DataParser {
         for (Map.Entry<String, List<String>> entry : dirStations.entrySet()) {
             String dirKey = entry.getKey();
             String[] parts = GraphKeyUtils.parseDirKey(dirKey);
+            if (parts.length < 3) continue;
             if (!StationUtils.isFutureDirection(dirKey)) continue;
             if (!parts[0].equals(lineId)) continue;
 

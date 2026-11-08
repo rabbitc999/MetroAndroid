@@ -270,7 +270,7 @@ public class TimeCalculator {
         int minutesOfDay = cal.get(Calendar.HOUR_OF_DAY) * 60 + cal.get(Calendar.MINUTE);
 
         for (HeadwayRule rule : rules) {
-            if (!rule.lineId.equals(lineId)) continue;
+            if (rule.lineId == null || !rule.lineId.equals(lineId)) continue;
             if (rule.days != null && !rule.days.isEmpty()) {
                 String dayName = getDayOfWeekString(dayOfWeek);
                 if (!rule.days.contains(dayName)) continue;
