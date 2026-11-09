@@ -1,5 +1,7 @@
 package com.rabbitc.subway.data.json;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 /**
@@ -17,7 +19,11 @@ public class CrowdRule {
 
     /** 拥挤时段列表 */
     public List<CrowdPeriod> periods;
-    public String directionKey; public String startTime; public String endTime; public double factor; public List<String> days;
+    @SerializedName("direction_key") public String directionKey;
+    @SerializedName("start_time") public String startTime;
+    @SerializedName("end_time") public String endTime;
+    public double factor;
+    public List<String> days;
 
     /** 单个拥挤时段。 */
     public static class CrowdPeriod {

@@ -1,5 +1,7 @@
 package com.rabbitc.subway.data.json;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 /**
@@ -16,7 +18,11 @@ public class HeadwayRule {
 
     /** 发车间隔时段列表 */
     public List<HeadwayPeriod> periods;
-    public String lineId; public String startTime; public String endTime; public int intervalSeconds; public List<String> days;
+    @SerializedName("line_id") public String lineId;
+    @SerializedName("start_time") public String startTime;
+    @SerializedName("end_time") public String endTime;
+    @SerializedName("interval_seconds") public int intervalSeconds;
+    public List<String> days;
 
     /** 单个发车间隔时段。 */
     public static class HeadwayPeriod {

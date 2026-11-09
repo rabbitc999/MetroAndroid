@@ -149,17 +149,32 @@ public final class DataParser {
         // 9. 票价解析：普通分段、线性延伸和特殊线路规则统一交给缓存保存。
         parsePrice(data.price, cache);
 
+        Map<String, String> directionIdMap = buildDirectionIdMap(data.lines);
+
         // 10. 拥挤规则 (crowd_rules)：保留原始时段和倍率，查询时再按出发时间匹配。
         if (data.crowdRules != null) {
             List<com.rabbitc.subway.data.parse.CrowdRule> rules = new ArrayList<>();
             for (CrowdRule cr : data.crowdRules) {
-                com.rabbitc.subway.data.parse.CrowdRule rule = new com.rabbitc.subway.data.parse.CrowdRule();
-                rule.directionKey = cr.directionKey;
-                rule.startTime = cr.startTime;
-                rule.endTime = cr.endTime;
-                rule.factor = cr.factor;
-                rule.days = cr.days;
-                rules.add(rule);
+                String directionKey = directionIdMap.getOrDefault(cr.id, cr.directionKey);
+                if (cr.periods != null) {
+                    for (CrowdRule.CrowdPeriod period : cr.periods) {
+                        com.rabbitc.subway.data.parse.CrowdRule rule = new com.rabbitc.subway.data.parse.CrowdRule();
+                        rule.directionKey = directionKey;
+                        rule.startTime = period.from;
+                        rule.endTime = period.to;
+                        rule.factor = period.factor;
+                        rule.days = period.days;
+                        rules.add(rule);
+                    }
+                } else {
+                    com.rabbitc.subway.data.parse.CrowdRule rule = new com.rabbitc.subway.data.parse.CrowdRule();
+                    rule.directionKey = directionKey;
+                    rule.startTime = cr.startTime;
+                    rule.endTime = cr.endTime;
+                    rule.factor = cr.factor;
+                    rule.days = cr.days;
+                    rules.add(rule);
+                }
             }
             cache.setCrowdRules(rules);
         }
@@ -168,13 +183,25 @@ public final class DataParser {
         if (data.headwayRules != null) {
             List<com.rabbitc.subway.data.parse.HeadwayRule> rules = new ArrayList<>();
             for (HeadwayRule hr : data.headwayRules) {
-                com.rabbitc.subway.data.parse.HeadwayRule rule = new com.rabbitc.subway.data.parse.HeadwayRule();
-                rule.lineId = hr.lineId;
-                rule.startTime = hr.startTime;
-                rule.endTime = hr.endTime;
-                rule.intervalSeconds = hr.intervalSeconds;
-                rule.days = hr.days;
-                rules.add(rule);
+                if (hr.periods != null) {
+                    for (HeadwayRule.HeadwayPeriod period : hr.periods) {
+                        com.rabbitc.subway.data.parse.HeadwayRule rule = new com.rabbitc.subway.data.parse.HeadwayRule();
+                        rule.lineId = hr.id != null ? hr.id : hr.lineId;
+                        rule.startTime = period.from;
+                        rule.endTime = period.to;
+                        rule.intervalSeconds = period.seconds;
+                        rule.days = period.days;
+                        rules.add(rule);
+                    }
+                } else {
+                    com.rabbitc.subway.data.parse.HeadwayRule rule = new com.rabbitc.subway.data.parse.HeadwayRule();
+                    rule.lineId = hr.lineId != null ? hr.lineId : hr.id;
+                    rule.startTime = hr.startTime;
+                    rule.endTime = hr.endTime;
+                    rule.intervalSeconds = hr.intervalSeconds;
+                    rule.days = hr.days;
+                    rules.add(rule);
+                }
             }
             cache.setHeadwayRules(rules);
         }
@@ -217,6 +244,20 @@ public final class DataParser {
     }
 
     // ======================== Gson 对象转 DataCache 核心转换 ========================
+
+    private static Map<String, String> buildDirectionIdMap(Map<String, Line> lines) {
+        Map<String, String> result = new HashMap<>();
+        if (lines == null) return result;
+        for (Map.Entry<String, Line> entry : lines.entrySet()) {
+            if (entry.getValue().direction == null) continue;
+            for (Direction direction : entry.getValue().direction) {
+                if (direction.id != null && direction.start != null && direction.end != null) {
+                    result.put(direction.id, GraphKeyUtils.makeDirKey(entry.getKey(), direction.start, direction.end));
+                }
+            }
+        }
+        return result;
+    }
 
     /**
      * 解析站点数据，填充站点坐标表、站点线路状态、换乘状态和特殊换乘时间。

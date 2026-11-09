@@ -34,6 +34,9 @@ public class Direction {
     /** 该方向上按顺序排列的车站列表 */
     public List<DirectionStation> station;
 
+    /** 该方向包含的全程/区间交路。 */
+    public List<Routing> routings;
+
     /** 是否为远期规划方向（JSON: "is_future"） */
     @SerializedName("is_future")
     public boolean isFuture;
